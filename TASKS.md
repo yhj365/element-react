@@ -3,7 +3,7 @@
 > 自动生成。只有与当前源码指纹一致、测试通过并有可运行示例的细项标记完成。未实现的原功能保留待办，公共使用文档不展示它们。
 
 来源：77d5c32c4ebcfffde67e51f6325c6d350ca668a0
-已验证 API：1286/2394；React示例：128；单元测试：467；整体等价验收：未完成。
+已验证 API：1503/2394；React示例：176；单元测试：546；整体等价验收：未完成。
 
 ## Affix 固钉
 
@@ -2492,69 +2492,69 @@
 - [ ] `directory:segmented` segmented
 - [x] `feature:segmented/empty-options` 选择控件 空选项不渲染 — 证据：tests/input-choice.test.tsx
 
-## select-v2
+## SelectV2 虚拟化选择器
 
-- [ ] `api:select-v2:240` Attributes / model-value / v-model
-- [ ] `api:select-v2:241` Attributes / options
-- [ ] `api:select-v2:242` Attributes / [props](#props)
-- [ ] `api:select-v2:243` Attributes / multiple
-- [ ] `api:select-v2:244` Attributes / disabled
-- [ ] `api:select-v2:245` Attributes / value-key
-- [ ] `api:select-v2:246` Attributes / size
-- [ ] `api:select-v2:247` Attributes / clearable
-- [ ] `api:select-v2:248` Attributes / clear-icon
-- [ ] `api:select-v2:249` Attributes / collapse-tags
-- [ ] `api:select-v2:250` Attributes / multiple-limit
-- [ ] `api:select-v2:251` Attributes / id
-- [ ] `api:select-v2:252` Attributes / name
-- [ ] `api:select-v2:253` Attributes / effect
-- [ ] `api:select-v2:254` Attributes / autocomplete
-- [ ] `api:select-v2:255` Attributes / placeholder
-- [ ] `api:select-v2:256` Attributes / filterable
-- [ ] `api:select-v2:257` Attributes / allow-create
-- [ ] `api:select-v2:258` Attributes / filter-method
-- [ ] `api:select-v2:259` Attributes / loading
-- [ ] `api:select-v2:260` Attributes / loading-text
-- [ ] `api:select-v2:261` Attributes / reserve-keyword
-- [ ] `api:select-v2:262` Attributes / default-first-option
-- [ ] `api:select-v2:263` Attributes / no-match-text
-- [ ] `api:select-v2:264` Attributes / no-data-text
-- [ ] `api:select-v2:265` Attributes / popper-class
-- [ ] `api:select-v2:266` Attributes / popper-style
-- [ ] `api:select-v2:267` Attributes / teleported
-- [ ] `api:select-v2:268` Attributes / append-to
-- [ ] `api:select-v2:269` Attributes / persistent
+- [x] `api:select-v2:240` Attributes / model-value / v-model — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:241` Attributes / options — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:242` Attributes / [props](#props) — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:243` Attributes / multiple — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:244` Attributes / disabled — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:245` Attributes / value-key — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:246` Attributes / size — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:247` Attributes / clearable — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:248` Attributes / clear-icon — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:249` Attributes / collapse-tags — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:250` Attributes / multiple-limit — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:251` Attributes / id — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:252` Attributes / name — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:253` Attributes / effect — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:254` Attributes / autocomplete — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:255` Attributes / placeholder — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:256` Attributes / filterable — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:257` Attributes / allow-create — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:258` Attributes / filter-method — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:259` Attributes / loading — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:260` Attributes / loading-text — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:261` Attributes / reserve-keyword — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:262` Attributes / default-first-option — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:263` Attributes / no-match-text — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:264` Attributes / no-data-text — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:265` Attributes / popper-class — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:266` Attributes / popper-style — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:267` Attributes / teleported — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:268` Attributes / append-to — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:269` Attributes / persistent — 证据：tests/select-v2.test.tsx
 - [ ] `api:select-v2:270` Attributes / popper-options
-- [ ] `api:select-v2:271` Attributes / automatic-dropdown
-- [ ] `api:select-v2:272` Attributes / fit-input-width
-- [ ] `api:select-v2:273` Attributes / suffix-icon
-- [ ] `api:select-v2:274` Attributes / height
-- [ ] `api:select-v2:275` Attributes / item-height
-- [ ] `api:select-v2:276` Attributes / estimated-option-height
-- [ ] `api:select-v2:277` Attributes / scrollbar-always-on
-- [ ] `api:select-v2:278` Attributes / remote
-- [ ] `api:select-v2:279` Attributes / debounce
-- [ ] `api:select-v2:280` Attributes / remote-method
-- [ ] `api:select-v2:281` Attributes / remote-show-suffix
-- [ ] `api:select-v2:282` Attributes / validate-event
-- [ ] `api:select-v2:283` Attributes / offset
-- [ ] `api:select-v2:284` Attributes / show-arrow
-- [ ] `api:select-v2:285` Attributes / placement
-- [ ] `api:select-v2:286` Attributes / fallback-placements
-- [ ] `api:select-v2:287` Attributes / collapse-tags-tooltip
-- [ ] `api:select-v2:288` Attributes / [tag-tooltip](#tag-tooltip)
-- [ ] `api:select-v2:289` Attributes / max-collapse-tags
-- [ ] `api:select-v2:290` Attributes / tag-type
-- [ ] `api:select-v2:291` Attributes / tag-effect
-- [ ] `api:select-v2:292` Attributes / aria-label
-- [ ] `api:select-v2:293` Attributes / empty-values
-- [ ] `api:select-v2:294` Attributes / value-on-clear
+- [x] `api:select-v2:271` Attributes / automatic-dropdown — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:272` Attributes / fit-input-width — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:273` Attributes / suffix-icon — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:274` Attributes / height — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:275` Attributes / item-height — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:276` Attributes / estimated-option-height — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:277` Attributes / scrollbar-always-on — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:278` Attributes / remote — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:279` Attributes / debounce — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:280` Attributes / remote-method — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:281` Attributes / remote-show-suffix — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:282` Attributes / validate-event — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:283` Attributes / offset — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:284` Attributes / show-arrow — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:285` Attributes / placement — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:286` Attributes / fallback-placements — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:287` Attributes / collapse-tags-tooltip — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:288` Attributes / [tag-tooltip](#tag-tooltip) — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:289` Attributes / max-collapse-tags — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:290` Attributes / tag-type — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:291` Attributes / tag-effect — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:292` Attributes / aria-label — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:293` Attributes / empty-values — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:294` Attributes / value-on-clear — 证据：tests/select-v2.test.tsx
 - [ ] `api:select-v2:295` Attributes / popper-append-to-body
-- [ ] `api:select-v2:296` Attributes / tabindex
-- [ ] `api:select-v2:302` props / value
-- [ ] `api:select-v2:303` props / label
-- [ ] `api:select-v2:304` props / options
-- [ ] `api:select-v2:305` props / disabled
+- [x] `api:select-v2:296` Attributes / tabindex — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:302` props / value — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:303` props / label — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:304` props / options — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:305` props / disabled — 证据：tests/select-v2.test.tsx
 - [ ] `api:select-v2:328` tag-tooltip ^(2.13.3) / append-to
 - [ ] `api:select-v2:329` tag-tooltip ^(2.13.3) / placement
 - [ ] `api:select-v2:330` tag-tooltip ^(2.13.3) / fallback-placements
@@ -2568,24 +2568,24 @@
 - [ ] `api:select-v2:338` tag-tooltip ^(2.13.3) / hide-after
 - [ ] `api:select-v2:339` tag-tooltip ^(2.13.3) / auto-close
 - [ ] `api:select-v2:340` tag-tooltip ^(2.13.3) / offset
-- [ ] `api:select-v2:346` Events / change
-- [ ] `api:select-v2:347` Events / visible-change
-- [ ] `api:select-v2:348` Events / remove-tag
-- [ ] `api:select-v2:349` Events / clear
-- [ ] `api:select-v2:350` Events / blur
-- [ ] `api:select-v2:351` Events / focus
-- [ ] `api:select-v2:352` Events / end-reached
-- [ ] `api:select-v2:358` Slots / default
-- [ ] `api:select-v2:359` Slots / header
-- [ ] `api:select-v2:360` Slots / footer
-- [ ] `api:select-v2:361` Slots / empty
-- [ ] `api:select-v2:362` Slots / prefix
-- [ ] `api:select-v2:363` Slots / tag
-- [ ] `api:select-v2:364` Slots / loading
-- [ ] `api:select-v2:365` Slots / label
-- [ ] `api:select-v2:371` Exposes / focus
-- [ ] `api:select-v2:372` Exposes / blur
-- [ ] `api:select-v2:373` Exposes / selectedLabel
+- [x] `api:select-v2:346` Events / change — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:347` Events / visible-change — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:348` Events / remove-tag — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:349` Events / clear — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:350` Events / blur — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:351` Events / focus — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:352` Events / end-reached — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:358` Slots / default — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:359` Slots / header — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:360` Slots / footer — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:361` Slots / empty — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:362` Slots / prefix — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:363` Slots / tag — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:364` Slots / loading — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:365` Slots / label — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:371` Exposes / focus — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:372` Exposes / blur — 证据：tests/select-v2.test.tsx
+- [x] `api:select-v2:373` Exposes / selectedLabel — 证据：tests/select-v2.test.tsx
 - [ ] `scenario:select-v2:14` Background
 - [ ] `scenario:select-v2:20` Basic usage
 - [ ] `scenario:select-v2:30` Multi select
@@ -2608,27 +2608,31 @@
 - [ ] `scenario:select-v2:214` Custom Label ^(2.7.4)
 - [ ] `scenario:select-v2:224` Custom Width ^(2.9.2)
 - [ ] `scenario:select-v2:307` tag-tooltip ^(2.13.3)
-- [ ] `source-example:select-v2:select-v2/basic-usage` select-v2/basic-usage
-- [ ] `source-example:select-v2:select-v2/multiple` select-v2/multiple
-- [ ] `source-example:select-v2:select-v2/size` select-v2/size
-- [ ] `source-example:select-v2:select-v2/hide-extra-tags` select-v2/hide-extra-tags
-- [ ] `source-example:select-v2:select-v2/filterable` select-v2/filterable
-- [ ] `source-example:select-v2:select-v2/disabled` select-v2/disabled
-- [ ] `source-example:select-v2:select-v2/grouping` select-v2/grouping
-- [ ] `source-example:select-v2:select-v2/clearable` select-v2/clearable
-- [ ] `source-example:select-v2:select-v2/customized-option` select-v2/customized-option
-- [ ] `source-example:select-v2:select-v2/custom-header` select-v2/custom-header
-- [ ] `source-example:select-v2:select-v2/custom-footer` select-v2/custom-footer
-- [ ] `source-example:select-v2:select-v2/allow-create` select-v2/allow-create
-- [ ] `source-example:select-v2:select-v2/remote-search` select-v2/remote-search
-- [ ] `source-example:select-v2:select-v2/use-valueKey` select-v2/use-valueKey
-- [ ] `source-example:select-v2:select-v2/props` select-v2/props
-- [ ] `source-example:select-v2:select-v2/custom-tag` select-v2/custom-tag
-- [ ] `source-example:select-v2:select-v2/custom-loading` select-v2/custom-loading
-- [ ] `source-example:select-v2:select-v2/empty-values` select-v2/empty-values
-- [ ] `source-example:select-v2:select-v2/custom-label` select-v2/custom-label
-- [ ] `source-example:select-v2:select-v2/custom-width` select-v2/custom-width
+- [x] `source-example:select-v2:select-v2/basic-usage` select-v2/basic-usage — 证据：
+- [x] `source-example:select-v2:select-v2/multiple` select-v2/multiple — 证据：
+- [x] `source-example:select-v2:select-v2/size` select-v2/size — 证据：
+- [x] `source-example:select-v2:select-v2/hide-extra-tags` select-v2/hide-extra-tags — 证据：
+- [x] `source-example:select-v2:select-v2/filterable` select-v2/filterable — 证据：
+- [x] `source-example:select-v2:select-v2/disabled` select-v2/disabled — 证据：
+- [x] `source-example:select-v2:select-v2/grouping` select-v2/grouping — 证据：
+- [x] `source-example:select-v2:select-v2/clearable` select-v2/clearable — 证据：
+- [x] `source-example:select-v2:select-v2/customized-option` select-v2/customized-option — 证据：
+- [x] `source-example:select-v2:select-v2/custom-header` select-v2/custom-header — 证据：
+- [x] `source-example:select-v2:select-v2/custom-footer` select-v2/custom-footer — 证据：
+- [x] `source-example:select-v2:select-v2/allow-create` select-v2/allow-create — 证据：
+- [x] `source-example:select-v2:select-v2/remote-search` select-v2/remote-search — 证据：
+- [x] `source-example:select-v2:select-v2/use-valueKey` select-v2/use-valueKey — 证据：
+- [x] `source-example:select-v2:select-v2/props` select-v2/props — 证据：
+- [x] `source-example:select-v2:select-v2/custom-tag` select-v2/custom-tag — 证据：
+- [x] `source-example:select-v2:select-v2/custom-loading` select-v2/custom-loading — 证据：
+- [x] `source-example:select-v2:select-v2/empty-values` select-v2/empty-values — 证据：
+- [x] `source-example:select-v2:select-v2/custom-label` select-v2/custom-label — 证据：
+- [x] `source-example:select-v2:select-v2/custom-width` select-v2/custom-width — 证据：
 - [ ] `directory:select-v2` select-v2
+- [x] `feature:select-v2/multi-toggle` 虚拟列表已选项再次点击可以取消选择 — 证据：tests/select-v2.test.tsx
+- [x] `feature:select-v2/clear-number` 数字0可正确回显并清空 — 证据：tests/select-v2.test.tsx
+- [x] `feature:select-v2/keyboard-window` 方向键定位未挂载末项并可按Enter提交 — 证据：tests/select-v2.test.tsx
+- [x] `feature:select-v2/locale-empty` 虚拟选择器空状态继承全局语言 — 证据：tests/select-v2.test.tsx
 
 ## Select 选择器
 
@@ -3759,34 +3763,34 @@
 - [ ] `directory:transfer` transfer
 - [x] `feature:transfer/select-filtered` 全选仅勾选当前过滤结果且跳过禁用项 — 证据：tests/transfer.test.tsx
 
-## tree-select
+## TreeSelect 树形选择
 
-- [ ] `api:tree-select:128` Attributes / [tree](./tree.md#attributes)
-- [ ] `api:tree-select:129` Attributes / [select](./select.md#select-attributes)
-- [ ] `api:tree-select:135` Own Attributes / cache-data
-- [ ] `api:tree-select:147` Exposes / treeRef
-- [ ] `api:tree-select:148` Exposes / selectRef
-- [ ] `api:tree-select:149` Exposes / filter
-- [ ] `api:tree-select:150` Exposes / updateKeyChildren
-- [ ] `api:tree-select:151` Exposes / getCheckedNodes
-- [ ] `api:tree-select:152` Exposes / setCheckedNodes
-- [ ] `api:tree-select:153` Exposes / getCheckedKeys
-- [ ] `api:tree-select:154` Exposes / setCheckedKeys
-- [ ] `api:tree-select:155` Exposes / setChecked
-- [ ] `api:tree-select:156` Exposes / getHalfCheckedNodes
-- [ ] `api:tree-select:157` Exposes / getHalfCheckedKeys
-- [ ] `api:tree-select:158` Exposes / getCurrentKey
-- [ ] `api:tree-select:159` Exposes / getCurrentNode
-- [ ] `api:tree-select:160` Exposes / setCurrentKey
-- [ ] `api:tree-select:161` Exposes / setCurrentNode
-- [ ] `api:tree-select:162` Exposes / getNode
-- [ ] `api:tree-select:163` Exposes / remove
-- [ ] `api:tree-select:164` Exposes / append
-- [ ] `api:tree-select:165` Exposes / insertBefore
-- [ ] `api:tree-select:166` Exposes / insertAfter
-- [ ] `api:tree-select:167` Exposes / focus
-- [ ] `api:tree-select:168` Exposes / blur
-- [ ] `api:tree-select:169` Exposes / selectedLabel
+- [x] `api:tree-select:128` Attributes / [tree](./tree.md#attributes) — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:129` Attributes / [select](./select.md#select-attributes) — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:135` Own Attributes / cache-data — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:147` Exposes / treeRef — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:148` Exposes / selectRef — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:149` Exposes / filter — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:150` Exposes / updateKeyChildren — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:151` Exposes / getCheckedNodes — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:152` Exposes / setCheckedNodes — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:153` Exposes / getCheckedKeys — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:154` Exposes / setCheckedKeys — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:155` Exposes / setChecked — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:156` Exposes / getHalfCheckedNodes — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:157` Exposes / getHalfCheckedKeys — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:158` Exposes / getCurrentKey — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:159` Exposes / getCurrentNode — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:160` Exposes / setCurrentKey — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:161` Exposes / setCurrentNode — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:162` Exposes / getNode — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:163` Exposes / remove — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:164` Exposes / append — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:165` Exposes / insertBefore — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:166` Exposes / insertAfter — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:167` Exposes / focus — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:168` Exposes / blur — 证据：tests/tree-select.test.tsx
+- [x] `api:tree-select:169` Exposes / selectedLabel — 证据：tests/tree-select.test.tsx
 - [ ] `scenario:tree-select:11` Basic usage
 - [ ] `scenario:tree-select:21` Select any level
 - [ ] `scenario:tree-select:47` Multiple Selection
@@ -3795,68 +3799,75 @@
 - [ ] `scenario:tree-select:79` Custom content
 - [ ] `scenario:tree-select:89` LazyLoad
 - [ ] `scenario:tree-select:99` Use node-key attribute
-- [ ] `source-example:tree-select:tree-select/basic` tree-select/basic
-- [ ] `source-example:tree-select:tree-select/check-strictly` tree-select/check-strictly
-- [ ] `source-example:tree-select:tree-select/multiple` tree-select/multiple
-- [ ] `source-example:tree-select:tree-select/disabled` tree-select/disabled
-- [ ] `source-example:tree-select:tree-select/filterable` tree-select/filterable
-- [ ] `source-example:tree-select:tree-select/slots` tree-select/slots
-- [ ] `source-example:tree-select:tree-select/lazy` tree-select/lazy
-- [ ] `source-example:tree-select:tree-select/node-key` tree-select/node-key
+- [x] `source-example:tree-select:tree-select/basic` tree-select/basic — 证据：
+- [x] `source-example:tree-select:tree-select/check-strictly` tree-select/check-strictly — 证据：
+- [x] `source-example:tree-select:tree-select/multiple` tree-select/multiple — 证据：
+- [x] `source-example:tree-select:tree-select/disabled` tree-select/disabled — 证据：
+- [x] `source-example:tree-select:tree-select/filterable` tree-select/filterable — 证据：
+- [x] `source-example:tree-select:tree-select/slots` tree-select/slots — 证据：
+- [x] `source-example:tree-select:tree-select/lazy` tree-select/lazy — 证据：
+- [x] `source-example:tree-select:tree-select/node-key` tree-select/node-key — 证据：
 - [ ] `directory:tree-select` tree-select
+- [x] `feature:tree-select/strict-level` 严格模式允许选择父节点且不同时展开分支 — 证据：tests/tree-select.test.tsx
+- [x] `feature:tree-select/multiple-checks` 非严格多选只提交叶节点，标签移除同步树勾选 — 证据：tests/tree-select.test.tsx
+- [x] `feature:tree-select/disabled-options` 禁用节点不能选择或勾选 — 证据：tests/tree-select.test.tsx
+- [x] `feature:tree-select/filter-tree` 输入过滤保留匹配叶节点与祖先 — 证据：tests/tree-select.test.tsx
+- [x] `feature:tree-select/custom-content` 树节点可渲染自定义内容 — 证据：tests/tree-select.test.tsx
+- [x] `feature:tree-select/numeric-key` 自定义nodeKey支持数字0并保持标量值 — 证据：tests/tree-select.test.tsx
+- [x] `feature:tree-select/keyboard-selection` 键盘打开后聚焦树，Enter选择叶节点，Escape恢复输入焦点 — 证据：tests/tree-select.test.tsx
 
-## tree-v2
+## TreeV2 虚拟化树形控件
 
-- [ ] `api:tree-v2:104` TreeV2 Attributes / data
-- [ ] `api:tree-v2:105` TreeV2 Attributes / empty-text
-- [ ] `api:tree-v2:106` TreeV2 Attributes / [props](#props)
-- [ ] `api:tree-v2:107` TreeV2 Attributes / highlight-current
-- [ ] `api:tree-v2:108` TreeV2 Attributes / expand-on-click-node
-- [ ] `api:tree-v2:109` TreeV2 Attributes / check-on-click-node
-- [ ] `api:tree-v2:110` TreeV2 Attributes / check-on-click-leaf
-- [ ] `api:tree-v2:111` TreeV2 Attributes / default-expanded-keys
-- [ ] `api:tree-v2:112` TreeV2 Attributes / show-checkbox
-- [ ] `api:tree-v2:113` TreeV2 Attributes / check-strictly
-- [ ] `api:tree-v2:114` TreeV2 Attributes / default-checked-keys
-- [ ] `api:tree-v2:115` TreeV2 Attributes / current-node-key
-- [ ] `api:tree-v2:116` TreeV2 Attributes / filter-method
-- [ ] `api:tree-v2:117` TreeV2 Attributes / indent
-- [ ] `api:tree-v2:118` TreeV2 Attributes / icon
-- [ ] `api:tree-v2:119` TreeV2 Attributes / item-size
-- [ ] `api:tree-v2:120` TreeV2 Attributes / scrollbar-always-on
-- [ ] `api:tree-v2:121` TreeV2 Attributes / height
-- [ ] `api:tree-v2:127` props / value
-- [ ] `api:tree-v2:128` props / label
-- [ ] `api:tree-v2:129` props / children
-- [ ] `api:tree-v2:130` props / disabled
-- [ ] `api:tree-v2:131` props / class
-- [ ] `api:tree-v2:139` TreeV2 Exposes / filter
-- [ ] `api:tree-v2:140` TreeV2 Exposes / getCheckedNodes
-- [ ] `api:tree-v2:141` TreeV2 Exposes / getCheckedKeys
-- [ ] `api:tree-v2:142` TreeV2 Exposes / setCheckedKeys
-- [ ] `api:tree-v2:143` TreeV2 Exposes / setChecked
-- [ ] `api:tree-v2:144` TreeV2 Exposes / setExpandedKeys
-- [ ] `api:tree-v2:145` TreeV2 Exposes / getHalfCheckedNodes
-- [ ] `api:tree-v2:146` TreeV2 Exposes / getHalfCheckedKeys
-- [ ] `api:tree-v2:147` TreeV2 Exposes / getCurrentKey
-- [ ] `api:tree-v2:148` TreeV2 Exposes / getCurrentNode
-- [ ] `api:tree-v2:149` TreeV2 Exposes / setCurrentKey
-- [ ] `api:tree-v2:150` TreeV2 Exposes / getNode
-- [ ] `api:tree-v2:151` TreeV2 Exposes / expandNode
-- [ ] `api:tree-v2:152` TreeV2 Exposes / collapseNode
-- [ ] `api:tree-v2:153` TreeV2 Exposes / setData
-- [ ] `api:tree-v2:154` TreeV2 Exposes / scrollTo
-- [ ] `api:tree-v2:155` TreeV2 Exposes / scrollToNode
-- [ ] `api:tree-v2:161` TreeV2 Events / node-click
-- [ ] `api:tree-v2:162` TreeV2 Events / node-drop
-- [ ] `api:tree-v2:163` TreeV2 Events / node-contextmenu
-- [ ] `api:tree-v2:164` TreeV2 Events / check-change
-- [ ] `api:tree-v2:165` TreeV2 Events / check
-- [ ] `api:tree-v2:166` TreeV2 Events / current-change
-- [ ] `api:tree-v2:167` TreeV2 Events / node-expand
-- [ ] `api:tree-v2:168` TreeV2 Events / node-collapse
-- [ ] `api:tree-v2:174` TreeV2 Slots / default
-- [ ] `api:tree-v2:175` TreeV2 Slots / empty
+- [x] `api:tree-v2:104` TreeV2 Attributes / data — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:105` TreeV2 Attributes / empty-text — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:106` TreeV2 Attributes / [props](#props) — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:107` TreeV2 Attributes / highlight-current — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:108` TreeV2 Attributes / expand-on-click-node — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:109` TreeV2 Attributes / check-on-click-node — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:110` TreeV2 Attributes / check-on-click-leaf — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:111` TreeV2 Attributes / default-expanded-keys — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:112` TreeV2 Attributes / show-checkbox — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:113` TreeV2 Attributes / check-strictly — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:114` TreeV2 Attributes / default-checked-keys — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:115` TreeV2 Attributes / current-node-key — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:116` TreeV2 Attributes / filter-method — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:117` TreeV2 Attributes / indent — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:118` TreeV2 Attributes / icon — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:119` TreeV2 Attributes / item-size — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:120` TreeV2 Attributes / scrollbar-always-on — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:121` TreeV2 Attributes / height — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:127` props / value — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:128` props / label — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:129` props / children — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:130` props / disabled — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:131` props / class — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:139` TreeV2 Exposes / filter — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:140` TreeV2 Exposes / getCheckedNodes — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:141` TreeV2 Exposes / getCheckedKeys — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:142` TreeV2 Exposes / setCheckedKeys — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:143` TreeV2 Exposes / setChecked — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:144` TreeV2 Exposes / setExpandedKeys — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:145` TreeV2 Exposes / getHalfCheckedNodes — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:146` TreeV2 Exposes / getHalfCheckedKeys — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:147` TreeV2 Exposes / getCurrentKey — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:148` TreeV2 Exposes / getCurrentNode — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:149` TreeV2 Exposes / setCurrentKey — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:150` TreeV2 Exposes / getNode — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:151` TreeV2 Exposes / expandNode — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:152` TreeV2 Exposes / collapseNode — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:153` TreeV2 Exposes / setData — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:154` TreeV2 Exposes / scrollTo — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:155` TreeV2 Exposes / scrollToNode — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:161` TreeV2 Events / node-click — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:162` TreeV2 Events / node-drop — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:163` TreeV2 Events / node-contextmenu — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:164` TreeV2 Events / check-change — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:165` TreeV2 Events / check — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:166` TreeV2 Events / current-change — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:167` TreeV2 Events / node-expand — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:168` TreeV2 Events / node-collapse — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:174` TreeV2 Slots / default — 证据：tests/tree-v2.test.tsx
+- [x] `api:tree-v2:175` TreeV2 Slots / empty — 证据：tests/tree-v2.test.tsx
 - [ ] `scenario:tree-v2:10` Basic usage
 - [ ] `scenario:tree-v2:20` Selectable
 - [ ] `scenario:tree-v2:37` Disabled checkbox
@@ -3865,82 +3876,83 @@
 - [ ] `scenario:tree-v2:67` Custom node class ^(2.9.0)
 - [ ] `scenario:tree-v2:77` Custom node icon ^(2.10.3)
 - [ ] `scenario:tree-v2:87` Tree node filtering ^(2.9.1)
-- [ ] `source-example:tree-v2:tree-v2/basic` tree-v2/basic
-- [ ] `source-example:tree-v2:tree-v2/selectable` tree-v2/selectable
-- [ ] `source-example:tree-v2:tree-v2/disabled` tree-v2/disabled
-- [ ] `source-example:tree-v2:tree-v2/default-state` tree-v2/default-state
-- [ ] `source-example:tree-v2:tree-v2/custom-node` tree-v2/custom-node
-- [ ] `source-example:tree-v2:tree-v2/custom-node-class` tree-v2/custom-node-class
-- [ ] `source-example:tree-v2:tree-v2/custom-icon` tree-v2/custom-icon
-- [ ] `source-example:tree-v2:tree-v2/filter` tree-v2/filter
+- [x] `source-example:tree-v2:tree-v2/basic` tree-v2/basic — 证据：
+- [x] `source-example:tree-v2:tree-v2/selectable` tree-v2/selectable — 证据：
+- [x] `source-example:tree-v2:tree-v2/disabled` tree-v2/disabled — 证据：
+- [x] `source-example:tree-v2:tree-v2/default-state` tree-v2/default-state — 证据：
+- [x] `source-example:tree-v2:tree-v2/custom-node` tree-v2/custom-node — 证据：
+- [x] `source-example:tree-v2:tree-v2/custom-node-class` tree-v2/custom-node-class — 证据：
+- [x] `source-example:tree-v2:tree-v2/custom-icon` tree-v2/custom-icon — 证据：
+- [x] `source-example:tree-v2:tree-v2/filter` tree-v2/filter — 证据：
 - [ ] `directory:tree-v2` tree-v2
+- [x] `feature:tree-v2/windowed-model` 窗口之外的节点仍可通过实例读取与勾选 — 证据：tests/tree-v2.test.tsx
 
-## tree
+## Tree 树形控件
 
-- [ ] `api:tree:137` Attributes / data
-- [ ] `api:tree:138` Attributes / empty-text
-- [ ] `api:tree:139` Attributes / node-key
-- [ ] `api:tree:140` Attributes / [props](#props)
-- [ ] `api:tree:141` Attributes / render-after-expand
-- [ ] `api:tree:142` Attributes / load
-- [ ] `api:tree:143` Attributes / render-content
-- [ ] `api:tree:144` Attributes / highlight-current
-- [ ] `api:tree:145` Attributes / default-expand-all
-- [ ] `api:tree:146` Attributes / expand-on-click-node
-- [ ] `api:tree:147` Attributes / check-on-click-node
-- [ ] `api:tree:148` Attributes / check-on-click-leaf
-- [ ] `api:tree:149` Attributes / auto-expand-parent
-- [ ] `api:tree:150` Attributes / default-expanded-keys
-- [ ] `api:tree:151` Attributes / show-checkbox
-- [ ] `api:tree:152` Attributes / check-strictly
-- [ ] `api:tree:153` Attributes / default-checked-keys
-- [ ] `api:tree:154` Attributes / current-node-key
-- [ ] `api:tree:155` Attributes / filter-node-method
-- [ ] `api:tree:156` Attributes / accordion
-- [ ] `api:tree:157` Attributes / indent
-- [ ] `api:tree:158` Attributes / icon
-- [ ] `api:tree:159` Attributes / lazy
-- [ ] `api:tree:160` Attributes / draggable
-- [ ] `api:tree:161` Attributes / allow-drag
-- [ ] `api:tree:162` Attributes / allow-drop
-- [ ] `api:tree:168` props / label
-- [ ] `api:tree:169` props / children
-- [ ] `api:tree:170` props / disabled
-- [ ] `api:tree:171` props / isLeaf
-- [ ] `api:tree:172` props / class
-- [ ] `api:tree:180` Exposes / filter
-- [ ] `api:tree:181` Exposes / updateKeyChildren
-- [ ] `api:tree:182` Exposes / getCheckedNodes
-- [ ] `api:tree:183` Exposes / setCheckedNodes
-- [ ] `api:tree:184` Exposes / getCheckedKeys
-- [ ] `api:tree:185` Exposes / setCheckedKeys
-- [ ] `api:tree:186` Exposes / setChecked
-- [ ] `api:tree:187` Exposes / getHalfCheckedNodes
-- [ ] `api:tree:188` Exposes / getHalfCheckedKeys
-- [ ] `api:tree:189` Exposes / getCurrentKey
-- [ ] `api:tree:190` Exposes / getCurrentNode
-- [ ] `api:tree:191` Exposes / setCurrentKey
-- [ ] `api:tree:192` Exposes / setCurrentNode
-- [ ] `api:tree:193` Exposes / getNode
-- [ ] `api:tree:194` Exposes / remove
-- [ ] `api:tree:195` Exposes / append
-- [ ] `api:tree:196` Exposes / insertBefore
-- [ ] `api:tree:197` Exposes / insertAfter
-- [ ] `api:tree:203` Events / node-click
-- [ ] `api:tree:204` Events / node-contextmenu
-- [ ] `api:tree:205` Events / check-change
-- [ ] `api:tree:206` Events / check
-- [ ] `api:tree:207` Events / current-change
-- [ ] `api:tree:208` Events / node-expand
-- [ ] `api:tree:209` Events / node-collapse
-- [ ] `api:tree:210` Events / node-drag-start
-- [ ] `api:tree:211` Events / node-drag-enter
-- [ ] `api:tree:212` Events / node-drag-leave
-- [ ] `api:tree:213` Events / node-drag-over
-- [ ] `api:tree:214` Events / node-drag-end
-- [ ] `api:tree:215` Events / node-drop
-- [ ] `api:tree:221` Slots / default
-- [ ] `api:tree:222` Slots / empty
+- [x] `api:tree:137` Attributes / data — 证据：tests/tree.test.tsx
+- [x] `api:tree:138` Attributes / empty-text — 证据：tests/tree.test.tsx
+- [x] `api:tree:139` Attributes / node-key — 证据：tests/tree.test.tsx
+- [x] `api:tree:140` Attributes / [props](#props) — 证据：tests/tree.test.tsx
+- [x] `api:tree:141` Attributes / render-after-expand — 证据：tests/tree.test.tsx
+- [x] `api:tree:142` Attributes / load — 证据：tests/tree.test.tsx
+- [x] `api:tree:143` Attributes / render-content — 证据：tests/tree.test.tsx
+- [x] `api:tree:144` Attributes / highlight-current — 证据：tests/tree.test.tsx
+- [x] `api:tree:145` Attributes / default-expand-all — 证据：tests/tree.test.tsx
+- [x] `api:tree:146` Attributes / expand-on-click-node — 证据：tests/tree.test.tsx
+- [x] `api:tree:147` Attributes / check-on-click-node — 证据：tests/tree.test.tsx
+- [x] `api:tree:148` Attributes / check-on-click-leaf — 证据：tests/tree.test.tsx
+- [x] `api:tree:149` Attributes / auto-expand-parent — 证据：tests/tree.test.tsx
+- [x] `api:tree:150` Attributes / default-expanded-keys — 证据：tests/tree.test.tsx
+- [x] `api:tree:151` Attributes / show-checkbox — 证据：tests/tree.test.tsx
+- [x] `api:tree:152` Attributes / check-strictly — 证据：tests/tree.test.tsx
+- [x] `api:tree:153` Attributes / default-checked-keys — 证据：tests/tree.test.tsx
+- [x] `api:tree:154` Attributes / current-node-key — 证据：tests/tree.test.tsx
+- [x] `api:tree:155` Attributes / filter-node-method — 证据：tests/tree.test.tsx
+- [x] `api:tree:156` Attributes / accordion — 证据：tests/tree.test.tsx
+- [x] `api:tree:157` Attributes / indent — 证据：tests/tree.test.tsx
+- [x] `api:tree:158` Attributes / icon — 证据：tests/tree.test.tsx
+- [x] `api:tree:159` Attributes / lazy — 证据：tests/tree.test.tsx
+- [x] `api:tree:160` Attributes / draggable — 证据：tests/tree.test.tsx
+- [x] `api:tree:161` Attributes / allow-drag — 证据：tests/tree.test.tsx
+- [x] `api:tree:162` Attributes / allow-drop — 证据：tests/tree.test.tsx
+- [x] `api:tree:168` props / label — 证据：tests/tree.test.tsx
+- [x] `api:tree:169` props / children — 证据：tests/tree.test.tsx
+- [x] `api:tree:170` props / disabled — 证据：tests/tree.test.tsx
+- [x] `api:tree:171` props / isLeaf — 证据：tests/tree.test.tsx
+- [x] `api:tree:172` props / class — 证据：tests/tree.test.tsx
+- [x] `api:tree:180` Exposes / filter — 证据：tests/tree.test.tsx
+- [x] `api:tree:181` Exposes / updateKeyChildren — 证据：tests/tree.test.tsx
+- [x] `api:tree:182` Exposes / getCheckedNodes — 证据：tests/tree.test.tsx
+- [x] `api:tree:183` Exposes / setCheckedNodes — 证据：tests/tree.test.tsx
+- [x] `api:tree:184` Exposes / getCheckedKeys — 证据：tests/tree.test.tsx
+- [x] `api:tree:185` Exposes / setCheckedKeys — 证据：tests/tree.test.tsx
+- [x] `api:tree:186` Exposes / setChecked — 证据：tests/tree.test.tsx
+- [x] `api:tree:187` Exposes / getHalfCheckedNodes — 证据：tests/tree.test.tsx
+- [x] `api:tree:188` Exposes / getHalfCheckedKeys — 证据：tests/tree.test.tsx
+- [x] `api:tree:189` Exposes / getCurrentKey — 证据：tests/tree.test.tsx
+- [x] `api:tree:190` Exposes / getCurrentNode — 证据：tests/tree.test.tsx
+- [x] `api:tree:191` Exposes / setCurrentKey — 证据：tests/tree.test.tsx
+- [x] `api:tree:192` Exposes / setCurrentNode — 证据：tests/tree.test.tsx
+- [x] `api:tree:193` Exposes / getNode — 证据：tests/tree.test.tsx
+- [x] `api:tree:194` Exposes / remove — 证据：tests/tree.test.tsx
+- [x] `api:tree:195` Exposes / append — 证据：tests/tree.test.tsx
+- [x] `api:tree:196` Exposes / insertBefore — 证据：tests/tree.test.tsx
+- [x] `api:tree:197` Exposes / insertAfter — 证据：tests/tree.test.tsx
+- [x] `api:tree:203` Events / node-click — 证据：tests/tree.test.tsx
+- [x] `api:tree:204` Events / node-contextmenu — 证据：tests/tree.test.tsx
+- [x] `api:tree:205` Events / check-change — 证据：tests/tree.test.tsx
+- [x] `api:tree:206` Events / check — 证据：tests/tree.test.tsx
+- [x] `api:tree:207` Events / current-change — 证据：tests/tree.test.tsx
+- [x] `api:tree:208` Events / node-expand — 证据：tests/tree.test.tsx
+- [x] `api:tree:209` Events / node-collapse — 证据：tests/tree.test.tsx
+- [x] `api:tree:210` Events / node-drag-start — 证据：tests/tree.test.tsx
+- [x] `api:tree:211` Events / node-drag-enter — 证据：tests/tree.test.tsx
+- [x] `api:tree:212` Events / node-drag-leave — 证据：tests/tree.test.tsx
+- [x] `api:tree:213` Events / node-drag-over — 证据：tests/tree.test.tsx
+- [x] `api:tree:214` Events / node-drag-end — 证据：tests/tree.test.tsx
+- [x] `api:tree:215` Events / node-drop — 证据：tests/tree.test.tsx
+- [x] `api:tree:221` Slots / default — 证据：tests/tree.test.tsx
+- [x] `api:tree:222` Slots / empty — 证据：tests/tree.test.tsx
 - [ ] `scenario:tree:10` Basic usage
 - [ ] `scenario:tree:20` Selectable
 - [ ] `scenario:tree:37` Custom leaf node in lazy mode
@@ -3953,19 +3965,23 @@
 - [ ] `scenario:tree:101` Tree node filtering
 - [ ] `scenario:tree:111` Accordion
 - [ ] `scenario:tree:121` Draggable
-- [ ] `source-example:tree:tree/basic` tree/basic
-- [ ] `source-example:tree:tree/selectable` tree/selectable
-- [ ] `source-example:tree:tree/custom-leaf` tree/custom-leaf
-- [ ] `source-example:tree:tree/multiple-times-load` tree/multiple-times-load
-- [ ] `source-example:tree:tree/disabled` tree/disabled
-- [ ] `source-example:tree:tree/default-state` tree/default-state
-- [ ] `source-example:tree:tree/checking-tree` tree/checking-tree
-- [ ] `source-example:tree:tree/customized-node` tree/customized-node
-- [ ] `source-example:tree:tree/custom-node-class` tree/custom-node-class
-- [ ] `source-example:tree:tree/filtering` tree/filtering
-- [ ] `source-example:tree:tree/accordion` tree/accordion
-- [ ] `source-example:tree:tree/draggable` tree/draggable
+- [x] `source-example:tree:tree/basic` tree/basic — 证据：
+- [x] `source-example:tree:tree/selectable` tree/selectable — 证据：
+- [x] `source-example:tree:tree/custom-leaf` tree/custom-leaf — 证据：
+- [x] `source-example:tree:tree/multiple-times-load` tree/multiple-times-load — 证据：
+- [x] `source-example:tree:tree/disabled` tree/disabled — 证据：
+- [x] `source-example:tree:tree/default-state` tree/default-state — 证据：
+- [x] `source-example:tree:tree/checking-tree` tree/checking-tree — 证据：
+- [x] `source-example:tree:tree/customized-node` tree/customized-node — 证据：
+- [x] `source-example:tree:tree/custom-node-class` tree/custom-node-class — 证据：
+- [x] `source-example:tree:tree/filtering` tree/filtering — 证据：
+- [x] `source-example:tree:tree/accordion` tree/accordion — 证据：
+- [x] `source-example:tree:tree/draggable` tree/draggable — 证据：
 - [ ] `directory:tree` tree
+- [x] `feature:tree/keyboard` 树方向键展开、聚焦子节点并以Space勾选 — 证据：tests/tree.test.tsx
+- [x] `feature:tree/unkeyed-identity` 无node-key树在插入节点后保留原父节点展开状态和身份 — 证据：tests/tree.test.tsx
+- [x] `feature:tree/replace-pending-data` 外部替换数据后清除加载状态并丢弃旧节点回调 — 证据：tests/tree.test.tsx
+- [x] `feature:tree/remove-pending-node` 删除后复用相同键的新节点不会接收旧加载回调 — 证据：tests/tree.test.tsx
 
 ## typography
 

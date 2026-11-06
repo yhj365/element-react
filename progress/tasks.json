@@ -1,15 +1,15 @@
 {
   "status": {
     "baseline": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
-    "fingerprint": "b0991e652f982a8d040fcfb79d1502bddac62806bbcac2e10b1736ab6ccf0b47",
-    "testedAt": "2026-11-06T09:01:21.115Z",
-    "unitTests": 467,
-    "completedApi": 1286,
+    "fingerprint": "4ac98c1a92de7bd17c2d3f05cc1e1c1478a0372cd71550b835eaeae193faee4e",
+    "testedAt": "2026-11-06T10:03:19.497Z",
+    "unitTests": 546,
+    "completedApi": 1503,
     "totalApi": 2394,
-    "documentedComponents": 64,
+    "documentedComponents": 68,
     "fullyVerifiedComponents": 0,
-    "completedFeatures": 49,
-    "completedExamples": 128,
+    "completedFeatures": 65,
+    "completedExamples": 176,
     "fullParity": false,
     "visualParity": false
   },
@@ -25700,13 +25700,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "model-value / v-model",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 240
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "万选项仅渲染窗口且受控值等待父级回写 [api:select-v2:240] [api:select-v2:241] [api:select-v2:274] [api:select-v2:275] [api:select-v2:277] [api:select-v2:272] [example:select-v2-basic-usage]",
+          "example": "select-v2-basic-usage"
+        }
+      ]
     },
     {
       "id": "api:select-v2:241",
@@ -25714,13 +25720,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "options",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 241
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "万选项仅渲染窗口且受控值等待父级回写 [api:select-v2:240] [api:select-v2:241] [api:select-v2:274] [api:select-v2:275] [api:select-v2:277] [api:select-v2:272] [example:select-v2-basic-usage]",
+          "example": "select-v2-basic-usage"
+        }
+      ]
     },
     {
       "id": "api:select-v2:242",
@@ -25728,13 +25740,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "[props](#props)",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 242
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "字段别名用于虚拟选项显示 [api:select-v2:242] [example:select-v2-props]",
+          "example": "select-v2-props"
+        }
+      ]
     },
     {
       "id": "api:select-v2:243",
@@ -25742,13 +25760,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "multiple",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 243
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "多选数量限制与标签折叠沿用Select行为 [api:select-v2:243] [api:select-v2:250] [api:select-v2:249] [api:select-v2:287] [api:select-v2:289] [example:select-v2-hide-extra-tags]",
+          "example": "select-v2-hide-extra-tags"
+        }
+      ]
     },
     {
       "id": "api:select-v2:244",
@@ -25756,13 +25780,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "disabled",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 244
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "禁用选择器不展开选项 [api:select-v2:244] [example:select-v2-disabled]",
+          "example": "select-v2-disabled"
+        }
+      ]
     },
     {
       "id": "api:select-v2:245",
@@ -25770,13 +25800,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "value-key",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 245
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "对象值使用valueKey保持跨实例回显 [api:select-v2:245] [example:select-v2-use-valueKey]",
+          "example": "select-v2-use-valueKey"
+        }
+      ]
     },
     {
       "id": "api:select-v2:246",
@@ -25784,13 +25820,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "size",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 246
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "尺寸原生输入属性和主题传递到选择器 [api:select-v2:246] [api:select-v2:251] [api:select-v2:252] [api:select-v2:254] [api:select-v2:255] [api:select-v2:253] [api:select-v2:292] [api:select-v2:296] [example:select-v2-size]",
+          "example": "select-v2-size"
+        }
+      ]
     },
     {
       "id": "api:select-v2:247",
@@ -25798,13 +25840,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "clearable",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 247
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "空字符串可作为有效值，自定义清空值和图标 [api:select-v2:247] [api:select-v2:248] [api:select-v2:293] [api:select-v2:294] [example:select-v2-empty-values]",
+          "example": "select-v2-empty-values"
+        }
+      ]
     },
     {
       "id": "api:select-v2:248",
@@ -25812,13 +25860,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "clear-icon",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 248
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "空字符串可作为有效值，自定义清空值和图标 [api:select-v2:247] [api:select-v2:248] [api:select-v2:293] [api:select-v2:294] [example:select-v2-empty-values]",
+          "example": "select-v2-empty-values"
+        }
+      ]
     },
     {
       "id": "api:select-v2:249",
@@ -25826,13 +25880,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "collapse-tags",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 249
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "多选数量限制与标签折叠沿用Select行为 [api:select-v2:243] [api:select-v2:250] [api:select-v2:249] [api:select-v2:287] [api:select-v2:289] [example:select-v2-hide-extra-tags]",
+          "example": "select-v2-hide-extra-tags"
+        }
+      ]
     },
     {
       "id": "api:select-v2:250",
@@ -25840,13 +25900,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "multiple-limit",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 250
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "多选数量限制与标签折叠沿用Select行为 [api:select-v2:243] [api:select-v2:250] [api:select-v2:249] [api:select-v2:287] [api:select-v2:289] [example:select-v2-hide-extra-tags]",
+          "example": "select-v2-hide-extra-tags"
+        }
+      ]
     },
     {
       "id": "api:select-v2:251",
@@ -25854,13 +25920,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "id",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 251
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "尺寸原生输入属性和主题传递到选择器 [api:select-v2:246] [api:select-v2:251] [api:select-v2:252] [api:select-v2:254] [api:select-v2:255] [api:select-v2:253] [api:select-v2:292] [api:select-v2:296] [example:select-v2-size]",
+          "example": "select-v2-size"
+        }
+      ]
     },
     {
       "id": "api:select-v2:252",
@@ -25868,13 +25940,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "name",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 252
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "尺寸原生输入属性和主题传递到选择器 [api:select-v2:246] [api:select-v2:251] [api:select-v2:252] [api:select-v2:254] [api:select-v2:255] [api:select-v2:253] [api:select-v2:292] [api:select-v2:296] [example:select-v2-size]",
+          "example": "select-v2-size"
+        }
+      ]
     },
     {
       "id": "api:select-v2:253",
@@ -25882,13 +25960,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "effect",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 253
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "尺寸原生输入属性和主题传递到选择器 [api:select-v2:246] [api:select-v2:251] [api:select-v2:252] [api:select-v2:254] [api:select-v2:255] [api:select-v2:253] [api:select-v2:292] [api:select-v2:296] [example:select-v2-size]",
+          "example": "select-v2-size"
+        }
+      ]
     },
     {
       "id": "api:select-v2:254",
@@ -25896,13 +25980,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "autocomplete",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 254
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "尺寸原生输入属性和主题传递到选择器 [api:select-v2:246] [api:select-v2:251] [api:select-v2:252] [api:select-v2:254] [api:select-v2:255] [api:select-v2:253] [api:select-v2:292] [api:select-v2:296] [example:select-v2-size]",
+          "example": "select-v2-size"
+        }
+      ]
     },
     {
       "id": "api:select-v2:255",
@@ -25910,13 +26000,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "placeholder",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 255
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "尺寸原生输入属性和主题传递到选择器 [api:select-v2:246] [api:select-v2:251] [api:select-v2:252] [api:select-v2:254] [api:select-v2:255] [api:select-v2:253] [api:select-v2:292] [api:select-v2:296] [example:select-v2-size]",
+          "example": "select-v2-size"
+        }
+      ]
     },
     {
       "id": "api:select-v2:256",
@@ -25924,13 +26020,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "filterable",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 256
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "过滤后重置窗口并显示无匹配提示 [api:select-v2:256] [api:select-v2:258] [api:select-v2:263] [api:select-v2:264] [example:select-v2-filterable]",
+          "example": "select-v2-filterable"
+        }
+      ]
     },
     {
       "id": "api:select-v2:257",
@@ -25938,13 +26040,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "allow-create",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 257
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "创建未匹配选项后清理查询文本 [api:select-v2:257] [api:select-v2:262] [api:select-v2:261] [example:select-v2-allow-create]",
+          "example": "select-v2-allow-create"
+        }
+      ]
     },
     {
       "id": "api:select-v2:258",
@@ -25952,13 +26060,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "filter-method",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 258
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "过滤后重置窗口并显示无匹配提示 [api:select-v2:256] [api:select-v2:258] [api:select-v2:263] [api:select-v2:264] [example:select-v2-filterable]",
+          "example": "select-v2-filterable"
+        }
+      ]
     },
     {
       "id": "api:select-v2:259",
@@ -25966,13 +26080,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "loading",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 259
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "加载状态优先于虚拟选项并显示加载提示 [api:select-v2:259] [api:select-v2:260] [api:select-v2:281] [example:select-v2-custom-loading]",
+          "example": "select-v2-custom-loading"
+        }
+      ]
     },
     {
       "id": "api:select-v2:260",
@@ -25980,13 +26100,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "loading-text",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 260
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "加载状态优先于虚拟选项并显示加载提示 [api:select-v2:259] [api:select-v2:260] [api:select-v2:281] [example:select-v2-custom-loading]",
+          "example": "select-v2-custom-loading"
+        }
+      ]
     },
     {
       "id": "api:select-v2:261",
@@ -25994,13 +26120,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "reserve-keyword",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 261
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "创建未匹配选项后清理查询文本 [api:select-v2:257] [api:select-v2:262] [api:select-v2:261] [example:select-v2-allow-create]",
+          "example": "select-v2-allow-create"
+        }
+      ]
     },
     {
       "id": "api:select-v2:262",
@@ -26008,13 +26140,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "default-first-option",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 262
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "创建未匹配选项后清理查询文本 [api:select-v2:257] [api:select-v2:262] [api:select-v2:261] [example:select-v2-allow-create]",
+          "example": "select-v2-allow-create"
+        }
+      ]
     },
     {
       "id": "api:select-v2:263",
@@ -26022,13 +26160,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "no-match-text",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 263
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "过滤后重置窗口并显示无匹配提示 [api:select-v2:256] [api:select-v2:258] [api:select-v2:263] [api:select-v2:264] [example:select-v2-filterable]",
+          "example": "select-v2-filterable"
+        }
+      ]
     },
     {
       "id": "api:select-v2:264",
@@ -26036,13 +26180,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "no-data-text",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 264
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "过滤后重置窗口并显示无匹配提示 [api:select-v2:256] [api:select-v2:258] [api:select-v2:263] [api:select-v2:264] [example:select-v2-filterable]",
+          "example": "select-v2-filterable"
+        }
+      ]
     },
     {
       "id": "api:select-v2:265",
@@ -26050,13 +26200,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "popper-class",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 265
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "自定义浮层宽度位置挂载及销毁 [api:select-v2:265] [api:select-v2:266] [api:select-v2:267] [api:select-v2:268] [api:select-v2:269] [api:select-v2:283] [api:select-v2:284] [api:select-v2:285] [api:select-v2:286] [example:select-v2-custom-width]",
+          "example": "select-v2-custom-width"
+        }
+      ]
     },
     {
       "id": "api:select-v2:266",
@@ -26064,13 +26220,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "popper-style",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 266
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "自定义浮层宽度位置挂载及销毁 [api:select-v2:265] [api:select-v2:266] [api:select-v2:267] [api:select-v2:268] [api:select-v2:269] [api:select-v2:283] [api:select-v2:284] [api:select-v2:285] [api:select-v2:286] [example:select-v2-custom-width]",
+          "example": "select-v2-custom-width"
+        }
+      ]
     },
     {
       "id": "api:select-v2:267",
@@ -26078,13 +26240,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "teleported",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 267
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "自定义浮层宽度位置挂载及销毁 [api:select-v2:265] [api:select-v2:266] [api:select-v2:267] [api:select-v2:268] [api:select-v2:269] [api:select-v2:283] [api:select-v2:284] [api:select-v2:285] [api:select-v2:286] [example:select-v2-custom-width]",
+          "example": "select-v2-custom-width"
+        }
+      ]
     },
     {
       "id": "api:select-v2:268",
@@ -26092,13 +26260,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "append-to",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 268
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "自定义浮层宽度位置挂载及销毁 [api:select-v2:265] [api:select-v2:266] [api:select-v2:267] [api:select-v2:268] [api:select-v2:269] [api:select-v2:283] [api:select-v2:284] [api:select-v2:285] [api:select-v2:286] [example:select-v2-custom-width]",
+          "example": "select-v2-custom-width"
+        }
+      ]
     },
     {
       "id": "api:select-v2:269",
@@ -26106,13 +26280,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "persistent",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 269
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "自定义浮层宽度位置挂载及销毁 [api:select-v2:265] [api:select-v2:266] [api:select-v2:267] [api:select-v2:268] [api:select-v2:269] [api:select-v2:283] [api:select-v2:284] [api:select-v2:285] [api:select-v2:286] [example:select-v2-custom-width]",
+          "example": "select-v2-custom-width"
+        }
+      ]
     },
     {
       "id": "api:select-v2:270",
@@ -26134,13 +26314,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "automatic-dropdown",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 271
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "自动聚焦展开和自定义后缀图标 [api:select-v2:271] [api:select-v2:273] [example:select-v2-basic-usage]",
+          "example": "select-v2-basic-usage"
+        }
+      ]
     },
     {
       "id": "api:select-v2:272",
@@ -26148,13 +26334,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "fit-input-width",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 272
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "万选项仅渲染窗口且受控值等待父级回写 [api:select-v2:240] [api:select-v2:241] [api:select-v2:274] [api:select-v2:275] [api:select-v2:277] [api:select-v2:272] [example:select-v2-basic-usage]",
+          "example": "select-v2-basic-usage"
+        }
+      ]
     },
     {
       "id": "api:select-v2:273",
@@ -26162,13 +26354,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "suffix-icon",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 273
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "自动聚焦展开和自定义后缀图标 [api:select-v2:271] [api:select-v2:273] [example:select-v2-basic-usage]",
+          "example": "select-v2-basic-usage"
+        }
+      ]
     },
     {
       "id": "api:select-v2:274",
@@ -26176,13 +26374,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "height",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 274
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "万选项仅渲染窗口且受控值等待父级回写 [api:select-v2:240] [api:select-v2:241] [api:select-v2:274] [api:select-v2:275] [api:select-v2:277] [api:select-v2:272] [example:select-v2-basic-usage]",
+          "example": "select-v2-basic-usage"
+        }
+      ]
     },
     {
       "id": "api:select-v2:275",
@@ -26190,13 +26394,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "item-height",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 275
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "万选项仅渲染窗口且受控值等待父级回写 [api:select-v2:240] [api:select-v2:241] [api:select-v2:274] [api:select-v2:275] [api:select-v2:277] [api:select-v2:272] [example:select-v2-basic-usage]",
+          "example": "select-v2-basic-usage"
+        }
+      ]
     },
     {
       "id": "api:select-v2:276",
@@ -26204,13 +26414,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "estimated-option-height",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 276
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "动态高度测量更新后续行的位置 [api:select-v2:276] [example:select-v2-customized-option]",
+          "example": "select-v2-customized-option"
+        }
+      ]
     },
     {
       "id": "api:select-v2:277",
@@ -26218,13 +26434,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "scrollbar-always-on",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 277
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "万选项仅渲染窗口且受控值等待父级回写 [api:select-v2:240] [api:select-v2:241] [api:select-v2:274] [api:select-v2:275] [api:select-v2:277] [api:select-v2:272] [example:select-v2-basic-usage]",
+          "example": "select-v2-basic-usage"
+        }
+      ]
     },
     {
       "id": "api:select-v2:278",
@@ -26232,13 +26454,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "remote",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 278
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "远程结果异步进入同一虚拟窗口 [api:select-v2:278] [api:select-v2:280] [api:select-v2:279] [example:select-v2-remote-search]",
+          "example": "select-v2-remote-search"
+        }
+      ]
     },
     {
       "id": "api:select-v2:279",
@@ -26246,13 +26474,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "debounce",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 279
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "远程结果异步进入同一虚拟窗口 [api:select-v2:278] [api:select-v2:280] [api:select-v2:279] [example:select-v2-remote-search]",
+          "example": "select-v2-remote-search"
+        }
+      ]
     },
     {
       "id": "api:select-v2:280",
@@ -26260,13 +26494,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "remote-method",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 280
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "远程结果异步进入同一虚拟窗口 [api:select-v2:278] [api:select-v2:280] [api:select-v2:279] [example:select-v2-remote-search]",
+          "example": "select-v2-remote-search"
+        }
+      ]
     },
     {
       "id": "api:select-v2:281",
@@ -26274,13 +26514,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "remote-show-suffix",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 281
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "加载状态优先于虚拟选项并显示加载提示 [api:select-v2:259] [api:select-v2:260] [api:select-v2:281] [example:select-v2-custom-loading]",
+          "example": "select-v2-custom-loading"
+        }
+      ]
     },
     {
       "id": "api:select-v2:282",
@@ -26288,13 +26534,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "validate-event",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 282
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "关闭校验通知后选择不触发表单change [api:select-v2:282] [example:select-v2-basic-usage]",
+          "example": "select-v2-basic-usage"
+        }
+      ]
     },
     {
       "id": "api:select-v2:283",
@@ -26302,13 +26554,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "offset",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 283
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "自定义浮层宽度位置挂载及销毁 [api:select-v2:265] [api:select-v2:266] [api:select-v2:267] [api:select-v2:268] [api:select-v2:269] [api:select-v2:283] [api:select-v2:284] [api:select-v2:285] [api:select-v2:286] [example:select-v2-custom-width]",
+          "example": "select-v2-custom-width"
+        }
+      ]
     },
     {
       "id": "api:select-v2:284",
@@ -26316,13 +26574,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "show-arrow",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 284
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "自定义浮层宽度位置挂载及销毁 [api:select-v2:265] [api:select-v2:266] [api:select-v2:267] [api:select-v2:268] [api:select-v2:269] [api:select-v2:283] [api:select-v2:284] [api:select-v2:285] [api:select-v2:286] [example:select-v2-custom-width]",
+          "example": "select-v2-custom-width"
+        }
+      ]
     },
     {
       "id": "api:select-v2:285",
@@ -26330,13 +26594,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "placement",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 285
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "自定义浮层宽度位置挂载及销毁 [api:select-v2:265] [api:select-v2:266] [api:select-v2:267] [api:select-v2:268] [api:select-v2:269] [api:select-v2:283] [api:select-v2:284] [api:select-v2:285] [api:select-v2:286] [example:select-v2-custom-width]",
+          "example": "select-v2-custom-width"
+        }
+      ]
     },
     {
       "id": "api:select-v2:286",
@@ -26344,13 +26614,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "fallback-placements",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 286
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "自定义浮层宽度位置挂载及销毁 [api:select-v2:265] [api:select-v2:266] [api:select-v2:267] [api:select-v2:268] [api:select-v2:269] [api:select-v2:283] [api:select-v2:284] [api:select-v2:285] [api:select-v2:286] [example:select-v2-custom-width]",
+          "example": "select-v2-custom-width"
+        }
+      ]
     },
     {
       "id": "api:select-v2:287",
@@ -26358,13 +26634,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "collapse-tags-tooltip",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 287
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "多选数量限制与标签折叠沿用Select行为 [api:select-v2:243] [api:select-v2:250] [api:select-v2:249] [api:select-v2:287] [api:select-v2:289] [example:select-v2-hide-extra-tags]",
+          "example": "select-v2-hide-extra-tags"
+        }
+      ]
     },
     {
       "id": "api:select-v2:288",
@@ -26372,13 +26654,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "[tag-tooltip](#tag-tooltip)",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 288
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "折叠标签提示配置传递至共享Tooltip [api:select-v2:288] [api:select-v2:290] [api:select-v2:291] [example:select-v2-hide-extra-tags]",
+          "example": "select-v2-hide-extra-tags"
+        }
+      ]
     },
     {
       "id": "api:select-v2:289",
@@ -26386,13 +26674,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "max-collapse-tags",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 289
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "多选数量限制与标签折叠沿用Select行为 [api:select-v2:243] [api:select-v2:250] [api:select-v2:249] [api:select-v2:287] [api:select-v2:289] [example:select-v2-hide-extra-tags]",
+          "example": "select-v2-hide-extra-tags"
+        }
+      ]
     },
     {
       "id": "api:select-v2:290",
@@ -26400,13 +26694,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "tag-type",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 290
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "折叠标签提示配置传递至共享Tooltip [api:select-v2:288] [api:select-v2:290] [api:select-v2:291] [example:select-v2-hide-extra-tags]",
+          "example": "select-v2-hide-extra-tags"
+        }
+      ]
     },
     {
       "id": "api:select-v2:291",
@@ -26414,13 +26714,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "tag-effect",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 291
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "折叠标签提示配置传递至共享Tooltip [api:select-v2:288] [api:select-v2:290] [api:select-v2:291] [example:select-v2-hide-extra-tags]",
+          "example": "select-v2-hide-extra-tags"
+        }
+      ]
     },
     {
       "id": "api:select-v2:292",
@@ -26428,13 +26734,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "aria-label",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 292
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "尺寸原生输入属性和主题传递到选择器 [api:select-v2:246] [api:select-v2:251] [api:select-v2:252] [api:select-v2:254] [api:select-v2:255] [api:select-v2:253] [api:select-v2:292] [api:select-v2:296] [example:select-v2-size]",
+          "example": "select-v2-size"
+        }
+      ]
     },
     {
       "id": "api:select-v2:293",
@@ -26442,13 +26754,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "empty-values",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 293
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "空字符串可作为有效值，自定义清空值和图标 [api:select-v2:247] [api:select-v2:248] [api:select-v2:293] [api:select-v2:294] [example:select-v2-empty-values]",
+          "example": "select-v2-empty-values"
+        }
+      ]
     },
     {
       "id": "api:select-v2:294",
@@ -26456,13 +26774,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "value-on-clear",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 294
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "空字符串可作为有效值，自定义清空值和图标 [api:select-v2:247] [api:select-v2:248] [api:select-v2:293] [api:select-v2:294] [example:select-v2-empty-values]",
+          "example": "select-v2-empty-values"
+        }
+      ]
     },
     {
       "id": "api:select-v2:295",
@@ -26484,13 +26808,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "tabindex",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 296
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "尺寸原生输入属性和主题传递到选择器 [api:select-v2:246] [api:select-v2:251] [api:select-v2:252] [api:select-v2:254] [api:select-v2:255] [api:select-v2:253] [api:select-v2:292] [api:select-v2:296] [example:select-v2-size]",
+          "example": "select-v2-size"
+        }
+      ]
     },
     {
       "id": "api:select-v2:302",
@@ -26498,13 +26828,19 @@
       "category": "api",
       "section": "props",
       "title": "value",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 302
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "分组标题和禁用组选项保留在虚拟行模型中 [api:select-v2:302] [api:select-v2:303] [api:select-v2:304] [api:select-v2:305] [example:select-v2-grouping]",
+          "example": "select-v2-grouping"
+        }
+      ]
     },
     {
       "id": "api:select-v2:303",
@@ -26512,13 +26848,19 @@
       "category": "api",
       "section": "props",
       "title": "label",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 303
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "分组标题和禁用组选项保留在虚拟行模型中 [api:select-v2:302] [api:select-v2:303] [api:select-v2:304] [api:select-v2:305] [example:select-v2-grouping]",
+          "example": "select-v2-grouping"
+        }
+      ]
     },
     {
       "id": "api:select-v2:304",
@@ -26526,13 +26868,19 @@
       "category": "api",
       "section": "props",
       "title": "options",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 304
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "分组标题和禁用组选项保留在虚拟行模型中 [api:select-v2:302] [api:select-v2:303] [api:select-v2:304] [api:select-v2:305] [example:select-v2-grouping]",
+          "example": "select-v2-grouping"
+        }
+      ]
     },
     {
       "id": "api:select-v2:305",
@@ -26540,13 +26888,19 @@
       "category": "api",
       "section": "props",
       "title": "disabled",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 305
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "分组标题和禁用组选项保留在虚拟行模型中 [api:select-v2:302] [api:select-v2:303] [api:select-v2:304] [api:select-v2:305] [example:select-v2-grouping]",
+          "example": "select-v2-grouping"
+        }
+      ]
     },
     {
       "id": "api:select-v2:328",
@@ -26736,13 +27090,19 @@
       "category": "api",
       "section": "Events",
       "title": "change",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 346
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "窗口边界和选择器交互分别发出回调 [api:select-v2:346] [api:select-v2:347] [api:select-v2:348] [api:select-v2:349] [api:select-v2:350] [api:select-v2:351] [api:select-v2:352] [example:select-v2-multiple]",
+          "example": "select-v2-multiple"
+        }
+      ]
     },
     {
       "id": "api:select-v2:347",
@@ -26750,13 +27110,19 @@
       "category": "api",
       "section": "Events",
       "title": "visible-change",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 347
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "窗口边界和选择器交互分别发出回调 [api:select-v2:346] [api:select-v2:347] [api:select-v2:348] [api:select-v2:349] [api:select-v2:350] [api:select-v2:351] [api:select-v2:352] [example:select-v2-multiple]",
+          "example": "select-v2-multiple"
+        }
+      ]
     },
     {
       "id": "api:select-v2:348",
@@ -26764,13 +27130,19 @@
       "category": "api",
       "section": "Events",
       "title": "remove-tag",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 348
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "窗口边界和选择器交互分别发出回调 [api:select-v2:346] [api:select-v2:347] [api:select-v2:348] [api:select-v2:349] [api:select-v2:350] [api:select-v2:351] [api:select-v2:352] [example:select-v2-multiple]",
+          "example": "select-v2-multiple"
+        }
+      ]
     },
     {
       "id": "api:select-v2:349",
@@ -26778,13 +27150,19 @@
       "category": "api",
       "section": "Events",
       "title": "clear",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 349
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "窗口边界和选择器交互分别发出回调 [api:select-v2:346] [api:select-v2:347] [api:select-v2:348] [api:select-v2:349] [api:select-v2:350] [api:select-v2:351] [api:select-v2:352] [example:select-v2-multiple]",
+          "example": "select-v2-multiple"
+        }
+      ]
     },
     {
       "id": "api:select-v2:350",
@@ -26792,13 +27170,19 @@
       "category": "api",
       "section": "Events",
       "title": "blur",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 350
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "窗口边界和选择器交互分别发出回调 [api:select-v2:346] [api:select-v2:347] [api:select-v2:348] [api:select-v2:349] [api:select-v2:350] [api:select-v2:351] [api:select-v2:352] [example:select-v2-multiple]",
+          "example": "select-v2-multiple"
+        }
+      ]
     },
     {
       "id": "api:select-v2:351",
@@ -26806,13 +27190,19 @@
       "category": "api",
       "section": "Events",
       "title": "focus",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 351
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "窗口边界和选择器交互分别发出回调 [api:select-v2:346] [api:select-v2:347] [api:select-v2:348] [api:select-v2:349] [api:select-v2:350] [api:select-v2:351] [api:select-v2:352] [example:select-v2-multiple]",
+          "example": "select-v2-multiple"
+        }
+      ]
     },
     {
       "id": "api:select-v2:352",
@@ -26820,13 +27210,19 @@
       "category": "api",
       "section": "Events",
       "title": "end-reached",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 352
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "窗口边界和选择器交互分别发出回调 [api:select-v2:346] [api:select-v2:347] [api:select-v2:348] [api:select-v2:349] [api:select-v2:350] [api:select-v2:351] [api:select-v2:352] [example:select-v2-multiple]",
+          "example": "select-v2-multiple"
+        }
+      ]
     },
     {
       "id": "api:select-v2:358",
@@ -26834,13 +27230,19 @@
       "category": "api",
       "section": "Slots",
       "title": "default",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 358
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "自定义选项接收保留额外字段的原始对象 [api:select-v2:358] [example:select-v2-customized-option]",
+          "example": "select-v2-customized-option"
+        }
+      ]
     },
     {
       "id": "api:select-v2:359",
@@ -26848,13 +27250,19 @@
       "category": "api",
       "section": "Slots",
       "title": "header",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 359
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "自定义头部保留在虚拟窗口之外 [api:select-v2:359] [example:select-v2-custom-header]",
+          "example": "select-v2-custom-header"
+        }
+      ]
     },
     {
       "id": "api:select-v2:360",
@@ -26862,13 +27270,19 @@
       "category": "api",
       "section": "Slots",
       "title": "footer",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 360
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "自定义底部保留在虚拟窗口之外 [api:select-v2:360] [example:select-v2-custom-footer]",
+          "example": "select-v2-custom-footer"
+        }
+      ]
     },
     {
       "id": "api:select-v2:361",
@@ -26876,13 +27290,19 @@
       "category": "api",
       "section": "Slots",
       "title": "empty",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 361
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "标签前缀和空状态插槽可独立覆盖 [api:select-v2:363] [api:select-v2:362] [api:select-v2:361] [example:select-v2-custom-tag]",
+          "example": "select-v2-custom-tag"
+        }
+      ]
     },
     {
       "id": "api:select-v2:362",
@@ -26890,13 +27310,19 @@
       "category": "api",
       "section": "Slots",
       "title": "prefix",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 362
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "标签前缀和空状态插槽可独立覆盖 [api:select-v2:363] [api:select-v2:362] [api:select-v2:361] [example:select-v2-custom-tag]",
+          "example": "select-v2-custom-tag"
+        }
+      ]
     },
     {
       "id": "api:select-v2:363",
@@ -26904,13 +27330,19 @@
       "category": "api",
       "section": "Slots",
       "title": "tag",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 363
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "标签前缀和空状态插槽可独立覆盖 [api:select-v2:363] [api:select-v2:362] [api:select-v2:361] [example:select-v2-custom-tag]",
+          "example": "select-v2-custom-tag"
+        }
+      ]
     },
     {
       "id": "api:select-v2:364",
@@ -26918,13 +27350,19 @@
       "category": "api",
       "section": "Slots",
       "title": "loading",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 364
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "加载插槽覆盖默认加载提示 [api:select-v2:364] [example:select-v2-custom-loading]",
+          "example": "select-v2-custom-loading"
+        }
+      ]
     },
     {
       "id": "api:select-v2:365",
@@ -26932,13 +27370,19 @@
       "category": "api",
       "section": "Slots",
       "title": "label",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 365
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "选中标签内容可定制 [api:select-v2:365] [example:select-v2-custom-label]",
+          "example": "select-v2-custom-label"
+        }
+      ]
     },
     {
       "id": "api:select-v2:371",
@@ -26946,13 +27390,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "focus",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 371
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "公开实例沿用Select聚焦与当前标签 [api:select-v2:371] [api:select-v2:372] [api:select-v2:373] [example:select-v2-basic-usage]",
+          "example": "select-v2-basic-usage"
+        }
+      ]
     },
     {
       "id": "api:select-v2:372",
@@ -26960,13 +27410,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "blur",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 372
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "公开实例沿用Select聚焦与当前标签 [api:select-v2:371] [api:select-v2:372] [api:select-v2:373] [example:select-v2-basic-usage]",
+          "example": "select-v2-basic-usage"
+        }
+      ]
     },
     {
       "id": "api:select-v2:373",
@@ -26974,13 +27430,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "selectedLabel",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/select-v2.md",
         "line": 373
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/select-v2/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "公开实例沿用Select聚焦与当前标签 [api:select-v2:371] [api:select-v2:372] [api:select-v2:373] [example:select-v2-basic-usage]",
+          "example": "select-v2-basic-usage"
+        }
+      ]
     },
     {
       "id": "api:select:206",
@@ -38212,13 +38674,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "[tree](./tree.md#attributes)",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 128
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "默认只选择叶节点并通过Select统一提交值与change [api:tree-select:128] [api:tree-select:129] [example:tree-select-basic]",
+          "example": "tree-select-basic"
+        }
+      ]
     },
     {
       "id": "api:tree-select:129",
@@ -38226,13 +38694,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "[select](./select.md#select-attributes)",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 129
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "默认只选择叶节点并通过Select统一提交值与change [api:tree-select:128] [api:tree-select:129] [example:tree-select-basic]",
+          "example": "tree-select-basic"
+        }
+      ]
     },
     {
       "id": "api:tree-select:135",
@@ -38240,13 +38714,19 @@
       "category": "api",
       "section": "Own Attributes",
       "title": "cache-data",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 135
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "懒加载前使用缓存标签，加载后的选择记住真实叶节点标签 [api:tree-select:135] [example:tree-select-lazy]",
+          "example": "tree-select-lazy"
+        }
+      ]
     },
     {
       "id": "api:tree-select:147",
@@ -38254,13 +38734,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "treeRef",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 147
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "公开组合实例与聚焦失焦和标签读数 [api:tree-select:147] [api:tree-select:148] [api:tree-select:167] [api:tree-select:168] [api:tree-select:169] [example:tree-select-basic]",
+          "example": "tree-select-basic"
+        }
+      ]
     },
     {
       "id": "api:tree-select:148",
@@ -38268,13 +38754,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "selectRef",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 148
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "公开组合实例与聚焦失焦和标签读数 [api:tree-select:147] [api:tree-select:148] [api:tree-select:167] [api:tree-select:168] [api:tree-select:169] [example:tree-select-basic]",
+          "example": "tree-select-basic"
+        }
+      ]
     },
     {
       "id": "api:tree-select:149",
@@ -38282,13 +38774,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "filter",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 149
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "旧树实例方法委托节点查询、过滤和不可变编辑 [api:tree-select:149] [api:tree-select:150] [api:tree-select:158] [api:tree-select:159] [api:tree-select:160] [api:tree-select:161] [api:tree-select:162] [api:tree-select:163] [api:tree-select:164] [api:tree-select:165] [api:tree-select:166] [example:tree-select-node-key]",
+          "example": "tree-select-node-key"
+        }
+      ]
     },
     {
       "id": "api:tree-select:150",
@@ -38296,13 +38794,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "updateKeyChildren",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 150
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "旧树实例方法委托节点查询、过滤和不可变编辑 [api:tree-select:149] [api:tree-select:150] [api:tree-select:158] [api:tree-select:159] [api:tree-select:160] [api:tree-select:161] [api:tree-select:162] [api:tree-select:163] [api:tree-select:164] [api:tree-select:165] [api:tree-select:166] [example:tree-select-node-key]",
+          "example": "tree-select-node-key"
+        }
+      ]
     },
     {
       "id": "api:tree-select:151",
@@ -38310,13 +38814,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "getCheckedNodes",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 151
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "原勾选实例方法委托到同一Tree实例 [api:tree-select:151] [api:tree-select:152] [api:tree-select:153] [api:tree-select:154] [api:tree-select:155] [api:tree-select:156] [api:tree-select:157] [example:tree-select-multiple]",
+          "example": "tree-select-multiple"
+        }
+      ]
     },
     {
       "id": "api:tree-select:152",
@@ -38324,13 +38834,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "setCheckedNodes",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 152
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "原勾选实例方法委托到同一Tree实例 [api:tree-select:151] [api:tree-select:152] [api:tree-select:153] [api:tree-select:154] [api:tree-select:155] [api:tree-select:156] [api:tree-select:157] [example:tree-select-multiple]",
+          "example": "tree-select-multiple"
+        }
+      ]
     },
     {
       "id": "api:tree-select:153",
@@ -38338,13 +38854,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "getCheckedKeys",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 153
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "原勾选实例方法委托到同一Tree实例 [api:tree-select:151] [api:tree-select:152] [api:tree-select:153] [api:tree-select:154] [api:tree-select:155] [api:tree-select:156] [api:tree-select:157] [example:tree-select-multiple]",
+          "example": "tree-select-multiple"
+        }
+      ]
     },
     {
       "id": "api:tree-select:154",
@@ -38352,13 +38874,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "setCheckedKeys",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 154
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "原勾选实例方法委托到同一Tree实例 [api:tree-select:151] [api:tree-select:152] [api:tree-select:153] [api:tree-select:154] [api:tree-select:155] [api:tree-select:156] [api:tree-select:157] [example:tree-select-multiple]",
+          "example": "tree-select-multiple"
+        }
+      ]
     },
     {
       "id": "api:tree-select:155",
@@ -38366,13 +38894,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "setChecked",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 155
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "原勾选实例方法委托到同一Tree实例 [api:tree-select:151] [api:tree-select:152] [api:tree-select:153] [api:tree-select:154] [api:tree-select:155] [api:tree-select:156] [api:tree-select:157] [example:tree-select-multiple]",
+          "example": "tree-select-multiple"
+        }
+      ]
     },
     {
       "id": "api:tree-select:156",
@@ -38380,13 +38914,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "getHalfCheckedNodes",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 156
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "原勾选实例方法委托到同一Tree实例 [api:tree-select:151] [api:tree-select:152] [api:tree-select:153] [api:tree-select:154] [api:tree-select:155] [api:tree-select:156] [api:tree-select:157] [example:tree-select-multiple]",
+          "example": "tree-select-multiple"
+        }
+      ]
     },
     {
       "id": "api:tree-select:157",
@@ -38394,13 +38934,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "getHalfCheckedKeys",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 157
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "原勾选实例方法委托到同一Tree实例 [api:tree-select:151] [api:tree-select:152] [api:tree-select:153] [api:tree-select:154] [api:tree-select:155] [api:tree-select:156] [api:tree-select:157] [example:tree-select-multiple]",
+          "example": "tree-select-multiple"
+        }
+      ]
     },
     {
       "id": "api:tree-select:158",
@@ -38408,13 +38954,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "getCurrentKey",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 158
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "旧树实例方法委托节点查询、过滤和不可变编辑 [api:tree-select:149] [api:tree-select:150] [api:tree-select:158] [api:tree-select:159] [api:tree-select:160] [api:tree-select:161] [api:tree-select:162] [api:tree-select:163] [api:tree-select:164] [api:tree-select:165] [api:tree-select:166] [example:tree-select-node-key]",
+          "example": "tree-select-node-key"
+        }
+      ]
     },
     {
       "id": "api:tree-select:159",
@@ -38422,13 +38974,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "getCurrentNode",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 159
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "旧树实例方法委托节点查询、过滤和不可变编辑 [api:tree-select:149] [api:tree-select:150] [api:tree-select:158] [api:tree-select:159] [api:tree-select:160] [api:tree-select:161] [api:tree-select:162] [api:tree-select:163] [api:tree-select:164] [api:tree-select:165] [api:tree-select:166] [example:tree-select-node-key]",
+          "example": "tree-select-node-key"
+        }
+      ]
     },
     {
       "id": "api:tree-select:160",
@@ -38436,13 +38994,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "setCurrentKey",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 160
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "旧树实例方法委托节点查询、过滤和不可变编辑 [api:tree-select:149] [api:tree-select:150] [api:tree-select:158] [api:tree-select:159] [api:tree-select:160] [api:tree-select:161] [api:tree-select:162] [api:tree-select:163] [api:tree-select:164] [api:tree-select:165] [api:tree-select:166] [example:tree-select-node-key]",
+          "example": "tree-select-node-key"
+        }
+      ]
     },
     {
       "id": "api:tree-select:161",
@@ -38450,13 +39014,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "setCurrentNode",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 161
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "旧树实例方法委托节点查询、过滤和不可变编辑 [api:tree-select:149] [api:tree-select:150] [api:tree-select:158] [api:tree-select:159] [api:tree-select:160] [api:tree-select:161] [api:tree-select:162] [api:tree-select:163] [api:tree-select:164] [api:tree-select:165] [api:tree-select:166] [example:tree-select-node-key]",
+          "example": "tree-select-node-key"
+        }
+      ]
     },
     {
       "id": "api:tree-select:162",
@@ -38464,13 +39034,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "getNode",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 162
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "旧树实例方法委托节点查询、过滤和不可变编辑 [api:tree-select:149] [api:tree-select:150] [api:tree-select:158] [api:tree-select:159] [api:tree-select:160] [api:tree-select:161] [api:tree-select:162] [api:tree-select:163] [api:tree-select:164] [api:tree-select:165] [api:tree-select:166] [example:tree-select-node-key]",
+          "example": "tree-select-node-key"
+        }
+      ]
     },
     {
       "id": "api:tree-select:163",
@@ -38478,13 +39054,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "remove",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 163
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "旧树实例方法委托节点查询、过滤和不可变编辑 [api:tree-select:149] [api:tree-select:150] [api:tree-select:158] [api:tree-select:159] [api:tree-select:160] [api:tree-select:161] [api:tree-select:162] [api:tree-select:163] [api:tree-select:164] [api:tree-select:165] [api:tree-select:166] [example:tree-select-node-key]",
+          "example": "tree-select-node-key"
+        }
+      ]
     },
     {
       "id": "api:tree-select:164",
@@ -38492,13 +39074,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "append",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 164
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "旧树实例方法委托节点查询、过滤和不可变编辑 [api:tree-select:149] [api:tree-select:150] [api:tree-select:158] [api:tree-select:159] [api:tree-select:160] [api:tree-select:161] [api:tree-select:162] [api:tree-select:163] [api:tree-select:164] [api:tree-select:165] [api:tree-select:166] [example:tree-select-node-key]",
+          "example": "tree-select-node-key"
+        }
+      ]
     },
     {
       "id": "api:tree-select:165",
@@ -38506,13 +39094,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "insertBefore",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 165
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "旧树实例方法委托节点查询、过滤和不可变编辑 [api:tree-select:149] [api:tree-select:150] [api:tree-select:158] [api:tree-select:159] [api:tree-select:160] [api:tree-select:161] [api:tree-select:162] [api:tree-select:163] [api:tree-select:164] [api:tree-select:165] [api:tree-select:166] [example:tree-select-node-key]",
+          "example": "tree-select-node-key"
+        }
+      ]
     },
     {
       "id": "api:tree-select:166",
@@ -38520,13 +39114,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "insertAfter",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 166
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "旧树实例方法委托节点查询、过滤和不可变编辑 [api:tree-select:149] [api:tree-select:150] [api:tree-select:158] [api:tree-select:159] [api:tree-select:160] [api:tree-select:161] [api:tree-select:162] [api:tree-select:163] [api:tree-select:164] [api:tree-select:165] [api:tree-select:166] [example:tree-select-node-key]",
+          "example": "tree-select-node-key"
+        }
+      ]
     },
     {
       "id": "api:tree-select:167",
@@ -38534,13 +39134,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "focus",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 167
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "公开组合实例与聚焦失焦和标签读数 [api:tree-select:147] [api:tree-select:148] [api:tree-select:167] [api:tree-select:168] [api:tree-select:169] [example:tree-select-basic]",
+          "example": "tree-select-basic"
+        }
+      ]
     },
     {
       "id": "api:tree-select:168",
@@ -38548,13 +39154,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "blur",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 168
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "公开组合实例与聚焦失焦和标签读数 [api:tree-select:147] [api:tree-select:148] [api:tree-select:167] [api:tree-select:168] [api:tree-select:169] [example:tree-select-basic]",
+          "example": "tree-select-basic"
+        }
+      ]
     },
     {
       "id": "api:tree-select:169",
@@ -38562,13 +39174,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "selectedLabel",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-select.md",
         "line": 169
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree-select/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "公开组合实例与聚焦失焦和标签读数 [api:tree-select:147] [api:tree-select:148] [api:tree-select:167] [api:tree-select:168] [api:tree-select:169] [example:tree-select-basic]",
+          "example": "tree-select-basic"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:104",
@@ -38576,13 +39194,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "data",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 104
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "万节点虚拟树只挂载可视窗口，滚动后更新窗口 [api:tree-v2:104] [api:tree-v2:121] [api:tree-v2:119] [api:tree-v2:120] [example:tree-v2-basic]",
+          "example": "tree-v2-basic"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:105",
@@ -38590,13 +39214,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "empty-text",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 105
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树支持自定义展开图标和空文本 [api:tree-v2:118] [api:tree-v2:105] [example:tree-v2-custom-icon]",
+          "example": "tree-v2-custom-icon"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:106",
@@ -38604,13 +39234,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "[props](#props)",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 106
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "配置映射可指定虚拟树唯一键和禁用字段 [api:tree-v2:106] [example:tree-v2-disabled]",
+          "example": "tree-v2-disabled"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:107",
@@ -38618,13 +39254,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "highlight-current",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 107
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "默认展开勾选和高亮在虚拟行中保持一致 [api:tree-v2:111] [api:tree-v2:114] [api:tree-v2:115] [api:tree-v2:107] [api:tree-v2:108] [api:tree-v2:117] [example:tree-v2-default-state]",
+          "example": "tree-v2-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:108",
@@ -38632,13 +39274,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "expand-on-click-node",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 108
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "默认展开勾选和高亮在虚拟行中保持一致 [api:tree-v2:111] [api:tree-v2:114] [api:tree-v2:115] [api:tree-v2:107] [api:tree-v2:108] [api:tree-v2:117] [example:tree-v2-default-state]",
+          "example": "tree-v2-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:109",
@@ -38646,13 +39294,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "check-on-click-node",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 109
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树支持严格选择和独立节点点击策略 [api:tree-v2:112] [api:tree-v2:113] [api:tree-v2:109] [api:tree-v2:110] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:110",
@@ -38660,13 +39314,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "check-on-click-leaf",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 110
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树支持严格选择和独立节点点击策略 [api:tree-v2:112] [api:tree-v2:113] [api:tree-v2:109] [api:tree-v2:110] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:111",
@@ -38674,13 +39334,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "default-expanded-keys",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 111
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "默认展开勾选和高亮在虚拟行中保持一致 [api:tree-v2:111] [api:tree-v2:114] [api:tree-v2:115] [api:tree-v2:107] [api:tree-v2:108] [api:tree-v2:117] [example:tree-v2-default-state]",
+          "example": "tree-v2-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:112",
@@ -38688,13 +39354,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "show-checkbox",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 112
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树支持严格选择和独立节点点击策略 [api:tree-v2:112] [api:tree-v2:113] [api:tree-v2:109] [api:tree-v2:110] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:113",
@@ -38702,13 +39374,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "check-strictly",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 113
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树支持严格选择和独立节点点击策略 [api:tree-v2:112] [api:tree-v2:113] [api:tree-v2:109] [api:tree-v2:110] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:114",
@@ -38716,13 +39394,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "default-checked-keys",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 114
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "默认展开勾选和高亮在虚拟行中保持一致 [api:tree-v2:111] [api:tree-v2:114] [api:tree-v2:115] [api:tree-v2:107] [api:tree-v2:108] [api:tree-v2:117] [example:tree-v2-default-state]",
+          "example": "tree-v2-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:115",
@@ -38730,13 +39414,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "current-node-key",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 115
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "默认展开勾选和高亮在虚拟行中保持一致 [api:tree-v2:111] [api:tree-v2:114] [api:tree-v2:115] [api:tree-v2:107] [api:tree-v2:108] [api:tree-v2:117] [example:tree-v2-default-state]",
+          "example": "tree-v2-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:116",
@@ -38744,13 +39434,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "filter-method",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 116
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树过滤显示匹配节点和祖先 [api:tree-v2:116] [example:tree-v2-filter]",
+          "example": "tree-v2-filter"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:117",
@@ -38758,13 +39454,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "indent",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 117
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "默认展开勾选和高亮在虚拟行中保持一致 [api:tree-v2:111] [api:tree-v2:114] [api:tree-v2:115] [api:tree-v2:107] [api:tree-v2:108] [api:tree-v2:117] [example:tree-v2-default-state]",
+          "example": "tree-v2-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:118",
@@ -38772,13 +39474,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "icon",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 118
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树支持自定义展开图标和空文本 [api:tree-v2:118] [api:tree-v2:105] [example:tree-v2-custom-icon]",
+          "example": "tree-v2-custom-icon"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:119",
@@ -38786,13 +39494,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "item-size",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 119
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "万节点虚拟树只挂载可视窗口，滚动后更新窗口 [api:tree-v2:104] [api:tree-v2:121] [api:tree-v2:119] [api:tree-v2:120] [example:tree-v2-basic]",
+          "example": "tree-v2-basic"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:120",
@@ -38800,13 +39514,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "scrollbar-always-on",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 120
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "万节点虚拟树只挂载可视窗口，滚动后更新窗口 [api:tree-v2:104] [api:tree-v2:121] [api:tree-v2:119] [api:tree-v2:120] [example:tree-v2-basic]",
+          "example": "tree-v2-basic"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:121",
@@ -38814,13 +39534,19 @@
       "category": "api",
       "section": "TreeV2 Attributes",
       "title": "height",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 121
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "万节点虚拟树只挂载可视窗口，滚动后更新窗口 [api:tree-v2:104] [api:tree-v2:121] [api:tree-v2:119] [api:tree-v2:120] [example:tree-v2-basic]",
+          "example": "tree-v2-basic"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:127",
@@ -38828,13 +39554,19 @@
       "category": "api",
       "section": "props",
       "title": "value",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 127
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "字段映射与节点类名覆盖应用于同一模型 [api:tree-v2:127] [api:tree-v2:128] [api:tree-v2:129] [api:tree-v2:130] [api:tree-v2:131] [example:tree-v2-custom-node-class]",
+          "example": "tree-v2-custom-node-class"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:128",
@@ -38842,13 +39574,19 @@
       "category": "api",
       "section": "props",
       "title": "label",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 128
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "字段映射与节点类名覆盖应用于同一模型 [api:tree-v2:127] [api:tree-v2:128] [api:tree-v2:129] [api:tree-v2:130] [api:tree-v2:131] [example:tree-v2-custom-node-class]",
+          "example": "tree-v2-custom-node-class"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:129",
@@ -38856,13 +39594,19 @@
       "category": "api",
       "section": "props",
       "title": "children",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 129
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "字段映射与节点类名覆盖应用于同一模型 [api:tree-v2:127] [api:tree-v2:128] [api:tree-v2:129] [api:tree-v2:130] [api:tree-v2:131] [example:tree-v2-custom-node-class]",
+          "example": "tree-v2-custom-node-class"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:130",
@@ -38870,13 +39614,19 @@
       "category": "api",
       "section": "props",
       "title": "disabled",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 130
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "字段映射与节点类名覆盖应用于同一模型 [api:tree-v2:127] [api:tree-v2:128] [api:tree-v2:129] [api:tree-v2:130] [api:tree-v2:131] [example:tree-v2-custom-node-class]",
+          "example": "tree-v2-custom-node-class"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:131",
@@ -38884,13 +39634,19 @@
       "category": "api",
       "section": "props",
       "title": "class",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 131
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "字段映射与节点类名覆盖应用于同一模型 [api:tree-v2:127] [api:tree-v2:128] [api:tree-v2:129] [api:tree-v2:130] [api:tree-v2:131] [example:tree-v2-custom-node-class]",
+          "example": "tree-v2-custom-node-class"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:139",
@@ -38898,13 +39654,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "filter",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 139
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树的勾选方法查询完整模型而非仅查询挂载DOM [api:tree-v2:139] [api:tree-v2:140] [api:tree-v2:141] [api:tree-v2:142] [api:tree-v2:143] [api:tree-v2:145] [api:tree-v2:146] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:140",
@@ -38912,13 +39674,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "getCheckedNodes",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 140
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树的勾选方法查询完整模型而非仅查询挂载DOM [api:tree-v2:139] [api:tree-v2:140] [api:tree-v2:141] [api:tree-v2:142] [api:tree-v2:143] [api:tree-v2:145] [api:tree-v2:146] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:141",
@@ -38926,13 +39694,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "getCheckedKeys",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 141
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树的勾选方法查询完整模型而非仅查询挂载DOM [api:tree-v2:139] [api:tree-v2:140] [api:tree-v2:141] [api:tree-v2:142] [api:tree-v2:143] [api:tree-v2:145] [api:tree-v2:146] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:142",
@@ -38940,13 +39714,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "setCheckedKeys",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 142
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树的勾选方法查询完整模型而非仅查询挂载DOM [api:tree-v2:139] [api:tree-v2:140] [api:tree-v2:141] [api:tree-v2:142] [api:tree-v2:143] [api:tree-v2:145] [api:tree-v2:146] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:143",
@@ -38954,13 +39734,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "setChecked",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 143
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树的勾选方法查询完整模型而非仅查询挂载DOM [api:tree-v2:139] [api:tree-v2:140] [api:tree-v2:141] [api:tree-v2:142] [api:tree-v2:143] [api:tree-v2:145] [api:tree-v2:146] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:144",
@@ -38968,13 +39754,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "setExpandedKeys",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 144
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "实例在折叠数据中定位节点并替换完整数据 [api:tree-v2:147] [api:tree-v2:148] [api:tree-v2:149] [api:tree-v2:150] [api:tree-v2:151] [api:tree-v2:152] [api:tree-v2:144] [api:tree-v2:153] [example:tree-v2-default-state]",
+          "example": "tree-v2-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:145",
@@ -38982,13 +39774,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "getHalfCheckedNodes",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 145
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树的勾选方法查询完整模型而非仅查询挂载DOM [api:tree-v2:139] [api:tree-v2:140] [api:tree-v2:141] [api:tree-v2:142] [api:tree-v2:143] [api:tree-v2:145] [api:tree-v2:146] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:146",
@@ -38996,13 +39794,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "getHalfCheckedKeys",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 146
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树的勾选方法查询完整模型而非仅查询挂载DOM [api:tree-v2:139] [api:tree-v2:140] [api:tree-v2:141] [api:tree-v2:142] [api:tree-v2:143] [api:tree-v2:145] [api:tree-v2:146] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:147",
@@ -39010,13 +39814,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "getCurrentKey",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 147
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "实例在折叠数据中定位节点并替换完整数据 [api:tree-v2:147] [api:tree-v2:148] [api:tree-v2:149] [api:tree-v2:150] [api:tree-v2:151] [api:tree-v2:152] [api:tree-v2:144] [api:tree-v2:153] [example:tree-v2-default-state]",
+          "example": "tree-v2-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:148",
@@ -39024,13 +39834,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "getCurrentNode",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 148
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "实例在折叠数据中定位节点并替换完整数据 [api:tree-v2:147] [api:tree-v2:148] [api:tree-v2:149] [api:tree-v2:150] [api:tree-v2:151] [api:tree-v2:152] [api:tree-v2:144] [api:tree-v2:153] [example:tree-v2-default-state]",
+          "example": "tree-v2-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:149",
@@ -39038,13 +39854,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "setCurrentKey",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 149
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "实例在折叠数据中定位节点并替换完整数据 [api:tree-v2:147] [api:tree-v2:148] [api:tree-v2:149] [api:tree-v2:150] [api:tree-v2:151] [api:tree-v2:152] [api:tree-v2:144] [api:tree-v2:153] [example:tree-v2-default-state]",
+          "example": "tree-v2-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:150",
@@ -39052,13 +39874,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "getNode",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 150
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "实例在折叠数据中定位节点并替换完整数据 [api:tree-v2:147] [api:tree-v2:148] [api:tree-v2:149] [api:tree-v2:150] [api:tree-v2:151] [api:tree-v2:152] [api:tree-v2:144] [api:tree-v2:153] [example:tree-v2-default-state]",
+          "example": "tree-v2-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:151",
@@ -39066,13 +39894,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "expandNode",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 151
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "实例在折叠数据中定位节点并替换完整数据 [api:tree-v2:147] [api:tree-v2:148] [api:tree-v2:149] [api:tree-v2:150] [api:tree-v2:151] [api:tree-v2:152] [api:tree-v2:144] [api:tree-v2:153] [example:tree-v2-default-state]",
+          "example": "tree-v2-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:152",
@@ -39080,13 +39914,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "collapseNode",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 152
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "实例在折叠数据中定位节点并替换完整数据 [api:tree-v2:147] [api:tree-v2:148] [api:tree-v2:149] [api:tree-v2:150] [api:tree-v2:151] [api:tree-v2:152] [api:tree-v2:144] [api:tree-v2:153] [example:tree-v2-default-state]",
+          "example": "tree-v2-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:153",
@@ -39094,13 +39934,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "setData",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 153
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "实例在折叠数据中定位节点并替换完整数据 [api:tree-v2:147] [api:tree-v2:148] [api:tree-v2:149] [api:tree-v2:150] [api:tree-v2:151] [api:tree-v2:152] [api:tree-v2:144] [api:tree-v2:153] [example:tree-v2-default-state]",
+          "example": "tree-v2-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:154",
@@ -39108,13 +39954,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "scrollTo",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 154
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "按位置和节点策略滚动到未挂载行 [api:tree-v2:154] [api:tree-v2:155] [example:tree-v2-basic]",
+          "example": "tree-v2-basic"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:155",
@@ -39122,13 +39974,19 @@
       "category": "api",
       "section": "TreeV2 Exposes",
       "title": "scrollToNode",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 155
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "按位置和节点策略滚动到未挂载行 [api:tree-v2:154] [api:tree-v2:155] [example:tree-v2-basic]",
+          "example": "tree-v2-basic"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:161",
@@ -39136,13 +39994,19 @@
       "category": "api",
       "section": "TreeV2 Events",
       "title": "node-click",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 161
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树行为事件回传原始节点数据与实时状态 [api:tree-v2:161] [api:tree-v2:163] [api:tree-v2:164] [api:tree-v2:165] [api:tree-v2:166] [api:tree-v2:167] [api:tree-v2:168] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:162",
@@ -39150,13 +40014,19 @@
       "category": "api",
       "section": "TreeV2 Events",
       "title": "node-drop",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 162
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "外部放置事件接收目标数据节点及原始事件 [api:tree-v2:162] [example:tree-v2-basic]",
+          "example": "tree-v2-basic"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:163",
@@ -39164,13 +40034,19 @@
       "category": "api",
       "section": "TreeV2 Events",
       "title": "node-contextmenu",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 163
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树行为事件回传原始节点数据与实时状态 [api:tree-v2:161] [api:tree-v2:163] [api:tree-v2:164] [api:tree-v2:165] [api:tree-v2:166] [api:tree-v2:167] [api:tree-v2:168] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:164",
@@ -39178,13 +40054,19 @@
       "category": "api",
       "section": "TreeV2 Events",
       "title": "check-change",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 164
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树行为事件回传原始节点数据与实时状态 [api:tree-v2:161] [api:tree-v2:163] [api:tree-v2:164] [api:tree-v2:165] [api:tree-v2:166] [api:tree-v2:167] [api:tree-v2:168] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:165",
@@ -39192,13 +40074,19 @@
       "category": "api",
       "section": "TreeV2 Events",
       "title": "check",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 165
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树行为事件回传原始节点数据与实时状态 [api:tree-v2:161] [api:tree-v2:163] [api:tree-v2:164] [api:tree-v2:165] [api:tree-v2:166] [api:tree-v2:167] [api:tree-v2:168] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:166",
@@ -39206,13 +40094,19 @@
       "category": "api",
       "section": "TreeV2 Events",
       "title": "current-change",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 166
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树行为事件回传原始节点数据与实时状态 [api:tree-v2:161] [api:tree-v2:163] [api:tree-v2:164] [api:tree-v2:165] [api:tree-v2:166] [api:tree-v2:167] [api:tree-v2:168] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:167",
@@ -39220,13 +40114,19 @@
       "category": "api",
       "section": "TreeV2 Events",
       "title": "node-expand",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 167
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树行为事件回传原始节点数据与实时状态 [api:tree-v2:161] [api:tree-v2:163] [api:tree-v2:164] [api:tree-v2:165] [api:tree-v2:166] [api:tree-v2:167] [api:tree-v2:168] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:168",
@@ -39234,13 +40134,19 @@
       "category": "api",
       "section": "TreeV2 Events",
       "title": "node-collapse",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 168
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树行为事件回传原始节点数据与实时状态 [api:tree-v2:161] [api:tree-v2:163] [api:tree-v2:164] [api:tree-v2:165] [api:tree-v2:166] [api:tree-v2:167] [api:tree-v2:168] [example:tree-v2-selectable]",
+          "example": "tree-v2-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:174",
@@ -39248,13 +40154,19 @@
       "category": "api",
       "section": "TreeV2 Slots",
       "title": "default",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 174
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树自定义节点和空内容 [api:tree-v2:174] [api:tree-v2:175] [example:tree-v2-custom-node]",
+          "example": "tree-v2-custom-node"
+        }
+      ]
     },
     {
       "id": "api:tree-v2:175",
@@ -39262,13 +40174,19 @@
       "category": "api",
       "section": "TreeV2 Slots",
       "title": "empty",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree-v2.md",
         "line": 175
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "虚拟树自定义节点和空内容 [api:tree-v2:174] [api:tree-v2:175] [example:tree-v2-custom-node]",
+          "example": "tree-v2-custom-node"
+        }
+      ]
     },
     {
       "id": "api:tree:137",
@@ -39276,13 +40194,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "data",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 137
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "初始层级与当前项按指定键和缩进渲染 [api:tree:137] [api:tree:139] [api:tree:145] [api:tree:144] [api:tree:154] [api:tree:157] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:138",
@@ -39290,13 +40214,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "empty-text",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 138
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "空内容文本和展开图标可替换 [api:tree:138] [api:tree:158] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:139",
@@ -39304,13 +40234,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "node-key",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 139
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "初始层级与当前项按指定键和缩进渲染 [api:tree:137] [api:tree:139] [api:tree:145] [api:tree:144] [api:tree:154] [api:tree:157] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:140",
@@ -39318,13 +40254,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "[props](#props)",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 140
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "字段映射与自定义节点内容可组合 [api:tree:140] [api:tree:143] [example:tree-customized-node]",
+          "example": "tree-customized-node"
+        }
+      ]
     },
     {
       "id": "api:tree:141",
@@ -39332,13 +40274,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "render-after-expand",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 141
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "同级手风琴展开，首次展开后保留隐藏子树 [api:tree:156] [api:tree:146] [api:tree:141] [example:tree-accordion]",
+          "example": "tree-accordion"
+        }
+      ]
     },
     {
       "id": "api:tree:142",
@@ -39346,13 +40294,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "load",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 142
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "懒加载拒绝后可重试，重复响应与卸载后结果失效 [api:tree:159] [api:tree:142] [example:tree-multiple-times-load]",
+          "example": "tree-multiple-times-load"
+        }
+      ]
     },
     {
       "id": "api:tree:143",
@@ -39360,13 +40314,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "render-content",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 143
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "字段映射与自定义节点内容可组合 [api:tree:140] [api:tree:143] [example:tree-customized-node]",
+          "example": "tree-customized-node"
+        }
+      ]
     },
     {
       "id": "api:tree:144",
@@ -39374,13 +40334,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "highlight-current",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 144
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "初始层级与当前项按指定键和缩进渲染 [api:tree:137] [api:tree:139] [api:tree:145] [api:tree:144] [api:tree:154] [api:tree:157] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:145",
@@ -39388,13 +40354,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "default-expand-all",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 145
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "初始层级与当前项按指定键和缩进渲染 [api:tree:137] [api:tree:139] [api:tree:145] [api:tree:144] [api:tree:154] [api:tree:157] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:146",
@@ -39402,13 +40374,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "expand-on-click-node",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 146
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "同级手风琴展开，首次展开后保留隐藏子树 [api:tree:156] [api:tree:146] [api:tree:141] [example:tree-accordion]",
+          "example": "tree-accordion"
+        }
+      ]
     },
     {
       "id": "api:tree:147",
@@ -39416,13 +40394,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "check-on-click-node",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 147
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "严格模式勾选独立，节点与叶节点点击策略可以分别关闭 [api:tree:152] [api:tree:147] [api:tree:148] [example:tree-selectable]",
+          "example": "tree-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree:148",
@@ -39430,13 +40414,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "check-on-click-leaf",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 148
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "严格模式勾选独立，节点与叶节点点击策略可以分别关闭 [api:tree:152] [api:tree:147] [api:tree:148] [example:tree-selectable]",
+          "example": "tree-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree:149",
@@ -39444,13 +40434,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "auto-expand-parent",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 149
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "默认展开目标祖先并计算父级半选状态 [api:tree:151] [api:tree:153] [api:tree:150] [api:tree:149] [example:tree-default-state]",
+          "example": "tree-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree:150",
@@ -39458,13 +40454,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "default-expanded-keys",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 150
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "默认展开目标祖先并计算父级半选状态 [api:tree:151] [api:tree:153] [api:tree:150] [api:tree:149] [example:tree-default-state]",
+          "example": "tree-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree:151",
@@ -39472,13 +40474,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "show-checkbox",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 151
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "默认展开目标祖先并计算父级半选状态 [api:tree:151] [api:tree:153] [api:tree:150] [api:tree:149] [example:tree-default-state]",
+          "example": "tree-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree:152",
@@ -39486,13 +40494,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "check-strictly",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 152
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "严格模式勾选独立，节点与叶节点点击策略可以分别关闭 [api:tree:152] [api:tree:147] [api:tree:148] [example:tree-selectable]",
+          "example": "tree-selectable"
+        }
+      ]
     },
     {
       "id": "api:tree:153",
@@ -39500,13 +40514,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "default-checked-keys",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 153
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "默认展开目标祖先并计算父级半选状态 [api:tree:151] [api:tree:153] [api:tree:150] [api:tree:149] [example:tree-default-state]",
+          "example": "tree-default-state"
+        }
+      ]
     },
     {
       "id": "api:tree:154",
@@ -39514,13 +40534,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "current-node-key",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 154
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "初始层级与当前项按指定键和缩进渲染 [api:tree:137] [api:tree:139] [api:tree:145] [api:tree:144] [api:tree:154] [api:tree:157] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:155",
@@ -39528,13 +40554,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "filter-node-method",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 155
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "过滤保留匹配节点祖先并展开命中路径 [api:tree:155] [example:tree-filtering]",
+          "example": "tree-filtering"
+        }
+      ]
     },
     {
       "id": "api:tree:156",
@@ -39542,13 +40574,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "accordion",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 156
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "同级手风琴展开，首次展开后保留隐藏子树 [api:tree:156] [api:tree:146] [api:tree:141] [example:tree-accordion]",
+          "example": "tree-accordion"
+        }
+      ]
     },
     {
       "id": "api:tree:157",
@@ -39556,13 +40594,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "indent",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 157
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "初始层级与当前项按指定键和缩进渲染 [api:tree:137] [api:tree:139] [api:tree:145] [api:tree:144] [api:tree:154] [api:tree:157] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:158",
@@ -39570,13 +40614,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "icon",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 158
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "空内容文本和展开图标可替换 [api:tree:138] [api:tree:158] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:159",
@@ -39584,13 +40634,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "lazy",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 159
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "懒加载拒绝后可重试，重复响应与卸载后结果失效 [api:tree:159] [api:tree:142] [example:tree-multiple-times-load]",
+          "example": "tree-multiple-times-load"
+        }
+      ]
     },
     {
       "id": "api:tree:160",
@@ -39598,13 +40654,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "draggable",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 160
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "拖拽约束阻止禁用源和将父节点放入自己的后代 [api:tree:160] [api:tree:161] [api:tree:162] [example:tree-draggable]",
+          "example": "tree-draggable"
+        }
+      ]
     },
     {
       "id": "api:tree:161",
@@ -39612,13 +40674,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "allow-drag",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 161
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "拖拽约束阻止禁用源和将父节点放入自己的后代 [api:tree:160] [api:tree:161] [api:tree:162] [example:tree-draggable]",
+          "example": "tree-draggable"
+        }
+      ]
     },
     {
       "id": "api:tree:162",
@@ -39626,13 +40694,19 @@
       "category": "api",
       "section": "Attributes",
       "title": "allow-drop",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 162
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "拖拽约束阻止禁用源和将父节点放入自己的后代 [api:tree:160] [api:tree:161] [api:tree:162] [example:tree-draggable]",
+          "example": "tree-draggable"
+        }
+      ]
     },
     {
       "id": "api:tree:168",
@@ -39640,13 +40714,19 @@
       "category": "api",
       "section": "props",
       "title": "label",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 168
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "节点字段回调读取层级并生成自定义类名 [api:tree:168] [api:tree:169] [api:tree:172] [example:tree-custom-node-class]",
+          "example": "tree-custom-node-class"
+        }
+      ]
     },
     {
       "id": "api:tree:169",
@@ -39654,13 +40734,19 @@
       "category": "api",
       "section": "props",
       "title": "children",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 169
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "节点字段回调读取层级并生成自定义类名 [api:tree:168] [api:tree:169] [api:tree:172] [example:tree-custom-node-class]",
+          "example": "tree-custom-node-class"
+        }
+      ]
     },
     {
       "id": "api:tree:170",
@@ -39668,13 +40754,19 @@
       "category": "api",
       "section": "props",
       "title": "disabled",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 170
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "级联勾选跳过禁用子项且不修改输入数据 [api:tree:170] [example:tree-disabled]",
+          "example": "tree-disabled"
+        }
+      ]
     },
     {
       "id": "api:tree:171",
@@ -39682,13 +40774,19 @@
       "category": "api",
       "section": "props",
       "title": "isLeaf",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 171
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "显式叶节点不调用加载器，根节点可异步获取 [api:tree:171] [example:tree-custom-leaf]",
+          "example": "tree-custom-leaf"
+        }
+      ]
     },
     {
       "id": "api:tree:172",
@@ -39696,13 +40794,19 @@
       "category": "api",
       "section": "props",
       "title": "class",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 172
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "节点字段回调读取层级并生成自定义类名 [api:tree:168] [api:tree:169] [api:tree:172] [example:tree-custom-node-class]",
+          "example": "tree-custom-node-class"
+        }
+      ]
     },
     {
       "id": "api:tree:180",
@@ -39710,13 +40814,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "filter",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 180
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "清空过滤恢复原有展开状态 [api:tree:180] [example:tree-filtering]",
+          "example": "tree-filtering"
+        }
+      ]
     },
     {
       "id": "api:tree:181",
@@ -39724,13 +40834,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "updateKeyChildren",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 181
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "节点增删插入和子树替换不修改外部数据 [api:tree:181] [api:tree:194] [api:tree:195] [api:tree:196] [api:tree:197] [example:tree-customized-node]",
+          "example": "tree-customized-node"
+        }
+      ]
     },
     {
       "id": "api:tree:182",
@@ -39738,13 +40854,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "getCheckedNodes",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 182
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "实例支持按键或数据勾选并查询完整半选与叶节点 [api:tree:182] [api:tree:183] [api:tree:184] [api:tree:185] [api:tree:186] [api:tree:187] [api:tree:188] [example:tree-checking-tree]",
+          "example": "tree-checking-tree"
+        }
+      ]
     },
     {
       "id": "api:tree:183",
@@ -39752,13 +40874,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "setCheckedNodes",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 183
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "实例支持按键或数据勾选并查询完整半选与叶节点 [api:tree:182] [api:tree:183] [api:tree:184] [api:tree:185] [api:tree:186] [api:tree:187] [api:tree:188] [example:tree-checking-tree]",
+          "example": "tree-checking-tree"
+        }
+      ]
     },
     {
       "id": "api:tree:184",
@@ -39766,13 +40894,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "getCheckedKeys",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 184
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "实例支持按键或数据勾选并查询完整半选与叶节点 [api:tree:182] [api:tree:183] [api:tree:184] [api:tree:185] [api:tree:186] [api:tree:187] [api:tree:188] [example:tree-checking-tree]",
+          "example": "tree-checking-tree"
+        }
+      ]
     },
     {
       "id": "api:tree:185",
@@ -39780,13 +40914,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "setCheckedKeys",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 185
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "实例支持按键或数据勾选并查询完整半选与叶节点 [api:tree:182] [api:tree:183] [api:tree:184] [api:tree:185] [api:tree:186] [api:tree:187] [api:tree:188] [example:tree-checking-tree]",
+          "example": "tree-checking-tree"
+        }
+      ]
     },
     {
       "id": "api:tree:186",
@@ -39794,13 +40934,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "setChecked",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 186
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "实例支持按键或数据勾选并查询完整半选与叶节点 [api:tree:182] [api:tree:183] [api:tree:184] [api:tree:185] [api:tree:186] [api:tree:187] [api:tree:188] [example:tree-checking-tree]",
+          "example": "tree-checking-tree"
+        }
+      ]
     },
     {
       "id": "api:tree:187",
@@ -39808,13 +40954,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "getHalfCheckedNodes",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 187
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "实例支持按键或数据勾选并查询完整半选与叶节点 [api:tree:182] [api:tree:183] [api:tree:184] [api:tree:185] [api:tree:186] [api:tree:187] [api:tree:188] [example:tree-checking-tree]",
+          "example": "tree-checking-tree"
+        }
+      ]
     },
     {
       "id": "api:tree:188",
@@ -39822,13 +40974,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "getHalfCheckedKeys",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 188
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "实例支持按键或数据勾选并查询完整半选与叶节点 [api:tree:182] [api:tree:183] [api:tree:184] [api:tree:185] [api:tree:186] [api:tree:187] [api:tree:188] [example:tree-checking-tree]",
+          "example": "tree-checking-tree"
+        }
+      ]
     },
     {
       "id": "api:tree:189",
@@ -39836,13 +40994,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "getCurrentKey",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 189
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "当前节点方法按键和原始数据读取，未知键清除当前项 [api:tree:189] [api:tree:190] [api:tree:191] [api:tree:192] [api:tree:193] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:190",
@@ -39850,13 +41014,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "getCurrentNode",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 190
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "当前节点方法按键和原始数据读取，未知键清除当前项 [api:tree:189] [api:tree:190] [api:tree:191] [api:tree:192] [api:tree:193] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:191",
@@ -39864,13 +41034,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "setCurrentKey",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 191
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "当前节点方法按键和原始数据读取，未知键清除当前项 [api:tree:189] [api:tree:190] [api:tree:191] [api:tree:192] [api:tree:193] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:192",
@@ -39878,13 +41054,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "setCurrentNode",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 192
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "当前节点方法按键和原始数据读取，未知键清除当前项 [api:tree:189] [api:tree:190] [api:tree:191] [api:tree:192] [api:tree:193] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:193",
@@ -39892,13 +41074,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "getNode",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 193
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "当前节点方法按键和原始数据读取，未知键清除当前项 [api:tree:189] [api:tree:190] [api:tree:191] [api:tree:192] [api:tree:193] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:194",
@@ -39906,13 +41094,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "remove",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 194
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "节点增删插入和子树替换不修改外部数据 [api:tree:181] [api:tree:194] [api:tree:195] [api:tree:196] [api:tree:197] [example:tree-customized-node]",
+          "example": "tree-customized-node"
+        }
+      ]
     },
     {
       "id": "api:tree:195",
@@ -39920,13 +41114,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "append",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 195
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "节点增删插入和子树替换不修改外部数据 [api:tree:181] [api:tree:194] [api:tree:195] [api:tree:196] [api:tree:197] [example:tree-customized-node]",
+          "example": "tree-customized-node"
+        }
+      ]
     },
     {
       "id": "api:tree:196",
@@ -39934,13 +41134,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "insertBefore",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 196
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "节点增删插入和子树替换不修改外部数据 [api:tree:181] [api:tree:194] [api:tree:195] [api:tree:196] [api:tree:197] [example:tree-customized-node]",
+          "example": "tree-customized-node"
+        }
+      ]
     },
     {
       "id": "api:tree:197",
@@ -39948,13 +41154,19 @@
       "category": "api",
       "section": "Exposes",
       "title": "insertAfter",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 197
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "节点增删插入和子树替换不修改外部数据 [api:tree:181] [api:tree:194] [api:tree:195] [api:tree:196] [api:tree:197] [example:tree-customized-node]",
+          "example": "tree-customized-node"
+        }
+      ]
     },
     {
       "id": "api:tree:203",
@@ -39962,13 +41174,19 @@
       "category": "api",
       "section": "Events",
       "title": "node-click",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 203
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "节点激活右键和展开事件分别通知 [api:tree:203] [api:tree:204] [api:tree:207] [api:tree:208] [api:tree:209] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:204",
@@ -39976,13 +41194,19 @@
       "category": "api",
       "section": "Events",
       "title": "node-contextmenu",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 204
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "节点激活右键和展开事件分别通知 [api:tree:203] [api:tree:204] [api:tree:207] [api:tree:208] [api:tree:209] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:205",
@@ -39990,13 +41214,19 @@
       "category": "api",
       "section": "Events",
       "title": "check-change",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 205
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "勾选事件区分用户动作和父级级联变化并包含半选结果 [api:tree:206] [api:tree:205] [example:tree-checking-tree]",
+          "example": "tree-checking-tree"
+        }
+      ]
     },
     {
       "id": "api:tree:206",
@@ -40004,13 +41234,19 @@
       "category": "api",
       "section": "Events",
       "title": "check",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 206
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "勾选事件区分用户动作和父级级联变化并包含半选结果 [api:tree:206] [api:tree:205] [example:tree-checking-tree]",
+          "example": "tree-checking-tree"
+        }
+      ]
     },
     {
       "id": "api:tree:207",
@@ -40018,13 +41254,19 @@
       "category": "api",
       "section": "Events",
       "title": "current-change",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 207
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "节点激活右键和展开事件分别通知 [api:tree:203] [api:tree:204] [api:tree:207] [api:tree:208] [api:tree:209] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:208",
@@ -40032,13 +41274,19 @@
       "category": "api",
       "section": "Events",
       "title": "node-expand",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 208
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "节点激活右键和展开事件分别通知 [api:tree:203] [api:tree:204] [api:tree:207] [api:tree:208] [api:tree:209] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:209",
@@ -40046,13 +41294,19 @@
       "category": "api",
       "section": "Events",
       "title": "node-collapse",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 209
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "节点激活右键和展开事件分别通知 [api:tree:203] [api:tree:204] [api:tree:207] [api:tree:208] [api:tree:209] [example:tree-basic]",
+          "example": "tree-basic"
+        }
+      ]
     },
     {
       "id": "api:tree:210",
@@ -40060,13 +41314,19 @@
       "category": "api",
       "section": "Events",
       "title": "node-drag-start",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 210
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "拖放在结束时提交并按来源顺序发出结束和放置事件 [api:tree:210] [api:tree:211] [api:tree:212] [api:tree:213] [api:tree:214] [api:tree:215] [example:tree-draggable]",
+          "example": "tree-draggable"
+        }
+      ]
     },
     {
       "id": "api:tree:211",
@@ -40074,13 +41334,19 @@
       "category": "api",
       "section": "Events",
       "title": "node-drag-enter",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 211
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "拖放在结束时提交并按来源顺序发出结束和放置事件 [api:tree:210] [api:tree:211] [api:tree:212] [api:tree:213] [api:tree:214] [api:tree:215] [example:tree-draggable]",
+          "example": "tree-draggable"
+        }
+      ]
     },
     {
       "id": "api:tree:212",
@@ -40088,13 +41354,19 @@
       "category": "api",
       "section": "Events",
       "title": "node-drag-leave",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 212
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "拖放在结束时提交并按来源顺序发出结束和放置事件 [api:tree:210] [api:tree:211] [api:tree:212] [api:tree:213] [api:tree:214] [api:tree:215] [example:tree-draggable]",
+          "example": "tree-draggable"
+        }
+      ]
     },
     {
       "id": "api:tree:213",
@@ -40102,13 +41374,19 @@
       "category": "api",
       "section": "Events",
       "title": "node-drag-over",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 213
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "拖放在结束时提交并按来源顺序发出结束和放置事件 [api:tree:210] [api:tree:211] [api:tree:212] [api:tree:213] [api:tree:214] [api:tree:215] [example:tree-draggable]",
+          "example": "tree-draggable"
+        }
+      ]
     },
     {
       "id": "api:tree:214",
@@ -40116,13 +41394,19 @@
       "category": "api",
       "section": "Events",
       "title": "node-drag-end",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 214
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "拖放在结束时提交并按来源顺序发出结束和放置事件 [api:tree:210] [api:tree:211] [api:tree:212] [api:tree:213] [api:tree:214] [api:tree:215] [example:tree-draggable]",
+          "example": "tree-draggable"
+        }
+      ]
     },
     {
       "id": "api:tree:215",
@@ -40130,13 +41414,19 @@
       "category": "api",
       "section": "Events",
       "title": "node-drop",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 215
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "拖放在结束时提交并按来源顺序发出结束和放置事件 [api:tree:210] [api:tree:211] [api:tree:212] [api:tree:213] [api:tree:214] [api:tree:215] [example:tree-draggable]",
+          "example": "tree-draggable"
+        }
+      ]
     },
     {
       "id": "api:tree:221",
@@ -40144,13 +41434,19 @@
       "category": "api",
       "section": "Slots",
       "title": "default",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 221
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "节点内容及空内容插槽 [api:tree:221] [api:tree:222] [example:tree-customized-node]",
+          "example": "tree-customized-node"
+        }
+      ]
     },
     {
       "id": "api:tree:222",
@@ -40158,13 +41454,19 @@
       "category": "api",
       "section": "Slots",
       "title": "empty",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/en-US/component/tree.md",
         "line": 222
       },
-      "implementation": null,
-      "evidence": []
+      "implementation": "packages/components/tree/index.tsx",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "节点内容及空内容插槽 [api:tree:221] [api:tree:222] [example:tree-customized-node]",
+          "example": "tree-customized-node"
+        }
+      ]
     },
     {
       "id": "api:upload:108",
@@ -50349,220 +51651,269 @@
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/basic-usage",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/basic-usage.vue"
       },
-      "evidence": []
+      "evidence": [
+        "万选项仅渲染窗口且受控值等待父级回写 [api:select-v2:240] [api:select-v2:241] [api:select-v2:274] [api:select-v2:275] [api:select-v2:277] [api:select-v2:272] [example:select-v2-basic-usage]",
+        "公开实例沿用Select聚焦与当前标签 [api:select-v2:371] [api:select-v2:372] [api:select-v2:373] [example:select-v2-basic-usage]",
+        "方向键定位未挂载末项并可按Enter提交 [feature:select-v2/keyboard-window] [example:select-v2-basic-usage]",
+        "虚拟选择器空状态继承全局语言 [feature:select-v2/locale-empty] [example:select-v2-basic-usage]",
+        "自动聚焦展开和自定义后缀图标 [api:select-v2:271] [api:select-v2:273] [example:select-v2-basic-usage]",
+        "关闭校验通知后选择不触发表单change [api:select-v2:282] [example:select-v2-basic-usage]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/multiple",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/multiple",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/multiple.vue"
       },
-      "evidence": []
+      "evidence": [
+        "虚拟列表已选项再次点击可以取消选择 [feature:select-v2/multi-toggle] [example:select-v2-multiple]",
+        "窗口边界和选择器交互分别发出回调 [api:select-v2:346] [api:select-v2:347] [api:select-v2:348] [api:select-v2:349] [api:select-v2:350] [api:select-v2:351] [api:select-v2:352] [example:select-v2-multiple]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/size",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/size",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/size.vue"
       },
-      "evidence": []
+      "evidence": [
+        "尺寸原生输入属性和主题传递到选择器 [api:select-v2:246] [api:select-v2:251] [api:select-v2:252] [api:select-v2:254] [api:select-v2:255] [api:select-v2:253] [api:select-v2:292] [api:select-v2:296] [example:select-v2-size]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/hide-extra-tags",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/hide-extra-tags",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/hide-extra-tags.vue"
       },
-      "evidence": []
+      "evidence": [
+        "多选数量限制与标签折叠沿用Select行为 [api:select-v2:243] [api:select-v2:250] [api:select-v2:249] [api:select-v2:287] [api:select-v2:289] [example:select-v2-hide-extra-tags]",
+        "折叠标签提示配置传递至共享Tooltip [api:select-v2:288] [api:select-v2:290] [api:select-v2:291] [example:select-v2-hide-extra-tags]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/filterable",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/filterable",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/filterable.vue"
       },
-      "evidence": []
+      "evidence": [
+        "过滤后重置窗口并显示无匹配提示 [api:select-v2:256] [api:select-v2:258] [api:select-v2:263] [api:select-v2:264] [example:select-v2-filterable]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/disabled",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/disabled",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/disabled.vue"
       },
-      "evidence": []
+      "evidence": [
+        "禁用选择器不展开选项 [api:select-v2:244] [example:select-v2-disabled]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/grouping",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/grouping",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/grouping.vue"
       },
-      "evidence": []
+      "evidence": [
+        "分组标题和禁用组选项保留在虚拟行模型中 [api:select-v2:302] [api:select-v2:303] [api:select-v2:304] [api:select-v2:305] [example:select-v2-grouping]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/clearable",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/clearable",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/clearable.vue"
       },
-      "evidence": []
+      "evidence": [
+        "数字0可正确回显并清空 [feature:select-v2/clear-number] [example:select-v2-clearable]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/customized-option",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/customized-option",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/customized-option.vue"
       },
-      "evidence": []
+      "evidence": [
+        "自定义选项接收保留额外字段的原始对象 [api:select-v2:358] [example:select-v2-customized-option]",
+        "动态高度测量更新后续行的位置 [api:select-v2:276] [example:select-v2-customized-option]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/custom-header",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/custom-header",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/custom-header.vue"
       },
-      "evidence": []
+      "evidence": [
+        "自定义头部保留在虚拟窗口之外 [api:select-v2:359] [example:select-v2-custom-header]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/custom-footer",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/custom-footer",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/custom-footer.vue"
       },
-      "evidence": []
+      "evidence": [
+        "自定义底部保留在虚拟窗口之外 [api:select-v2:360] [example:select-v2-custom-footer]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/allow-create",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/allow-create",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/allow-create.vue"
       },
-      "evidence": []
+      "evidence": [
+        "创建未匹配选项后清理查询文本 [api:select-v2:257] [api:select-v2:262] [api:select-v2:261] [example:select-v2-allow-create]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/remote-search",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/remote-search",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/remote-search.vue"
       },
-      "evidence": []
+      "evidence": [
+        "远程结果异步进入同一虚拟窗口 [api:select-v2:278] [api:select-v2:280] [api:select-v2:279] [example:select-v2-remote-search]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/use-valueKey",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/use-valueKey",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/use-valueKey.vue"
       },
-      "evidence": []
+      "evidence": [
+        "对象值使用valueKey保持跨实例回显 [api:select-v2:245] [example:select-v2-use-valueKey]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/props",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/props",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/props.vue"
       },
-      "evidence": []
+      "evidence": [
+        "字段别名用于虚拟选项显示 [api:select-v2:242] [example:select-v2-props]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/custom-tag",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/custom-tag",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/custom-tag.vue"
       },
-      "evidence": []
+      "evidence": [
+        "标签前缀和空状态插槽可独立覆盖 [api:select-v2:363] [api:select-v2:362] [api:select-v2:361] [example:select-v2-custom-tag]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/custom-loading",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/custom-loading",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/custom-loading.vue"
       },
-      "evidence": []
+      "evidence": [
+        "加载状态优先于虚拟选项并显示加载提示 [api:select-v2:259] [api:select-v2:260] [api:select-v2:281] [example:select-v2-custom-loading]",
+        "加载插槽覆盖默认加载提示 [api:select-v2:364] [example:select-v2-custom-loading]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/empty-values",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/empty-values",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/empty-values.vue"
       },
-      "evidence": []
+      "evidence": [
+        "空字符串可作为有效值，自定义清空值和图标 [api:select-v2:247] [api:select-v2:248] [api:select-v2:293] [api:select-v2:294] [example:select-v2-empty-values]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/custom-label",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/custom-label",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/custom-label.vue"
       },
-      "evidence": []
+      "evidence": [
+        "选中标签内容可定制 [api:select-v2:365] [example:select-v2-custom-label]"
+      ]
     },
     {
       "id": "source-example:select-v2:select-v2/custom-width",
       "component": "select-v2",
       "category": "source-example",
       "title": "select-v2/custom-width",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/select-v2/custom-width.vue"
       },
-      "evidence": []
+      "evidence": [
+        "自定义浮层宽度位置挂载及销毁 [api:select-v2:265] [api:select-v2:266] [api:select-v2:267] [api:select-v2:268] [api:select-v2:269] [api:select-v2:283] [api:select-v2:284] [api:select-v2:285] [api:select-v2:286] [example:select-v2-custom-width]"
+      ]
     },
     {
       "id": "scenario:select:16",
@@ -54916,88 +56267,108 @@
       "component": "tree-select",
       "category": "source-example",
       "title": "tree-select/basic",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree-select/basic.vue"
       },
-      "evidence": []
+      "evidence": [
+        "默认只选择叶节点并通过Select统一提交值与change [api:tree-select:128] [api:tree-select:129] [example:tree-select-basic]",
+        "公开组合实例与聚焦失焦和标签读数 [api:tree-select:147] [api:tree-select:148] [api:tree-select:167] [api:tree-select:168] [api:tree-select:169] [example:tree-select-basic]",
+        "键盘打开后聚焦树，Enter选择叶节点，Escape恢复输入焦点 [feature:tree-select/keyboard-selection] [example:tree-select-basic]"
+      ]
     },
     {
       "id": "source-example:tree-select:tree-select/check-strictly",
       "component": "tree-select",
       "category": "source-example",
       "title": "tree-select/check-strictly",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree-select/check-strictly.vue"
       },
-      "evidence": []
+      "evidence": [
+        "严格模式允许选择父节点且不同时展开分支 [feature:tree-select/strict-level] [example:tree-select-check-strictly]"
+      ]
     },
     {
       "id": "source-example:tree-select:tree-select/multiple",
       "component": "tree-select",
       "category": "source-example",
       "title": "tree-select/multiple",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree-select/multiple.vue"
       },
-      "evidence": []
+      "evidence": [
+        "非严格多选只提交叶节点，标签移除同步树勾选 [feature:tree-select/multiple-checks] [example:tree-select-multiple]",
+        "原勾选实例方法委托到同一Tree实例 [api:tree-select:151] [api:tree-select:152] [api:tree-select:153] [api:tree-select:154] [api:tree-select:155] [api:tree-select:156] [api:tree-select:157] [example:tree-select-multiple]"
+      ]
     },
     {
       "id": "source-example:tree-select:tree-select/disabled",
       "component": "tree-select",
       "category": "source-example",
       "title": "tree-select/disabled",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree-select/disabled.vue"
       },
-      "evidence": []
+      "evidence": [
+        "禁用节点不能选择或勾选 [feature:tree-select/disabled-options] [example:tree-select-disabled]"
+      ]
     },
     {
       "id": "source-example:tree-select:tree-select/filterable",
       "component": "tree-select",
       "category": "source-example",
       "title": "tree-select/filterable",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree-select/filterable.vue"
       },
-      "evidence": []
+      "evidence": [
+        "输入过滤保留匹配叶节点与祖先 [feature:tree-select/filter-tree] [example:tree-select-filterable]"
+      ]
     },
     {
       "id": "source-example:tree-select:tree-select/slots",
       "component": "tree-select",
       "category": "source-example",
       "title": "tree-select/slots",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree-select/slots.vue"
       },
-      "evidence": []
+      "evidence": [
+        "树节点可渲染自定义内容 [feature:tree-select/custom-content] [example:tree-select-slots]"
+      ]
     },
     {
       "id": "source-example:tree-select:tree-select/lazy",
       "component": "tree-select",
       "category": "source-example",
       "title": "tree-select/lazy",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree-select/lazy.vue"
       },
-      "evidence": []
+      "evidence": [
+        "懒加载前使用缓存标签，加载后的选择记住真实叶节点标签 [api:tree-select:135] [example:tree-select-lazy]"
+      ]
     },
     {
       "id": "source-example:tree-select:tree-select/node-key",
       "component": "tree-select",
       "category": "source-example",
       "title": "tree-select/node-key",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree-select/node-key.vue"
       },
-      "evidence": []
+      "evidence": [
+        "自定义nodeKey支持数字0并保持标量值 [feature:tree-select/numeric-key] [example:tree-select-node-key]",
+        "旧树实例方法委托节点查询、过滤和不可变编辑 [api:tree-select:149] [api:tree-select:150] [api:tree-select:158] [api:tree-select:159] [api:tree-select:160] [api:tree-select:161] [api:tree-select:162] [api:tree-select:163] [api:tree-select:164] [api:tree-select:165] [api:tree-select:166] [example:tree-select-node-key]"
+      ]
     },
     {
       "id": "scenario:tree-v2:10",
@@ -55100,88 +56471,110 @@
       "component": "tree-v2",
       "category": "source-example",
       "title": "tree-v2/basic",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree-v2/basic.vue"
       },
-      "evidence": []
+      "evidence": [
+        "万节点虚拟树只挂载可视窗口，滚动后更新窗口 [api:tree-v2:104] [api:tree-v2:121] [api:tree-v2:119] [api:tree-v2:120] [example:tree-v2-basic]",
+        "按位置和节点策略滚动到未挂载行 [api:tree-v2:154] [api:tree-v2:155] [example:tree-v2-basic]",
+        "外部放置事件接收目标数据节点及原始事件 [api:tree-v2:162] [example:tree-v2-basic]",
+        "窗口之外的节点仍可通过实例读取与勾选 [feature:tree-v2/windowed-model] [example:tree-v2-basic]"
+      ]
     },
     {
       "id": "source-example:tree-v2:tree-v2/selectable",
       "component": "tree-v2",
       "category": "source-example",
       "title": "tree-v2/selectable",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree-v2/selectable.vue"
       },
-      "evidence": []
+      "evidence": [
+        "虚拟树支持严格选择和独立节点点击策略 [api:tree-v2:112] [api:tree-v2:113] [api:tree-v2:109] [api:tree-v2:110] [example:tree-v2-selectable]",
+        "虚拟树的勾选方法查询完整模型而非仅查询挂载DOM [api:tree-v2:139] [api:tree-v2:140] [api:tree-v2:141] [api:tree-v2:142] [api:tree-v2:143] [api:tree-v2:145] [api:tree-v2:146] [example:tree-v2-selectable]",
+        "虚拟树行为事件回传原始节点数据与实时状态 [api:tree-v2:161] [api:tree-v2:163] [api:tree-v2:164] [api:tree-v2:165] [api:tree-v2:166] [api:tree-v2:167] [api:tree-v2:168] [example:tree-v2-selectable]"
+      ]
     },
     {
       "id": "source-example:tree-v2:tree-v2/disabled",
       "component": "tree-v2",
       "category": "source-example",
       "title": "tree-v2/disabled",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree-v2/disabled.vue"
       },
-      "evidence": []
+      "evidence": [
+        "配置映射可指定虚拟树唯一键和禁用字段 [api:tree-v2:106] [example:tree-v2-disabled]"
+      ]
     },
     {
       "id": "source-example:tree-v2:tree-v2/default-state",
       "component": "tree-v2",
       "category": "source-example",
       "title": "tree-v2/default-state",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree-v2/default-state.vue"
       },
-      "evidence": []
+      "evidence": [
+        "默认展开勾选和高亮在虚拟行中保持一致 [api:tree-v2:111] [api:tree-v2:114] [api:tree-v2:115] [api:tree-v2:107] [api:tree-v2:108] [api:tree-v2:117] [example:tree-v2-default-state]",
+        "实例在折叠数据中定位节点并替换完整数据 [api:tree-v2:147] [api:tree-v2:148] [api:tree-v2:149] [api:tree-v2:150] [api:tree-v2:151] [api:tree-v2:152] [api:tree-v2:144] [api:tree-v2:153] [example:tree-v2-default-state]"
+      ]
     },
     {
       "id": "source-example:tree-v2:tree-v2/custom-node",
       "component": "tree-v2",
       "category": "source-example",
       "title": "tree-v2/custom-node",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree-v2/custom-node.vue"
       },
-      "evidence": []
+      "evidence": [
+        "虚拟树自定义节点和空内容 [api:tree-v2:174] [api:tree-v2:175] [example:tree-v2-custom-node]"
+      ]
     },
     {
       "id": "source-example:tree-v2:tree-v2/custom-node-class",
       "component": "tree-v2",
       "category": "source-example",
       "title": "tree-v2/custom-node-class",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree-v2/custom-node-class.vue"
       },
-      "evidence": []
+      "evidence": [
+        "字段映射与节点类名覆盖应用于同一模型 [api:tree-v2:127] [api:tree-v2:128] [api:tree-v2:129] [api:tree-v2:130] [api:tree-v2:131] [example:tree-v2-custom-node-class]"
+      ]
     },
     {
       "id": "source-example:tree-v2:tree-v2/custom-icon",
       "component": "tree-v2",
       "category": "source-example",
       "title": "tree-v2/custom-icon",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree-v2/custom-icon.vue"
       },
-      "evidence": []
+      "evidence": [
+        "虚拟树支持自定义展开图标和空文本 [api:tree-v2:118] [api:tree-v2:105] [example:tree-v2-custom-icon]"
+      ]
     },
     {
       "id": "source-example:tree-v2:tree-v2/filter",
       "component": "tree-v2",
       "category": "source-example",
       "title": "tree-v2/filter",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree-v2/filter.vue"
       },
-      "evidence": []
+      "evidence": [
+        "虚拟树过滤显示匹配节点和祖先 [api:tree-v2:116] [example:tree-v2-filter]"
+      ]
     },
     {
       "id": "scenario:tree:10",
@@ -55332,132 +56725,168 @@
       "component": "tree",
       "category": "source-example",
       "title": "tree/basic",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree/basic.vue"
       },
-      "evidence": []
+      "evidence": [
+        "初始层级与当前项按指定键和缩进渲染 [api:tree:137] [api:tree:139] [api:tree:145] [api:tree:144] [api:tree:154] [api:tree:157] [example:tree-basic]",
+        "当前节点方法按键和原始数据读取，未知键清除当前项 [api:tree:189] [api:tree:190] [api:tree:191] [api:tree:192] [api:tree:193] [example:tree-basic]",
+        "节点激活右键和展开事件分别通知 [api:tree:203] [api:tree:204] [api:tree:207] [api:tree:208] [api:tree:209] [example:tree-basic]",
+        "空内容文本和展开图标可替换 [api:tree:138] [api:tree:158] [example:tree-basic]",
+        "树方向键展开、聚焦子节点并以Space勾选 [feature:tree/keyboard] [example:tree-basic]"
+      ]
     },
     {
       "id": "source-example:tree:tree/selectable",
       "component": "tree",
       "category": "source-example",
       "title": "tree/selectable",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree/selectable.vue"
       },
-      "evidence": []
+      "evidence": [
+        "严格模式勾选独立，节点与叶节点点击策略可以分别关闭 [api:tree:152] [api:tree:147] [api:tree:148] [example:tree-selectable]"
+      ]
     },
     {
       "id": "source-example:tree:tree/custom-leaf",
       "component": "tree",
       "category": "source-example",
       "title": "tree/custom-leaf",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree/custom-leaf.vue"
       },
-      "evidence": []
+      "evidence": [
+        "显式叶节点不调用加载器，根节点可异步获取 [api:tree:171] [example:tree-custom-leaf]"
+      ]
     },
     {
       "id": "source-example:tree:tree/multiple-times-load",
       "component": "tree",
       "category": "source-example",
       "title": "tree/multiple-times-load",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree/multiple-times-load.vue"
       },
-      "evidence": []
+      "evidence": [
+        "懒加载拒绝后可重试，重复响应与卸载后结果失效 [api:tree:159] [api:tree:142] [example:tree-multiple-times-load]",
+        "外部替换数据后清除加载状态并丢弃旧节点回调 [feature:tree/replace-pending-data] [example:tree-multiple-times-load]",
+        "删除后复用相同键的新节点不会接收旧加载回调 [feature:tree/remove-pending-node] [example:tree-multiple-times-load]"
+      ]
     },
     {
       "id": "source-example:tree:tree/disabled",
       "component": "tree",
       "category": "source-example",
       "title": "tree/disabled",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree/disabled.vue"
       },
-      "evidence": []
+      "evidence": [
+        "级联勾选跳过禁用子项且不修改输入数据 [api:tree:170] [example:tree-disabled]"
+      ]
     },
     {
       "id": "source-example:tree:tree/default-state",
       "component": "tree",
       "category": "source-example",
       "title": "tree/default-state",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree/default-state.vue"
       },
-      "evidence": []
+      "evidence": [
+        "默认展开目标祖先并计算父级半选状态 [api:tree:151] [api:tree:153] [api:tree:150] [api:tree:149] [example:tree-default-state]"
+      ]
     },
     {
       "id": "source-example:tree:tree/checking-tree",
       "component": "tree",
       "category": "source-example",
       "title": "tree/checking-tree",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree/checking-tree.vue"
       },
-      "evidence": []
+      "evidence": [
+        "勾选事件区分用户动作和父级级联变化并包含半选结果 [api:tree:206] [api:tree:205] [example:tree-checking-tree]",
+        "实例支持按键或数据勾选并查询完整半选与叶节点 [api:tree:182] [api:tree:183] [api:tree:184] [api:tree:185] [api:tree:186] [api:tree:187] [api:tree:188] [example:tree-checking-tree]"
+      ]
     },
     {
       "id": "source-example:tree:tree/customized-node",
       "component": "tree",
       "category": "source-example",
       "title": "tree/customized-node",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree/customized-node.vue"
       },
-      "evidence": []
+      "evidence": [
+        "字段映射与自定义节点内容可组合 [api:tree:140] [api:tree:143] [example:tree-customized-node]",
+        "节点增删插入和子树替换不修改外部数据 [api:tree:181] [api:tree:194] [api:tree:195] [api:tree:196] [api:tree:197] [example:tree-customized-node]",
+        "节点内容及空内容插槽 [api:tree:221] [api:tree:222] [example:tree-customized-node]",
+        "无node-key树在插入节点后保留原父节点展开状态和身份 [feature:tree/unkeyed-identity] [example:tree-customized-node]"
+      ]
     },
     {
       "id": "source-example:tree:tree/custom-node-class",
       "component": "tree",
       "category": "source-example",
       "title": "tree/custom-node-class",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree/custom-node-class.vue"
       },
-      "evidence": []
+      "evidence": [
+        "节点字段回调读取层级并生成自定义类名 [api:tree:168] [api:tree:169] [api:tree:172] [example:tree-custom-node-class]"
+      ]
     },
     {
       "id": "source-example:tree:tree/filtering",
       "component": "tree",
       "category": "source-example",
       "title": "tree/filtering",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree/filtering.vue"
       },
-      "evidence": []
+      "evidence": [
+        "过滤保留匹配节点祖先并展开命中路径 [api:tree:155] [example:tree-filtering]",
+        "清空过滤恢复原有展开状态 [api:tree:180] [example:tree-filtering]"
+      ]
     },
     {
       "id": "source-example:tree:tree/accordion",
       "component": "tree",
       "category": "source-example",
       "title": "tree/accordion",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree/accordion.vue"
       },
-      "evidence": []
+      "evidence": [
+        "同级手风琴展开，首次展开后保留隐藏子树 [api:tree:156] [api:tree:146] [api:tree:141] [example:tree-accordion]"
+      ]
     },
     {
       "id": "source-example:tree:tree/draggable",
       "component": "tree",
       "category": "source-example",
       "title": "tree/draggable",
-      "status": "pending",
+      "status": "completed",
       "source": {
         "path": "docs/examples/tree/draggable.vue"
       },
-      "evidence": []
+      "evidence": [
+        "拖拽约束阻止禁用源和将父节点放入自己的后代 [api:tree:160] [api:tree:161] [api:tree:162] [example:tree-draggable]",
+        "拖放在结束时提交并按来源顺序发出结束和放置事件 [api:tree:210] [api:tree:211] [api:tree:212] [api:tree:213] [api:tree:214] [api:tree:215] [example:tree-draggable]"
+      ]
     },
     {
       "id": "scenario:typography:10",
@@ -57745,6 +59174,62 @@
       "example": "image-basic"
     },
     {
+      "id": "feature:select-v2/multi-toggle",
+      "component": "select-v2",
+      "category": "react-feature",
+      "title": "虚拟列表已选项再次点击可以取消选择",
+      "status": "completed",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "虚拟列表已选项再次点击可以取消选择 [feature:select-v2/multi-toggle] [example:select-v2-multiple]"
+        }
+      ],
+      "example": "select-v2-multiple"
+    },
+    {
+      "id": "feature:select-v2/clear-number",
+      "component": "select-v2",
+      "category": "react-feature",
+      "title": "数字0可正确回显并清空",
+      "status": "completed",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "数字0可正确回显并清空 [feature:select-v2/clear-number] [example:select-v2-clearable]"
+        }
+      ],
+      "example": "select-v2-clearable"
+    },
+    {
+      "id": "feature:select-v2/keyboard-window",
+      "component": "select-v2",
+      "category": "react-feature",
+      "title": "方向键定位未挂载末项并可按Enter提交",
+      "status": "completed",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "方向键定位未挂载末项并可按Enter提交 [feature:select-v2/keyboard-window] [example:select-v2-basic-usage]"
+        }
+      ],
+      "example": "select-v2-basic-usage"
+    },
+    {
+      "id": "feature:select-v2/locale-empty",
+      "component": "select-v2",
+      "category": "react-feature",
+      "title": "虚拟选择器空状态继承全局语言",
+      "status": "completed",
+      "evidence": [
+        {
+          "file": "tests/select-v2.test.tsx",
+          "title": "虚拟选择器空状态继承全局语言 [feature:select-v2/locale-empty] [example:select-v2-basic-usage]"
+        }
+      ],
+      "example": "select-v2-basic-usage"
+    },
+    {
       "id": "feature:select/keyboard-loop",
       "component": "select",
       "category": "react-feature",
@@ -57869,6 +59354,174 @@
         }
       ],
       "example": "transfer-basic"
+    },
+    {
+      "id": "feature:tree-select/strict-level",
+      "component": "tree-select",
+      "category": "react-feature",
+      "title": "严格模式允许选择父节点且不同时展开分支",
+      "status": "completed",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "严格模式允许选择父节点且不同时展开分支 [feature:tree-select/strict-level] [example:tree-select-check-strictly]"
+        }
+      ],
+      "example": "tree-select-check-strictly"
+    },
+    {
+      "id": "feature:tree-select/multiple-checks",
+      "component": "tree-select",
+      "category": "react-feature",
+      "title": "非严格多选只提交叶节点，标签移除同步树勾选",
+      "status": "completed",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "非严格多选只提交叶节点，标签移除同步树勾选 [feature:tree-select/multiple-checks] [example:tree-select-multiple]"
+        }
+      ],
+      "example": "tree-select-multiple"
+    },
+    {
+      "id": "feature:tree-select/disabled-options",
+      "component": "tree-select",
+      "category": "react-feature",
+      "title": "禁用节点不能选择或勾选",
+      "status": "completed",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "禁用节点不能选择或勾选 [feature:tree-select/disabled-options] [example:tree-select-disabled]"
+        }
+      ],
+      "example": "tree-select-disabled"
+    },
+    {
+      "id": "feature:tree-select/filter-tree",
+      "component": "tree-select",
+      "category": "react-feature",
+      "title": "输入过滤保留匹配叶节点与祖先",
+      "status": "completed",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "输入过滤保留匹配叶节点与祖先 [feature:tree-select/filter-tree] [example:tree-select-filterable]"
+        }
+      ],
+      "example": "tree-select-filterable"
+    },
+    {
+      "id": "feature:tree-select/custom-content",
+      "component": "tree-select",
+      "category": "react-feature",
+      "title": "树节点可渲染自定义内容",
+      "status": "completed",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "树节点可渲染自定义内容 [feature:tree-select/custom-content] [example:tree-select-slots]"
+        }
+      ],
+      "example": "tree-select-slots"
+    },
+    {
+      "id": "feature:tree-select/numeric-key",
+      "component": "tree-select",
+      "category": "react-feature",
+      "title": "自定义nodeKey支持数字0并保持标量值",
+      "status": "completed",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "自定义nodeKey支持数字0并保持标量值 [feature:tree-select/numeric-key] [example:tree-select-node-key]"
+        }
+      ],
+      "example": "tree-select-node-key"
+    },
+    {
+      "id": "feature:tree-select/keyboard-selection",
+      "component": "tree-select",
+      "category": "react-feature",
+      "title": "键盘打开后聚焦树，Enter选择叶节点，Escape恢复输入焦点",
+      "status": "completed",
+      "evidence": [
+        {
+          "file": "tests/tree-select.test.tsx",
+          "title": "键盘打开后聚焦树，Enter选择叶节点，Escape恢复输入焦点 [feature:tree-select/keyboard-selection] [example:tree-select-basic]"
+        }
+      ],
+      "example": "tree-select-basic"
+    },
+    {
+      "id": "feature:tree-v2/windowed-model",
+      "component": "tree-v2",
+      "category": "react-feature",
+      "title": "窗口之外的节点仍可通过实例读取与勾选",
+      "status": "completed",
+      "evidence": [
+        {
+          "file": "tests/tree-v2.test.tsx",
+          "title": "窗口之外的节点仍可通过实例读取与勾选 [feature:tree-v2/windowed-model] [example:tree-v2-basic]"
+        }
+      ],
+      "example": "tree-v2-basic"
+    },
+    {
+      "id": "feature:tree/keyboard",
+      "component": "tree",
+      "category": "react-feature",
+      "title": "树方向键展开、聚焦子节点并以Space勾选",
+      "status": "completed",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "树方向键展开、聚焦子节点并以Space勾选 [feature:tree/keyboard] [example:tree-basic]"
+        }
+      ],
+      "example": "tree-basic"
+    },
+    {
+      "id": "feature:tree/unkeyed-identity",
+      "component": "tree",
+      "category": "react-feature",
+      "title": "无node-key树在插入节点后保留原父节点展开状态和身份",
+      "status": "completed",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "无node-key树在插入节点后保留原父节点展开状态和身份 [feature:tree/unkeyed-identity] [example:tree-customized-node]"
+        }
+      ],
+      "example": "tree-customized-node"
+    },
+    {
+      "id": "feature:tree/replace-pending-data",
+      "component": "tree",
+      "category": "react-feature",
+      "title": "外部替换数据后清除加载状态并丢弃旧节点回调",
+      "status": "completed",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "外部替换数据后清除加载状态并丢弃旧节点回调 [feature:tree/replace-pending-data] [example:tree-multiple-times-load]"
+        }
+      ],
+      "example": "tree-multiple-times-load"
+    },
+    {
+      "id": "feature:tree/remove-pending-node",
+      "component": "tree",
+      "category": "react-feature",
+      "title": "删除后复用相同键的新节点不会接收旧加载回调",
+      "status": "completed",
+      "evidence": [
+        {
+          "file": "tests/tree.test.tsx",
+          "title": "删除后复用相同键的新节点不会接收旧加载回调 [feature:tree/remove-pending-node] [example:tree-multiple-times-load]"
+        }
+      ],
+      "example": "tree-multiple-times-load"
     },
     {
       "id": "feature:upload/pending-unmount",

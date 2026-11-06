@@ -1,7 +1,8 @@
-总体目标：全部Element Plus固定基线组件、官方场景及599原始示例迁移为React，并完成双语文档。仍在执行，不能宣称全部完成。
+总体目标：完成全部Element Plus固定基线组件、官方场景和599原始示例的React迁移，完成双语文档。持续执行，未完成。
 
-已完成并验证：工具链Vite8.3.6/React插件6.2.1/TS6.0.3；TSX高亮、两处收起、复制；中英文文档导航及语言记忆（全文翻译未完成）；Slider、Autocomplete、Splitter、Menu家族、Dropdown家族、Upload。
-当前验证范围：64组件主题、128可运行示例、1286/2394来源API；467项全量单测通过；生产库已构建。文档Sass样式同名模块冲突已修复，正在重跑测试及文档构建。浏览器上一checkpoint 5项测试通过，使用独立4173端口。
+最新有效checkpoint（2026-11-06）：68组件主题、176可运行示例、1503/2394已验证API；546项全量单测、5项浏览器测试、typecheck、lint、format、组件库ES/CJS/声明/主题构建和文档生产构建全部通过。文档预览已重新启动于3100；自动浏览器测试独立使用4173。当前源码和发布目录证据一致。
 
-接下来：Tree/TreeV2/TreeSelect共享模型与交互；Table/TableV2；Cascader；Date/Time/ColorPicker及面板；Tour；Mention；SelectV2；剩余已有组件未实现API（如Menu水平ellipsis、原Popper参数适配、Slider剩余接口）。说明主题border/color/typography/overview单独补文档。所有组件完成后仍需599示例逐项对齐、完整双语与视觉行为对照，不用粗略覆盖率代替验收。
-每轮以当前源码指纹的全量单测报告生成公共目录及TASKS.md，定向测试可快速排错但不能代替发布证据。
+本轮完成的新增组：Slider、Autocomplete、Splitter、Menu/SubMenu/MenuItem/MenuItemGroup、Dropdown系列、Upload、Tree、TreeV2、TreeSelect、SelectV2。重要：这些组的已验证API和官方场景已发布，整体视觉与所有API等价仍未完成，不能视为全库已完成。TSX高亮/折叠/复制和导航语言切换已完成，完整内容翻译仍待补齐。
+
+接下来按顺序：Table/TableV2；Cascader；ColorPicker/ColorPickerPanel；DatePicker/DatePickerPanel/DateTimePicker/TimePicker；Tour；Mention。之后补已有组件欠缺API（Menu ellipsis、原Popper选项适配、Slider余项等）、说明主题border/color/typography/overview、全量599原示例、完整双语和视觉对照。用户明确期望全部完成，不能自行将本轮增量当作最终收尾。
+每个组用当前指纹全量单测报告生成公共目录及TASKS.md；定向测试仅用于快速开发，不代替发布证据。Table源API和25官方示例清单已读，TableV2源码清单已开始读。尚未创建Table代码。正在用Playwright CLI复查TreeSelect/虚拟列表浏览器视觉。

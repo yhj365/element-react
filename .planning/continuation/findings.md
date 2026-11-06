@@ -5,3 +5,4 @@
 源码真实待办保留：Menu水平ellipsis尚未实现，Dropdown/Autocomplete的原Popper特定options未适配。Upload目前目录选择支持native webkitdirectory；拖拽目录递归与完整accept过滤尚需补验收。全库完成和599官方示例对齐仍未完成，禁止声称已全完成。
 
 Tree 系列实现设计（下一阶段）：共享类型、归一化节点模型、勾选状态、树渲染。节点键与数据字段可配置；父子引用、层级、叶节点、懒加载状态明确。选择支持级联/严格、禁用、半选、默认选中和命令式方法。展开支持默认全部/指定、自动祖先、手风琴。异步加载以请求token防止重复、过期和卸载回写；失败可retry。过滤保留匹配节点祖先。普通Tree递归DOM，TreeV2仅挂载可视扁平窗口。TreeSelect复用同一模型与现有Select/Tooltip。需覆盖键盘、ARIA、拖放限制、防止将父节点拖入自己的后代，以及append/remove/insert/updateKeyChildren不可变数据操作。不要将原始节点数或prop数量当作完成证据。
+Select新增通用renderOptions scope，包含id/query/options/keyOf/renderOption/select/update/close；TreeSelect复用其输入、标签、校验与清空，SelectV2复用其过滤远程和键盘。动态虚拟选项使用ResizeObserver测量、前缀和二分窗口。TreeSelect已接入来源tree-select样式类。文档示例入口memo避免展开源码重新处理万条选项。

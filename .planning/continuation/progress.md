@@ -10,3 +10,5 @@ Menu17定向测试、Dropdown14定向测试（含slots）已补，之前Menu13�
 Upload纳入后467单测、5浏览器测试、docs生产构建和format全部通过；所有发布证据有效于tree加入前checkpoint。Tree/types.ts、model.ts、index.tsx和TreeV2已创建（未导出/未加示例/未测试），类型检查和lint已过第一轮；正在补身份保持和拖拽状态细节。
 Tree22项定向测试、TreeV2新增14项定向测试均过（合计36）；源API已覆盖多数主要能力，Tree/TreeV2共20官方示例已注册。Select增加renderOptions/popupRole可复用扩展，并补受控Tree.checkedKeys，为TreeSelect和SelectV2复用。TreeSelect实现已写，尚未导出/添加示例与测试。最近类型和lint检查进行中，整库公开目录仍停留树组件加入前467测试checkpoint。
 TreeSelect12项定向测试已全过。SelectV2实现已加入固定/动态行高、分组、选项自定义、窗口内键盘定位；20官方示例已注册。新增测试27项正在调试（首轮修正测试助手多选项匹配、示例混合值泛型与远程结果类型），Select复用层改动需要全量回归，当前目录未发布新增树/虚拟选择器能力。
+最新全量：546项单元测试通过，类型和lint通过。Tree24、TreeV2 14、TreeSelect12、SelectV2 29定向测试；新增48原文对应示例（Tree12+TreeV2 8+TreeSelect8+SelectV2 20）。Tree受控checkedKeys、过期懒加载（替换数据/删除再复用key）、拖放结束提交均已覆盖。现在audit/库构建/docs构建/5浏览器/format完整checkpoint运行中，结束后开始Table/TableV2。
+68主题checkpoint所有门禁均通过：546单测、5浏览器、库与docs构建、type/lint/format。重新启动3100预览（exec session35297）；Playwright CLI旧docs-review浏览器已失效，正重新open。源码尚未创建Table。

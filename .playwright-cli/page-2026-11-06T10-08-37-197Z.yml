@@ -1,0 +1,601 @@
+- generic [ref=e2]:
+  - link "跳至文档正文" [ref=e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e4]:
+    - link "E R Element React" [ref=e5] [cursor=pointer]:
+      - /url: "#/components/button"
+      - generic [ref=e6]:
+        - text: E
+        - generic [ref=e7]: R
+      - generic [ref=e8]: Element React
+    - navigation "主导航" [ref=e9]:
+      - link "组件" [ref=e10] [cursor=pointer]:
+        - /url: "#/components/button"
+      - link "完成记录" [ref=e11] [cursor=pointer]:
+        - /url: "#/verification"
+      - link "Element Plus" [ref=e12] [cursor=pointer]:
+        - /url: https://element-plus.org/
+        - text: Element Plus
+        - generic [aria-hidden] [ref=e13]: ↗
+      - combobox "语言" [ref=e14]:
+        - option "简体中文" [selected]
+        - option "English"
+      - button "切换深色主题" [ref=e16] [cursor=pointer]: ☾
+  - complementary "组件目录" [ref=e17]:
+    - generic [ref=e18]:
+      - text: 组件文档
+      - generic [ref=e19]: "68"
+    - generic [ref=e20]:
+      - generic [aria-hidden] [ref=e21]: ⌕
+      - textbox "搜索组件" [ref=e22]:
+        - /placeholder: 搜索组件…
+      - generic [ref=e23]: ⌕
+    - generic [ref=e24]:
+      - heading "基础" [level=2] [ref=e25]
+      - link "Icon 图标" [ref=e26] [cursor=pointer]:
+        - /url: "#/components/icon"
+      - link "Button 按钮" [ref=e28] [cursor=pointer]:
+        - /url: "#/components/button"
+      - link "Text 文字" [ref=e30] [cursor=pointer]:
+        - /url: "#/components/text"
+      - link "Link 链接" [ref=e32] [cursor=pointer]:
+        - /url: "#/components/link"
+    - generic [ref=e34]:
+      - heading "布局" [level=2] [ref=e35]
+      - link "Splitter 分隔面板" [ref=e36] [cursor=pointer]:
+        - /url: "#/components/splitter"
+      - link "Divider 分割线" [ref=e38] [cursor=pointer]:
+        - /url: "#/components/divider"
+      - link "Layout 布局" [ref=e40] [cursor=pointer]:
+        - /url: "#/components/layout"
+      - link "Container 容器" [ref=e42] [cursor=pointer]:
+        - /url: "#/components/container"
+      - link "Space 间距" [ref=e44] [cursor=pointer]:
+        - /url: "#/components/space"
+    - generic [ref=e46]:
+      - heading "表单" [level=2] [ref=e47]
+      - link "SelectV2 虚拟化选择器" [ref=e48] [cursor=pointer]:
+        - /url: "#/components/select-v2"
+      - link "TreeSelect 树形选择" [ref=e50] [cursor=pointer]:
+        - /url: "#/components/tree-select"
+      - link "Upload 上传" [ref=e52] [cursor=pointer]:
+        - /url: "#/components/upload"
+      - link "Autocomplete 自动补全" [ref=e54] [cursor=pointer]:
+        - /url: "#/components/autocomplete"
+      - link "Slider 滑块" [ref=e56] [cursor=pointer]:
+        - /url: "#/components/slider"
+      - link "TimeSelect 时间选择" [ref=e58] [cursor=pointer]:
+        - /url: "#/components/time-select"
+      - link "InputTag 标签输入框" [ref=e60] [cursor=pointer]:
+        - /url: "#/components/input-tag"
+      - link "Transfer 穿梭框" [ref=e62] [cursor=pointer]:
+        - /url: "#/components/transfer"
+      - link "InputOtp 验证码输入" [ref=e64] [cursor=pointer]:
+        - /url: "#/components/input-otp"
+      - link "Select 选择器" [ref=e66] [cursor=pointer]:
+        - /url: "#/components/select"
+      - link "Rate 评分" [ref=e68] [cursor=pointer]:
+        - /url: "#/components/rate"
+      - link "Form 表单" [ref=e70] [cursor=pointer]:
+        - /url: "#/components/form"
+      - link "Input 输入框" [ref=e72] [cursor=pointer]:
+        - /url: "#/components/input"
+      - link "InputNumber 数字输入" [ref=e74] [cursor=pointer]:
+        - /url: "#/components/input-number"
+      - link "Checkbox 复选框" [ref=e76] [cursor=pointer]:
+        - /url: "#/components/checkbox"
+      - link "Radio 单选框" [ref=e78] [cursor=pointer]:
+        - /url: "#/components/radio"
+      - link "Switch 开关" [ref=e80] [cursor=pointer]:
+        - /url: "#/components/switch"
+      - link "Segmented 分段选择" [ref=e82] [cursor=pointer]:
+        - /url: "#/components/segmented"
+    - generic [ref=e84]:
+      - heading "数据展示" [level=2] [ref=e85]
+      - link "TreeV2 虚拟化树形控件" [ref=e86] [cursor=pointer]:
+        - /url: "#/components/tree-v2"
+      - link "Tree 树形控件" [ref=e88] [cursor=pointer]:
+        - /url: "#/components/tree"
+      - link "Carousel 走马灯" [ref=e90] [cursor=pointer]:
+        - /url: "#/components/carousel"
+      - link "Watermark 水印" [ref=e92] [cursor=pointer]:
+        - /url: "#/components/watermark"
+      - link "InfiniteScroll 无限滚动" [ref=e94] [cursor=pointer]:
+        - /url: "#/components/infinite-scroll"
+      - link "Descriptions 描述列表" [ref=e96] [cursor=pointer]:
+        - /url: "#/components/descriptions"
+      - link "Calendar 日历" [ref=e98] [cursor=pointer]:
+        - /url: "#/components/calendar"
+      - link "Scrollbar 滚动条" [ref=e100] [cursor=pointer]:
+        - /url: "#/components/scrollbar"
+      - link "Image 图片" [ref=e102] [cursor=pointer]:
+        - /url: "#/components/image"
+      - link "Card 卡片" [ref=e104] [cursor=pointer]:
+        - /url: "#/components/card"
+      - link "Tag 标签" [ref=e106] [cursor=pointer]:
+        - /url: "#/components/tag"
+      - link "Badge 徽标" [ref=e108] [cursor=pointer]:
+        - /url: "#/components/badge"
+      - link "Alert 提示" [ref=e110] [cursor=pointer]:
+        - /url: "#/components/alert"
+      - link "Empty 空状态" [ref=e112] [cursor=pointer]:
+        - /url: "#/components/empty"
+      - link "Result 结果" [ref=e114] [cursor=pointer]:
+        - /url: "#/components/result"
+      - link "Avatar 头像" [ref=e116] [cursor=pointer]:
+        - /url: "#/components/avatar"
+      - link "Skeleton 骨架屏" [ref=e118] [cursor=pointer]:
+        - /url: "#/components/skeleton"
+      - link "Statistic 统计" [ref=e120] [cursor=pointer]:
+        - /url: "#/components/statistic"
+      - link "Progress 进度" [ref=e122] [cursor=pointer]:
+        - /url: "#/components/progress"
+      - link "Collapse 折叠面板" [ref=e124] [cursor=pointer]:
+        - /url: "#/components/collapse"
+      - link "Timeline 时间轴" [ref=e126] [cursor=pointer]:
+        - /url: "#/components/timeline"
+    - generic [ref=e128]:
+      - heading "导航" [level=2] [ref=e129]
+      - link "Dropdown 下拉菜单" [ref=e130] [cursor=pointer]:
+        - /url: "#/components/dropdown"
+      - link "Menu 菜单" [ref=e132] [cursor=pointer]:
+        - /url: "#/components/menu"
+      - link "Anchor 锚点" [ref=e134] [cursor=pointer]:
+        - /url: "#/components/anchor"
+      - link "Backtop 回到顶部" [ref=e136] [cursor=pointer]:
+        - /url: "#/components/backtop"
+      - link "Affix 固钉" [ref=e138] [cursor=pointer]:
+        - /url: "#/components/affix"
+      - link "PageHeader 页头" [ref=e140] [cursor=pointer]:
+        - /url: "#/components/page-header"
+      - link "Steps 步骤条" [ref=e142] [cursor=pointer]:
+        - /url: "#/components/steps"
+      - link "Pagination 分页" [ref=e144] [cursor=pointer]:
+        - /url: "#/components/pagination"
+      - link "Breadcrumb 面包屑" [ref=e146] [cursor=pointer]:
+        - /url: "#/components/breadcrumb"
+      - link "Tabs 标签页" [ref=e148] [cursor=pointer]:
+        - /url: "#/components/tabs"
+    - generic [ref=e150]:
+      - heading "反馈" [level=2] [ref=e151]
+      - link "MessageBox 消息弹框" [ref=e152] [cursor=pointer]:
+        - /url: "#/components/message-box"
+      - link "Message 消息提示" [ref=e154] [cursor=pointer]:
+        - /url: "#/components/message"
+      - link "Notification 通知" [ref=e156] [cursor=pointer]:
+        - /url: "#/components/notification"
+      - link "Loading 加载" [ref=e158] [cursor=pointer]:
+        - /url: "#/components/loading"
+      - link "Tooltip 文字提示" [ref=e160] [cursor=pointer]:
+        - /url: "#/components/tooltip"
+      - link "Popover 弹出框" [ref=e162] [cursor=pointer]:
+        - /url: "#/components/popover"
+      - link "Popconfirm 气泡确认" [ref=e164] [cursor=pointer]:
+        - /url: "#/components/popconfirm"
+      - link "Dialog 对话框" [ref=e166] [cursor=pointer]:
+        - /url: "#/components/dialog"
+      - link "Drawer 抽屉" [ref=e168] [cursor=pointer]:
+        - /url: "#/components/drawer"
+    - generic [ref=e170]:
+      - heading "配置" [level=2] [ref=e171]
+      - link "ConfigProvider 全局配置" [ref=e172] [cursor=pointer]:
+        - /url: "#/components/config-provider"
+    - generic [ref=e174]: React 19 · TypeScript文档随验证结果更新
+  - main [ref=e177]:
+    - generic [ref=e178]:
+      - text: 组件
+      - generic [ref=e179]: /
+      - text: 表单
+    - generic [ref=e180]:
+      - heading "TreeSelect 树形选择" [level=1] [ref=e181]
+      - generic [ref=e182]: React 19
+    - paragraph [ref=e183]: 展开树选择叶节点，按配置支持任意层级、多选和搜索。
+    - generic [ref=e184]:
+      - generic [ref=e185]: ✓ 26 项 API 已验证
+      - generic [ref=e186]: 8 个可运行示例
+      - generic [ref=e187]: MIT
+    - generic [ref=e188]:
+      - button "使用文档" [ref=e189] [cursor=pointer]
+      - button "完成记录与来源对照26" [ref=e190] [cursor=pointer]
+    - generic [ref=e191]:
+      - heading [level=2] [ref=e192]:
+        - text: 基础用法
+        - link "#" [ref=e193] [cursor=pointer]:
+          - /url: "#tree-select-basic"
+      - paragraph [ref=e194]: 展开树选择叶节点，按配置支持任意层级、多选和搜索。
+      - generic [ref=e195]:
+        - generic [ref=e200] [cursor=pointer]:
+          - combobox "Tree selection" [ref=e202]
+          - generic [ref=e203]: 请选择
+        - generic [ref=e208]:
+          - generic [ref=e209]: 可运行示例
+          - generic [ref=e211]:
+            - button "复制示例代码" [ref=e212] [cursor=pointer]: 复制
+            - button "查看代码" [ref=e213] [cursor=pointer]: </> 查看代码
+    - generic [ref=e214]:
+      - heading [level=2] [ref=e215]:
+        - text: 选择任意层级
+        - link "#" [ref=e216] [cursor=pointer]:
+          - /url: "#tree-select-check-strictly"
+      - paragraph [ref=e217]: 展开树选择叶节点，按配置支持任意层级、多选和搜索。
+      - generic [ref=e218]:
+        - generic [ref=e223] [cursor=pointer]:
+          - combobox "Tree selection" [ref=e225]
+          - generic [ref=e226]: 请选择
+        - generic [ref=e231]:
+          - generic [ref=e232]: 可运行示例
+          - generic [ref=e234]:
+            - button "复制示例代码" [ref=e235] [cursor=pointer]: 复制
+            - button "查看代码" [ref=e236] [cursor=pointer]: </> 查看代码
+    - generic [ref=e237]:
+      - heading [level=2] [ref=e238]:
+        - text: 多选
+        - link "#" [ref=e239] [cursor=pointer]:
+          - /url: "#tree-select-multiple"
+      - paragraph [ref=e240]: 展开树选择叶节点，按配置支持任意层级、多选和搜索。
+      - generic [ref=e241]:
+        - generic [ref=e246] [cursor=pointer]:
+          - combobox "Tree selection" [ref=e248]
+          - generic [ref=e249]: 请选择
+        - generic [ref=e254]:
+          - generic [ref=e255]: 可运行示例
+          - generic [ref=e257]:
+            - button "复制示例代码" [ref=e258] [cursor=pointer]: 复制
+            - button "查看代码" [ref=e259] [cursor=pointer]: </> 查看代码
+    - generic [ref=e260]:
+      - heading [level=2] [ref=e261]:
+        - text: 禁用选择
+        - link "#" [ref=e262] [cursor=pointer]:
+          - /url: "#tree-select-disabled"
+      - paragraph [ref=e263]: 展开树选择叶节点，按配置支持任意层级、多选和搜索。
+      - generic [ref=e264]:
+        - generic [ref=e269] [cursor=pointer]:
+          - combobox "Tree selection" [ref=e271]
+          - generic [ref=e272]: 请选择
+        - generic [ref=e277]:
+          - generic [ref=e278]: 可运行示例
+          - generic [ref=e280]:
+            - button "复制示例代码" [ref=e281] [cursor=pointer]: 复制
+            - button "查看代码" [ref=e282] [cursor=pointer]: </> 查看代码
+    - generic [ref=e283]:
+      - heading [level=2] [ref=e284]:
+        - text: 可搜索
+        - link "#" [ref=e285] [cursor=pointer]:
+          - /url: "#tree-select-filterable"
+      - paragraph [ref=e286]: 展开树选择叶节点，按配置支持任意层级、多选和搜索。
+      - generic [ref=e287]:
+        - generic [ref=e291]:
+          - generic [ref=e292]:
+            - combobox "Tree selection" [ref=e294]
+            - generic [ref=e295]: 请选择
+          - generic [ref=e297] [cursor=pointer]
+        - generic [ref=e300]:
+          - generic [ref=e301]: 可运行示例
+          - generic [ref=e303]:
+            - button "复制示例代码" [ref=e304] [cursor=pointer]: 复制
+            - button "查看代码" [ref=e305] [cursor=pointer]: </> 查看代码
+    - generic [ref=e306]:
+      - heading [level=2] [ref=e307]:
+        - text: 自定义内容
+        - link "#" [ref=e308] [cursor=pointer]:
+          - /url: "#tree-select-slots"
+      - paragraph [ref=e309]: 展开树选择叶节点，按配置支持任意层级、多选和搜索。
+      - generic [ref=e310]:
+        - generic [ref=e315] [cursor=pointer]:
+          - combobox "Tree selection" [ref=e317]
+          - generic [ref=e318]: 请选择
+        - generic [ref=e323]:
+          - generic [ref=e324]: 可运行示例
+          - generic [ref=e326]:
+            - button "复制示例代码" [ref=e327] [cursor=pointer]: 复制
+            - button "查看代码" [ref=e328] [cursor=pointer]: </> 查看代码
+    - generic [ref=e329]:
+      - heading [level=2] [ref=e330]:
+        - text: 懒加载
+        - link "#" [ref=e331] [cursor=pointer]:
+          - /url: "#tree-select-lazy"
+      - paragraph [ref=e332]: 展开树选择叶节点，按配置支持任意层级、多选和搜索。
+      - generic [ref=e333]:
+        - generic [ref=e338] [cursor=pointer]:
+          - combobox "Tree selection" [ref=e340]
+          - generic [ref=e341]: Lazy leaf
+        - generic [ref=e346]:
+          - generic [ref=e347]: 可运行示例
+          - generic [ref=e349]:
+            - button "复制示例代码" [ref=e350] [cursor=pointer]: 复制
+            - button "查看代码" [ref=e351] [cursor=pointer]: </> 查看代码
+    - generic [ref=e352]:
+      - heading [level=2] [ref=e353]:
+        - text: 自定义节点键
+        - link "#" [ref=e354] [cursor=pointer]:
+          - /url: "#tree-select-node-key"
+      - paragraph [ref=e355]: 展开树选择叶节点，按配置支持任意层级、多选和搜索。
+      - generic [ref=e356]:
+        - generic [ref=e361] [cursor=pointer]:
+          - combobox "Tree selection" [ref=e363]
+          - generic [ref=e364]: 请选择
+        - generic [ref=e369]:
+          - generic [ref=e370]: 可运行示例
+          - generic [ref=e372]:
+            - button "复制示例代码" [ref=e373] [cursor=pointer]: 复制
+            - button "查看代码" [ref=e374] [cursor=pointer]: </> 查看代码
+    - generic [ref=e375]:
+      - heading "API" [level=2] [ref=e376]
+      - paragraph [ref=e377]: React 接口采用驼峰命名；具名内容使用 render 函数或 ReactNode。来源类型用于核对 Element Plus 契约，准确的 React 类型以组件导出声明为准。
+      - generic [ref=e378]:
+        - heading "Attributes" [level=3] [ref=e379]
+        - table [ref=e381]:
+          - rowgroup [ref=e382]:
+            - row [ref=e383]:
+              - columnheader "名称" [ref=e384]
+              - columnheader "说明" [ref=e385]
+              - columnheader "来源类型" [ref=e386]
+              - columnheader "默认值" [ref=e387]
+          - rowgroup [ref=e388]:
+            - row [ref=e389]:
+              - cell "[tree](./tree.md#attributes) Attributes · [tree](./tree.md#attributes)" [ref=e390]:
+                - code [ref=e391]: "[tree](./tree.md#attributes)"
+                - generic [ref=e392]: Attributes · [tree](./tree.md#attributes)
+              - cell "详见来源契约" [ref=e393]
+              - cell [ref=e394]:
+                - code [ref=e395]: —
+              - cell [ref=e396]:
+                - code [ref=e397]: —
+            - row [ref=e398]:
+              - cell "[select](./select.md#selectAttributes) Attributes · [select](./select.md#select-attributes)" [ref=e399]:
+                - code [ref=e400]: "[select](./select.md#selectAttributes)"
+                - generic [ref=e401]: Attributes · [select](./select.md#select-attributes)
+              - cell "详见来源契约" [ref=e402]
+              - cell [ref=e403]:
+                - code [ref=e404]: —
+              - cell [ref=e405]:
+                - code [ref=e406]: —
+      - generic [ref=e407]:
+        - heading "Own Attributes" [level=3] [ref=e408]
+        - table [ref=e410]:
+          - rowgroup [ref=e411]:
+            - row [ref=e412]:
+              - columnheader "名称" [ref=e413]
+              - columnheader "说明" [ref=e414]
+              - columnheader "来源类型" [ref=e415]
+              - columnheader "默认值" [ref=e416]
+          - rowgroup [ref=e417]:
+            - row [ref=e418]:
+              - cell "cacheData Own Attributes · cache-data" [ref=e419]:
+                - code [ref=e420]: cacheData
+                - generic [ref=e421]: Own Attributes · cache-data
+              - cell "The cached data of the lazy node, the structure is the same as the data, used to get the label of the unloaded data" [ref=e422]
+              - cell [ref=e423]:
+                - code [ref=e424]: arrayCacheOption[]
+              - cell [ref=e425]:
+                - code [ref=e426]: "[]"
+      - generic [ref=e427]:
+        - heading "Exposes" [level=3] [ref=e428]
+        - table [ref=e430]:
+          - rowgroup [ref=e431]:
+            - row [ref=e432]:
+              - columnheader "名称" [ref=e433]
+              - columnheader "说明" [ref=e434]
+              - columnheader "来源类型" [ref=e435]
+              - columnheader "默认值" [ref=e436]
+          - rowgroup [ref=e437]:
+            - row [ref=e438]:
+              - cell "ref.current.treeRef Exposes · treeRef" [ref=e439]:
+                - code [ref=e440]: ref.current.treeRef
+                - generic [ref=e441]: Exposes · treeRef
+              - cell "Tree component instance" [ref=e442]
+              - cell [ref=e443]:
+                - code [ref=e444]: TreeInstance
+              - cell [ref=e445]:
+                - code [ref=e446]: —
+            - row [ref=e447]:
+              - cell "ref.current.selectRef Exposes · selectRef" [ref=e448]:
+                - code [ref=e449]: ref.current.selectRef
+                - generic [ref=e450]: Exposes · selectRef
+              - cell "Select component instance" [ref=e451]
+              - cell [ref=e452]:
+                - code [ref=e453]: SelectInstance
+              - cell [ref=e454]:
+                - code [ref=e455]: —
+            - row [ref=e456]:
+              - cell "ref.current.filter Exposes · filter" [ref=e457]:
+                - code [ref=e458]: ref.current.filter
+                - generic [ref=e459]: Exposes · filter
+              - cell "filter all tree nodes, filtered nodes will be hidden" [ref=e460]
+              - cell [ref=e461]:
+                - code [ref=e462]: Accept a parameter which will be used as first parameter for filter-node-method
+              - cell [ref=e463]:
+                - code [ref=e464]: —
+            - row [ref=e465]:
+              - cell "ref.current.updateKeyChildren Exposes · updateKeyChildren" [ref=e466]:
+                - code [ref=e467]: ref.current.updateKeyChildren
+                - generic [ref=e468]: Exposes · updateKeyChildren
+              - 'cell "set new data to node, only works when `node-key` is assigned" [ref=e469]'
+              - cell [ref=e470]:
+                - code [ref=e471]: "(key, data) Accept two parameters: 1. key of node 2. new data"
+              - cell [ref=e472]:
+                - code [ref=e473]: —
+            - row [ref=e474]:
+              - cell "ref.current.getCheckedNodes Exposes · getCheckedNodes" [ref=e475]:
+                - code [ref=e476]: ref.current.getCheckedNodes
+                - generic [ref=e477]: Exposes · getCheckedNodes
+              - 'cell "If the node can be selected (`show-checkbox` is `true`), it returns the currently selected array of nodes" [ref=e478]'
+              - cell [ref=e479]:
+                - code [ref=e480]: "(leafOnly, includeHalfChecked) Accept two boolean type parameters: 1. default value is false. If the parameter is true, it only returns the currently selected array of sub-nodes. 2. default value is false. If the parameter is true, the return value contains halfchecked nodes"
+              - cell [ref=e481]:
+                - code [ref=e482]: —
+            - row [ref=e483]:
+              - cell "ref.current.setCheckedNodes Exposes · setCheckedNodes" [ref=e484]:
+                - code [ref=e485]: ref.current.setCheckedNodes
+                - generic [ref=e486]: Exposes · setCheckedNodes
+              - 'cell "set certain nodes to be checked, only works when `node-key` is assigned" [ref=e487]'
+              - cell [ref=e488]:
+                - code [ref=e489]: an array of nodes to be checked
+              - cell [ref=e490]:
+                - code [ref=e491]: —
+            - row [ref=e492]:
+              - cell "ref.current.getCheckedKeys Exposes · getCheckedKeys" [ref=e493]:
+                - code [ref=e494]: ref.current.getCheckedKeys
+                - generic [ref=e495]: Exposes · getCheckedKeys
+              - 'cell "If the node can be selected (`show-checkbox` is `true`), it returns the currently selected array of node''s keys" [ref=e496]'
+              - cell [ref=e497]:
+                - code [ref=e498]: (leafOnly) Accept a boolean type parameter whose default value is false. If the parameter is true, it only returns the currently selected array of sub-nodes.
+              - cell [ref=e499]:
+                - code [ref=e500]: —
+            - row [ref=e501]:
+              - cell "ref.current.setCheckedKeys Exposes · setCheckedKeys" [ref=e502]:
+                - code [ref=e503]: ref.current.setCheckedKeys
+                - generic [ref=e504]: Exposes · setCheckedKeys
+              - 'cell "set certain nodes to be checked, only works when `node-key` is assigned" [ref=e505]'
+              - cell [ref=e506]:
+                - code [ref=e507]: "(keys, leafOnly) Accept two parameters: 1. an array of node's keys to be checked 2. a boolean parameter. If set to true, only the checked status of leaf nodes will be set. The default value is false."
+              - cell [ref=e508]:
+                - code [ref=e509]: —
+            - row [ref=e510]:
+              - cell "ref.current.setChecked Exposes · setChecked" [ref=e511]:
+                - code [ref=e512]: ref.current.setChecked
+                - generic [ref=e513]: Exposes · setChecked
+              - 'cell "set node to be checked or not, only works when `node-key` is assigned" [ref=e514]'
+              - cell [ref=e515]:
+                - code [ref=e516]: "(key/data, checked, deep) Accept three parameters: 1. node's key or data to be checked 2. a boolean typed parameter indicating checked or not. 3. a boolean typed parameter indicating whether to recursively check/uncheck child nodes (since ^(2.14.0), this works regardless of the check-strictly setting)."
+              - cell [ref=e517]:
+                - code [ref=e518]: —
+            - row [ref=e519]:
+              - cell "ref.current.getHalfCheckedNodes Exposes · getHalfCheckedNodes" [ref=e520]:
+                - code [ref=e521]: ref.current.getHalfCheckedNodes
+                - generic [ref=e522]: Exposes · getHalfCheckedNodes
+              - 'cell "If the node can be selected (`show-checkbox` is `true`), it returns the currently half selected array of nodes" [ref=e523]'
+              - cell [ref=e524]:
+                - code [ref=e525]: —
+              - cell [ref=e526]:
+                - code [ref=e527]: —
+            - row [ref=e528]:
+              - cell "ref.current.getHalfCheckedKeys Exposes · getHalfCheckedKeys" [ref=e529]:
+                - code [ref=e530]: ref.current.getHalfCheckedKeys
+                - generic [ref=e531]: Exposes · getHalfCheckedKeys
+              - 'cell "If the node can be selected (`show-checkbox` is `true`), it returns the currently half selected array of node''s keys" [ref=e532]'
+              - cell [ref=e533]:
+                - code [ref=e534]: —
+              - cell [ref=e535]:
+                - code [ref=e536]: —
+            - row [ref=e537]:
+              - cell "ref.current.getCurrentKey Exposes · getCurrentKey" [ref=e538]:
+                - code [ref=e539]: ref.current.getCurrentKey
+                - generic [ref=e540]: Exposes · getCurrentKey
+              - cell "return the highlight node's key (null if no node is highlighted)" [ref=e541]
+              - cell [ref=e542]:
+                - code [ref=e543]: —
+              - cell [ref=e544]:
+                - code [ref=e545]: —
+            - row [ref=e546]:
+              - cell "ref.current.getCurrentNode Exposes · getCurrentNode" [ref=e547]:
+                - code [ref=e548]: ref.current.getCurrentNode
+                - generic [ref=e549]: Exposes · getCurrentNode
+              - cell "return the highlight node's data (null if no node is highlighted)" [ref=e550]
+              - cell [ref=e551]:
+                - code [ref=e552]: —
+              - cell [ref=e553]:
+                - code [ref=e554]: —
+            - row [ref=e555]:
+              - cell "ref.current.setCurrentKey Exposes · setCurrentKey" [ref=e556]:
+                - code [ref=e557]: ref.current.setCurrentKey
+                - generic [ref=e558]: Exposes · setCurrentKey
+              - 'cell "set highlighted node by key, only works when `node-key` is assigned" [ref=e559]'
+              - cell [ref=e560]:
+                - code [ref=e561]: (key, shouldAutoExpandParent=true) 1. the node's key to be highlighted. If null, cancel the currently highlighted node 2. whether to automatically expand parent node
+              - cell [ref=e562]:
+                - code [ref=e563]: —
+            - row [ref=e564]:
+              - cell "ref.current.setCurrentNode Exposes · setCurrentNode" [ref=e565]:
+                - code [ref=e566]: ref.current.setCurrentNode
+                - generic [ref=e567]: Exposes · setCurrentNode
+              - 'cell "set highlighted node, only works when `node-key` is assigned" [ref=e568]'
+              - cell [ref=e569]:
+                - code [ref=e570]: (node, shouldAutoExpandParent=true) 1. the node to be highlighted 2. whether to automatically expand parent node
+              - cell [ref=e571]:
+                - code [ref=e572]: —
+            - row [ref=e573]:
+              - cell "ref.current.getNode Exposes · getNode" [ref=e574]:
+                - code [ref=e575]: ref.current.getNode
+                - generic [ref=e576]: Exposes · getNode
+              - cell "get node by data or key" [ref=e577]
+              - cell [ref=e578]:
+                - code [ref=e579]: (data) the node's data or key
+              - cell [ref=e580]:
+                - code [ref=e581]: —
+            - row [ref=e582]:
+              - cell "ref.current.remove Exposes · remove" [ref=e583]:
+                - code [ref=e584]: ref.current.remove
+                - generic [ref=e585]: Exposes · remove
+              - cell "remove a node, only works when node-key is assigned" [ref=e586]
+              - cell [ref=e587]:
+                - code [ref=e588]: (data) the node's data or node to be deleted
+              - cell [ref=e589]:
+                - code [ref=e590]: —
+            - row [ref=e591]:
+              - cell "ref.current.append Exposes · append" [ref=e592]:
+                - code [ref=e593]: ref.current.append
+                - generic [ref=e594]: Exposes · append
+              - cell "append a child node to a given node in the tree" [ref=e595]
+              - cell [ref=e596]:
+                - code [ref=e597]: (data, parentNode) 1. child node's data to be appended 2. parent node's data, key or node
+              - cell [ref=e598]:
+                - code [ref=e599]: —
+            - row [ref=e600]:
+              - cell "ref.current.insertBefore Exposes · insertBefore" [ref=e601]:
+                - code [ref=e602]: ref.current.insertBefore
+                - generic [ref=e603]: Exposes · insertBefore
+              - cell "insert a node before a given node in the tree" [ref=e604]
+              - cell [ref=e605]:
+                - code [ref=e606]: (data, refNode) 1. node's data to be inserted 2. reference node's data, key or node
+              - cell [ref=e607]:
+                - code [ref=e608]: —
+            - row [ref=e609]:
+              - cell "ref.current.insertAfter Exposes · insertAfter" [ref=e610]:
+                - code [ref=e611]: ref.current.insertAfter
+                - generic [ref=e612]: Exposes · insertAfter
+              - cell "insert a node after a given node in the tree" [ref=e613]
+              - cell [ref=e614]:
+                - code [ref=e615]: (data, refNode) 1. node's data to be inserted 2. reference node's data, key or node
+              - cell [ref=e616]:
+                - code [ref=e617]: —
+            - row [ref=e618]:
+              - cell "ref.current.focus Exposes · focus" [ref=e619]:
+                - code [ref=e620]: ref.current.focus
+                - generic [ref=e621]: Exposes · focus
+              - cell "focus the Input component" [ref=e622]
+              - cell [ref=e623]:
+                - code [ref=e624]: Function() => void
+              - cell [ref=e625]:
+                - code [ref=e626]: —
+            - row [ref=e627]:
+              - cell "ref.current.blur Exposes · blur" [ref=e628]:
+                - code [ref=e629]: ref.current.blur
+                - generic [ref=e630]: Exposes · blur
+              - cell "blur the Input component, and hide the dropdown" [ref=e631]
+              - cell [ref=e632]:
+                - code [ref=e633]: Function() => void
+              - cell [ref=e634]:
+                - code [ref=e635]: —
+            - row [ref=e636]:
+              - cell "ref.current.selectedLabel Exposes · selectedLabel" [ref=e637]:
+                - code [ref=e638]: ref.current.selectedLabel
+                - generic [ref=e639]: Exposes · selectedLabel
+              - cell "get the currently selected label" [ref=e640]
+              - cell [ref=e641]:
+                - code [ref=e642]: objectComputedRef<string | string[]>
+              - cell [ref=e643]:
+                - code [ref=e644]: —
+    - generic [ref=e645]:
+      - heading "已验证功能点" [level=2] [ref=e646]
+      - list [ref=e647]:
+        - listitem [ref=e648]: ✓严格模式允许选择父节点且不同时展开分支
+        - listitem [ref=e649]: ✓非严格多选只提交叶节点，标签移除同步树勾选
+        - listitem [ref=e650]: ✓禁用节点不能选择或勾选
+        - listitem [ref=e651]: ✓输入过滤保留匹配叶节点与祖先
+        - listitem [ref=e652]: ✓树节点可渲染自定义内容
+        - listitem [ref=e653]: ✓自定义nodeKey支持数字0并保持标量值
+        - listitem [ref=e654]: ✓键盘打开后聚焦树，Enter选择叶节点，Escape恢复输入焦点
+    - generic [ref=e655]:
+      - generic [ref=e656]: Element React
+      - generic [ref=e657]: 基于 Element Plus 设计 · MIT License
