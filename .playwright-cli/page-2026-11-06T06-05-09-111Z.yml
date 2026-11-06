@@ -1,0 +1,521 @@
+- generic [ref=e2]:
+  - link "跳至文档正文" [ref=e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e4]:
+    - link "E R Element React" [ref=e5] [cursor=pointer]:
+      - /url: "#/components/button"
+      - generic [ref=e6]:
+        - text: E
+        - generic [ref=e7]: R
+      - generic [ref=e8]: Element React
+    - navigation "主导航" [ref=e9]:
+      - link "组件" [ref=e10] [cursor=pointer]:
+        - /url: "#/components/button"
+      - link "完成记录" [ref=e11] [cursor=pointer]:
+        - /url: "#/verification"
+      - link "Element Plus" [ref=e12] [cursor=pointer]:
+        - /url: https://element-plus.org/
+        - text: Element Plus
+        - generic [aria-hidden] [ref=e13]: ↗
+      - combobox "语言" [ref=e14]:
+        - option "简体中文" [selected]
+        - option "English"
+      - button "切换深色主题" [ref=e16] [cursor=pointer]: ☾
+  - complementary "组件目录" [ref=e17]:
+    - generic [ref=e18]:
+      - text: 组件文档
+      - generic [ref=e19]: "59"
+    - generic [ref=e20]:
+      - generic [aria-hidden] [ref=e21]: ⌕
+      - textbox "搜索组件" [ref=e22]:
+        - /placeholder: 搜索组件…
+      - generic [ref=e23]: ⌕
+    - generic [ref=e24]:
+      - heading "基础" [level=2] [ref=e25]
+      - link "Icon 图标" [ref=e26] [cursor=pointer]:
+        - /url: "#/components/icon"
+      - link "Button 按钮" [ref=e28] [cursor=pointer]:
+        - /url: "#/components/button"
+      - link "Text 文字" [ref=e30] [cursor=pointer]:
+        - /url: "#/components/text"
+      - link "Link 链接" [ref=e32] [cursor=pointer]:
+        - /url: "#/components/link"
+    - generic [ref=e34]:
+      - heading "布局" [level=2] [ref=e35]
+      - link "Divider 分割线" [ref=e36] [cursor=pointer]:
+        - /url: "#/components/divider"
+      - link "Layout 布局" [ref=e38] [cursor=pointer]:
+        - /url: "#/components/layout"
+      - link "Container 容器" [ref=e40] [cursor=pointer]:
+        - /url: "#/components/container"
+      - link "Space 间距" [ref=e42] [cursor=pointer]:
+        - /url: "#/components/space"
+    - generic [ref=e44]:
+      - heading "表单" [level=2] [ref=e45]
+      - link "Slider 滑块" [ref=e46] [cursor=pointer]:
+        - /url: "#/components/slider"
+      - link "TimeSelect 时间选择" [ref=e48] [cursor=pointer]:
+        - /url: "#/components/time-select"
+      - link "InputTag 标签输入框" [ref=e50] [cursor=pointer]:
+        - /url: "#/components/input-tag"
+      - link "Transfer 穿梭框" [ref=e52] [cursor=pointer]:
+        - /url: "#/components/transfer"
+      - link "InputOtp 验证码输入" [ref=e54] [cursor=pointer]:
+        - /url: "#/components/input-otp"
+      - link "Select 选择器" [ref=e56] [cursor=pointer]:
+        - /url: "#/components/select"
+      - link "Rate 评分" [ref=e58] [cursor=pointer]:
+        - /url: "#/components/rate"
+      - link "Form 表单" [ref=e60] [cursor=pointer]:
+        - /url: "#/components/form"
+      - link "Input 输入框" [ref=e62] [cursor=pointer]:
+        - /url: "#/components/input"
+      - link "InputNumber 数字输入" [ref=e64] [cursor=pointer]:
+        - /url: "#/components/input-number"
+      - link "Checkbox 复选框" [ref=e66] [cursor=pointer]:
+        - /url: "#/components/checkbox"
+      - link "Radio 单选框" [ref=e68] [cursor=pointer]:
+        - /url: "#/components/radio"
+      - link "Switch 开关" [ref=e70] [cursor=pointer]:
+        - /url: "#/components/switch"
+      - link "Segmented 分段选择" [ref=e72] [cursor=pointer]:
+        - /url: "#/components/segmented"
+    - generic [ref=e74]:
+      - heading "数据展示" [level=2] [ref=e75]
+      - link "Carousel 走马灯" [ref=e76] [cursor=pointer]:
+        - /url: "#/components/carousel"
+      - link "Watermark 水印" [ref=e78] [cursor=pointer]:
+        - /url: "#/components/watermark"
+      - link "InfiniteScroll 无限滚动" [ref=e80] [cursor=pointer]:
+        - /url: "#/components/infinite-scroll"
+      - link "Descriptions 描述列表" [ref=e82] [cursor=pointer]:
+        - /url: "#/components/descriptions"
+      - link "Calendar 日历" [ref=e84] [cursor=pointer]:
+        - /url: "#/components/calendar"
+      - link "Scrollbar 滚动条" [ref=e86] [cursor=pointer]:
+        - /url: "#/components/scrollbar"
+      - link "Image 图片" [ref=e88] [cursor=pointer]:
+        - /url: "#/components/image"
+      - link "Card 卡片" [ref=e90] [cursor=pointer]:
+        - /url: "#/components/card"
+      - link "Tag 标签" [ref=e92] [cursor=pointer]:
+        - /url: "#/components/tag"
+      - link "Badge 徽标" [ref=e94] [cursor=pointer]:
+        - /url: "#/components/badge"
+      - link "Alert 提示" [ref=e96] [cursor=pointer]:
+        - /url: "#/components/alert"
+      - link "Empty 空状态" [ref=e98] [cursor=pointer]:
+        - /url: "#/components/empty"
+      - link "Result 结果" [ref=e100] [cursor=pointer]:
+        - /url: "#/components/result"
+      - link "Avatar 头像" [ref=e102] [cursor=pointer]:
+        - /url: "#/components/avatar"
+      - link "Skeleton 骨架屏" [ref=e104] [cursor=pointer]:
+        - /url: "#/components/skeleton"
+      - link "Statistic 统计" [ref=e106] [cursor=pointer]:
+        - /url: "#/components/statistic"
+      - link "Progress 进度" [ref=e108] [cursor=pointer]:
+        - /url: "#/components/progress"
+      - link "Collapse 折叠面板" [ref=e110] [cursor=pointer]:
+        - /url: "#/components/collapse"
+      - link "Timeline 时间轴" [ref=e112] [cursor=pointer]:
+        - /url: "#/components/timeline"
+    - generic [ref=e114]:
+      - heading "导航" [level=2] [ref=e115]
+      - link "Anchor 锚点" [ref=e116] [cursor=pointer]:
+        - /url: "#/components/anchor"
+      - link "Backtop 回到顶部" [ref=e118] [cursor=pointer]:
+        - /url: "#/components/backtop"
+      - link "Affix 固钉" [ref=e120] [cursor=pointer]:
+        - /url: "#/components/affix"
+      - link "PageHeader 页头" [ref=e122] [cursor=pointer]:
+        - /url: "#/components/page-header"
+      - link "Steps 步骤条" [ref=e124] [cursor=pointer]:
+        - /url: "#/components/steps"
+      - link "Pagination 分页" [ref=e126] [cursor=pointer]:
+        - /url: "#/components/pagination"
+      - link "Breadcrumb 面包屑" [ref=e128] [cursor=pointer]:
+        - /url: "#/components/breadcrumb"
+      - link "Tabs 标签页" [ref=e130] [cursor=pointer]:
+        - /url: "#/components/tabs"
+    - generic [ref=e132]:
+      - heading "反馈" [level=2] [ref=e133]
+      - link "MessageBox 消息弹框" [ref=e134] [cursor=pointer]:
+        - /url: "#/components/message-box"
+      - link "Message 消息提示" [ref=e136] [cursor=pointer]:
+        - /url: "#/components/message"
+      - link "Notification 通知" [ref=e138] [cursor=pointer]:
+        - /url: "#/components/notification"
+      - link "Loading 加载" [ref=e140] [cursor=pointer]:
+        - /url: "#/components/loading"
+      - link "Tooltip 文字提示" [ref=e142] [cursor=pointer]:
+        - /url: "#/components/tooltip"
+      - link "Popover 弹出框" [ref=e144] [cursor=pointer]:
+        - /url: "#/components/popover"
+      - link "Popconfirm 气泡确认" [ref=e146] [cursor=pointer]:
+        - /url: "#/components/popconfirm"
+      - link "Dialog 对话框" [ref=e148] [cursor=pointer]:
+        - /url: "#/components/dialog"
+      - link "Drawer 抽屉" [ref=e150] [cursor=pointer]:
+        - /url: "#/components/drawer"
+    - generic [ref=e152]:
+      - heading "配置" [level=2] [ref=e153]
+      - link "ConfigProvider 全局配置" [ref=e154] [cursor=pointer]:
+        - /url: "#/components/config-provider"
+    - generic [ref=e156]: React 19 · TypeScript文档随验证结果更新
+  - main [ref=e159]:
+    - generic [ref=e160]:
+      - text: 组件
+      - generic [ref=e161]: /
+      - text: 表单
+    - generic [ref=e162]:
+      - heading "Slider 滑块" [level=1] [ref=e163]
+      - generic [ref=e164]: React 19
+    - paragraph [ref=e165]: 拖动滑块或使用方向键调整数值。
+    - generic [ref=e166]:
+      - generic [ref=e167]: ✓ 18 项 API 已验证
+      - generic [ref=e168]: 8 个可运行示例
+      - generic [ref=e169]: MIT
+    - generic [ref=e170]:
+      - button "使用文档" [ref=e171] [cursor=pointer]
+      - button "完成记录与来源对照18" [ref=e172] [cursor=pointer]
+    - generic [ref=e173]:
+      - heading [level=2] [ref=e174]:
+        - text: 基础用法
+        - link "#" [ref=e175] [cursor=pointer]:
+          - /url: "#slider-basic-usage"
+      - paragraph [ref=e176]: 拖动滑块或使用方向键调整数值。
+      - generic [ref=e177]:
+        - generic [ref=e179]:
+          - generic [ref=e181] [cursor=pointer]:
+            - slider "Default value": "0"
+          - generic [ref=e184] [cursor=pointer]:
+            - slider "Customized initial value": "50"
+          - generic [ref=e188] [cursor=pointer]:
+            - slider "Slider": "30"
+          - generic [ref=e192] [cursor=pointer]:
+            - slider "Slider": "40"
+          - generic [ref=e196] [cursor=pointer]:
+            - slider "Slider" [disabled]: "50"
+        - generic [ref=e199]:
+          - generic [ref=e200]: 可运行示例
+          - generic [ref=e202]:
+            - button "复制示例代码" [ref=e203] [cursor=pointer]: 复制
+            - button "查看代码" [ref=e204] [cursor=pointer]: </> 查看代码
+    - generic [ref=e205]:
+      - heading [level=2] [ref=e206]:
+        - text: 离散值
+        - link "#" [ref=e207] [cursor=pointer]:
+          - /url: "#slider-discrete-values"
+      - paragraph [ref=e208]: 拖动滑块或使用方向键调整数值。
+      - generic [ref=e209]:
+        - generic [ref=e211]:
+          - generic [ref=e213] [cursor=pointer]:
+            - slider "Slider": "20"
+          - generic [ref=e217] [cursor=pointer]:
+            - slider "Slider": "40"
+        - generic [ref=e229]:
+          - generic [ref=e230]: 可运行示例
+          - generic [ref=e232]:
+            - button "复制示例代码" [ref=e233] [cursor=pointer]: 复制
+            - button "查看代码" [ref=e234] [cursor=pointer]: </> 查看代码
+    - generic [ref=e235]:
+      - heading [level=2] [ref=e236]:
+        - text: 带有输入框
+        - link "#" [ref=e237] [cursor=pointer]:
+          - /url: "#slider-slider-with-input-box"
+      - paragraph [ref=e238]: 拖动滑块或使用方向键调整数值。
+      - generic [ref=e239]:
+        - generic [ref=e242]:
+          - generic [ref=e243] [cursor=pointer]:
+            - slider "Slider": "30"
+          - spinbutton "Slider value" [ref=e246]: "30"
+        - generic [ref=e247]:
+          - generic [ref=e248]: 可运行示例
+          - generic [ref=e250]:
+            - button "复制示例代码" [ref=e251] [cursor=pointer]: 复制
+            - button "查看代码" [ref=e252] [cursor=pointer]: </> 查看代码
+    - generic [ref=e253]:
+      - heading [level=2] [ref=e254]:
+        - text: 尺寸
+        - link "#" [ref=e255] [cursor=pointer]:
+          - /url: "#slider-sizes"
+      - paragraph [ref=e256]: 拖动滑块或使用方向键调整数值。
+      - generic [ref=e257]:
+        - generic [ref=e259]:
+          - generic [ref=e261] [cursor=pointer]:
+            - slider "Slider": "30"
+          - generic [ref=e265] [cursor=pointer]:
+            - slider "Slider": "40"
+          - generic [ref=e269] [cursor=pointer]:
+            - slider "Slider": "50"
+        - generic [ref=e272]:
+          - generic [ref=e273]: 可运行示例
+          - generic [ref=e275]:
+            - button "复制示例代码" [ref=e276] [cursor=pointer]: 复制
+            - button "查看代码" [ref=e277] [cursor=pointer]: </> 查看代码
+    - generic [ref=e278]:
+      - heading [level=2] [ref=e279]:
+        - text: 范围选择
+        - link "#" [ref=e280] [cursor=pointer]:
+          - /url: "#slider-range-selection"
+      - paragraph [ref=e281]: 拖动滑块或使用方向键调整数值。
+      - generic [ref=e282]:
+        - generic [ref=e286] [cursor=pointer]:
+          - slider "Minimum": "30"
+          - slider "Maximum": "60"
+        - generic [ref=e289]:
+          - generic [ref=e290]: 可运行示例
+          - generic [ref=e292]:
+            - button "复制示例代码" [ref=e293] [cursor=pointer]: 复制
+            - button "查看代码" [ref=e294] [cursor=pointer]: </> 查看代码
+    - generic [ref=e295]:
+      - heading [level=2] [ref=e296]:
+        - text: 竖向模式
+        - link "#" [ref=e297] [cursor=pointer]:
+          - /url: "#slider-vertical-mode"
+      - paragraph [ref=e298]: 拖动滑块或使用方向键调整数值。
+      - generic [ref=e299]:
+        - generic [ref=e301]:
+          - generic [ref=e303] [cursor=pointer]:
+            - slider "Slider": "30"
+          - generic [ref=e307] [cursor=pointer]:
+            - slider "Range start": "20"
+            - slider "Range end": "70"
+        - generic [ref=e310]:
+          - generic [ref=e311]: 可运行示例
+          - generic [ref=e313]:
+            - button "复制示例代码" [ref=e314] [cursor=pointer]: 复制
+            - button "查看代码" [ref=e315] [cursor=pointer]: </> 查看代码
+    - generic [ref=e316]:
+      - heading [level=2] [ref=e317]:
+        - text: 展示标记
+        - link "#" [ref=e318] [cursor=pointer]:
+          - /url: "#slider-show-marks"
+      - paragraph [ref=e319]: 拖动滑块或使用方向键调整数值。
+      - generic [ref=e320]:
+        - generic [ref=e324] [cursor=pointer]:
+          - slider "Range start": "30"
+          - slider "Range end": "60"
+          - generic [ref=e330]:
+            - generic [ref=e331]: 0°C
+            - generic [ref=e332]: 8°C
+            - generic [ref=e333]: 37°C
+            - generic [ref=e334]: 50%
+        - generic [ref=e335]:
+          - generic [ref=e336]: 可运行示例
+          - generic [ref=e338]:
+            - button "复制示例代码" [ref=e339] [cursor=pointer]: 复制
+            - button "查看代码" [ref=e340] [cursor=pointer]: </> 查看代码
+    - generic [ref=e341]:
+      - heading [level=2] [ref=e342]:
+        - text: 限制取值
+        - link "#" [ref=e343] [cursor=pointer]:
+          - /url: "#slider-restrict-value"
+      - paragraph [ref=e344]: 拖动滑块或使用方向键调整数值。
+      - generic [ref=e345]:
+        - generic [ref=e349] [cursor=pointer]:
+          - slider "Slider": "37"
+          - generic [ref=e356]:
+            - generic [ref=e357]: 0°C
+            - generic [ref=e358]: 8°C
+            - generic [ref=e359]: 37°C
+            - generic [ref=e360]: 50°C
+            - generic [ref=e361]: 100°C
+        - generic [ref=e362]:
+          - generic [ref=e363]: 可运行示例
+          - generic [ref=e365]:
+            - button "复制示例代码" [ref=e366] [cursor=pointer]: 复制
+            - button "查看代码" [ref=e367] [cursor=pointer]: </> 查看代码
+    - generic [ref=e368]:
+      - heading "API" [level=2] [ref=e369]
+      - paragraph [ref=e370]: React 接口采用驼峰命名；具名内容使用 render 函数或 ReactNode。来源类型用于核对 Element Plus 契约，准确的 React 类型以组件导出声明为准。
+      - generic [ref=e371]:
+        - heading "Attributes" [level=3] [ref=e372]
+        - table [ref=e374]:
+          - rowgroup [ref=e375]:
+            - row [ref=e376]:
+              - columnheader "名称" [ref=e377]
+              - columnheader "说明" [ref=e378]
+              - columnheader "来源类型" [ref=e379]
+              - columnheader "默认值" [ref=e380]
+          - rowgroup [ref=e381]:
+            - row [ref=e382]:
+              - cell "value / defaultValue / onValueChange Attributes · model-value / v-model" [ref=e383]:
+                - code [ref=e384]: value / defaultValue / onValueChange
+                - generic [ref=e385]: Attributes · model-value / v-model
+              - cell "binding value" [ref=e386]
+              - cell [ref=e387]:
+                - code [ref=e388]: number / arraynumber[]
+              - cell [ref=e389]:
+                - code [ref=e390]: "0"
+            - row [ref=e391]:
+              - cell "min Attributes · min" [ref=e392]:
+                - code [ref=e393]: min
+                - generic [ref=e394]: Attributes · min
+              - cell "minimum value" [ref=e395]
+              - cell [ref=e396]:
+                - code [ref=e397]: number
+              - cell [ref=e398]:
+                - code [ref=e399]: "0"
+            - row [ref=e400]:
+              - cell "max Attributes · max" [ref=e401]:
+                - code [ref=e402]: max
+                - generic [ref=e403]: Attributes · max
+              - cell "maximum value" [ref=e404]
+              - cell [ref=e405]:
+                - code [ref=e406]: number
+              - cell [ref=e407]:
+                - code [ref=e408]: "100"
+            - row [ref=e409]:
+              - cell "disabled Attributes · disabled" [ref=e410]:
+                - code [ref=e411]: disabled
+                - generic [ref=e412]: Attributes · disabled
+              - cell "whether Slider is disabled" [ref=e413]
+              - cell [ref=e414]:
+                - code [ref=e415]: boolean
+              - cell [ref=e416]:
+                - code [ref=e417]: "false"
+            - row [ref=e418]:
+              - cell "step Attributes · step" [ref=e419]:
+                - code [ref=e420]: step
+                - generic [ref=e421]: Attributes · step
+              - 'cell "step size, can be a number or `''mark''` ^(2.13.6) to restrict values to marks. When set to `''mark''`, the `marks` attribute must be set" [ref=e422]'
+              - cell [ref=e423]:
+                - code [ref=e424]: number / string'mark'
+              - cell [ref=e425]:
+                - code [ref=e426]: "1"
+            - row [ref=e427]:
+              - cell "showInput Attributes · show-input" [ref=e428]:
+                - code [ref=e429]: showInput
+                - generic [ref=e430]: Attributes · show-input
+              - 'cell "whether to display an input box, works when `range` is false and `step` is not `''mark''`" [ref=e431]'
+              - cell [ref=e432]:
+                - code [ref=e433]: boolean
+              - cell [ref=e434]:
+                - code [ref=e435]: "false"
+            - row [ref=e436]:
+              - cell "size Attributes · size" [ref=e437]:
+                - code [ref=e438]: size
+                - generic [ref=e439]: Attributes · size
+              - cell "size of the slider wrapper, will not work in vertical mode" [ref=e440]
+              - cell [ref=e441]:
+                - code [ref=e442]: enum'' | 'large' | 'default' | 'small'
+              - cell [ref=e443]:
+                - code [ref=e444]: default
+            - row [ref=e445]:
+              - cell "showStops Attributes · show-stops" [ref=e446]:
+                - code [ref=e447]: showStops
+                - generic [ref=e448]: Attributes · show-stops
+              - cell "whether to display breakpoints" [ref=e449]
+              - cell [ref=e450]:
+                - code [ref=e451]: boolean
+              - cell [ref=e452]:
+                - code [ref=e453]: "false"
+            - row [ref=e454]:
+              - cell "showTooltip Attributes · show-tooltip" [ref=e455]:
+                - code [ref=e456]: showTooltip
+                - generic [ref=e457]: Attributes · show-tooltip
+              - cell "whether to display tooltip value" [ref=e458]
+              - cell [ref=e459]:
+                - code [ref=e460]: boolean
+              - cell [ref=e461]:
+                - code [ref=e462]: "true"
+            - row [ref=e463]:
+              - cell "formatTooltip Attributes · format-tooltip" [ref=e464]:
+                - code [ref=e465]: formatTooltip
+                - generic [ref=e466]: Attributes · format-tooltip
+              - cell "format to display tooltip value" [ref=e467]
+              - cell [ref=e468]:
+                - code [ref=e469]: "Function(value: number) => number | string"
+              - cell [ref=e470]:
+                - code [ref=e471]: —
+            - row [ref=e472]:
+              - cell "range Attributes · range" [ref=e473]:
+                - code [ref=e474]: range
+                - generic [ref=e475]: Attributes · range
+              - cell "whether to select a range" [ref=e476]
+              - cell [ref=e477]:
+                - code [ref=e478]: boolean
+              - cell [ref=e479]:
+                - code [ref=e480]: "false"
+            - row [ref=e481]:
+              - cell "vertical Attributes · vertical" [ref=e482]:
+                - code [ref=e483]: vertical
+                - generic [ref=e484]: Attributes · vertical
+              - cell "vertical mode" [ref=e485]
+              - cell [ref=e486]:
+                - code [ref=e487]: boolean
+              - cell [ref=e488]:
+                - code [ref=e489]: "false"
+            - row [ref=e490]:
+              - cell "height Attributes · height" [ref=e491]:
+                - code [ref=e492]: height
+                - generic [ref=e493]: Attributes · height
+              - cell "slider height, required in vertical mode" [ref=e494]
+              - cell [ref=e495]:
+                - code [ref=e496]: string
+              - cell [ref=e497]:
+                - code [ref=e498]: —
+            - row [ref=e499]:
+              - cell "rangeStartLabel Attributes · range-start-label" [ref=e500]:
+                - code [ref=e501]: rangeStartLabel
+                - generic [ref=e502]: Attributes · range-start-label
+              - 'cell "when `range` is true, screen reader label for the start of the range" [ref=e503]'
+              - cell [ref=e504]:
+                - code [ref=e505]: string
+              - cell [ref=e506]:
+                - code [ref=e507]: —
+            - row [ref=e508]:
+              - cell "rangeEndLabel Attributes · range-end-label" [ref=e509]:
+                - code [ref=e510]: rangeEndLabel
+                - generic [ref=e511]: Attributes · range-end-label
+              - 'cell "when `range` is true, screen reader label for the end of the range" [ref=e512]'
+              - cell [ref=e513]:
+                - code [ref=e514]: string
+              - cell [ref=e515]:
+                - code [ref=e516]: —
+            - row [ref=e517]:
+              - cell "marks Attributes · marks" [ref=e518]:
+                - code [ref=e519]: marks
+                - generic [ref=e520]: Attributes · marks
+              - 'cell "marks, type of key must be `number` and must in closed interval `[min, max]`, each mark can custom style" [ref=e521]'
+              - cell [ref=e522]:
+                - code [ref=e523]: objectSliderMarks
+              - cell [ref=e524]:
+                - code [ref=e525]: —
+      - generic [ref=e526]:
+        - heading "Events" [level=3] [ref=e527]
+        - table [ref=e529]:
+          - rowgroup [ref=e530]:
+            - row [ref=e531]:
+              - columnheader "名称" [ref=e532]
+              - columnheader "说明" [ref=e533]
+              - columnheader "来源类型" [ref=e534]
+              - columnheader "默认值" [ref=e535]
+          - rowgroup [ref=e536]:
+            - row [ref=e537]:
+              - cell "onChange Events · change" [ref=e538]:
+                - code [ref=e539]: onChange
+                - generic [ref=e540]: Events · change
+              - cell "triggers when the value changes (if the mouse is being dragged, this event only fires when the mouse is released)" [ref=e541]
+              - cell [ref=e542]:
+                - code [ref=e543]: "Function(value: Arrayable<number>) => void"
+              - cell [ref=e544]:
+                - code [ref=e545]: —
+            - row [ref=e546]:
+              - cell "onInput Events · input" [ref=e547]:
+                - code [ref=e548]: onInput
+                - generic [ref=e549]: Events · input
+              - cell "triggers when the data changes (It'll be emitted in real time during sliding)" [ref=e550]
+              - cell [ref=e551]:
+                - code [ref=e552]: "Function(value: Arrayable<number>) => void"
+              - cell [ref=e553]:
+                - code [ref=e554]: —
+    - generic [ref=e555]:
+      - heading "已验证功能点" [level=2] [ref=e556]
+      - list [ref=e557]:
+        - listitem [ref=e558]: ✓标记模式吸附到最近标记
+    - generic [ref=e559]:
+      - generic [ref=e560]: Element React
+      - generic [ref=e561]: 基于 Element Plus 设计 · MIT License

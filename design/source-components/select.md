@@ -1,0 +1,179 @@
+# Select 源码目录设计
+
+- 来源：packages/components/select
+- 分类：根组件入口直接重导出（包括部分基础设施）
+- 功能设计：Option/OptionGroup；单选/多选、过滤/远程、创建；对象值键、禁用、清空、标签折叠；头尾/空/加载/标签/选中项定制；键盘高亮、面板滚动和表单。
+- 家族设计：[select](../components/select.md)
+- React方案：通过React组合组件与Context保持来源层级；属性/事件/插槽/实例映射遵循家族设计和全局契约。
+- 状态：目录已纳入覆盖；未逐行完成实现行为审计，不代表组件已实现。
+
+## 文件追踪
+
+- packages/components/select/index.ts（SHA256 fab2d49475552b5f5842e1417b31a662f51ea7b9144e2a8277426004931d9a5a）
+- packages/components/select/src/option-group.vue（SHA256 feb2b87917fb7035949d822ede673c4bd9c424099033358ed33fc0d10e5a524e）
+- packages/components/select/src/option.ts（SHA256 69e4a255e90ac95024dc70ea6f8fb3ad81c0d2be6e4baad2240f8d26be5e132b）
+- packages/components/select/src/option.vue（SHA256 7398bc233b63d077b68f2efb2fcab20760e1657d2756c605590aa3362410976e）
+- packages/components/select/src/options.ts（SHA256 40070bdfd0f5d7dd85366c4340e0fc1505e5b6ccca9e381d2049f7c801aa5919）
+- packages/components/select/src/select-dropdown.vue（SHA256 540b95769b259c3989098beff7da00d6e64d9a2ba6b38fa0847ce97cc497d4c9）
+- packages/components/select/src/select.ts（SHA256 ec215b1bba0e2aa9ce7bfd830bd937773632959275af1eafc7993a393572de27）
+- packages/components/select/src/select.vue（SHA256 bc19c43977c9dc19ae51438034a6f2342996c73e8c5ab757ef54da498b41c470）
+- packages/components/select/src/token.ts（SHA256 e7b3675c4ac945ed3826a11343429d4b2910c8bec5ad3517b7ca3904b7ac43ba）
+- packages/components/select/src/type.ts（SHA256 d14eca56dd9f4acb1c254b4121aebd42b01e4fe2f77913df653948d8225583f4）
+- packages/components/select/src/useOption.ts（SHA256 528babfb0ece211513e9817208fc13e6316f117916c79f0e7a9a54900dd9ea5e）
+- packages/components/select/src/useSelect.ts（SHA256 098312de104e64d1317900dd2d774a98cfe8499f68d3fd723b4623ea176fa403）
+- packages/components/select/style/css.ts（SHA256 924d69ca5d38faad40e7a6564be6e1a2372a10ead7aa9f3207731bc8c346c405）
+- packages/components/select/style/index.ts（SHA256 f663e5a9ff64ebf159dfd276b02362de1034f01e58153cf174bb17783fe95410）
+- packages/components/select/__tests__/options.test.tsx（SHA256 7a598bb2842f9806ddefe09956c32e2e5a99acbeba87503f15078398b6873c20）
+- packages/components/select/__tests__/select.test.ts（SHA256 bcf952608a69a121ac5779f8162612af1ddcecc04f0dc48600e55b8b07b0a501）
+
+## 来源测试名称索引
+
+以下为静态提取，不包含所有动态生成用例、断言、before/after钩子；必须阅读测试快照迁移行为，不以标题数量代表完整覆盖。
+
+- options — packages/components/select/__tests__/options.test.tsx
+- renders emit correct options — packages/components/select/__tests__/options.test.tsx
+- renders emit correct options with option group — packages/components/select/__tests__/options.test.tsx
+- Select — packages/components/select/__tests__/select.test.ts
+- create — packages/components/select/__tests__/select.test.ts
+- options rendered correctly — packages/components/select/__tests__/select.test.ts
+- custom dropdown class — packages/components/select/__tests__/select.test.ts
+- custom popper style — packages/components/select/__tests__/select.test.ts
+- default value — packages/components/select/__tests__/select.test.ts
+- the scenario of rendering label when there is a default value and persistent is false — packages/components/select/__tests__/select.test.ts
+- updates selected label after label change when closed and persistent=false — packages/components/select/__tests__/select.test.ts
+- keeps empty string label after label update when closed and persistent=false — packages/components/select/__tests__/select.test.ts
+- when there is a default value and persistent is false, render the label and dynamically modify options and modelValue — packages/components/select/__tests__/select.test.ts
+- should not render the empty slot when multiple is true and persistent is false — packages/components/select/__tests__/select.test.ts
+- multiple is true and persistent is false — packages/components/select/__tests__/select.test.ts
+- multiple is true and persistent is false, render the label and dynamically modify options — packages/components/select/__tests__/select.test.ts
+- expose select label — packages/components/select/__tests__/select.test.ts
+- set default value to object — packages/components/select/__tests__/select.test.ts
+- custom label — packages/components/select/__tests__/select.test.ts
+- custom label with object — packages/components/select/__tests__/select.test.ts
+- value bind object with value-key — packages/components/select/__tests__/select.test.ts
+- set default value to object with value-key — packages/components/select/__tests__/select.test.ts
+- sync set value and options — packages/components/select/__tests__/select.test.ts
+- single select — packages/components/select/__tests__/select.test.ts
+- disabled option — packages/components/select/__tests__/select.test.ts
+- disabled select — packages/components/select/__tests__/select.test.ts
+- group disabled option — packages/components/select/__tests__/select.test.ts
+- keyboard operations when option-group is disabled — packages/components/select/__tests__/select.test.ts
+- visible event — packages/components/select/__tests__/select.test.ts
+- keyboard operations — packages/components/select/__tests__/select.test.ts
+- keyboard operations when options have the same label — packages/components/select/__tests__/select.test.ts
+- keyboard operations when options are disabled due to multiple-limit — packages/components/select/__tests__/select.test.ts
+- clearable — packages/components/select/__tests__/select.test.ts
+- suffix icon — packages/components/select/__tests__/select.test.ts
+- test remote show suffix — packages/components/select/__tests__/select.test.ts
+- fitInputWidth — packages/components/select/__tests__/select.test.ts
+- check default first option — packages/components/select/__tests__/select.test.ts
+- check default first option when the very first option is disabled — packages/components/select/__tests__/select.test.ts
+- allow create — packages/components/select/__tests__/select.test.ts
+- allow create should clear input after creating a tag with reserveKeyword — packages/components/select/__tests__/select.test.ts
+- allow create with default first option — packages/components/select/__tests__/select.test.ts
+- allow create async option — packages/components/select/__tests__/select.test.ts
+- multiple select — packages/components/select/__tests__/select.test.ts
+- should prevent option mousedown from blurring multiple select — packages/components/select/__tests__/select.test.ts
+- multiple select when content overflow — packages/components/select/__tests__/select.test.ts
+- multiple select with collapseTags when content overflow — packages/components/select/__tests__/select.test.ts
+- multiple select with collapseTagsTooltip — packages/components/select/__tests__/select.test.ts
+- multiple select with maxCollapseTags — packages/components/select/__tests__/select.test.ts
+- multiple remove-tag — packages/components/select/__tests__/select.test.ts
+- allow remove non existant option — packages/components/select/__tests__/select.test.ts
+- multiple limit — packages/components/select/__tests__/select.test.ts
+- event:focus — packages/components/select/__tests__/select.test.ts
+- should show clear btn on focus — packages/components/select/__tests__/select.test.ts
+- event:blur — packages/components/select/__tests__/select.test.ts
+- event:focus & blur for clearable & filterable — packages/components/select/__tests__/select.test.ts
+- event:focus & blur for multiple & filterable select — packages/components/select/__tests__/select.test.ts
+- event:focus & blur for multiple tag close — packages/components/select/__tests__/select.test.ts
+- should be target blur event when click outside — packages/components/select/__tests__/select.test.ts
+- should not open popper when automatic-dropdown not set — packages/components/select/__tests__/select.test.ts
+- should open popper when automatic-dropdown is set — packages/components/select/__tests__/select.test.ts
+- automatic dropdown should cooperate with click to open the dropdown — packages/components/select/__tests__/select.test.ts
+- only emit change on user input — packages/components/select/__tests__/select.test.ts
+- should set placeholder to label of selected option when filterable is true and multiple is false — packages/components/select/__tests__/select.test.ts
+- default value is null or undefined — packages/components/select/__tests__/select.test.ts
+- emptyText error show — packages/components/select/__tests__/select.test.ts
+- multiple select with remote load — packages/components/select/__tests__/select.test.ts
+- disabled group — packages/components/select/__tests__/select.test.ts
+- el-option-group should visible when el-option in a component — packages/components/select/__tests__/select.test.ts
+- el-option-group should visible when custom option component — packages/components/select/__tests__/select.test.ts
+- tag of disabled option is not closable — packages/components/select/__tests__/select.test.ts
+- tag type — packages/components/select/__tests__/select.test.ts
+- modelValue should be deep reactive in multiple mode — packages/components/select/__tests__/select.test.ts
+- should reset placeholder after clear when both multiple and filterable are true — packages/components/select/__tests__/select.test.ts
+- should close popper when click icon twice — packages/components/select/__tests__/select.test.ts
+- mouseenter click — packages/components/select/__tests__/select.test.ts
+- should keep the select dropdown open when using the filterable — packages/components/select/__tests__/select.test.ts
+- should show all options when open select dropdown — packages/components/select/__tests__/select.test.ts
+- both filterable and multiple are false — packages/components/select/__tests__/select.test.ts
+- filterable is true and multiple is false — packages/components/select/__tests__/select.test.ts
+- filterable is false and multiple is true — packages/components/select/__tests__/select.test.ts
+- both filterable and multiple are true — packages/components/select/__tests__/select.test.ts
+- filterable is true with grouping — packages/components/select/__tests__/select.test.ts
+- after search — packages/components/select/__tests__/select.test.ts
+- should call filter method — packages/components/select/__tests__/select.test.ts
+- should call filter method in multiple mode — packages/components/select/__tests__/select.test.ts
+- should call remote method — packages/components/select/__tests__/select.test.ts
+- should call remote method in multiple mode — packages/components/select/__tests__/select.test.ts
+- teleported API — packages/components/select/__tests__/select.test.ts
+- should mount on popper container — packages/components/select/__tests__/select.test.ts
+- should not mount on the popper container — packages/components/select/__tests__/select.test.ts
+- multiple select has an initial value — packages/components/select/__tests__/select.test.ts
+- should reset selectedLabel when toggle multiple — packages/components/select/__tests__/select.test.ts
+- should modify size height change — packages/components/select/__tests__/select.test.ts
+- form item accessibility integration — packages/components/select/__tests__/select.test.ts
+- automatic id attachment — packages/components/select/__tests__/select.test.ts
+- specified id attachment — packages/components/select/__tests__/select.test.ts
+- form item role is group when multiple inputs — packages/components/select/__tests__/select.test.ts
+- The disabled state of a component has higher priority than that of a form — packages/components/select/__tests__/select.test.ts
+- When props are changed, label can be displayed correctly after selecting operation — packages/components/select/__tests__/select.test.ts
+- should update selected data when the options prop is changed and the select is focused — packages/components/select/__tests__/select.test.ts
+- backspace key should delete selected tag but should not delete disabled options — packages/components/select/__tests__/select.test.ts
+- should render label slot with index — packages/components/select/__tests__/select.test.ts
+- should label slot render dynamic index — packages/components/select/__tests__/select.test.ts
+- should ensure that isDisabled is fresh to prevent selected tag from being cleared — packages/components/select/__tests__/select.test.ts
+- should return slot tag data correctly & dont have tag component — packages/components/select/__tests__/select.test.ts
+- should expose delete-tag through slot & be able to delete a value — packages/components/select/__tests__/select.test.ts
+- It should generate accessible attributes — packages/components/select/__tests__/select.test.ts
+- tabindex — packages/components/select/__tests__/select.test.ts
+- should be trigger the click event — packages/components/select/__tests__/select.test.ts
+- should be run normally when switching multiple — packages/components/select/__tests__/select.test.ts
+- should be do not expend options when select is disabled — packages/components/select/__tests__/select.test.ts
+- check default first option after input — packages/components/select/__tests__/select.test.ts
+- defalut — packages/components/select/__tests__/select.test.ts
+- with multiple — packages/components/select/__tests__/select.test.ts
+- the value is string with value-key — packages/components/select/__tests__/select.test.ts
+- the value is object with value-key — packages/components/select/__tests__/select.test.ts
+- should work when options changed — packages/components/select/__tests__/select.test.ts
+- should keep the selected label after filtering options — packages/components/select/__tests__/select.test.ts
+- passes disabled prop to custom #tag slot — packages/components/select/__tests__/select.test.ts
+- disabled prop from el-form is passed to el-select and tag slot — packages/components/select/__tests__/select.test.ts
+- renders options via props — packages/components/select/__tests__/select.test.ts
+- renders options with custom field names — packages/components/select/__tests__/select.test.ts
+- loading appears on first click when remote — packages/components/select/__tests__/select.test.ts
+- should trigger scroll when option value is 0 — packages/components/select/__tests__/select.test.ts
+- keyboard navigation with Home, End, PageUp, PageDown — packages/components/select/__tests__/select.test.ts
+- should support selecting options with both Enter and Numpad Enter — packages/components/select/__tests__/select.test.ts
+- hoveringIndex should stay on the most recently selected option when using multiple — packages/components/select/__tests__/select.test.ts
+- should locate the most recently selected option when using multiple — packages/components/select/__tests__/select.test.ts
+- should restore warn handler after the last select unmounts — packages/components/select/__tests__/select.test.ts
+- limitReached: hovering via DOM event should not update index nor add class — packages/components/select/__tests__/select.test.ts
+- should trigger visible-change when dropdownMenuVisible changes — packages/components/select/__tests__/select.test.ts
+- should show empty slot correctly in remote search scenarios — packages/components/select/__tests__/select.test.ts
+- input-wrapper in multiple mode — packages/components/select/__tests__/select.test.ts
+- should reserve input width only when input-wrapper is visible — packages/components/select/__tests__/select.test.ts
+- should hide input-wrapper when empty and not focused — packages/components/select/__tests__/select.test.ts
+- should show input-wrapper when input has value — packages/components/select/__tests__/select.test.ts
+- should not hide input-wrapper in single mode when empty and not focused — packages/components/select/__tests__/select.test.ts
+- should not bubble native change event from filter input — packages/components/select/__tests__/select.test.ts
+- should keep dropdown visible during debouncing when options exist (remote) — packages/components/select/__tests__/select.test.ts
+- should trigger end-reached when dropdown scroll reaches bottom — packages/components/select/__tests__/select.test.ts
+- should preserve selected label when remote options change — packages/components/select/__tests__/select.test.ts
+
+## 必须补齐的设计审计
+
+- [ ] 导出与组合关系、Props默认值、emits、defineExpose、watch/生命周期副作用逐项核对。
+- [ ] React实现的状态所有权、上下文、订阅和卸载清理明确。
+- [ ] 来源测试全部建立映射，涉及DOM/视觉的补充浏览器对照。

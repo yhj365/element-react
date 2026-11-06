@@ -1,0 +1,238 @@
+# DatePicker 源码目录设计
+
+- 来源：packages/components/date-picker
+- 分类：根组件入口直接重导出（包括部分基础设施）
+- 功能设计：日期、周、月、年及范围等源模式；展示格式和绑定格式分离；禁用日期、快捷项、默认值、清空、确认；左右面板联动、键盘和国际化。
+- 家族设计：[date-picker](../components/date-picker.md)
+- React方案：通过React组合组件与Context保持来源层级；属性/事件/插槽/实例映射遵循家族设计和全局契约。
+- 状态：目录已纳入覆盖；未逐行完成实现行为审计，不代表组件已实现。
+
+## 文件追踪
+
+- packages/components/date-picker/index.ts（SHA256 e411ec880e0261e1df3a3797a73e934ea239da9d412eb65889d87cf0e5ac96fe）
+- packages/components/date-picker/src/date-picker.tsx（SHA256 307f6080495af99789dc874f6bc14de9b9628e183620d685c8c6c88acd0e5a90）
+- packages/components/date-picker/src/instance.ts（SHA256 34a740d0ebaa9fe91ff26419146121305304fbea7826beeebfe5fa0e36b5a302）
+- packages/components/date-picker/src/props.ts（SHA256 11a3dc9f1fb4bd14e4ead2aae995d4670762b87c2061378f2015ce16d6102b57）
+- packages/components/date-picker/style/css.ts（SHA256 e21e8b41882d494c101d3a9d953a4ed0094abd09c70d007177a2651df24aca73）
+- packages/components/date-picker/style/index.ts（SHA256 d870f65d52e679046b3e98270f351a59c5bfa83e4a12d31aa92eb3a3bb4a8438）
+- packages/components/date-picker/__tests__/date-picker.test.ts（SHA256 db09d21a3d9e57d8d3abe05df18c921d875d39e5bd7c742671bb86d2650eced5）
+- packages/components/date-picker/__tests__/date-time-picker.test.tsx（SHA256 400a064d59b0a63ba03285fc35ceb001ac0a619437a19617a0c227b974aa43d6）
+
+## 来源测试名称索引
+
+以下为静态提取，不包含所有动态生成用例、断言、before/after钩子；必须阅读测试快照迁移行为，不以标题数量代表完整覆盖。
+
+- DatePicker — packages/components/date-picker/__tests__/date-picker.test.ts
+- create & custom class & style — packages/components/date-picker/__tests__/date-picker.test.ts
+- select date — packages/components/date-picker/__tests__/date-picker.test.ts
+- cleared value should match the value-on-clear prop — packages/components/date-picker/__tests__/date-picker.test.ts
+- type:daterange — packages/components/date-picker/__tests__/date-picker.test.ts
+- type:monthrange — packages/components/date-picker/__tests__/date-picker.test.ts
+- type:yearrange — packages/components/date-picker/__tests__/date-picker.test.ts
+- defaultTime and clear value — packages/components/date-picker/__tests__/date-picker.test.ts
+- defaultValue — packages/components/date-picker/__tests__/date-picker.test.ts
+- event change, focus, blur, keydown — packages/components/date-picker/__tests__/date-picker.test.ts
+- should show clear btn on focus — packages/components/date-picker/__tests__/date-picker.test.ts
+- emits focus on click when not currently focused — packages/components/date-picker/__tests__/date-picker.test.ts
+- opens popper on click when input is focused — packages/components/date-picker/__tests__/date-picker.test.ts
+- shortcuts — packages/components/date-picker/__tests__/date-picker.test.ts
+- disabledDate — packages/components/date-picker/__tests__/date-picker.test.ts
+- select year picker when using disabledDate prop — packages/components/date-picker/__tests__/date-picker.test.ts
+- select month picker when using disabledDate prop — packages/components/date-picker/__tests__/date-picker.test.ts
+- should work when using disabledDate prop and daterange type — packages/components/date-picker/__tests__/date-picker.test.ts
+- validate user input — packages/components/date-picker/__tests__/date-picker.test.ts
+- should accept and normalize flexible date input formats — packages/components/date-picker/__tests__/date-picker.test.ts
+- should reject unparseable text input — packages/components/date-picker/__tests__/date-picker.test.ts
+- should keep lenient parsing for overflowing and long-year input — packages/components/date-picker/__tests__/date-picker.test.ts
+- validate manual change value with format — packages/components/date-picker/__tests__/date-picker.test.ts
+- ref focus — packages/components/date-picker/__tests__/date-picker.test.ts
+- ref handleOpen — packages/components/date-picker/__tests__/date-picker.test.ts
+- ref handleClose — packages/components/date-picker/__tests__/date-picker.test.ts
+- should have same common propreties for default slot — packages/components/date-picker/__tests__/date-picker.test.ts
+- custom content — packages/components/date-picker/__tests__/date-picker.test.ts
+- custom content comment — packages/components/date-picker/__tests__/date-picker.test.ts
+- custom content value validate — packages/components/date-picker/__tests__/date-picker.test.ts
+- custom content bail out slot compoent — packages/components/date-picker/__tests__/date-picker.test.ts
+- custom content for type is month — packages/components/date-picker/__tests__/date-picker.test.ts
+- custom content comment for type is month — packages/components/date-picker/__tests__/date-picker.test.ts
+- custom content for type is year — packages/components/date-picker/__tests__/date-picker.test.ts
+- should toggle visibility of confirm button through show-confirm — packages/components/date-picker/__tests__/date-picker.test.ts
+- custom content comment for type is year — packages/components/date-picker/__tests__/date-picker.test.ts
+- shows weekNumber — packages/components/date-picker/__tests__/date-picker.test.ts
+- value-format — packages/components/date-picker/__tests__/date-picker.test.ts
+- with literal string — packages/components/date-picker/__tests__/date-picker.test.ts
+- It should generate accessible attributes — packages/components/date-picker/__tests__/date-picker.test.ts
+- should generate aria attributes — packages/components/date-picker/__tests__/date-picker.test.ts
+- should append set dates when model value change on daterange — packages/components/date-picker/__tests__/date-picker.test.ts
+- should append set dates when model value change on monthrange — packages/components/date-picker/__tests__/date-picker.test.ts
+- should append set dates when model value change on yearrange — packages/components/date-picker/__tests__/date-picker.test.ts
+- should append set dates when model value change on quarterrange — packages/components/date-picker/__tests__/date-picker.test.ts
+- should generate aria attributes for range — packages/components/date-picker/__tests__/date-picker.test.ts
+- Trigger the change event when clearing the date picker — packages/components/date-picker/__tests__/date-picker.test.ts
+- click the button to clear the date — packages/components/date-picker/__tests__/date-picker.test.ts
+- manually clear date — packages/components/date-picker/__tests__/date-picker.test.ts
+- should handle array value for datetime type without errors — packages/components/date-picker/__tests__/date-picker.test.ts
+- should convert array value to proper format when changed — packages/components/date-picker/__tests__/date-picker.test.ts
+- DatePicker Navigation — packages/components/date-picker/__tests__/date-picker.test.ts
+- month, year — packages/components/date-picker/__tests__/date-picker.test.ts
+- month with fewer dates — packages/components/date-picker/__tests__/date-picker.test.ts
+- year with fewer February dates — packages/components/date-picker/__tests__/date-picker.test.ts
+- month label with fewer dates — packages/components/date-picker/__tests__/date-picker.test.ts
+- panel change event — packages/components/date-picker/__tests__/date-picker.test.ts
+- MonthPicker — packages/components/date-picker/__tests__/date-picker.test.ts
+- basic — packages/components/date-picker/__tests__/date-picker.test.ts
+- value-format — packages/components/date-picker/__tests__/date-picker.test.ts
+- only the status of current month is enable when using disabledDate prop — packages/components/date-picker/__tests__/date-picker.test.ts
+- YearPicker — packages/components/date-picker/__tests__/date-picker.test.ts
+- basic — packages/components/date-picker/__tests__/date-picker.test.ts
+- value-format — packages/components/date-picker/__tests__/date-picker.test.ts
+- WeekPicker — packages/components/date-picker/__tests__/date-picker.test.ts
+- create — packages/components/date-picker/__tests__/date-picker.test.ts
+- emit first day of the week, ${loObj.locale.name} locale, ${loObj.name} — packages/components/date-picker/__tests__/date-picker.test.ts
+- DatePicker dates — packages/components/date-picker/__tests__/date-picker.test.ts
+- create — packages/components/date-picker/__tests__/date-picker.test.ts
+- selected — packages/components/date-picker/__tests__/date-picker.test.ts
+- should toggle dates on keyboard enter and space — packages/components/date-picker/__tests__/date-picker.test.ts
+- DatePicker months — packages/components/date-picker/__tests__/date-picker.test.ts
+- create — packages/components/date-picker/__tests__/date-picker.test.ts
+- selected — packages/components/date-picker/__tests__/date-picker.test.ts
+- remove same months from different years — packages/components/date-picker/__tests__/date-picker.test.ts
+- DatePicker keyboard events — packages/components/date-picker/__tests__/date-picker.test.ts
+- enter — packages/components/date-picker/__tests__/date-picker.test.ts
+- numpadEnter — packages/components/date-picker/__tests__/date-picker.test.ts
+- should be able to enter in date picker table through keyboard navigation — packages/components/date-picker/__tests__/date-picker.test.ts
+- DateRangePicker — packages/components/date-picker/__tests__/date-picker.test.ts
+- should accept and normalize flexible date input formats — packages/components/date-picker/__tests__/date-picker.test.ts
+- create & custom class & style — packages/components/date-picker/__tests__/date-picker.test.ts
+- should not emit update:model-value when open the date-picker — packages/components/date-picker/__tests__/date-picker.test.ts
+- daterange should be reopen successfully — packages/components/date-picker/__tests__/date-picker.test.ts
+- daterange should be reopen successfully with value-format — packages/components/date-picker/__tests__/date-picker.test.ts
+- reverse selection — packages/components/date-picker/__tests__/date-picker.test.ts
+- reset selection — packages/components/date-picker/__tests__/date-picker.test.ts
+- range, start-date and end-date — packages/components/date-picker/__tests__/date-picker.test.ts
+- unlink:true — packages/components/date-picker/__tests__/date-picker.test.ts
+- daylight saving time highlight — packages/components/date-picker/__tests__/date-picker.test.ts
+- single-panel — packages/components/date-picker/__tests__/date-picker.test.ts
+- value-format — packages/components/date-picker/__tests__/date-picker.test.ts
+- panel change event — packages/components/date-picker/__tests__/date-picker.test.ts
+- display value — packages/components/date-picker/__tests__/date-picker.test.ts
+- range, select-year — packages/components/date-picker/__tests__/date-picker.test.ts
+- range, select-year with unlink option — packages/components/date-picker/__tests__/date-picker.test.ts
+- range, select-month — packages/components/date-picker/__tests__/date-picker.test.ts
+- range, select-month with unlink option — packages/components/date-picker/__tests__/date-picker.test.ts
+- range, shows weekNumber — packages/components/date-picker/__tests__/date-picker.test.ts
+- should not be visible after input two dates — packages/components/date-picker/__tests__/date-picker.test.ts
+- should not trigger popper dropdown on dynamic assignment — packages/components/date-picker/__tests__/date-picker.test.ts
+- MonthRange — packages/components/date-picker/__tests__/date-picker.test.ts
+- works — packages/components/date-picker/__tests__/date-picker.test.ts
+- range, start-date and end-date — packages/components/date-picker/__tests__/date-picker.test.ts
+- type:monthrange unlink:true — packages/components/date-picker/__tests__/date-picker.test.ts
+- daylight saving time highlight — packages/components/date-picker/__tests__/date-picker.test.ts
+- should accept popper options and pass down — packages/components/date-picker/__tests__/date-picker.test.ts
+- user input — packages/components/date-picker/__tests__/date-picker.test.ts
+- form item accessibility integration — packages/components/date-picker/__tests__/date-picker.test.ts
+- automatic id attachment — packages/components/date-picker/__tests__/date-picker.test.ts
+- specified id attachment — packages/components/date-picker/__tests__/date-picker.test.ts
+- form item role is group when multiple inputs — packages/components/date-picker/__tests__/date-picker.test.ts
+- should give its own disabled prop higher priority within a form — packages/components/date-picker/__tests__/date-picker.test.ts
+- The year which is disabled should not be selectable — packages/components/date-picker/__tests__/date-picker.test.ts
+- prop defaultTime should not confilt with prop shortcuts — packages/components/date-picker/__tests__/date-picker.test.ts
+- format allows dynamic changes — packages/components/date-picker/__tests__/date-picker.test.ts
+- YearRange — packages/components/date-picker/__tests__/date-picker.test.ts
+- works — packages/components/date-picker/__tests__/date-picker.test.ts
+- range, start-date and end-date — packages/components/date-picker/__tests__/date-picker.test.ts
+- type:yearrange unlink:true — packages/components/date-picker/__tests__/date-picker.test.ts
+- daylight saving time highlight — packages/components/date-picker/__tests__/date-picker.test.ts
+- should accept popper options and pass down — packages/components/date-picker/__tests__/date-picker.test.ts
+- should show default value when persistent is false — packages/components/date-picker/__tests__/date-picker.test.ts
+- type:date — packages/components/date-picker/__tests__/date-picker.test.ts
+- type:datetime — packages/components/date-picker/__tests__/date-picker.test.ts
+- type:daterange — packages/components/date-picker/__tests__/date-picker.test.ts
+- value-on-clear in config-provider should take effect — packages/components/date-picker/__tests__/date-picker.test.ts
+- type:daterange — packages/components/date-picker/__tests__/date-picker.test.ts
+- type:monthrange — packages/components/date-picker/__tests__/date-picker.test.ts
+- type:yearrange — packages/components/date-picker/__tests__/date-picker.test.ts
+- the selected row has .current class when show-week-number — packages/components/date-picker/__tests__/date-picker.test.ts
+- should normalize flexible date input to the configured format — packages/components/date-picker/__tests__/date-picker.test.ts
+- QuarterPicker — packages/components/date-picker/__tests__/date-picker.test.ts
+- basic — packages/components/date-picker/__tests__/date-picker.test.ts
+- renders Q1-Q4 labels — packages/components/date-picker/__tests__/date-picker.test.ts
+- value-format — packages/components/date-picker/__tests__/date-picker.test.ts
+- validate manual change with default quarter format — packages/components/date-picker/__tests__/date-picker.test.ts
+- disabledDate — packages/components/date-picker/__tests__/date-picker.test.ts
+- partial disabledDate in quarter should not disable the whole quarter — packages/components/date-picker/__tests__/date-picker.test.ts
+- partial disabledDate in quarter should normalize typed input — packages/components/date-picker/__tests__/date-picker.test.ts
+- partial disabledDate in quarter should normalize keyboard navigation — packages/components/date-picker/__tests__/date-picker.test.ts
+- panel change event — packages/components/date-picker/__tests__/date-picker.test.ts
+- clear — packages/components/date-picker/__tests__/date-picker.test.ts
+- Quarters — packages/components/date-picker/__tests__/date-picker.test.ts
+- create — packages/components/date-picker/__tests__/date-picker.test.ts
+- should zero hours minutes seconds after panel pick — packages/components/date-picker/__tests__/date-picker.test.ts
+- selected — packages/components/date-picker/__tests__/date-picker.test.ts
+- value-format — packages/components/date-picker/__tests__/date-picker.test.ts
+- display multiple quarters in input — packages/components/date-picker/__tests__/date-picker.test.ts
+- year pick should not replace quarters array — packages/components/date-picker/__tests__/date-picker.test.ts
+- disabledDate — packages/components/date-picker/__tests__/date-picker.test.ts
+- clear — packages/components/date-picker/__tests__/date-picker.test.ts
+- should toggle visibility of confirm button through show-confirm — packages/components/date-picker/__tests__/date-picker.test.ts
+- confirm should stay enabled with partial disabled quarter and value-format — packages/components/date-picker/__tests__/date-picker.test.ts
+- remove same quarters from different years — packages/components/date-picker/__tests__/date-picker.test.ts
+- should toggle quarters on keyboard enter and space — packages/components/date-picker/__tests__/date-picker.test.ts
+- QuarterRange — packages/components/date-picker/__tests__/date-picker.test.ts
+- works — packages/components/date-picker/__tests__/date-picker.test.ts
+- should highlight cross-panel range after table mouseleave resets hover dedup — packages/components/date-picker/__tests__/date-picker.test.ts
+- should zero hours minutes seconds after panel pick — packages/components/date-picker/__tests__/date-picker.test.ts
+- type:quarterrange — packages/components/date-picker/__tests__/date-picker.test.ts
+- type:quarterrange unlink:true — packages/components/date-picker/__tests__/date-picker.test.ts
+- value-format — packages/components/date-picker/__tests__/date-picker.test.ts
+- disabledDate — packages/components/date-picker/__tests__/date-picker.test.ts
+- partial disabledDate in quarter range should use first available date — packages/components/date-picker/__tests__/date-picker.test.ts
+- partial disabledDate in quarter range should normalize typed input — packages/components/date-picker/__tests__/date-picker.test.ts
+- should reject manually typed disabled quarter ranges — packages/components/date-picker/__tests__/date-picker.test.ts
+- Datetime Picker — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- both picker show correct formated value (extract date-format and time-format from format property — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- both picker show correct value — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- click now button — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- time-picker select && input time && input date — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- now button: can not choose disabled date — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- now button: should be disabled when current date is disabled — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- confirm button honors picked date — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- selectableRange — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- defaultTime takes effect when the type is datetime — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- defaultTime only takes effect when time is not selected — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- inherit time across different picker view — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- first click accuracy — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- validate user input — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- shows weekNumber — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- should work with editable prop — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- Datetimerange — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- select daterange and default Time and input format — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- input date — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- select time — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- clear button should empty the input value — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- confirm honors disabledDate — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- selectableRange — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- select same date, different time — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- form item accessibility integration — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- automatic id attachment — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- specified id attachment — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- form item role is group when multiple inputs — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- display value — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- prop defaultTime should not confilt with prop shortcuts — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- shows weekNumber — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- should emit update:model-value when two dates reached — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- should not have footer when show-footer is false — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- should datetimerange visibility not be trapped by setting new values — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- datetimerange should be reopen successfully — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- should show clear btn on focus — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- should not emit update:model-value on panel open when value format as string — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- should left list time be sync with input input change — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- should not duplicate panels after confirm left time input — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- should not duplicate panels after confirm right time input — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+- should work with editable prop — packages/components/date-picker/__tests__/date-time-picker.test.tsx
+
+## 必须补齐的设计审计
+
+- [ ] 导出与组合关系、Props默认值、emits、defineExpose、watch/生命周期副作用逐项核对。
+- [ ] React实现的状态所有权、上下文、订阅和卸载清理明确。
+- [ ] 来源测试全部建立映射，涉及DOM/视觉的补充浏览器对照。

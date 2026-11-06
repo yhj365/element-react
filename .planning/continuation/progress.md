@@ -1,0 +1,12 @@
+已读取实现和验收机制，正在核对工具链。
+类型检查和lint通过；首轮401单元测试全部通过。新增浏览器验证语言记忆、高亮折叠和键盘。接下来重新生成同指纹报告和生产构建。
+生产构建已成功；浏览器首轮3通过2失败：全量浏览超过90s，增加该循环预算至300s；Select测试误统计语言选择器option，已限定组件弹层。并发单元测试14项5s超时，首轮401通过，现以maxWorkers=2重跑保留原断言。格式检查通过。
+用户进一步明确：期望全部组件完成，任务继续，不以本轮增量作为最终完成。基础401单测、5浏览器测试、两种生产构建已通过。新补Autocomplete，5官方示例、10项定向测试通过；正在实现Splitter及6官方示例。
+Autocomplete及Splitter合计21项定向测试通过；包括新增内容的422项全量单测通过，typecheck通过。现已创建Menu/SubMenu/MenuItem/MenuItemGroup及Dropdown/Menu/Item实现，尚未导出、添加示例及测试，不能作为已验收能力。
+Menu17定向测试、Dropdown14定向测试（含slots）已补，之前Menu13、Dropdown11通过，新增slot测试纳入正在进行的全量检查。导出和14个官方示例已注册。
+最新checkpoint：453项全量单测、typecheck/lint、库与文档生产构建通过；目录63主题、118示例、1250/2394API。浏览器原3100预览进程中断造成连接拒绝，已切换独立4173测试端口，5项全过。之后新增Upload实现与10官方场景、14项定向测试全过（包含默认XHR transport），新增上传样式并纳入库和文档主题。正在进行最后类型/lint检查，新增内容需下轮全量测试与目录构建。
+新checkpoint：467全量单测通过，typecheck/lint通过。Upload10示例已发布，当前64主题/128示例/1286已验证API。生产构建正在收尾。下一组开始Tree/TreeV2/TreeSelect共享模型；已读取原API表和源码文档。
+发现docs构建Sass模块命名冲突：slider/style.css和upload/style.css均默认命名style。已改为显式slider-styles/upload-styles，需重新生成测试指纹再构建；库生产构建本身通过。
+Upload纳入后467单测、5浏览器测试、docs生产构建和format全部通过；所有发布证据有效于tree加入前checkpoint。Tree/types.ts、model.ts、index.tsx和TreeV2已创建（未导出/未加示例/未测试），类型检查和lint已过第一轮；正在补身份保持和拖拽状态细节。
+Tree22项定向测试、TreeV2新增14项定向测试均过（合计36）；源API已覆盖多数主要能力，Tree/TreeV2共20官方示例已注册。Select增加renderOptions/popupRole可复用扩展，并补受控Tree.checkedKeys，为TreeSelect和SelectV2复用。TreeSelect实现已写，尚未导出/添加示例与测试。最近类型和lint检查进行中，整库公开目录仍停留树组件加入前467测试checkpoint。
+TreeSelect12项定向测试已全过。SelectV2实现已加入固定/动态行高、分组、选项自定义、窗口内键盘定位；20官方示例已注册。新增测试27项正在调试（首轮修正测试助手多选项匹配、示例混合值泛型与远程结果类型），Select复用层改动需要全量回归，当前目录未发布新增树/虚拟选择器能力。

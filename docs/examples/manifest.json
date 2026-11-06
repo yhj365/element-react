@@ -1,0 +1,1507 @@
+[
+  {
+    "id": "button-variants",
+    "component": "button",
+    "title": "基础用法与样式",
+    "description": "语义色、尺寸以及朴素、文字、圆角和虚线按钮。",
+    "source": "docs/examples/button-variants.tsx"
+  },
+  {
+    "id": "button-loading",
+    "component": "button",
+    "title": "图标与加载",
+    "description": "加载状态阻止重复操作，可替换加载内容。",
+    "source": "docs/examples/button-loading.tsx"
+  },
+  {
+    "id": "button-native",
+    "component": "button",
+    "title": "原生类型与自定义标签",
+    "description": "提交、重置和自定义标签的禁用保护。",
+    "source": "docs/examples/button-native.tsx"
+  },
+  {
+    "id": "button-spacing",
+    "component": "button",
+    "title": "汉字间距与实例",
+    "description": "两个汉字可自动展开间距，实例状态随属性更新。",
+    "source": "docs/examples/button-spacing.tsx"
+  },
+  {
+    "id": "button-group",
+    "component": "button",
+    "title": "按钮组",
+    "description": "组级尺寸和类型由后代继承，单个按钮可覆盖。",
+    "source": "docs/examples/button-group.tsx"
+  },
+  {
+    "id": "icon-basic",
+    "component": "icon",
+    "title": "尺寸与颜色",
+    "description": "SVG图形继承图标容器的尺寸与颜色。",
+    "source": "docs/examples/icon-basic.tsx"
+  },
+  {
+    "id": "text-basic",
+    "component": "text",
+    "title": "文字层级与截断",
+    "description": "文字语义、尺寸及单行、多行截断。",
+    "source": "docs/examples/text-basic.tsx"
+  },
+  {
+    "id": "link-basic",
+    "component": "link",
+    "title": "链接",
+    "description": "普通链接保留浏览器行为，禁用状态不触发导航。",
+    "source": "docs/examples/link-basic.tsx"
+  },
+  {
+    "id": "card-basic",
+    "component": "card",
+    "title": "卡片区域",
+    "description": "头部、正文和底部支持独立内容和样式。",
+    "source": "docs/examples/card-basic.tsx"
+  },
+  {
+    "id": "tag-basic",
+    "component": "tag",
+    "title": "标签与关闭事件",
+    "description": "点击关闭由调用方更新列表，组件不自行删除。",
+    "source": "docs/examples/tag-basic.tsx"
+  },
+  {
+    "id": "check-tag-basic",
+    "component": "tag",
+    "title": "可勾选标签",
+    "description": "支持受控勾选和键盘操作。",
+    "source": "docs/examples/check-tag-basic.tsx"
+  },
+  {
+    "id": "divider-basic",
+    "component": "divider",
+    "title": "分割线",
+    "description": "水平内容位置、边框样式与垂直分隔。",
+    "source": "docs/examples/divider-basic.tsx"
+  },
+  {
+    "id": "badge-basic",
+    "component": "badge",
+    "title": "徽标",
+    "description": "支持最大数字、小圆点和自定义内容。",
+    "source": "docs/examples/badge-basic.tsx"
+  },
+  {
+    "id": "alert-basic",
+    "component": "alert",
+    "title": "提示信息",
+    "description": "不同语义、图标、描述和关闭通知。",
+    "source": "docs/examples/alert-basic.tsx"
+  },
+  {
+    "id": "empty-basic",
+    "component": "empty",
+    "title": "空状态",
+    "description": "说明和底部动作可以自定义。",
+    "source": "docs/examples/empty-basic.tsx"
+  },
+  {
+    "id": "result-basic",
+    "component": "result",
+    "title": "结果反馈",
+    "description": "展示操作结果并提供后续动作。",
+    "source": "docs/examples/result-basic.tsx"
+  },
+  {
+    "id": "avatar-basic",
+    "component": "avatar",
+    "title": "头像与回退",
+    "description": "文字、图标和图片加载失败回退。",
+    "source": "docs/examples/avatar-basic.tsx"
+  },
+  {
+    "id": "layout-grid",
+    "component": "layout",
+    "title": "24栅格",
+    "description": "行间距、列占比和对齐。",
+    "source": "docs/examples/layout-grid.tsx"
+  },
+  {
+    "id": "layout-responsive",
+    "component": "layout",
+    "title": "响应式列",
+    "description": "在窄容器中按断点切换列宽。",
+    "source": "docs/examples/layout-responsive.tsx"
+  },
+  {
+    "id": "container-basic",
+    "component": "container",
+    "title": "页面容器",
+    "description": "组合顶部、侧栏、主内容和底部。",
+    "source": "docs/examples/container-basic.tsx"
+  },
+  {
+    "id": "space-basic",
+    "component": "space",
+    "title": "间距与分隔",
+    "description": "支持方向、换行、数组间距和分隔内容。",
+    "source": "docs/examples/space-basic.tsx"
+  },
+  {
+    "id": "skeleton-basic",
+    "component": "skeleton",
+    "title": "骨架占位",
+    "description": "可切换加载与实际内容，支持定制模板。",
+    "source": "docs/examples/skeleton-basic.tsx"
+  },
+  {
+    "id": "statistic-basic",
+    "component": "statistic",
+    "title": "数字统计",
+    "description": "支持精度、分隔符、前后缀和自定义格式化。",
+    "source": "docs/examples/statistic-basic.tsx"
+  },
+  {
+    "id": "countdown-basic",
+    "component": "statistic",
+    "title": "倒计时",
+    "description": "按照绝对截止时间更新，完成通知只触发一次。",
+    "source": "docs/examples/countdown-basic.tsx"
+  },
+  {
+    "id": "progress-basic",
+    "component": "progress",
+    "title": "进度展示",
+    "description": "线形与圆环进度、自定义文字和动画。",
+    "source": "docs/examples/progress-basic.tsx"
+  },
+  {
+    "id": "input-basic",
+    "component": "input",
+    "title": "基础输入",
+    "description": "受控输入、原生属性与输入法处理。",
+    "source": "docs/examples/input-basic.tsx"
+  },
+  {
+    "id": "input-format",
+    "component": "input",
+    "title": "格式化与解析",
+    "description": "绑定值与显示格式独立。",
+    "source": "docs/examples/input-format.tsx"
+  },
+  {
+    "id": "input-clear",
+    "component": "input",
+    "title": "清空与实例方法",
+    "description": "清空通知与逐字输入、提交事件分别处理。",
+    "source": "docs/examples/input-clear.tsx"
+  },
+  {
+    "id": "input-password",
+    "component": "input",
+    "title": "密码与字数",
+    "description": "切换密码可见性，并显示输入字数。",
+    "source": "docs/examples/input-password.tsx"
+  },
+  {
+    "id": "input-slots",
+    "component": "input",
+    "title": "前后置内容",
+    "description": "可组合前缀、后缀及输入框前后置区域。",
+    "source": "docs/examples/input-slots.tsx"
+  },
+  {
+    "id": "input-textarea",
+    "component": "input",
+    "title": "多行输入",
+    "description": "支持行数和原生resize方向。",
+    "source": "docs/examples/input-textarea.tsx"
+  },
+  {
+    "id": "input-number-basic",
+    "component": "input-number",
+    "title": "数字输入",
+    "description": "支持步长、精度、边界与键盘增减。",
+    "source": "docs/examples/input-number-basic.tsx"
+  },
+  {
+    "id": "checkbox-basic",
+    "component": "checkbox",
+    "title": "复选框",
+    "description": "独立勾选、半选和禁用。",
+    "source": "docs/examples/checkbox-basic.tsx"
+  },
+  {
+    "id": "checkbox-group",
+    "component": "checkbox",
+    "title": "复选组与数量限制",
+    "description": "组值保持不可变，最少和最多选择数量可配置。",
+    "source": "docs/examples/checkbox-group.tsx"
+  },
+  {
+    "id": "checkbox-buttons",
+    "component": "checkbox",
+    "title": "按钮式复选",
+    "description": "与复选组共享值模型。",
+    "source": "docs/examples/checkbox-buttons.tsx"
+  },
+  {
+    "id": "radio-basic",
+    "component": "radio",
+    "title": "单选组",
+    "description": "选中值、尺寸与禁用由组统一管理。",
+    "source": "docs/examples/radio-basic.tsx"
+  },
+  {
+    "id": "radio-buttons",
+    "component": "radio",
+    "title": "按钮式单选",
+    "description": "切换选项时只保留一个选中值。",
+    "source": "docs/examples/radio-buttons.tsx"
+  },
+  {
+    "id": "switch-basic",
+    "component": "switch",
+    "title": "开关",
+    "description": "原生switch语义、受控值、尺寸和加载状态。",
+    "source": "docs/examples/switch-basic.tsx"
+  },
+  {
+    "id": "switch-labels",
+    "component": "switch",
+    "title": "文字与内联提示",
+    "description": "开关两侧及内部提示可自定义。",
+    "source": "docs/examples/switch-labels.tsx"
+  },
+  {
+    "id": "switch-async",
+    "component": "switch",
+    "title": "异步切换拦截",
+    "description": "异步确认通过后才更新开关，等待期间阻止重复操作。",
+    "source": "docs/examples/switch-async.tsx"
+  },
+  {
+    "id": "segmented-basic",
+    "component": "segmented",
+    "title": "分段选择",
+    "description": "标量或对象选项，支持禁用、方向和自定义内容。",
+    "source": "docs/examples/segmented-basic.tsx"
+  },
+  {
+    "id": "collapse-basic",
+    "component": "collapse",
+    "title": "折叠面板",
+    "description": "支持多项展开和手风琴。",
+    "source": "docs/examples/collapse-basic.tsx"
+  },
+  {
+    "id": "collapse-custom",
+    "component": "collapse",
+    "title": "自定义标题和图标",
+    "description": "标题和图标接收当前展开状态。",
+    "source": "docs/examples/collapse-custom.tsx"
+  },
+  {
+    "id": "breadcrumb-basic",
+    "component": "breadcrumb",
+    "title": "面包屑",
+    "description": "支持字符串/图标分隔符和链接。",
+    "source": "docs/examples/breadcrumb-basic.tsx"
+  },
+  {
+    "id": "timeline-basic",
+    "component": "timeline",
+    "title": "时间轴",
+    "description": "时间戳、节点类型及自定义图形。",
+    "source": "docs/examples/timeline-basic.tsx"
+  },
+  {
+    "id": "tabs-basic",
+    "component": "tabs",
+    "title": "标签页",
+    "description": "支持激活值、不同位置和自定义页签内容。",
+    "source": "docs/examples/tabs-basic.tsx"
+  },
+  {
+    "id": "tabs-async",
+    "component": "tabs",
+    "title": "切换前拦截",
+    "description": "较旧的异步结果不能覆盖新的切换请求。",
+    "source": "docs/examples/tabs-async.tsx"
+  },
+  {
+    "id": "tabs-editable",
+    "component": "tabs",
+    "title": "可增删标签页",
+    "description": "调用方通过事件更新实际面板列表。",
+    "source": "docs/examples/tabs-editable.tsx"
+  },
+  {
+    "id": "tabs-lazy",
+    "component": "tabs",
+    "title": "面板懒加载",
+    "description": "第一次激活后保留挂载，切换回来仍保留输入内容。",
+    "source": "docs/examples/tabs-lazy.tsx"
+  },
+  {
+    "id": "config-basic",
+    "component": "config-provider",
+    "title": "配置继承与覆盖",
+    "description": "局部配置覆盖上级，未指定的字段继续继承。",
+    "source": "docs/examples/config-basic.tsx"
+  },
+  {
+    "id": "dialog-basic",
+    "component": "dialog",
+    "title": "基本对话框",
+    "description": "受控显隐、内容和底部操作。",
+    "source": "docs/examples/dialog-basic.tsx"
+  },
+  {
+    "id": "dialog-lifecycle",
+    "component": "dialog",
+    "title": "关闭拦截与生命周期",
+    "description": "通过关闭前检查决定是否关闭。",
+    "source": "docs/examples/dialog-lifecycle.tsx"
+  },
+  {
+    "id": "drawer-basic",
+    "component": "drawer",
+    "title": "基础抽屉",
+    "description": "四方向、尺寸和可定制的内容区域。",
+    "source": "docs/examples/drawer-basic.tsx"
+  },
+  {
+    "id": "form-basic",
+    "component": "form",
+    "title": "表单校验与重置",
+    "description": "受控模型、字段规则、错误提示和重置。",
+    "source": "docs/examples/form-basic.tsx"
+  },
+  {
+    "id": "form-rules",
+    "component": "form",
+    "title": "嵌套路径与字段实例",
+    "description": "按字段校验、清除错误和自定义错误展示。",
+    "source": "docs/examples/form-rules.tsx"
+  },
+  {
+    "id": "page-header-basic",
+    "component": "page-header",
+    "title": "页头与路径",
+    "description": "返回动作、面包屑及额外操作。",
+    "source": "docs/examples/page-header-basic.tsx"
+  },
+  {
+    "id": "steps-basic",
+    "component": "steps",
+    "title": "步骤状态",
+    "description": "由active控制的步骤进度和展示状态。",
+    "source": "docs/examples/steps-basic.tsx"
+  },
+  {
+    "id": "rate-basic",
+    "component": "rate",
+    "title": "评分交互",
+    "description": "评分预览、半星、清零及禁用展示。",
+    "source": "docs/examples/rate-basic.tsx"
+  },
+  {
+    "id": "pagination-basic",
+    "component": "pagination",
+    "title": "分页与跳页",
+    "description": "独立的页码和页大小通道。",
+    "source": "docs/examples/pagination-basic.tsx"
+  },
+  {
+    "id": "tooltip-basic",
+    "component": "tooltip",
+    "title": "文字提示",
+    "description": "位置、主题和多种触发方式。",
+    "source": "docs/examples/tooltip-basic.tsx"
+  },
+  {
+    "id": "popover-basic",
+    "component": "popover",
+    "title": "弹出框",
+    "description": "引用内容与丰富面板内容分离。",
+    "source": "docs/examples/popover-basic.tsx"
+  },
+  {
+    "id": "popconfirm-basic",
+    "component": "popconfirm",
+    "title": "气泡确认",
+    "description": "独立的确认取消动作与内容定制。",
+    "source": "docs/examples/popconfirm-basic.tsx"
+  },
+  {
+    "id": "scrollbar-basic",
+    "component": "scrollbar",
+    "title": "自定义滚动条",
+    "description": "原生滚动与可拖动滑块。",
+    "source": "docs/examples/scrollbar-basic.tsx"
+  },
+  {
+    "id": "backtop-basic",
+    "component": "backtop",
+    "title": "容器回顶",
+    "description": "达到阈值后显示回顶操作。",
+    "source": "docs/examples/backtop-basic.tsx"
+  },
+  {
+    "id": "affix-basic",
+    "component": "affix",
+    "title": "固定定位",
+    "description": "保留占位与容器边界约束。",
+    "source": "docs/examples/affix-basic.tsx"
+  },
+  {
+    "id": "image-basic",
+    "component": "image",
+    "title": "图片及预览",
+    "description": "加载反馈和独立图片查看器。",
+    "source": "docs/examples/image-basic.tsx"
+  },
+  {
+    "id": "descriptions-basic",
+    "component": "descriptions",
+    "title": "描述列表",
+    "description": "表格布局、跨行跨列和区域定制。",
+    "source": "docs/examples/descriptions-basic.tsx"
+  },
+  {
+    "id": "calendar-basic",
+    "component": "calendar",
+    "title": "基础月历",
+    "description": "受控日期、日期范围与单元格定制。",
+    "source": "docs/examples/calendar-basic.tsx"
+  },
+  {
+    "id": "message-basic",
+    "component": "message",
+    "title": "消息提示",
+    "description": "类型、重复分组和Provider绑定。",
+    "source": "docs/examples/message-basic.tsx"
+  },
+  {
+    "id": "notification-basic",
+    "component": "notification",
+    "title": "通知",
+    "description": "独立位置堆叠和关闭控制。",
+    "source": "docs/examples/notification-basic.tsx"
+  },
+  {
+    "id": "loading-basic",
+    "component": "loading",
+    "title": "加载反馈",
+    "description": "区域加载与全屏显式服务。",
+    "source": "docs/examples/loading-basic.tsx"
+  },
+  {
+    "id": "select-basic",
+    "component": "select",
+    "title": "基础选择",
+    "description": "受控单选、分组、禁用和过滤。",
+    "source": "docs/examples/select-basic.tsx"
+  },
+  {
+    "id": "select-multiple",
+    "component": "select",
+    "title": "多选与创建",
+    "description": "多选限制、折叠标签和创建选项。",
+    "source": "docs/examples/select-multiple.tsx"
+  },
+  {
+    "id": "message-box-basic",
+    "component": "message-box",
+    "title": "消息确认与输入",
+    "description": "确认结果、取消和输入校验。",
+    "source": "docs/examples/message-box-basic.tsx"
+  },
+  {
+    "id": "input-otp-basic",
+    "component": "input-otp",
+    "title": "验证码输入",
+    "description": "逐位输入、粘贴与位置校验。",
+    "source": "docs/examples/input-otp-basic.tsx"
+  },
+  {
+    "id": "anchor-basic",
+    "component": "anchor",
+    "title": "锚点目录",
+    "description": "局部滚动、章节定位与目录联动。",
+    "source": "docs/examples/anchor-basic.tsx"
+  },
+  {
+    "id": "infinite-scroll-basic",
+    "component": "infinite-scroll",
+    "title": "无限滚动",
+    "description": "滚动阈值、加载限制与自动补充。",
+    "source": "docs/examples/infinite-scroll-basic.tsx"
+  },
+  {
+    "id": "watermark-basic",
+    "component": "watermark",
+    "title": "文字水印",
+    "description": "多行文字、字体与区域平铺。",
+    "source": "docs/examples/watermark-basic.tsx"
+  },
+  {
+    "id": "transfer-basic",
+    "component": "transfer",
+    "title": "穿梭框",
+    "description": "双列表选择、过滤和移动。",
+    "source": "docs/examples/transfer-basic.tsx"
+  },
+  {
+    "id": "carousel-basic",
+    "component": "carousel",
+    "title": "基础轮播",
+    "description": "轮播切换、指示器与卡片布局。",
+    "source": "docs/examples/carousel-basic.tsx"
+  },
+  {
+    "id": "carousel-card",
+    "component": "carousel",
+    "title": "卡片轮播",
+    "description": "轮播切换、指示器与卡片布局。",
+    "source": "docs/examples/carousel-card.tsx"
+  },
+  {
+    "id": "avatar-group",
+    "component": "avatar",
+    "title": "头像组",
+    "description": "尺寸继承、折叠和提示层。",
+    "source": "docs/examples/avatar-group.tsx"
+  },
+  {
+    "id": "input-tag-basic",
+    "component": "input-tag",
+    "title": "标签输入",
+    "description": "输入提交、分隔粘贴和标签管理。",
+    "source": "docs/examples/input-tag-basic.tsx"
+  },
+  {
+    "id": "input-tag-collapse",
+    "component": "input-tag",
+    "title": "折叠标签",
+    "description": "输入提交、分隔粘贴和标签管理。",
+    "source": "docs/examples/input-tag-collapse.tsx"
+  },
+  {
+    "id": "time-select-basic",
+    "component": "time-select",
+    "title": "固定间隔时间选择",
+    "description": "时间区间、间隔和可选范围限制。",
+    "source": "docs/examples/time-select-basic.tsx"
+  },
+  {
+    "id": "slider-basic-usage",
+    "component": "slider",
+    "title": "基础用法",
+    "titleEn": "Basic usage",
+    "description": "拖动滑块或使用方向键调整数值。",
+    "descriptionEn": "Drag the handles or use arrow keys to adjust the value.",
+    "source": "docs/examples/slider-basic-usage.tsx",
+    "sourceExample": "slider/basic-usage"
+  },
+  {
+    "id": "slider-discrete-values",
+    "component": "slider",
+    "title": "离散值",
+    "titleEn": "Discrete values",
+    "description": "拖动滑块或使用方向键调整数值。",
+    "descriptionEn": "Drag the handles or use arrow keys to adjust the value.",
+    "source": "docs/examples/slider-discrete-values.tsx",
+    "sourceExample": "slider/discrete-values"
+  },
+  {
+    "id": "slider-slider-with-input-box",
+    "component": "slider",
+    "title": "带有输入框",
+    "titleEn": "Slider with input box",
+    "description": "拖动滑块或使用方向键调整数值。",
+    "descriptionEn": "Drag the handles or use arrow keys to adjust the value.",
+    "source": "docs/examples/slider-slider-with-input-box.tsx",
+    "sourceExample": "slider/slider-with-input-box"
+  },
+  {
+    "id": "slider-sizes",
+    "component": "slider",
+    "title": "尺寸",
+    "titleEn": "Sizes",
+    "description": "拖动滑块或使用方向键调整数值。",
+    "descriptionEn": "Drag the handles or use arrow keys to adjust the value.",
+    "source": "docs/examples/slider-sizes.tsx",
+    "sourceExample": "slider/sizes"
+  },
+  {
+    "id": "slider-range-selection",
+    "component": "slider",
+    "title": "范围选择",
+    "titleEn": "Range selection",
+    "description": "拖动滑块或使用方向键调整数值。",
+    "descriptionEn": "Drag the handles or use arrow keys to adjust the value.",
+    "source": "docs/examples/slider-range-selection.tsx",
+    "sourceExample": "slider/range-selection"
+  },
+  {
+    "id": "slider-vertical-mode",
+    "component": "slider",
+    "title": "竖向模式",
+    "titleEn": "Vertical mode",
+    "description": "拖动滑块或使用方向键调整数值。",
+    "descriptionEn": "Drag the handles or use arrow keys to adjust the value.",
+    "source": "docs/examples/slider-vertical-mode.tsx",
+    "sourceExample": "slider/vertical-mode"
+  },
+  {
+    "id": "slider-show-marks",
+    "component": "slider",
+    "title": "展示标记",
+    "titleEn": "Show marks",
+    "description": "拖动滑块或使用方向键调整数值。",
+    "descriptionEn": "Drag the handles or use arrow keys to adjust the value.",
+    "source": "docs/examples/slider-show-marks.tsx",
+    "sourceExample": "slider/show-marks"
+  },
+  {
+    "id": "slider-restrict-value",
+    "component": "slider",
+    "title": "限制取值",
+    "titleEn": "Restrict value",
+    "description": "拖动滑块或使用方向键调整数值。",
+    "descriptionEn": "Drag the handles or use arrow keys to adjust the value.",
+    "source": "docs/examples/slider-restrict-value.tsx",
+    "sourceExample": "slider/restrict-value"
+  },
+  {
+    "id": "autocomplete-autocomplete",
+    "component": "autocomplete",
+    "title": "基础用法",
+    "titleEn": "Basic usage",
+    "description": "输入文本查看建议，使用方向键高亮并回车选择。",
+    "descriptionEn": "Type to get suggestions, then use arrow keys and Enter to select.",
+    "source": "docs/examples/autocomplete-autocomplete.tsx",
+    "sourceExample": "autocomplete/autocomplete"
+  },
+  {
+    "id": "autocomplete-autocomplete-template",
+    "component": "autocomplete",
+    "title": "自定义模板",
+    "titleEn": "Custom template",
+    "description": "输入文本查看建议，使用方向键高亮并回车选择。",
+    "descriptionEn": "Type to get suggestions, then use arrow keys and Enter to select.",
+    "source": "docs/examples/autocomplete-autocomplete-template.tsx",
+    "sourceExample": "autocomplete/autocomplete-template"
+  },
+  {
+    "id": "autocomplete-remote-search",
+    "component": "autocomplete",
+    "title": "远程搜索",
+    "titleEn": "Remote search",
+    "description": "输入文本查看建议，使用方向键高亮并回车选择。",
+    "descriptionEn": "Type to get suggestions, then use arrow keys and Enter to select.",
+    "source": "docs/examples/autocomplete-remote-search.tsx",
+    "sourceExample": "autocomplete/remote-search"
+  },
+  {
+    "id": "autocomplete-custom-loading",
+    "component": "autocomplete",
+    "title": "自定义加载",
+    "titleEn": "Custom Loading",
+    "description": "输入文本查看建议，使用方向键高亮并回车选择。",
+    "descriptionEn": "Type to get suggestions, then use arrow keys and Enter to select.",
+    "source": "docs/examples/autocomplete-custom-loading.tsx",
+    "sourceExample": "autocomplete/custom-loading"
+  },
+  {
+    "id": "autocomplete-custom-header-footer",
+    "component": "autocomplete",
+    "title": "自定义头部和底部",
+    "titleEn": "Custom Header & Footer",
+    "description": "输入文本查看建议，使用方向键高亮并回车选择。",
+    "descriptionEn": "Type to get suggestions, then use arrow keys and Enter to select.",
+    "source": "docs/examples/autocomplete-custom-header-footer.tsx",
+    "sourceExample": "autocomplete/custom-header-footer"
+  },
+  {
+    "id": "splitter-basic",
+    "component": "splitter",
+    "title": "基础用法",
+    "titleEn": "Basic usage",
+    "description": "拖动分隔线调整面板尺寸，也可聚焦分隔线使用方向键。",
+    "descriptionEn": "Drag a divider, or focus it and use arrow keys to resize panels.",
+    "source": "docs/examples/splitter-basic.tsx",
+    "sourceExample": "splitter/basic"
+  },
+  {
+    "id": "splitter-vertical",
+    "component": "splitter",
+    "title": "垂直布局",
+    "titleEn": "Vertical",
+    "description": "拖动分隔线调整面板尺寸，也可聚焦分隔线使用方向键。",
+    "descriptionEn": "Drag a divider, or focus it and use arrow keys to resize panels.",
+    "source": "docs/examples/splitter-vertical.tsx",
+    "sourceExample": "splitter/vertical"
+  },
+  {
+    "id": "splitter-collapsible",
+    "component": "splitter",
+    "title": "可折叠",
+    "titleEn": "Collapsible",
+    "description": "拖动分隔线调整面板尺寸，也可聚焦分隔线使用方向键。",
+    "descriptionEn": "Drag a divider, or focus it and use arrow keys to resize panels.",
+    "source": "docs/examples/splitter-collapsible.tsx",
+    "sourceExample": "splitter/collapsible"
+  },
+  {
+    "id": "splitter-disableDrag",
+    "component": "splitter",
+    "title": "禁止拖动",
+    "titleEn": "Disable drag",
+    "description": "拖动分隔线调整面板尺寸，也可聚焦分隔线使用方向键。",
+    "descriptionEn": "Drag a divider, or focus it and use arrow keys to resize panels.",
+    "source": "docs/examples/splitter-disableDrag.tsx",
+    "sourceExample": "splitter/disableDrag"
+  },
+  {
+    "id": "splitter-size",
+    "component": "splitter",
+    "title": "面板尺寸",
+    "titleEn": "Panel size",
+    "description": "拖动分隔线调整面板尺寸，也可聚焦分隔线使用方向键。",
+    "descriptionEn": "Drag a divider, or focus it and use arrow keys to resize panels.",
+    "source": "docs/examples/splitter-size.tsx",
+    "sourceExample": "splitter/size"
+  },
+  {
+    "id": "splitter-lazy",
+    "component": "splitter",
+    "title": "延迟更新",
+    "titleEn": "Lazy",
+    "description": "拖动分隔线调整面板尺寸，也可聚焦分隔线使用方向键。",
+    "descriptionEn": "Drag a divider, or focus it and use arrow keys to resize panels.",
+    "source": "docs/examples/splitter-lazy.tsx",
+    "sourceExample": "splitter/lazy"
+  },
+  {
+    "id": "menu-basic",
+    "component": "menu",
+    "title": "顶栏",
+    "titleEn": "Top bar",
+    "description": "选择菜单项，展开嵌套菜单，禁用项目不能激活。",
+    "descriptionEn": "Select an item or expand nested menus. Disabled items cannot be activated.",
+    "source": "docs/examples/menu-basic.tsx",
+    "sourceExample": "menu/basic"
+  },
+  {
+    "id": "menu-left-and-right",
+    "component": "menu",
+    "title": "左右布局",
+    "titleEn": "Left And Right",
+    "description": "选择菜单项，展开嵌套菜单，禁用项目不能激活。",
+    "descriptionEn": "Select an item or expand nested menus. Disabled items cannot be activated.",
+    "source": "docs/examples/menu-left-and-right.tsx",
+    "sourceExample": "menu/left-and-right"
+  },
+  {
+    "id": "menu-vertical",
+    "component": "menu",
+    "title": "侧栏",
+    "titleEn": "Side bar",
+    "description": "选择菜单项，展开嵌套菜单，禁用项目不能激活。",
+    "descriptionEn": "Select an item or expand nested menus. Disabled items cannot be activated.",
+    "source": "docs/examples/menu-vertical.tsx",
+    "sourceExample": "menu/vertical"
+  },
+  {
+    "id": "menu-collapse",
+    "component": "menu",
+    "title": "折叠菜单",
+    "titleEn": "Collapse",
+    "description": "选择菜单项，展开嵌套菜单，禁用项目不能激活。",
+    "descriptionEn": "Select an item or expand nested menus. Disabled items cannot be activated.",
+    "source": "docs/examples/menu-collapse.tsx",
+    "sourceExample": "menu/collapse"
+  },
+  {
+    "id": "menu-popper-offset",
+    "component": "menu",
+    "title": "浮层偏移",
+    "titleEn": "Popper Offset",
+    "description": "选择菜单项，展开嵌套菜单，禁用项目不能激活。",
+    "descriptionEn": "Select an item or expand nested menus. Disabled items cannot be activated.",
+    "source": "docs/examples/menu-popper-offset.tsx",
+    "sourceExample": "menu/popper-offset"
+  },
+  {
+    "id": "dropdown-basic-usage",
+    "component": "dropdown",
+    "title": "基础用法",
+    "titleEn": "Basic usage",
+    "description": "展开菜单，选择命令或使用键盘导航。",
+    "descriptionEn": "Open the menu, choose a command or navigate with the keyboard.",
+    "source": "docs/examples/dropdown-basic-usage.tsx",
+    "sourceExample": "dropdown/basic-usage"
+  },
+  {
+    "id": "dropdown-placements",
+    "component": "dropdown",
+    "title": "弹出位置",
+    "titleEn": "Placement",
+    "description": "展开菜单，选择命令或使用键盘导航。",
+    "descriptionEn": "Open the menu, choose a command or navigate with the keyboard.",
+    "source": "docs/examples/dropdown-placements.tsx",
+    "sourceExample": "dropdown/placements"
+  },
+  {
+    "id": "dropdown-triggering-element",
+    "component": "dropdown",
+    "title": "分割按钮",
+    "titleEn": "Triggering element",
+    "description": "展开菜单，选择命令或使用键盘导航。",
+    "descriptionEn": "Open the menu, choose a command or navigate with the keyboard.",
+    "source": "docs/examples/dropdown-triggering-element.tsx",
+    "sourceExample": "dropdown/triggering-element"
+  },
+  {
+    "id": "dropdown-how-to-trigger",
+    "component": "dropdown",
+    "title": "触发方式",
+    "titleEn": "How to trigger",
+    "description": "展开菜单，选择命令或使用键盘导航。",
+    "descriptionEn": "Open the menu, choose a command or navigate with the keyboard.",
+    "source": "docs/examples/dropdown-how-to-trigger.tsx",
+    "sourceExample": "dropdown/how-to-trigger"
+  },
+  {
+    "id": "dropdown-menu-hiding-behavior",
+    "component": "dropdown",
+    "title": "菜单隐藏方式",
+    "titleEn": "Menu hiding behavior",
+    "description": "展开菜单，选择命令或使用键盘导航。",
+    "descriptionEn": "Open the menu, choose a command or navigate with the keyboard.",
+    "source": "docs/examples/dropdown-menu-hiding-behavior.tsx",
+    "sourceExample": "dropdown/menu-hiding-behavior"
+  },
+  {
+    "id": "dropdown-command-event",
+    "component": "dropdown",
+    "title": "指令事件",
+    "titleEn": "Command event",
+    "description": "展开菜单，选择命令或使用键盘导航。",
+    "descriptionEn": "Open the menu, choose a command or navigate with the keyboard.",
+    "source": "docs/examples/dropdown-command-event.tsx",
+    "sourceExample": "dropdown/command-event"
+  },
+  {
+    "id": "dropdown-dropdown-methods",
+    "component": "dropdown",
+    "title": "手动展开和关闭",
+    "titleEn": "Dropdown methods",
+    "description": "展开菜单，选择命令或使用键盘导航。",
+    "descriptionEn": "Open the menu, choose a command or navigate with the keyboard.",
+    "source": "docs/examples/dropdown-dropdown-methods.tsx",
+    "sourceExample": "dropdown/dropdown-methods"
+  },
+  {
+    "id": "dropdown-sizes",
+    "component": "dropdown",
+    "title": "尺寸",
+    "titleEn": "Sizes",
+    "description": "展开菜单，选择命令或使用键盘导航。",
+    "descriptionEn": "Open the menu, choose a command or navigate with the keyboard.",
+    "source": "docs/examples/dropdown-sizes.tsx",
+    "sourceExample": "dropdown/sizes"
+  },
+  {
+    "id": "dropdown-virtual-trigger",
+    "component": "dropdown",
+    "title": "虚拟触发",
+    "titleEn": "Virtual triggering",
+    "description": "展开菜单，选择命令或使用键盘导航。",
+    "descriptionEn": "Open the menu, choose a command or navigate with the keyboard.",
+    "source": "docs/examples/dropdown-virtual-trigger.tsx",
+    "sourceExample": "dropdown/virtual-trigger"
+  },
+  {
+    "id": "upload-basic",
+    "component": "upload",
+    "title": "基础用法",
+    "titleEn": "Basic Usage",
+    "description": "选择文件后查看列表和上传状态，示例在浏览器本地完成请求。",
+    "descriptionEn": "Select files to inspect upload status. Demo requests complete locally in the browser.",
+    "source": "docs/examples/upload-basic.tsx",
+    "sourceExample": "upload/basic"
+  },
+  {
+    "id": "upload-limit-cover",
+    "component": "upload",
+    "title": "覆盖上一个文件",
+    "titleEn": "Cover Previous File",
+    "description": "选择文件后查看列表和上传状态，示例在浏览器本地完成请求。",
+    "descriptionEn": "Select files to inspect upload status. Demo requests complete locally in the browser.",
+    "source": "docs/examples/upload-limit-cover.tsx",
+    "sourceExample": "upload/limit-cover"
+  },
+  {
+    "id": "upload-avatar",
+    "component": "upload",
+    "title": "头像上传",
+    "titleEn": "User Avatar",
+    "description": "选择文件后查看列表和上传状态，示例在浏览器本地完成请求。",
+    "descriptionEn": "Select files to inspect upload status. Demo requests complete locally in the browser.",
+    "source": "docs/examples/upload-avatar.tsx",
+    "sourceExample": "upload/avatar"
+  },
+  {
+    "id": "upload-photo-wall",
+    "component": "upload",
+    "title": "照片墙",
+    "titleEn": "Photo Wall",
+    "description": "选择文件后查看列表和上传状态，示例在浏览器本地完成请求。",
+    "descriptionEn": "Select files to inspect upload status. Demo requests complete locally in the browser.",
+    "source": "docs/examples/upload-photo-wall.tsx",
+    "sourceExample": "upload/photo-wall"
+  },
+  {
+    "id": "upload-custom-thumbnail",
+    "component": "upload",
+    "title": "自定义缩略图",
+    "titleEn": "Custom Thumbnail",
+    "description": "选择文件后查看列表和上传状态，示例在浏览器本地完成请求。",
+    "descriptionEn": "Select files to inspect upload status. Demo requests complete locally in the browser.",
+    "source": "docs/examples/upload-custom-thumbnail.tsx",
+    "sourceExample": "upload/custom-thumbnail"
+  },
+  {
+    "id": "upload-file-list-with-thumbnail",
+    "component": "upload",
+    "title": "缩略图列表",
+    "titleEn": "File List with Thumbnail",
+    "description": "选择文件后查看列表和上传状态，示例在浏览器本地完成请求。",
+    "descriptionEn": "Select files to inspect upload status. Demo requests complete locally in the browser.",
+    "source": "docs/examples/upload-file-list-with-thumbnail.tsx",
+    "sourceExample": "upload/file-list-with-thumbnail"
+  },
+  {
+    "id": "upload-file-list",
+    "component": "upload",
+    "title": "文件列表控制",
+    "titleEn": "File List Control",
+    "description": "选择文件后查看列表和上传状态，示例在浏览器本地完成请求。",
+    "descriptionEn": "Select files to inspect upload status. Demo requests complete locally in the browser.",
+    "source": "docs/examples/upload-file-list.tsx",
+    "sourceExample": "upload/file-list"
+  },
+  {
+    "id": "upload-drag-and-drop",
+    "component": "upload",
+    "title": "拖拽上传",
+    "titleEn": "Drag to Upload",
+    "description": "选择文件后查看列表和上传状态，示例在浏览器本地完成请求。",
+    "descriptionEn": "Select files to inspect upload status. Demo requests complete locally in the browser.",
+    "source": "docs/examples/upload-drag-and-drop.tsx",
+    "sourceExample": "upload/drag-and-drop"
+  },
+  {
+    "id": "upload-directory",
+    "component": "upload",
+    "title": "文件夹上传",
+    "titleEn": "Upload Directory",
+    "description": "选择文件后查看列表和上传状态，示例在浏览器本地完成请求。",
+    "descriptionEn": "Select files to inspect upload status. Demo requests complete locally in the browser.",
+    "source": "docs/examples/upload-directory.tsx",
+    "sourceExample": "upload/directory"
+  },
+  {
+    "id": "upload-manual",
+    "component": "upload",
+    "title": "手动上传",
+    "titleEn": "Manual Upload",
+    "description": "选择文件后查看列表和上传状态，示例在浏览器本地完成请求。",
+    "descriptionEn": "Select files to inspect upload status. Demo requests complete locally in the browser.",
+    "source": "docs/examples/upload-manual.tsx",
+    "sourceExample": "upload/manual"
+  },
+  {
+    "id": "tree-basic",
+    "component": "tree",
+    "title": "基础用法",
+    "titleEn": "Basic usage",
+    "description": "展开层级节点并操作当前场景中的选择、过滤或拖放。",
+    "descriptionEn": "Expand nodes and explore selection, filtering or drag and drop for this scenario.",
+    "source": "docs/examples/tree-basic.tsx",
+    "sourceExample": "tree/basic"
+  },
+  {
+    "id": "tree-selectable",
+    "component": "tree",
+    "title": "可选择",
+    "titleEn": "Selectable",
+    "description": "展开层级节点并操作当前场景中的选择、过滤或拖放。",
+    "descriptionEn": "Expand nodes and explore selection, filtering or drag and drop for this scenario.",
+    "source": "docs/examples/tree-selectable.tsx",
+    "sourceExample": "tree/selectable"
+  },
+  {
+    "id": "tree-custom-leaf",
+    "component": "tree",
+    "title": "自定义叶节点",
+    "titleEn": "Custom leaf node",
+    "description": "展开层级节点并操作当前场景中的选择、过滤或拖放。",
+    "descriptionEn": "Expand nodes and explore selection, filtering or drag and drop for this scenario.",
+    "source": "docs/examples/tree-custom-leaf.tsx",
+    "sourceExample": "tree/custom-leaf"
+  },
+  {
+    "id": "tree-multiple-times-load",
+    "component": "tree",
+    "title": "懒加载重试",
+    "titleEn": "Lazy loading multiple times",
+    "description": "展开层级节点并操作当前场景中的选择、过滤或拖放。",
+    "descriptionEn": "Expand nodes and explore selection, filtering or drag and drop for this scenario.",
+    "source": "docs/examples/tree-multiple-times-load.tsx",
+    "sourceExample": "tree/multiple-times-load"
+  },
+  {
+    "id": "tree-disabled",
+    "component": "tree",
+    "title": "禁用复选框",
+    "titleEn": "Disabled checkbox",
+    "description": "展开层级节点并操作当前场景中的选择、过滤或拖放。",
+    "descriptionEn": "Expand nodes and explore selection, filtering or drag and drop for this scenario.",
+    "source": "docs/examples/tree-disabled.tsx",
+    "sourceExample": "tree/disabled"
+  },
+  {
+    "id": "tree-default-state",
+    "component": "tree",
+    "title": "默认展开和勾选",
+    "titleEn": "Default expanded and checked",
+    "description": "展开层级节点并操作当前场景中的选择、过滤或拖放。",
+    "descriptionEn": "Expand nodes and explore selection, filtering or drag and drop for this scenario.",
+    "source": "docs/examples/tree-default-state.tsx",
+    "sourceExample": "tree/default-state"
+  },
+  {
+    "id": "tree-checking-tree",
+    "component": "tree",
+    "title": "节点勾选操作",
+    "titleEn": "Checking tree nodes",
+    "description": "展开层级节点并操作当前场景中的选择、过滤或拖放。",
+    "descriptionEn": "Expand nodes and explore selection, filtering or drag and drop for this scenario.",
+    "source": "docs/examples/tree-checking-tree.tsx",
+    "sourceExample": "tree/checking-tree"
+  },
+  {
+    "id": "tree-customized-node",
+    "component": "tree",
+    "title": "自定义节点内容",
+    "titleEn": "Custom node content",
+    "description": "展开层级节点并操作当前场景中的选择、过滤或拖放。",
+    "descriptionEn": "Expand nodes and explore selection, filtering or drag and drop for this scenario.",
+    "source": "docs/examples/tree-customized-node.tsx",
+    "sourceExample": "tree/customized-node"
+  },
+  {
+    "id": "tree-custom-node-class",
+    "component": "tree",
+    "title": "自定义节点类名",
+    "titleEn": "Custom node class",
+    "description": "展开层级节点并操作当前场景中的选择、过滤或拖放。",
+    "descriptionEn": "Expand nodes and explore selection, filtering or drag and drop for this scenario.",
+    "source": "docs/examples/tree-custom-node-class.tsx",
+    "sourceExample": "tree/custom-node-class"
+  },
+  {
+    "id": "tree-filtering",
+    "component": "tree",
+    "title": "节点过滤",
+    "titleEn": "Tree node filtering",
+    "description": "展开层级节点并操作当前场景中的选择、过滤或拖放。",
+    "descriptionEn": "Expand nodes and explore selection, filtering or drag and drop for this scenario.",
+    "source": "docs/examples/tree-filtering.tsx",
+    "sourceExample": "tree/filtering"
+  },
+  {
+    "id": "tree-accordion",
+    "component": "tree",
+    "title": "手风琴",
+    "titleEn": "Accordion",
+    "description": "展开层级节点并操作当前场景中的选择、过滤或拖放。",
+    "descriptionEn": "Expand nodes and explore selection, filtering or drag and drop for this scenario.",
+    "source": "docs/examples/tree-accordion.tsx",
+    "sourceExample": "tree/accordion"
+  },
+  {
+    "id": "tree-draggable",
+    "component": "tree",
+    "title": "可拖拽",
+    "titleEn": "Draggable",
+    "description": "展开层级节点并操作当前场景中的选择、过滤或拖放。",
+    "descriptionEn": "Expand nodes and explore selection, filtering or drag and drop for this scenario.",
+    "source": "docs/examples/tree-draggable.tsx",
+    "sourceExample": "tree/draggable"
+  },
+  {
+    "id": "tree-v2-basic",
+    "component": "tree-v2",
+    "title": "基础用法",
+    "titleEn": "Basic usage",
+    "description": "虚拟树仅挂载可见节点，滚动查看其余内容。",
+    "descriptionEn": "Only visible rows are mounted. Scroll to explore the remaining nodes.",
+    "source": "docs/examples/tree-v2-basic.tsx",
+    "sourceExample": "tree-v2/basic"
+  },
+  {
+    "id": "tree-v2-selectable",
+    "component": "tree-v2",
+    "title": "可选择",
+    "titleEn": "Selectable",
+    "description": "虚拟树仅挂载可见节点，滚动查看其余内容。",
+    "descriptionEn": "Only visible rows are mounted. Scroll to explore the remaining nodes.",
+    "source": "docs/examples/tree-v2-selectable.tsx",
+    "sourceExample": "tree-v2/selectable"
+  },
+  {
+    "id": "tree-v2-disabled",
+    "component": "tree-v2",
+    "title": "禁用复选框",
+    "titleEn": "Disabled checkbox",
+    "description": "虚拟树仅挂载可见节点，滚动查看其余内容。",
+    "descriptionEn": "Only visible rows are mounted. Scroll to explore the remaining nodes.",
+    "source": "docs/examples/tree-v2-disabled.tsx",
+    "sourceExample": "tree-v2/disabled"
+  },
+  {
+    "id": "tree-v2-default-state",
+    "component": "tree-v2",
+    "title": "默认展开和勾选",
+    "titleEn": "Default expanded and checked",
+    "description": "虚拟树仅挂载可见节点，滚动查看其余内容。",
+    "descriptionEn": "Only visible rows are mounted. Scroll to explore the remaining nodes.",
+    "source": "docs/examples/tree-v2-default-state.tsx",
+    "sourceExample": "tree-v2/default-state"
+  },
+  {
+    "id": "tree-v2-custom-node",
+    "component": "tree-v2",
+    "title": "自定义节点",
+    "titleEn": "Custom node",
+    "description": "虚拟树仅挂载可见节点，滚动查看其余内容。",
+    "descriptionEn": "Only visible rows are mounted. Scroll to explore the remaining nodes.",
+    "source": "docs/examples/tree-v2-custom-node.tsx",
+    "sourceExample": "tree-v2/custom-node"
+  },
+  {
+    "id": "tree-v2-custom-node-class",
+    "component": "tree-v2",
+    "title": "自定义节点类名",
+    "titleEn": "Custom node class",
+    "description": "虚拟树仅挂载可见节点，滚动查看其余内容。",
+    "descriptionEn": "Only visible rows are mounted. Scroll to explore the remaining nodes.",
+    "source": "docs/examples/tree-v2-custom-node-class.tsx",
+    "sourceExample": "tree-v2/custom-node-class"
+  },
+  {
+    "id": "tree-v2-custom-icon",
+    "component": "tree-v2",
+    "title": "自定义图标",
+    "titleEn": "Custom icon",
+    "description": "虚拟树仅挂载可见节点，滚动查看其余内容。",
+    "descriptionEn": "Only visible rows are mounted. Scroll to explore the remaining nodes.",
+    "source": "docs/examples/tree-v2-custom-icon.tsx",
+    "sourceExample": "tree-v2/custom-icon"
+  },
+  {
+    "id": "tree-v2-filter",
+    "component": "tree-v2",
+    "title": "节点过滤",
+    "titleEn": "Tree node filtering",
+    "description": "虚拟树仅挂载可见节点，滚动查看其余内容。",
+    "descriptionEn": "Only visible rows are mounted. Scroll to explore the remaining nodes.",
+    "source": "docs/examples/tree-v2-filter.tsx",
+    "sourceExample": "tree-v2/filter"
+  },
+  {
+    "id": "tree-select-basic",
+    "component": "tree-select",
+    "title": "基础用法",
+    "titleEn": "Basic usage",
+    "description": "展开树选择叶节点，按配置支持任意层级、多选和搜索。",
+    "descriptionEn": "Expand the tree to select leaves, or enable any level selection, multiple values and filtering.",
+    "source": "docs/examples/tree-select-basic.tsx",
+    "sourceExample": "tree-select/basic"
+  },
+  {
+    "id": "tree-select-check-strictly",
+    "component": "tree-select",
+    "title": "选择任意层级",
+    "titleEn": "Select any level",
+    "description": "展开树选择叶节点，按配置支持任意层级、多选和搜索。",
+    "descriptionEn": "Expand the tree to select leaves, or enable any level selection, multiple values and filtering.",
+    "source": "docs/examples/tree-select-check-strictly.tsx",
+    "sourceExample": "tree-select/check-strictly"
+  },
+  {
+    "id": "tree-select-multiple",
+    "component": "tree-select",
+    "title": "多选",
+    "titleEn": "Multiple Selection",
+    "description": "展开树选择叶节点，按配置支持任意层级、多选和搜索。",
+    "descriptionEn": "Expand the tree to select leaves, or enable any level selection, multiple values and filtering.",
+    "source": "docs/examples/tree-select-multiple.tsx",
+    "sourceExample": "tree-select/multiple"
+  },
+  {
+    "id": "tree-select-disabled",
+    "component": "tree-select",
+    "title": "禁用选择",
+    "titleEn": "Disabled Selection",
+    "description": "展开树选择叶节点，按配置支持任意层级、多选和搜索。",
+    "descriptionEn": "Expand the tree to select leaves, or enable any level selection, multiple values and filtering.",
+    "source": "docs/examples/tree-select-disabled.tsx",
+    "sourceExample": "tree-select/disabled"
+  },
+  {
+    "id": "tree-select-filterable",
+    "component": "tree-select",
+    "title": "可搜索",
+    "titleEn": "Filterable",
+    "description": "展开树选择叶节点，按配置支持任意层级、多选和搜索。",
+    "descriptionEn": "Expand the tree to select leaves, or enable any level selection, multiple values and filtering.",
+    "source": "docs/examples/tree-select-filterable.tsx",
+    "sourceExample": "tree-select/filterable"
+  },
+  {
+    "id": "tree-select-slots",
+    "component": "tree-select",
+    "title": "自定义内容",
+    "titleEn": "Custom content",
+    "description": "展开树选择叶节点，按配置支持任意层级、多选和搜索。",
+    "descriptionEn": "Expand the tree to select leaves, or enable any level selection, multiple values and filtering.",
+    "source": "docs/examples/tree-select-slots.tsx",
+    "sourceExample": "tree-select/slots"
+  },
+  {
+    "id": "tree-select-lazy",
+    "component": "tree-select",
+    "title": "懒加载",
+    "titleEn": "LazyLoad",
+    "description": "展开树选择叶节点，按配置支持任意层级、多选和搜索。",
+    "descriptionEn": "Expand the tree to select leaves, or enable any level selection, multiple values and filtering.",
+    "source": "docs/examples/tree-select-lazy.tsx",
+    "sourceExample": "tree-select/lazy"
+  },
+  {
+    "id": "tree-select-node-key",
+    "component": "tree-select",
+    "title": "自定义节点键",
+    "titleEn": "Use node-key attribute",
+    "description": "展开树选择叶节点，按配置支持任意层级、多选和搜索。",
+    "descriptionEn": "Expand the tree to select leaves, or enable any level selection, multiple values and filtering.",
+    "source": "docs/examples/tree-select-node-key.tsx",
+    "sourceExample": "tree-select/node-key"
+  },
+  {
+    "id": "select-v2-basic-usage",
+    "component": "select-v2",
+    "title": "基础用法",
+    "titleEn": "Basic usage",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-basic-usage.tsx",
+    "sourceExample": "select-v2/basic-usage"
+  },
+  {
+    "id": "select-v2-multiple",
+    "component": "select-v2",
+    "title": "多选",
+    "titleEn": "Multi select",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-multiple.tsx",
+    "sourceExample": "select-v2/multiple"
+  },
+  {
+    "id": "select-v2-size",
+    "component": "select-v2",
+    "title": "尺寸",
+    "titleEn": "Sizes",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-size.tsx",
+    "sourceExample": "select-v2/size"
+  },
+  {
+    "id": "select-v2-hide-extra-tags",
+    "component": "select-v2",
+    "title": "折叠标签",
+    "titleEn": "Hide extra tags",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-hide-extra-tags.tsx",
+    "sourceExample": "select-v2/hide-extra-tags"
+  },
+  {
+    "id": "select-v2-filterable",
+    "component": "select-v2",
+    "title": "可搜索",
+    "titleEn": "Filtering",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-filterable.tsx",
+    "sourceExample": "select-v2/filterable"
+  },
+  {
+    "id": "select-v2-disabled",
+    "component": "select-v2",
+    "title": "禁用",
+    "titleEn": "Disabled",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-disabled.tsx",
+    "sourceExample": "select-v2/disabled"
+  },
+  {
+    "id": "select-v2-grouping",
+    "component": "select-v2",
+    "title": "选项分组",
+    "titleEn": "Grouping",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-grouping.tsx",
+    "sourceExample": "select-v2/grouping"
+  },
+  {
+    "id": "select-v2-clearable",
+    "component": "select-v2",
+    "title": "可清空",
+    "titleEn": "Clearable",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-clearable.tsx",
+    "sourceExample": "select-v2/clearable"
+  },
+  {
+    "id": "select-v2-customized-option",
+    "component": "select-v2",
+    "title": "自定义选项",
+    "titleEn": "Customized option",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-customized-option.tsx",
+    "sourceExample": "select-v2/customized-option"
+  },
+  {
+    "id": "select-v2-custom-header",
+    "component": "select-v2",
+    "title": "自定义头部",
+    "titleEn": "Custom header",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-custom-header.tsx",
+    "sourceExample": "select-v2/custom-header"
+  },
+  {
+    "id": "select-v2-custom-footer",
+    "component": "select-v2",
+    "title": "自定义底部",
+    "titleEn": "Custom footer",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-custom-footer.tsx",
+    "sourceExample": "select-v2/custom-footer"
+  },
+  {
+    "id": "select-v2-allow-create",
+    "component": "select-v2",
+    "title": "创建选项",
+    "titleEn": "Create options",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-allow-create.tsx",
+    "sourceExample": "select-v2/allow-create"
+  },
+  {
+    "id": "select-v2-remote-search",
+    "component": "select-v2",
+    "title": "远程搜索",
+    "titleEn": "Remote search",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-remote-search.tsx",
+    "sourceExample": "select-v2/remote-search"
+  },
+  {
+    "id": "select-v2-use-valueKey",
+    "component": "select-v2",
+    "title": "对象值",
+    "titleEn": "Object values",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-use-valueKey.tsx",
+    "sourceExample": "select-v2/use-valueKey"
+  },
+  {
+    "id": "select-v2-props",
+    "component": "select-v2",
+    "title": "字段映射",
+    "titleEn": "Props aliases",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-props.tsx",
+    "sourceExample": "select-v2/props"
+  },
+  {
+    "id": "select-v2-custom-tag",
+    "component": "select-v2",
+    "title": "自定义标签",
+    "titleEn": "Custom tags",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-custom-tag.tsx",
+    "sourceExample": "select-v2/custom-tag"
+  },
+  {
+    "id": "select-v2-custom-loading",
+    "component": "select-v2",
+    "title": "自定义加载",
+    "titleEn": "Custom loading",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-custom-loading.tsx",
+    "sourceExample": "select-v2/custom-loading"
+  },
+  {
+    "id": "select-v2-empty-values",
+    "component": "select-v2",
+    "title": "空值处理",
+    "titleEn": "Empty values",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-empty-values.tsx",
+    "sourceExample": "select-v2/empty-values"
+  },
+  {
+    "id": "select-v2-custom-label",
+    "component": "select-v2",
+    "title": "自定义选中标签",
+    "titleEn": "Custom labels",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-custom-label.tsx",
+    "sourceExample": "select-v2/custom-label"
+  },
+  {
+    "id": "select-v2-custom-width",
+    "component": "select-v2",
+    "title": "自定义宽度",
+    "titleEn": "Custom width",
+    "description": "滚动虚拟列表选择选项，按场景使用筛选、多选或自定义内容。",
+    "descriptionEn": "Scroll the virtual list and explore filtering, multiple selection or custom content.",
+    "source": "docs/examples/select-v2-custom-width.tsx",
+    "sourceExample": "select-v2/custom-width"
+  }
+]

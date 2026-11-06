@@ -1,0 +1,15 @@
+{
+  "baseline": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+  "documentCount": 83,
+  "sourceDirectoryCount": 122,
+  "sourceFileCount": 1062,
+  "apiTableRows": 2394,
+  "missingDocumentDesigns": [],
+  "missingDirectoryDesigns": [],
+  "unmappedDirectories": [],
+  "exampleReferences": 599,
+  "unresolvedExampleReferences": [],
+  "runtimeTestsRun": false,
+  "visualParityVerified": false,
+  "implementationComplete": false
+}

@@ -1,0 +1,18 @@
+/* 交互元素使用来源列表样式，清除原生按钮的额外边框和底色。 */
+.el-upload-list__item-name {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  text-align: start;
+  cursor: pointer;
+}
+.el-upload-list__item-delete {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.el-upload:focus-visible {
+  outline: 2px solid var(--el-color-primary);
+  outline-offset: 2px;
+}

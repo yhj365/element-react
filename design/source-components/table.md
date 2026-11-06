@@ -1,0 +1,224 @@
+# Table 源码目录设计
+
+- 来源：packages/components/table
+- 分类：根组件入口直接重导出（包括部分基础设施）
+- 功能设计：TableColumn；列分组、宽度、固定列、表头；选择/保留选择、排序/自定义排序、筛选；展开/树/懒加载；合计/合并单元格、索引；溢出提示、滚动、布局和全套实例方法。
+- 家族设计：[table](../components/table.md)
+- React方案：通过React组合组件与Context保持来源层级；属性/事件/插槽/实例映射遵循家族设计和全局契约。
+- 状态：目录已纳入覆盖；未逐行完成实现行为审计，不代表组件已实现。
+
+## 文件追踪
+
+- packages/components/table/index.ts（SHA256 42e1d7ea30e88d340cab67988cd6052bdb06322c07f690aed2227c3cfa36e6fc）
+- packages/components/table/src/composables/use-scrollbar.ts（SHA256 5d40cf3cbbdefc52fab2e783f2e2391f7aaa85f55b97ed874f4031a3b0dfd747）
+- packages/components/table/src/config.ts（SHA256 b7e09481a58bbea3ebf67abac6e515ac86a453891bfcf26fc4c75777f1d19acc）
+- packages/components/table/src/filter-panel.vue（SHA256 ac942fd928d418c964f133732b57d566622c93a6f386c93a379ba35a6021aa57）
+- packages/components/table/src/h-helper.ts（SHA256 92db245985dc4d2324b90ae49f18477defdf347ce519c0cb08ac0d9812dd2642）
+- packages/components/table/src/layout-observer.ts（SHA256 c075be74bd79c365f9d83a253738636225bac294fe86eff6ca47610a4837ea3a）
+- packages/components/table/src/store/current.ts（SHA256 bf4466dafae1405c8c2ea1c6df4f13621a70b152d02cfaab0c371109b592b216）
+- packages/components/table/src/store/expand.ts（SHA256 3dbbed65266bb64ae20fd110b8ce3217a2086c6f3c6c0a738ff42ba7451d020c）
+- packages/components/table/src/store/helper.ts（SHA256 8c1142c737567dd5ccf6322e8efa883aab3efe94d8110b3db9bbd64a6bb1f452）
+- packages/components/table/src/store/index.ts（SHA256 517a0dfcca179a481fb33062ffeb4c2f0932f61ac4363115d370595b70ff18c2）
+- packages/components/table/src/store/tree.ts（SHA256 1ee5e401874175f6fa2faccbe59ddd57a8c0a17abd67e1a8db4088d083d65f62）
+- packages/components/table/src/store/watcher.ts（SHA256 ae3860003576eb0bce18603aa22af97fe1c5e2914309c1d2229996061b60f140）
+- packages/components/table/src/table/defaults.ts（SHA256 3d3885360de529dac82cf2eaf794ae23877b504bc3c8b3fa2c8bafa41aec68b4）
+- packages/components/table/src/table/key-render-helper.ts（SHA256 7a68e0a6e23fd68e96a85bb32dd6c660f7cbf7e018eeb0b640a1ad829f9acd8f）
+- packages/components/table/src/table/style-helper.ts（SHA256 a1753e327fa5db75c6568ba8cf71dae8e0189d1e954f246c692451bf2f44c6bf）
+- packages/components/table/src/table/utils-helper.ts（SHA256 1be01360626fc73b0447ccdb9efc66c777c524f0a0537bc05a9f3a1af1bcdaeb）
+- packages/components/table/src/table-body/defaults.ts（SHA256 d381fdb033dfccedaa791fbb492c55128cd32a9f9461174f2413a0c5b62384e4）
+- packages/components/table/src/table-body/events-helper.ts（SHA256 7fe9682d76fd11cbd324dd4ef9a9b25edf773483227e6bc19c4f333f2961f9e0）
+- packages/components/table/src/table-body/index.ts（SHA256 c467888b7f8cbe05d175f4aa3608973efb018be29db3f65966f1ef329b334996）
+- packages/components/table/src/table-body/render-helper.ts（SHA256 506d1e086481164f41a12de935ff7393d2b6ec1c8e4bc967240475a0248a77cb）
+- packages/components/table/src/table-body/styles-helper.ts（SHA256 8a47536092f8f356079d80d9495398b91580a93c69f8c1a71ba9bbbb688a37d7）
+- packages/components/table/src/table-body/td-wrapper.vue（SHA256 6e834ba829e60f9ce1e35eb7e758e992e44bb3aa9ffab8757046e48eb3c38cd5）
+- packages/components/table/src/table-column/defaults.ts（SHA256 2d3924804b64ee5feb9d49669dab8f617f5535a7068c6b2515428bcfdd7720c5）
+- packages/components/table/src/table-column/index.ts（SHA256 22f8ec58015696a24a4d95328e548372ced04be5314111c066dbe80c4587d5ab）
+- packages/components/table/src/table-column/index.vue（SHA256 1447099db8b51ebf9e3487ba88cde418fb6fd401f66f3a4971c524c5a193fd5d）
+- packages/components/table/src/table-column/render-helper.ts（SHA256 df3b8e408207394a5657857773c1f67d01626b52b472514d8d645ea9640fff68）
+- packages/components/table/src/table-column/watcher-helper.ts（SHA256 9d03463550d39b515f2938a9aeced06a3224d4aa240e1bbd970eb8a9925d9278）
+- packages/components/table/src/table-footer/index.ts（SHA256 5cabf6d496f9c0b55cbbe8cea098c950f69ce87df6f9e0388248bc444c6e9929）
+- packages/components/table/src/table-footer/mapState-helper.ts（SHA256 7667269633f7f51d8db0006c1d3496aa6e62cb72612bfd9c1e309161ff5d5f68）
+- packages/components/table/src/table-footer/style-helper.ts（SHA256 8e0a5be0a4b1187dd833ac043fee2debcd992edc5eff3154faa941e3d5fce377）
+- packages/components/table/src/table-header/event-helper.ts（SHA256 6dbe58a2d24a754c4e60da0570d42b96cc2d18e0d2f24e3ae29e864d8a252942）
+- packages/components/table/src/table-header/index.ts（SHA256 7fb7e0fe1b67549b957226b763ae4fee2567e43c19c3ffb1458b7c840621fb1f）
+- packages/components/table/src/table-header/style.helper.ts（SHA256 7b7673ff6b5d8b94b9d96724161a4f0741c459a6153d0dedd294f48fac0fd3a0）
+- packages/components/table/src/table-header/utils-helper.ts（SHA256 9ea973e8086d07ff2a96fa0247f21af3a415c1a8b4553734ec863c759769b381）
+- packages/components/table/src/table-layout.ts（SHA256 46d238be62cb9341d7d7ef783552e507e70f945e969146b2f36f6b8952542b90）
+- packages/components/table/src/table.vue（SHA256 71d924e1b578c2705f67f3655f078eb6fb6015e6d5a73ea8386a5a94fd7590f7）
+- packages/components/table/src/tableColumn.ts（SHA256 6d170b56d3959ee8a1703d8a24a3fb025267b1d4c2d4fb4b2cbbb925c10c0509）
+- packages/components/table/src/tokens.ts（SHA256 ccfa16f5a61140284584adc38b9a54f33905ab8d9d1685c500c6f3da6d6bb7c5）
+- packages/components/table/src/util.ts（SHA256 5d81148243408f61e1c46c4caa8c3aa31bd9cc5bc4649609607e42f9fad5af93）
+- packages/components/table/style/css.ts（SHA256 841c0a8e576fcad5d8977d1a20a045374d18b3263b541ae158bbf2b438ee4e5b）
+- packages/components/table/style/index.ts（SHA256 4afd6dacc3f00975d65da40c684d914af46d3d334f8d39becd54f11472c0ccfc）
+- packages/components/table/__tests__/table-column.test.ts（SHA256 ee75e7b3491af3fea1cded3032a37606a451c0bbd8677e7b41776e0cdd0a8686）
+- packages/components/table/__tests__/table-test-common.ts（SHA256 8f1a872d67a03db32e6cebbdd6e4f9ba87660ce867579db8faefb6319fe795d3）
+- packages/components/table/__tests__/table.test.ts（SHA256 5d60b6d41e9353dfb34b98374ab999268a65972dc8207327f754f491b83c6743）
+
+## 来源测试名称索引
+
+以下为静态提取，不包含所有动态生成用例、断言、before/after钩子；必须阅读测试快照迁移行为，不以标题数量代表完整覆盖。
+
+- table column — packages/components/table/__tests__/table-column.test.ts
+- column attributes — packages/components/table/__tests__/table-column.test.ts
+- label — packages/components/table/__tests__/table-column.test.ts
+- width — packages/components/table/__tests__/table-column.test.ts
+- fixed — packages/components/table/__tests__/table-column.test.ts
+- resizable — packages/components/table/__tests__/table-column.test.ts
+- formatter — packages/components/table/__tests__/table-column.test.ts
+- show-overflow-tooltip — packages/components/table/__tests__/table-column.test.ts
+- align — packages/components/table/__tests__/table-column.test.ts
+- class-name — packages/components/table/__tests__/table-column.test.ts
+- selectable === false & check selectAll status — packages/components/table/__tests__/table-column.test.ts
+- type — packages/components/table/__tests__/table-column.test.ts
+- = selection — packages/components/table/__tests__/table-column.test.ts
+- render — packages/components/table/__tests__/table-column.test.ts
+- select all — packages/components/table/__tests__/table-column.test.ts
+- select one — packages/components/table/__tests__/table-column.test.ts
+- The index parameters of the selectable function should be the same as the index of the row — packages/components/table/__tests__/table-column.test.ts
+- Maintain child selection states during data updates — packages/components/table/__tests__/table-column.test.ts
+- reserve selection — packages/components/table/__tests__/table-column.test.ts
+- a11y — packages/components/table/__tests__/table-column.test.ts
+- = index — packages/components/table/__tests__/table-column.test.ts
+- render — packages/components/table/__tests__/table-column.test.ts
+- = expand — packages/components/table/__tests__/table-column.test.ts
+- works — packages/components/table/__tests__/table-column.test.ts
+- a11y — packages/components/table/__tests__/table-column.test.ts
+- sortable — packages/components/table/__tests__/table-column.test.ts
+- render — packages/components/table/__tests__/table-column.test.ts
+- sortable orders — packages/components/table/__tests__/table-column.test.ts
+- sortable method — packages/components/table/__tests__/table-column.test.ts
+- sortable by method — packages/components/table/__tests__/table-column.test.ts
+- sortable by property — packages/components/table/__tests__/table-column.test.ts
+- click sortable column — packages/components/table/__tests__/table-column.test.ts
+- ascending — packages/components/table/__tests__/table-column.test.ts
+- descending — packages/components/table/__tests__/table-column.test.ts
+- change column configuration — packages/components/table/__tests__/table-column.test.ts
+- column expand — packages/components/table/__tests__/table-column.test.ts
+- should render expand column correctly — packages/components/table/__tests__/table-column.test.ts
+- should respect row-expandable prop — packages/components/table/__tests__/table-column.test.ts
+- preserve-expanded-content — packages/components/table/__tests__/table-column.test.ts
+- should lose expanded state when refreshing data without preserve-expanded-content — packages/components/table/__tests__/table-column.test.ts
+- should preserve expanded state when refreshing data with preserve-expanded-content — packages/components/table/__tests__/table-column.test.ts
+- should preserve multiple expanded rows when refreshing data — packages/components/table/__tests__/table-column.test.ts
+- multi level column — packages/components/table/__tests__/table-column.test.ts
+- should works — packages/components/table/__tests__/table-column.test.ts
+- should works — packages/components/table/__tests__/table-column.test.ts
+- should work in one column — packages/components/table/__tests__/table-column.test.ts
+- should work with fixed — packages/components/table/__tests__/table-column.test.ts
+- el-table-column should callback itself — packages/components/table/__tests__/table-column.test.ts
+- should not rendered other components in hidden-columns — packages/components/table/__tests__/table-column.test.ts
+- should not rendered text in hidden-columns — packages/components/table/__tests__/table-column.test.ts
+- dynamic column attributes — packages/components/table/__tests__/table-column.test.ts
+- label — packages/components/table/__tests__/table-column.test.ts
+- align — packages/components/table/__tests__/table-column.test.ts
+- header-align — packages/components/table/__tests__/table-column.test.ts
+- width — packages/components/table/__tests__/table-column.test.ts
+- min-width — packages/components/table/__tests__/table-column.test.ts
+- fixed — packages/components/table/__tests__/table-column.test.ts
+- correct render selection column when it is not in the first — packages/components/table/__tests__/table-column.test.ts
+- prop — packages/components/table/__tests__/table-column.test.ts
+- tree table — packages/components/table/__tests__/table-column.test.ts
+- selectable index parameter should be correct — packages/components/table/__tests__/table-column.test.ts
+- Table.vue — packages/components/table/__tests__/table.test.ts
+- rendering data is correct — packages/components/table/__tests__/table.test.ts
+- head — packages/components/table/__tests__/table.test.ts
+- row length — packages/components/table/__tests__/table.test.ts
+- row data — packages/components/table/__tests__/table.test.ts
+- custom template — packages/components/table/__tests__/table.test.ts
+- attributes — packages/components/table/__tests__/table.test.ts
+- height — packages/components/table/__tests__/table.test.ts
+- height as string — packages/components/table/__tests__/table.test.ts
+- maxHeight — packages/components/table/__tests__/table.test.ts
+- maxHeight uses special units — packages/components/table/__tests__/table.test.ts
+- updates height and maxHeight sequentially without recursive error — packages/components/table/__tests__/table.test.ts
+- rapidly update height should apply latest value, not stale callbacks — packages/components/table/__tests__/table.test.ts
+- stripe — packages/components/table/__tests__/table.test.ts
+- should display stripe correctly when row is expanded and closed — packages/components/table/__tests__/table.test.ts
+- border — packages/components/table/__tests__/table.test.ts
+- fit — packages/components/table/__tests__/table.test.ts
+- show-header — packages/components/table/__tests__/table.test.ts
+- tableRowClassName — packages/components/table/__tests__/table.test.ts
+- tableRowStyle[Object] — packages/components/table/__tests__/table.test.ts
+- tableRowStyle[Function] — packages/components/table/__tests__/table.test.ts
+- current-row-key — packages/components/table/__tests__/table.test.ts
+- current-change event should pass correct oldCurrentRow when using current-row-key — packages/components/table/__tests__/table.test.ts
+- filter — packages/components/table/__tests__/table.test.ts
+- render — packages/components/table/__tests__/table.test.ts
+- click dropdown — packages/components/table/__tests__/table.test.ts
+- click filter — packages/components/table/__tests__/table.test.ts
+- does not highlight an unconfirmed multiple filter — packages/components/table/__tests__/table.test.ts
+- applies a single filter from an initially unfiltered column — packages/components/table/__tests__/table.test.ts
+- clear filter — packages/components/table/__tests__/table.test.ts
+- click reset — packages/components/table/__tests__/table.test.ts
+- filter filter-icon slot — packages/components/table/__tests__/table.test.ts
+- render — packages/components/table/__tests__/table.test.ts
+- click filter-trigger — packages/components/table/__tests__/table.test.ts
+- events — packages/components/table/__tests__/table.test.ts
+- select — packages/components/table/__tests__/table.test.ts
+- selection-change — packages/components/table/__tests__/table.test.ts
+- cell-mouse-enter — packages/components/table/__tests__/table.test.ts
+- cell mouse enter on cell of which rowSpan > 2 — packages/components/table/__tests__/table.test.ts
+- cell-mouse-leave — packages/components/table/__tests__/table.test.ts
+- row-click — packages/components/table/__tests__/table.test.ts
+- row-dblclick — packages/components/table/__tests__/table.test.ts
+- header-click — packages/components/table/__tests__/table.test.ts
+- summary row — packages/components/table/__tests__/table.test.ts
+- should render — packages/components/table/__tests__/table.test.ts
+- custom sum text — packages/components/table/__tests__/table.test.ts
+- custom summary method — packages/components/table/__tests__/table.test.ts
+- methods — packages/components/table/__tests__/table.test.ts
+- toggleRowSelection — packages/components/table/__tests__/table.test.ts
+- toggleAllSelection — packages/components/table/__tests__/table.test.ts
+- clearSelection — packages/components/table/__tests__/table.test.ts
+- selection reference — packages/components/table/__tests__/table.test.ts
+- sort — packages/components/table/__tests__/table.test.ts
+- sort correct change icon — packages/components/table/__tests__/table.test.ts
+- sort-change event — packages/components/table/__tests__/table.test.ts
+- setCurrentRow — packages/components/table/__tests__/table.test.ts
+- get table columns — packages/components/table/__tests__/table.test.ts
+- hover — packages/components/table/__tests__/table.test.ts
+- hover on which rowSpan > 1 — packages/components/table/__tests__/table.test.ts
+- hover on which contains nested rowSpan > 1 — packages/components/table/__tests__/table.test.ts
+- highlight-current-row — packages/components/table/__tests__/table.test.ts
+- keep highlight row when data change — packages/components/table/__tests__/table.test.ts
+- keep highlight row after sort — packages/components/table/__tests__/table.test.ts
+- table append is visible in viewport if height is 100% — packages/components/table/__tests__/table.test.ts
+- rowKey & index — packages/components/table/__tests__/table.test.ts
+- key type is string — packages/components/table/__tests__/table.test.ts
+- with expand row — packages/components/table/__tests__/table.test.ts
+- tree — packages/components/table/__tests__/table.test.ts
+- render tree structural data — packages/components/table/__tests__/table.test.ts
+- load substree row data & updateKeyChildren — packages/components/table/__tests__/table.test.ts
+- tree-props & default-expand-all & expand-change — packages/components/table/__tests__/table.test.ts
+- tree-props & default-expand-all with dynamic data — packages/components/table/__tests__/table.test.ts
+- tree-props & update expandRowKeys — packages/components/table/__tests__/table.test.ts
+- expand-row-keys & toggleRowExpansion — packages/components/table/__tests__/table.test.ts
+- v-if on el-table-column should patch correctly — packages/components/table/__tests__/table.test.ts
+- selectable tree — packages/components/table/__tests__/table.test.ts
+- lazy tree selection linkage — packages/components/table/__tests__/table.test.ts
+- eager parent select cascades to lazy grandchildren on expand — packages/components/table/__tests__/table.test.ts
+- select-all includes loaded lazy children — packages/components/table/__tests__/table.test.ts
+- updateAllSelected reflects lazy children state — packages/components/table/__tests__/table.test.ts
+- cleanSelection preserves valid lazy children — packages/components/table/__tests__/table.test.ts
+- selectable tree linkage parent status with children — packages/components/table/__tests__/table.test.ts
+- cleanSelection removes lazy children when parent is removed — packages/components/table/__tests__/table.test.ts
+- a11y — packages/components/table/__tests__/table.test.ts
+- getHalfSelectionRows — packages/components/table/__tests__/table.test.ts
+- when tableLayout is auto — packages/components/table/__tests__/table.test.ts
+- automatic minimum size of flex-items — packages/components/table/__tests__/table.test.ts
+- change columns order when use v-for & key to render table — packages/components/table/__tests__/table.test.ts
+- show-overflow-tooltip — packages/components/table/__tests__/table.test.ts
+- add show-overflow-tooltip to table and table-column — packages/components/table/__tests__/table.test.ts
+- test show-overflow-tooltip trigger — packages/components/table/__tests__/table.test.ts
+- should not show tooltip when cell content is empty — packages/components/table/__tests__/table.test.ts
+- should cleanup tooltip dynamically — packages/components/table/__tests__/table.test.ts
+- use-tooltip-formatter — packages/components/table/__tests__/table.test.ts
+- should dynamically update show-overflow-tooltip via root table level — packages/components/table/__tests__/table.test.ts
+- does not mutate filtered-value when filter-multiple is false — packages/components/table/__tests__/table.test.ts
+- should not throw when unmounted with a pending fixed column style update — packages/components/table/__tests__/table.test.ts
+
+## 必须补齐的设计审计
+
+- [ ] 导出与组合关系、Props默认值、emits、defineExpose、watch/生命周期副作用逐项核对。
+- [ ] React实现的状态所有权、上下文、订阅和卸载清理明确。
+- [ ] 来源测试全部建立映射，涉及DOM/视觉的补充浏览器对照。

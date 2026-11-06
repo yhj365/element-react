@@ -1,0 +1,4084 @@
+# Element React 完整任务清单
+
+> 自动生成。只有与当前源码指纹一致、测试通过并有可运行示例的细项标记完成。未实现的原功能保留待办，公共使用文档不展示它们。
+
+来源：77d5c32c4ebcfffde67e51f6325c6d350ca668a0
+已验证 API：1286/2394；React示例：128；单元测试：467；整体等价验收：未完成。
+
+## Affix 固钉
+
+- [x] `api:affix:46` Attributes / offset — 证据：tests/scroll-image.test.tsx
+- [x] `api:affix:47` Attributes / position — 证据：tests/scroll-image.test.tsx
+- [x] `api:affix:48` Attributes / target — 证据：tests/scroll-image.test.tsx
+- [x] `api:affix:49` Attributes / z-index — 证据：tests/scroll-image.test.tsx
+- [ ] `api:affix:50` Attributes / teleported
+- [ ] `api:affix:51` Attributes / append-to
+- [ ] `api:affix:57` Events / change
+- [ ] `api:affix:58` Events / scroll
+- [x] `api:affix:64` Slots / default — 证据：tests/scroll-image.test.tsx
+- [x] `api:affix:70` Exposes / update — 证据：tests/scroll-image.test.tsx
+- [x] `api:affix:71` Exposes / updateRoot — 证据：tests/scroll-image.test.tsx
+- [ ] `scenario:affix:10` Basic Usage
+- [ ] `scenario:affix:20` Target Container
+- [ ] `scenario:affix:30` Fixed Position
+- [ ] `source-example:affix:affix/basic` affix/basic
+- [ ] `source-example:affix:affix/target` affix/target
+- [ ] `source-example:affix:affix/fixed` affix/fixed
+- [ ] `directory:affix` affix
+
+## Alert 提示
+
+- [x] `api:alert:84` Attributes / title — 证据：tests/presentation.test.tsx
+- [x] `api:alert:85` Attributes / type — 证据：tests/presentation.test.tsx
+- [x] `api:alert:86` Attributes / description — 证据：tests/presentation.test.tsx
+- [x] `api:alert:87` Attributes / closable — 证据：tests/presentation.test.tsx
+- [x] `api:alert:88` Attributes / center — 证据：tests/presentation.test.tsx
+- [x] `api:alert:89` Attributes / close-text — 证据：tests/presentation.test.tsx
+- [x] `api:alert:90` Attributes / show-icon — 证据：tests/presentation.test.tsx
+- [x] `api:alert:91` Attributes / effect — 证据：tests/presentation.test.tsx
+- [x] `api:alert:97` Events / close — 证据：tests/presentation.test.tsx
+- [x] `api:alert:103` Slots / default — 证据：tests/presentation.test.tsx
+- [x] `api:alert:104` Slots / title — 证据：tests/presentation.test.tsx
+- [x] `api:alert:105` Slots / icon — 证据：tests/presentation.test.tsx
+- [ ] `scenario:alert:10` Basic Usage
+- [ ] `scenario:alert:20` Theme
+- [ ] `scenario:alert:30` Customizable Close Button
+- [ ] `scenario:alert:40` With Icon
+- [ ] `scenario:alert:50` Centered Text
+- [ ] `scenario:alert:60` With Description
+- [ ] `scenario:alert:70` With Icon and Description
+- [ ] `source-example:alert:alert/basic` alert/basic
+- [ ] `source-example:alert:alert/theme` alert/theme
+- [ ] `source-example:alert:alert/close-button` alert/close-button
+- [ ] `source-example:alert:alert/icon` alert/icon
+- [ ] `source-example:alert:alert/center` alert/center
+- [ ] `source-example:alert:alert/description` alert/description
+- [ ] `source-example:alert:alert/icon-description` alert/icon-description
+- [ ] `directory:alert` alert
+
+## Anchor 锚点
+
+- [x] `api:anchor:82` Anchor Attributes / container — 证据：tests/anchor.test.tsx
+- [x] `api:anchor:83` Anchor Attributes / offset — 证据：tests/anchor.test.tsx
+- [x] `api:anchor:84` Anchor Attributes / bound — 证据：tests/anchor.test.tsx
+- [x] `api:anchor:85` Anchor Attributes / duration — 证据：tests/anchor.test.tsx
+- [x] `api:anchor:86` Anchor Attributes / marker — 证据：tests/anchor.test.tsx
+- [x] `api:anchor:87` Anchor Attributes / type — 证据：tests/anchor.test.tsx
+- [x] `api:anchor:88` Anchor Attributes / direction — 证据：tests/anchor.test.tsx
+- [x] `api:anchor:89` Anchor Attributes / select-scroll-top — 证据：tests/anchor.test.tsx
+- [x] `api:anchor:95` Anchor Events / change — 证据：tests/anchor.test.tsx
+- [x] `api:anchor:96` Anchor Events / click — 证据：tests/anchor.test.tsx
+- [x] `api:anchor:102` Anchor Exposes / scrollTo — 证据：tests/anchor.test.tsx
+- [x] `api:anchor:108` Anchor Slots / default — 证据：tests/anchor.test.tsx
+- [x] `api:anchor:114` AnchorLink Attributes / title — 证据：tests/anchor.test.tsx
+- [x] `api:anchor:115` AnchorLink Attributes / href — 证据：tests/anchor.test.tsx
+- [x] `api:anchor:121` AnchorLink Slots / default — 证据：tests/anchor.test.tsx
+- [x] `api:anchor:122` AnchorLink Slots / sub-link — 证据：tests/anchor.test.tsx
+- [ ] `scenario:anchor:10` Basic Usage
+- [ ] `scenario:anchor:20` Horizontal Mode
+- [ ] `scenario:anchor:36` Scroll Container
+- [ ] `scenario:anchor:46` Anchor link change
+- [ ] `scenario:anchor:56` Underline type
+- [ ] `scenario:anchor:66` Affix Mode
+- [ ] `source-example:anchor:anchor/basic` anchor/basic
+- [ ] `source-example:anchor:anchor/horizontal` anchor/horizontal
+- [ ] `source-example:anchor:anchor/scroll` anchor/scroll
+- [ ] `source-example:anchor:anchor/change` anchor/change
+- [ ] `source-example:anchor:anchor/underline` anchor/underline
+- [ ] `source-example:anchor:anchor/affix` anchor/affix
+- [ ] `directory:anchor` anchor
+- [ ] `directory:anchor-link` anchor-link
+- [x] `feature:anchor/cancel-animation` 新点击取消旧动画且卸载释放滚动监听 — 证据：tests/anchor.test.tsx
+
+## Autocomplete 自动补全
+
+- [x] `api:autocomplete:66` Attributes / model-value / v-model — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:67` Attributes / placeholder — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:68` Attributes / clearable — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:69` Attributes / disabled — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:70` Attributes / value-key — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:71` Attributes / debounce — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:72` Attributes / placement — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:73` Attributes / fetch-suggestions — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:74` Attributes / trigger-on-focus — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:75` Attributes / select-when-unmatched — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:76` Attributes / name — 证据：tests/autocomplete.test.tsx
+- [ ] `api:autocomplete:77` Attributes / aria-label
+- [x] `api:autocomplete:78` Attributes / hide-loading — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:79` Attributes / popper-class — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:80` Attributes / popper-style — 证据：tests/autocomplete.test.tsx
+- [ ] `api:autocomplete:81` Attributes / popper-options
+- [x] `api:autocomplete:82` Attributes / show-arrow — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:83` Attributes / teleported — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:84` Attributes / append-to — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:85` Attributes / highlight-first-item — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:86` Attributes / fit-input-width — 证据：tests/autocomplete.test.tsx
+- [ ] `api:autocomplete:87` Attributes / popper-append-to-body
+- [x] `api:autocomplete:88` Attributes / loop-navigation — 证据：tests/autocomplete.test.tsx
+- [ ] `api:autocomplete:89` Attributes / [input props](./input.md#attributes)
+- [x] `api:autocomplete:95` Events / blur — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:96` Events / focus — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:97` Events / input — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:98` Events / clear — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:99` Events / select — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:100` Events / change — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:106` Slots / default — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:107` Slots / header — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:108` Slots / footer — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:109` Slots / prefix — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:110` Slots / suffix — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:111` Slots / prepend — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:112` Slots / append — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:113` Slots / loading — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:119` Exposes / activated — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:120` Exposes / blur — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:121` Exposes / close — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:122` Exposes / focus — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:123` Exposes / handleSelect — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:124` Exposes / handleKeyEnter — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:125` Exposes / highlightedIndex — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:126` Exposes / highlight — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:127` Exposes / inputRef — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:128` Exposes / loading — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:129` Exposes / popperRef — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:130` Exposes / suggestions — 证据：tests/autocomplete.test.tsx
+- [x] `api:autocomplete:131` Exposes / getData — 证据：tests/autocomplete.test.tsx
+- [ ] `scenario:autocomplete:10` Basic Usage
+- [ ] `scenario:autocomplete:20` Custom template
+- [ ] `scenario:autocomplete:30` Remote search
+- [ ] `scenario:autocomplete:40` Custom Loading ^(2.5.0)
+- [ ] `scenario:autocomplete:50` Custom Header & Footer ^(2.10.6)
+- [x] `source-example:autocomplete:autocomplete/autocomplete` autocomplete/autocomplete — 证据：
+- [x] `source-example:autocomplete:autocomplete/autocomplete-template` autocomplete/autocomplete-template — 证据：
+- [x] `source-example:autocomplete:autocomplete/remote-search` autocomplete/remote-search — 证据：
+- [x] `source-example:autocomplete:autocomplete/custom-loading` autocomplete/custom-loading — 证据：
+- [x] `source-example:autocomplete:autocomplete/custom-header-footer` autocomplete/custom-header-footer — 证据：
+- [ ] `directory:autocomplete` autocomplete
+- [x] `feature:autocomplete/request-race` 旧回调及卸载后响应不能覆盖最新建议 — 证据：tests/autocomplete.test.tsx
+
+## Avatar 头像
+
+- [x] `api:avatar:66` Avatar Attributes / icon — 证据：tests/presentation.test.tsx
+- [x] `api:avatar:67` Avatar Attributes / size — 证据：tests/presentation.test.tsx
+- [x] `api:avatar:68` Avatar Attributes / shape — 证据：tests/presentation.test.tsx
+- [x] `api:avatar:69` Avatar Attributes / src — 证据：tests/presentation.test.tsx
+- [x] `api:avatar:70` Avatar Attributes / src-set — 证据：tests/presentation.test.tsx
+- [x] `api:avatar:71` Avatar Attributes / alt — 证据：tests/presentation.test.tsx
+- [x] `api:avatar:72` Avatar Attributes / fit — 证据：tests/presentation.test.tsx
+- [x] `api:avatar:78` Avatar Events / error — 证据：tests/presentation.test.tsx
+- [x] `api:avatar:84` Avatar Slots / default — 证据：tests/presentation.test.tsx
+- [x] `api:avatar:92` AvatarGroup Attributes / size — 证据：tests/avatar-group.test.tsx
+- [x] `api:avatar:93` AvatarGroup Attributes / shape — 证据：tests/avatar-group.test.tsx
+- [x] `api:avatar:94` AvatarGroup Attributes / collapse-avatars — 证据：tests/avatar-group.test.tsx
+- [x] `api:avatar:95` AvatarGroup Attributes / collapse-avatars-tooltip — 证据：tests/avatar-group.test.tsx
+- [x] `api:avatar:96` AvatarGroup Attributes / max-collapse-avatars — 证据：tests/avatar-group.test.tsx
+- [x] `api:avatar:97` AvatarGroup Attributes / effect — 证据：tests/avatar-group.test.tsx
+- [x] `api:avatar:98` AvatarGroup Attributes / placement — 证据：tests/avatar-group.test.tsx
+- [x] `api:avatar:99` AvatarGroup Attributes / popper-class — 证据：tests/avatar-group.test.tsx
+- [x] `api:avatar:100` AvatarGroup Attributes / popper-style — 证据：tests/avatar-group.test.tsx
+- [x] `api:avatar:101` AvatarGroup Attributes / collapse-class — 证据：tests/avatar-group.test.tsx
+- [x] `api:avatar:102` AvatarGroup Attributes / collapse-style — 证据：tests/avatar-group.test.tsx
+- [ ] `scenario:avatar:10` Basic Usage
+- [ ] `scenario:avatar:20` Types
+- [ ] `scenario:avatar:30` Fallback
+- [ ] `scenario:avatar:40` Fit Container
+- [ ] `scenario:avatar:50` Avatar Group ^(2.13.1)
+- [ ] `source-example:avatar:avatar/basic` avatar/basic
+- [ ] `source-example:avatar:avatar/types` avatar/types
+- [ ] `source-example:avatar:avatar/fallback` avatar/fallback
+- [ ] `source-example:avatar:avatar/fit` avatar/fit
+- [ ] `source-example:avatar:avatar/group` avatar/group
+- [ ] `directory:avatar` avatar
+- [ ] `directory:avatar-group` avatar-group
+- [x] `feature:avatar/retry-previous-source` 切换回曾失败图片时允许重新尝试 — 证据：tests/avatar-group.test.tsx
+- [x] `feature:avatar/group-namespace` 自定义命名空间下数值尺寸变量保持一致 — 证据：tests/avatar-group.test.tsx
+
+## Backtop 回到顶部
+
+- [x] `api:backtop:36` Attributes / target — 证据：tests/scroll-image.test.tsx
+- [x] `api:backtop:37` Attributes / visibility-height — 证据：tests/scroll-image.test.tsx
+- [x] `api:backtop:38` Attributes / right — 证据：tests/scroll-image.test.tsx
+- [x] `api:backtop:39` Attributes / bottom — 证据：tests/scroll-image.test.tsx
+- [x] `api:backtop:45` Events / click — 证据：tests/scroll-image.test.tsx
+- [x] `api:backtop:51` Slots / default — 证据：tests/scroll-image.test.tsx
+- [ ] `scenario:backtop:10` Basic Usage
+- [ ] `scenario:backtop:20` Customizations
+- [ ] `source-example:backtop:backtop/basic` backtop/basic
+- [ ] `source-example:backtop:backtop/custom` backtop/custom
+- [ ] `directory:backtop` backtop
+
+## Badge 徽标
+
+- [x] `api:badge:64` Attributes / value — 证据：tests/presentation.test.tsx
+- [x] `api:badge:65` Attributes / max — 证据：tests/presentation.test.tsx
+- [x] `api:badge:66` Attributes / is-dot — 证据：tests/presentation.test.tsx
+- [x] `api:badge:67` Attributes / hidden — 证据：tests/presentation.test.tsx
+- [x] `api:badge:68` Attributes / type — 证据：tests/presentation.test.tsx
+- [x] `api:badge:69` Attributes / show-zero — 证据：tests/presentation.test.tsx
+- [x] `api:badge:70` Attributes / color — 证据：tests/presentation.test.tsx
+- [x] `api:badge:71` Attributes / offset — 证据：tests/presentation.test.tsx
+- [x] `api:badge:72` Attributes / badge-style — 证据：tests/presentation.test.tsx
+- [x] `api:badge:73` Attributes / badge-class — 证据：tests/presentation.test.tsx
+- [x] `api:badge:79` Slots / default — 证据：tests/presentation.test.tsx
+- [x] `api:badge:80` Slots / content — 证据：tests/presentation.test.tsx
+- [ ] `scenario:badge:10` Basic Usage
+- [ ] `scenario:badge:20` Max Value
+- [ ] `scenario:badge:30` Customizations
+- [ ] `scenario:badge:40` Red Dot
+- [ ] `scenario:badge:50` Offset ^(2.7.0)
+- [ ] `source-example:badge:badge/basic` badge/basic
+- [ ] `source-example:badge:badge/max` badge/max
+- [ ] `source-example:badge:badge/customize` badge/customize
+- [ ] `source-example:badge:badge/dot` badge/dot
+- [ ] `source-example:badge:badge/offset` badge/offset
+- [ ] `directory:badge` badge
+
+## border
+
+- [ ] `scenario:border:10` Border style
+- [ ] `scenario:border:20` Radius
+- [ ] `scenario:border:30` Shadow
+- [ ] `source-example:border:border/border` border/border
+- [ ] `source-example:border:border/radius` border/radius
+- [ ] `source-example:border:border/shadow` border/shadow
+
+## Breadcrumb 面包屑
+
+- [x] `api:breadcrumb:32` Breadcrumb Attributes / separator — 证据：tests/layout-display.test.tsx
+- [x] `api:breadcrumb:33` Breadcrumb Attributes / separator-icon — 证据：tests/layout-display.test.tsx
+- [x] `api:breadcrumb:39` Breadcrumb Slots / default — 证据：tests/layout-display.test.tsx
+- [x] `api:breadcrumb:47` BreadcrumbItem Attributes / to — 证据：tests/layout-display.test.tsx
+- [x] `api:breadcrumb:48` BreadcrumbItem Attributes / replace — 证据：tests/layout-display.test.tsx
+- [x] `api:breadcrumb:54` BreadcrumbItem Slots / default — 证据：tests/layout-display.test.tsx
+- [ ] `scenario:breadcrumb:10` Basic usage
+- [ ] `scenario:breadcrumb:18` Icon separator
+- [ ] `source-example:breadcrumb:breadcrumb/basic` breadcrumb/basic
+- [ ] `source-example:breadcrumb:breadcrumb/icon` breadcrumb/icon
+- [ ] `directory:breadcrumb` breadcrumb
+- [ ] `directory:breadcrumb-item` breadcrumb-item
+
+## Button 按钮
+
+- [x] `api:button:146` Button Attributes / size — 证据：tests/presentation.test.tsx
+- [x] `api:button:147` Button Attributes / type — 证据：tests/presentation.test.tsx
+- [x] `api:button:148` Button Attributes / plain — 证据：tests/presentation.test.tsx
+- [x] `api:button:149` Button Attributes / text — 证据：tests/presentation.test.tsx
+- [x] `api:button:150` Button Attributes / bg — 证据：tests/presentation.test.tsx
+- [x] `api:button:151` Button Attributes / link — 证据：tests/presentation.test.tsx
+- [x] `api:button:152` Button Attributes / round — 证据：tests/presentation.test.tsx
+- [x] `api:button:153` Button Attributes / circle — 证据：tests/presentation.test.tsx
+- [x] `api:button:154` Button Attributes / dashed — 证据：tests/presentation.test.tsx
+- [x] `api:button:155` Button Attributes / loading — 证据：tests/presentation.test.tsx
+- [x] `api:button:156` Button Attributes / loading-icon — 证据：tests/presentation.test.tsx
+- [x] `api:button:157` Button Attributes / disabled — 证据：tests/presentation.test.tsx
+- [x] `api:button:158` Button Attributes / icon — 证据：tests/presentation.test.tsx
+- [x] `api:button:159` Button Attributes / autofocus — 证据：tests/presentation.test.tsx
+- [x] `api:button:160` Button Attributes / native-type — 证据：tests/presentation.test.tsx
+- [x] `api:button:161` Button Attributes / auto-insert-space — 证据：tests/presentation.test.tsx
+- [ ] `api:button:162` Button Attributes / color
+- [ ] `api:button:163` Button Attributes / dark
+- [x] `api:button:164` Button Attributes / tag — 证据：tests/presentation.test.tsx
+- [x] `api:button:170` Button Slots / default — 证据：tests/presentation.test.tsx
+- [x] `api:button:171` Button Slots / loading — 证据：tests/presentation.test.tsx
+- [x] `api:button:172` Button Slots / icon — 证据：tests/presentation.test.tsx
+- [x] `api:button:178` Button Exposes / ref — 证据：tests/presentation.test.tsx
+- [x] `api:button:179` Button Exposes / size — 证据：tests/presentation.test.tsx
+- [x] `api:button:180` Button Exposes / type — 证据：tests/presentation.test.tsx
+- [x] `api:button:181` Button Exposes / disabled — 证据：tests/presentation.test.tsx
+- [x] `api:button:182` Button Exposes / shouldAddSpace — 证据：tests/presentation.test.tsx
+- [x] `api:button:190` ButtonGroup Attributes / size — 证据：tests/presentation.test.tsx
+- [x] `api:button:191` ButtonGroup Attributes / type — 证据：tests/presentation.test.tsx
+- [x] `api:button:192` ButtonGroup Attributes / direction — 证据：tests/presentation.test.tsx
+- [x] `api:button:198` ButtonGroup Slots / default — 证据：tests/presentation.test.tsx
+- [ ] `scenario:button:10` Basic usage
+- [ ] `scenario:button:18` Disabled Button
+- [ ] `scenario:button:28` Link Button
+- [ ] `scenario:button:44` Text Button
+- [ ] `scenario:button:64` Icon Button
+- [ ] `scenario:button:74` Button Group
+- [ ] `scenario:button:86` Loading Button
+- [ ] `scenario:button:106` Sizes
+- [ ] `scenario:button:116` Tag ^(2.3.4)
+- [ ] `scenario:button:126` Custom Color ^(beta)
+- [ ] `source-example:button:button/basic` button/basic
+- [ ] `source-example:button:button/disabled` button/disabled
+- [ ] `source-example:button:button/link` button/link
+- [ ] `source-example:button:button/text` button/text
+- [ ] `source-example:button:button/icon` button/icon
+- [ ] `source-example:button:button/group` button/group
+- [ ] `source-example:button:button/loading` button/loading
+- [ ] `source-example:button:button/size` button/size
+- [ ] `source-example:button:button/tag` button/tag
+- [ ] `source-example:button:button/custom` button/custom
+- [ ] `directory:button` button
+- [ ] `directory:button-group` button-group
+- [x] `feature:button/disabled-custom-tag` Button 自定义标签和重复渲染无多发事件 — 证据：tests/presentation.test.tsx
+
+## Calendar 日历
+
+- [x] `api:calendar:62` Attributes / model-value / v-model — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:calendar:63` Attributes / range — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:calendar:64` Attributes / controller-type — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:calendar:65` Attributes / formatter — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:calendar:71` Slots / date-cell — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:calendar:72` Slots / header — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:calendar:78` Exposes / selectedDay — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:calendar:79` Exposes / pickDay — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:calendar:80` Exposes / selectDate — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:calendar:81` Exposes / calculateValidatedDateRange — 证据：tests/descriptions-calendar.test.tsx
+- [ ] `scenario:calendar:10` Basic
+- [ ] `scenario:calendar:18` Controller Type ^(2.13.1)
+- [ ] `scenario:calendar:26` Custom Content
+- [ ] `scenario:calendar:34` Range
+- [ ] `scenario:calendar:42` Customize header
+- [ ] `scenario:calendar:50` Localization
+- [ ] `source-example:calendar:calendar/basic` calendar/basic
+- [ ] `source-example:calendar:calendar/controller-type` calendar/controller-type
+- [ ] `source-example:calendar:calendar/customize` calendar/customize
+- [ ] `source-example:calendar:calendar/range` calendar/range
+- [ ] `source-example:calendar:calendar/header` calendar/header
+- [ ] `directory:calendar` calendar
+
+## Card 卡片
+
+- [x] `api:card:56` Attributes / header — 证据：tests/presentation.test.tsx
+- [x] `api:card:57` Attributes / footer — 证据：tests/presentation.test.tsx
+- [x] `api:card:58` Attributes / body-style — 证据：tests/presentation.test.tsx
+- [x] `api:card:59` Attributes / header-class — 证据：tests/presentation.test.tsx
+- [x] `api:card:60` Attributes / body-class — 证据：tests/presentation.test.tsx
+- [x] `api:card:61` Attributes / footer-class — 证据：tests/presentation.test.tsx
+- [x] `api:card:62` Attributes / shadow — 证据：tests/presentation.test.tsx
+- [x] `api:card:68` Slots / default — 证据：tests/presentation.test.tsx
+- [x] `api:card:69` Slots / header — 证据：tests/presentation.test.tsx
+- [x] `api:card:70` Slots / footer — 证据：tests/presentation.test.tsx
+- [ ] `scenario:card:10` Basic usage
+- [ ] `scenario:card:20` Simple card
+- [ ] `scenario:card:30` With images
+- [ ] `scenario:card:40` Shadow
+- [ ] `source-example:card:card/basic` card/basic
+- [ ] `source-example:card:card/simple` card/simple
+- [ ] `source-example:card:card/with-images` card/with-images
+- [ ] `source-example:card:card/shadow` card/shadow
+- [ ] `directory:card` card
+
+## Carousel 走马灯
+
+- [x] `api:carousel:84` Carousel Attributes / height — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:85` Carousel Attributes / initial-index — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:86` Carousel Attributes / trigger — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:87` Carousel Attributes / autoplay — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:88` Carousel Attributes / interval — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:89` Carousel Attributes / indicator-position — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:90` Carousel Attributes / arrow — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:91` Carousel Attributes / type — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:92` Carousel Attributes / card-scale — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:93` Carousel Attributes / loop — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:94` Carousel Attributes / direction — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:95` Carousel Attributes / pause-on-hover — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:96` Carousel Attributes / motion-blur — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:102` Carousel Events / change — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:108` Carousel Slots / default — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:114` Carousel Exposes / activeIndex — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:115` Carousel Exposes / setActiveItem — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:116` Carousel Exposes / prev — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:117` Carousel Exposes / next — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:125` Carousel-Item Attributes / name — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:126` Carousel-Item Attributes / label — 证据：tests/carousel.test.tsx
+- [x] `api:carousel:132` Carousel-Item Slots / default — 证据：tests/carousel.test.tsx
+- [ ] `scenario:carousel:10` Basic usage
+- [ ] `scenario:carousel:18` Motion blur ^(2.6.0)
+- [ ] `scenario:carousel:28` Indicators
+- [ ] `scenario:carousel:38` Arrows
+- [ ] `scenario:carousel:48` Auto height
+- [ ] `scenario:carousel:58` Card mode
+- [ ] `scenario:carousel:68` Vertical
+- [ ] `source-example:carousel:carousel/basic` carousel/basic
+- [ ] `source-example:carousel:carousel/motion-blur` carousel/motion-blur
+- [ ] `source-example:carousel:carousel/indicator` carousel/indicator
+- [ ] `source-example:carousel:carousel/arrows` carousel/arrows
+- [ ] `source-example:carousel:carousel/auto-height` carousel/auto-height
+- [ ] `source-example:carousel:carousel/card` carousel/card
+- [ ] `source-example:carousel:carousel/vertical` carousel/vertical
+- [ ] `directory:carousel` carousel
+- [ ] `directory:carousel-item` carousel-item
+- [x] `feature:carousel/two-item-loop` 双项循环复制用于无缝过渡，外部索引保持两项范围 — 证据：tests/carousel.test.tsx
+- [x] `feature:carousel/auto-height` auto高度随当前轮播项测量更新 — 证据：tests/carousel.test.tsx
+- [x] `feature:carousel/timer-cleanup` 手动切换重置计时并在卸载释放计时器 — 证据：tests/carousel.test.tsx
+- [x] `feature:carousel/hover-policy` pauseOnHover=false保持播放，悬停指示器可切换 — 证据：tests/carousel.test.tsx
+
+## cascader
+
+- [ ] `api:cascader:228` Cascader Attributes / model-value / v-model
+- [ ] `api:cascader:229` Cascader Attributes / options
+- [ ] `api:cascader:230` Cascader Attributes / [props](#cascaderprops)
+- [ ] `api:cascader:231` Cascader Attributes / size
+- [ ] `api:cascader:232` Cascader Attributes / placeholder
+- [ ] `api:cascader:233` Cascader Attributes / disabled
+- [ ] `api:cascader:234` Cascader Attributes / clearable
+- [ ] `api:cascader:235` Cascader Attributes / clear-icon
+- [ ] `api:cascader:236` Cascader Attributes / show-all-levels
+- [ ] `api:cascader:237` Cascader Attributes / collapse-tags
+- [ ] `api:cascader:238` Cascader Attributes / collapse-tags-tooltip
+- [ ] `api:cascader:239` Cascader Attributes / max-collapse-tags-tooltip-height
+- [ ] `api:cascader:240` Cascader Attributes / separator
+- [ ] `api:cascader:241` Cascader Attributes / filterable
+- [ ] `api:cascader:242` Cascader Attributes / filter-method
+- [ ] `api:cascader:243` Cascader Attributes / debounce
+- [ ] `api:cascader:244` Cascader Attributes / before-filter
+- [ ] `api:cascader:245` Cascader Attributes / popper-class
+- [ ] `api:cascader:246` Cascader Attributes / popper-style
+- [ ] `api:cascader:247` Cascader Attributes / teleported
+- [ ] `api:cascader:248` Cascader Attributes / effect
+- [ ] `api:cascader:249` Cascader Attributes / tag-type
+- [ ] `api:cascader:250` Cascader Attributes / tag-effect
+- [ ] `api:cascader:251` Cascader Attributes / validate-event
+- [ ] `api:cascader:252` Cascader Attributes / max-collapse-tags
+- [ ] `api:cascader:253` Cascader Attributes / empty-values
+- [ ] `api:cascader:254` Cascader Attributes / value-on-clear
+- [ ] `api:cascader:255` Cascader Attributes / persistent
+- [ ] `api:cascader:256` Cascader Attributes / fallback-placements
+- [ ] `api:cascader:257` Cascader Attributes / placement
+- [ ] `api:cascader:258` Cascader Attributes / popper-append-to-body
+- [ ] `api:cascader:259` Cascader Attributes / show-checked-strategy
+- [ ] `api:cascader:260` Cascader Attributes / virtual-scroll
+- [ ] `api:cascader:261` Cascader Attributes / fit-input-width
+- [ ] `api:cascader:262` Cascader Attributes / item-size
+- [ ] `api:cascader:263` Cascader Attributes / height
+- [ ] `api:cascader:269` Cascader Events / change
+- [ ] `api:cascader:270` Cascader Events / expand-change
+- [ ] `api:cascader:271` Cascader Events / blur
+- [ ] `api:cascader:272` Cascader Events / focus
+- [ ] `api:cascader:273` Cascader Events / clear
+- [ ] `api:cascader:274` Cascader Events / visible-change
+- [ ] `api:cascader:275` Cascader Events / remove-tag
+- [ ] `api:cascader:281` Cascader Slots / default
+- [ ] `api:cascader:282` Cascader Slots / empty
+- [ ] `api:cascader:283` Cascader Slots / prefix
+- [ ] `api:cascader:284` Cascader Slots / suggestion-item
+- [ ] `api:cascader:285` Cascader Slots / tag
+- [ ] `api:cascader:286` Cascader Slots / header
+- [ ] `api:cascader:287` Cascader Slots / footer
+- [ ] `api:cascader:293` Cascader Exposes / getCheckedNodes
+- [ ] `api:cascader:294` Cascader Exposes / cascaderPanelRef
+- [ ] `api:cascader:295` Cascader Exposes / togglePopperVisible
+- [ ] `api:cascader:296` Cascader Exposes / contentRef
+- [ ] `api:cascader:297` Cascader Exposes / presentText
+- [ ] `api:cascader:298` Cascader Exposes / focus
+- [ ] `api:cascader:299` Cascader Exposes / blur
+- [ ] `api:cascader:307` CascaderPanel Attributes / model-value / v-model
+- [ ] `api:cascader:308` CascaderPanel Attributes / options
+- [ ] `api:cascader:309` CascaderPanel Attributes / [props](#cascaderprops)
+- [ ] `api:cascader:310` CascaderPanel Attributes / virtual-scroll
+- [ ] `api:cascader:311` CascaderPanel Attributes / item-size
+- [ ] `api:cascader:312` CascaderPanel Attributes / height
+- [ ] `api:cascader:318` CascaderPanel Events / change
+- [ ] `api:cascader:319` CascaderPanel Events / update:modelValue
+- [ ] `api:cascader:320` CascaderPanel Events / expand-change
+- [ ] `api:cascader:321` CascaderPanel Events / close
+- [ ] `api:cascader:327` CascaderPanel Slots / default
+- [ ] `api:cascader:328` CascaderPanel Slots / empty
+- [ ] `api:cascader:334` CascaderPanel Exposes / getCheckedNodes
+- [ ] `api:cascader:335` CascaderPanel Exposes / clearCheckedNodes
+- [ ] `api:cascader:341` CascaderProps / expandTrigger
+- [ ] `api:cascader:342` CascaderProps / multiple
+- [ ] `api:cascader:343` CascaderProps / checkStrictly
+- [ ] `api:cascader:344` CascaderProps / emitPath
+- [ ] `api:cascader:345` CascaderProps / lazy
+- [ ] `api:cascader:346` CascaderProps / lazyLoad
+- [ ] `api:cascader:347` CascaderProps / value
+- [ ] `api:cascader:348` CascaderProps / label
+- [ ] `api:cascader:349` CascaderProps / children
+- [ ] `api:cascader:350` CascaderProps / disabled
+- [ ] `api:cascader:351` CascaderProps / leaf
+- [ ] `api:cascader:352` CascaderProps / hoverThreshold
+- [ ] `api:cascader:353` CascaderProps / checkOnClickNode
+- [ ] `api:cascader:354` CascaderProps / checkOnClickLeaf
+- [ ] `api:cascader:355` CascaderProps / showPrefix
+- [ ] `api:cascader:367` Type Declarations / CascaderNodePathValue
+- [ ] `api:cascader:368` Type Declarations / (CascaderNodeValue
+- [ ] `scenario:cascader:10` Basic usage
+- [ ] `scenario:cascader:20` Disabled option
+- [ ] `scenario:cascader:30` Clearable
+- [ ] `scenario:cascader:40` Custom Clear Icon ^(2.11.0)
+- [ ] `scenario:cascader:50` Display only the last level
+- [ ] `scenario:cascader:60` Multiple Selection
+- [ ] `scenario:cascader:91` Select any level of options
+- [ ] `scenario:cascader:101` Dynamic loading
+- [ ] `scenario:cascader:111` Filterable
+- [ ] `scenario:cascader:121` Custom option content
+- [ ] `scenario:cascader:131` Custom suggestion item ^(2.9.5)
+- [ ] `scenario:cascader:141` Cascader panel
+- [ ] `scenario:cascader:151` Custom Tag ^(2.10.3)
+- [ ] `scenario:cascader:161` Show Checked Strategy ^(2.10.5)
+- [ ] `scenario:cascader:171` Click to Check Node ^(2.10.5)
+- [ ] `scenario:cascader:186` Custom Header & Footer ^(2.10.5)
+- [ ] `scenario:cascader:196` Virtual Scroll ^(2.14.0)
+- [ ] `scenario:cascader:206` Custom Suggestion Width ^(2.14.0)
+- [ ] `source-example:cascader:cascader/basic` cascader/basic
+- [ ] `source-example:cascader:cascader/option-disabling` cascader/option-disabling
+- [ ] `source-example:cascader:cascader/clearable` cascader/clearable
+- [ ] `source-example:cascader:cascader/clear-icon` cascader/clear-icon
+- [ ] `source-example:cascader:cascader/last-level` cascader/last-level
+- [ ] `source-example:cascader:cascader/multiple-selection` cascader/multiple-selection
+- [ ] `source-example:cascader:cascader/any-level` cascader/any-level
+- [ ] `source-example:cascader:cascader/dynamic-loading` cascader/dynamic-loading
+- [ ] `source-example:cascader:cascader/filterable` cascader/filterable
+- [ ] `source-example:cascader:cascader/custom-content` cascader/custom-content
+- [ ] `source-example:cascader:cascader/custom-suggestion-item` cascader/custom-suggestion-item
+- [ ] `source-example:cascader:cascader/panel` cascader/panel
+- [ ] `source-example:cascader:cascader/custom-tag` cascader/custom-tag
+- [ ] `source-example:cascader:cascader/show-checked-strategy` cascader/show-checked-strategy
+- [ ] `source-example:cascader:cascader/check-on-click-node` cascader/check-on-click-node
+- [ ] `source-example:cascader:cascader/custom-header-footer` cascader/custom-header-footer
+- [ ] `source-example:cascader:cascader/virtual-scroll` cascader/virtual-scroll
+- [ ] `source-example:cascader:cascader/fit-input-width` cascader/fit-input-width
+- [ ] `directory:cascader` cascader
+- [ ] `directory:cascader-panel` cascader-panel
+
+## Checkbox 复选框
+
+- [ ] `api:checkbox:116` Checkbox Attributes / model-value / v-model
+- [ ] `api:checkbox:117` Checkbox Attributes / value
+- [x] `api:checkbox:118` Checkbox Attributes / label — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:119` Checkbox Attributes / true-value — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:120` Checkbox Attributes / false-value — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:121` Checkbox Attributes / disabled — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:122` Checkbox Attributes / border — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:123` Checkbox Attributes / size — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:124` Checkbox Attributes / name — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:125` Checkbox Attributes / checked — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:126` Checkbox Attributes / indeterminate — 证据：tests/input-choice.test.tsx
+- [ ] `api:checkbox:127` Checkbox Attributes / validate-event
+- [ ] `api:checkbox:128` Checkbox Attributes / tabindex
+- [x] `api:checkbox:129` Checkbox Attributes / id — 证据：tests/input-choice.test.tsx
+- [ ] `api:checkbox:130` Checkbox Attributes / aria-controls
+- [ ] `api:checkbox:131` Checkbox Attributes / aria-label
+- [ ] `api:checkbox:132` Checkbox Attributes / true-label
+- [ ] `api:checkbox:133` Checkbox Attributes / false-label
+- [ ] `api:checkbox:134` Checkbox Attributes / controls
+- [x] `api:checkbox:140` Checkbox Events / change — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:146` Checkbox Slots / default — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:154` CheckboxGroup Attributes / model-value / v-model — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:155` CheckboxGroup Attributes / size — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:156` CheckboxGroup Attributes / disabled — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:157` CheckboxGroup Attributes / min — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:158` CheckboxGroup Attributes / max — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:159` CheckboxGroup Attributes / aria-label — 证据：tests/input-choice.test.tsx
+- [ ] `api:checkbox:160` CheckboxGroup Attributes / text-color
+- [ ] `api:checkbox:161` CheckboxGroup Attributes / fill
+- [ ] `api:checkbox:162` CheckboxGroup Attributes / tag
+- [ ] `api:checkbox:163` CheckboxGroup Attributes / validate-event
+- [ ] `api:checkbox:164` CheckboxGroup Attributes / label
+- [ ] `api:checkbox:165` CheckboxGroup Attributes / options
+- [ ] `api:checkbox:166` CheckboxGroup Attributes / props
+- [ ] `api:checkbox:167` CheckboxGroup Attributes / type
+- [x] `api:checkbox:173` CheckboxGroup Events / change — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:179` CheckboxGroup Slots / default — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:187` CheckboxButton Attributes / value — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:188` CheckboxButton Attributes / label — 证据：tests/input-choice.test.tsx
+- [ ] `api:checkbox:189` CheckboxButton Attributes / true-value
+- [ ] `api:checkbox:190` CheckboxButton Attributes / false-value
+- [x] `api:checkbox:191` CheckboxButton Attributes / disabled — 证据：tests/input-choice.test.tsx
+- [x] `api:checkbox:192` CheckboxButton Attributes / name — 证据：tests/input-choice.test.tsx
+- [ ] `api:checkbox:193` CheckboxButton Attributes / checked
+- [ ] `api:checkbox:194` CheckboxButton Attributes / true-label
+- [ ] `api:checkbox:195` CheckboxButton Attributes / false-label
+- [x] `api:checkbox:201` CheckboxButton Slots / default — 证据：tests/input-choice.test.tsx
+- [ ] `scenario:checkbox:34` Basic usage
+- [ ] `scenario:checkbox:44` Disabled State
+- [ ] `scenario:checkbox:54` Checkbox group
+- [ ] `scenario:checkbox:64` Options attribute ^(2.11.2)
+- [ ] `scenario:checkbox:72` Indeterminate
+- [ ] `scenario:checkbox:82` Minimum / Maximum items checked
+- [ ] `scenario:checkbox:92` Button style
+- [ ] `scenario:checkbox:102` With borders
+- [ ] `source-example:checkbox:checkbox/basic` checkbox/basic
+- [ ] `source-example:checkbox:checkbox/disabled` checkbox/disabled
+- [ ] `source-example:checkbox:checkbox/grouping` checkbox/grouping
+- [ ] `source-example:checkbox:checkbox/options` checkbox/options
+- [ ] `source-example:checkbox:checkbox/intermediate` checkbox/intermediate
+- [ ] `source-example:checkbox:checkbox/limitation` checkbox/limitation
+- [ ] `source-example:checkbox:checkbox/button-style` checkbox/button-style
+- [ ] `source-example:checkbox:checkbox/with-border` checkbox/with-border
+- [ ] `directory:checkbox` checkbox
+- [ ] `directory:checkbox-button` checkbox-button
+- [ ] `directory:checkbox-group` checkbox-group
+
+## Collapse 折叠面板
+
+- [x] `api:collapse:82` Collapse Attributes / model-value / v-model — 证据：tests/navigation.test.tsx
+- [x] `api:collapse:83` Collapse Attributes / accordion — 证据：tests/navigation.test.tsx
+- [ ] `api:collapse:84` Collapse Attributes / expand-icon-position
+- [ ] `api:collapse:85` Collapse Attributes / before-collapse
+- [x] `api:collapse:91` Collapse Events / change — 证据：tests/navigation.test.tsx
+- [x] `api:collapse:97` Collapse Slots / default — 证据：tests/navigation.test.tsx
+- [ ] `api:collapse:103` Collapse Exposes / activeNames
+- [ ] `api:collapse:104` Collapse Exposes / setActiveNames
+- [x] `api:collapse:112` Collapse Item Attributes / name — 证据：tests/navigation.test.tsx
+- [x] `api:collapse:113` Collapse Item Attributes / title — 证据：tests/navigation.test.tsx
+- [x] `api:collapse:114` Collapse Item Attributes / icon — 证据：tests/navigation.test.tsx
+- [x] `api:collapse:115` Collapse Item Attributes / disabled — 证据：tests/navigation.test.tsx
+- [x] `api:collapse:121` Collapse Item Slot / default — 证据：tests/navigation.test.tsx
+- [x] `api:collapse:122` Collapse Item Slot / title — 证据：tests/navigation.test.tsx
+- [x] `api:collapse:123` Collapse Item Slot / icon — 证据：tests/navigation.test.tsx
+- [x] `api:collapse:129` Collapse Item Exposes / isActive — 证据：tests/navigation.test.tsx
+- [ ] `scenario:collapse:10` Basic usage
+- [ ] `scenario:collapse:20` Accordion
+- [ ] `scenario:collapse:30` Custom title
+- [ ] `scenario:collapse:46` Custom icon ^(2.8.3)
+- [ ] `scenario:collapse:56` Custom icon position ^(2.9.10)
+- [ ] `scenario:collapse:66` Prevent collapsing ^(2.9.11)
+- [ ] `scenario:collapse:117` Collapse Item Slot
+- [ ] `source-example:collapse:collapse/basic` collapse/basic
+- [ ] `source-example:collapse:collapse/accordion` collapse/accordion
+- [ ] `source-example:collapse:collapse/customization` collapse/customization
+- [ ] `source-example:collapse:collapse/custom-icon` collapse/custom-icon
+- [ ] `source-example:collapse:collapse/custom-icon-position` collapse/custom-icon-position
+- [ ] `source-example:collapse:collapse/prevent-collapsing` collapse/prevent-collapsing
+- [ ] `directory:collapse` collapse
+- [ ] `directory:collapse-item` collapse-item
+- [ ] `directory:collapse-transition` collapse-transition
+
+## color-picker-panel
+
+- [ ] `api:color-picker-panel:60` Attributes / model-value / v-model
+- [ ] `api:color-picker-panel:61` Attributes / border
+- [ ] `api:color-picker-panel:62` Attributes / disabled
+- [ ] `api:color-picker-panel:63` Attributes / show-alpha
+- [ ] `api:color-picker-panel:64` Attributes / color-format
+- [ ] `api:color-picker-panel:65` Attributes / predefine
+- [ ] `api:color-picker-panel:66` Attributes / validate-event
+- [ ] `api:color-picker-panel:67` Attributes / hue-slider-class
+- [ ] `api:color-picker-panel:68` Attributes / hue-slider-style
+- [ ] `api:color-picker-panel:74` Slots / footer
+- [ ] `api:color-picker-panel:80` Exposes / color
+- [ ] `api:color-picker-panel:81` Exposes / inputRef
+- [ ] `api:color-picker-panel:82` Exposes / update
+- [ ] `scenario:color-picker-panel:10` Basic usage
+- [ ] `scenario:color-picker-panel:18` Alpha
+- [ ] `scenario:color-picker-panel:26` Predefined colors
+- [ ] `scenario:color-picker-panel:34` Border
+- [ ] `scenario:color-picker-panel:44` Disabled
+- [ ] `source-example:color-picker-panel:color-picker-panel/basic` color-picker-panel/basic
+- [ ] `source-example:color-picker-panel:color-picker-panel/alpha` color-picker-panel/alpha
+- [ ] `source-example:color-picker-panel:color-picker-panel/predefined-color` color-picker-panel/predefined-color
+- [ ] `source-example:color-picker-panel:color-picker-panel/border` color-picker-panel/border
+- [ ] `source-example:color-picker-panel:color-picker-panel/disabled` color-picker-panel/disabled
+- [ ] `directory:color-picker-panel` color-picker-panel
+
+## color-picker
+
+- [ ] `api:color-picker:48` Attributes / model-value / v-model
+- [ ] `api:color-picker:49` Attributes / disabled
+- [ ] `api:color-picker:50` Attributes / clearable
+- [ ] `api:color-picker:51` Attributes / size
+- [ ] `api:color-picker:52` Attributes / show-alpha
+- [ ] `api:color-picker:53` Attributes / color-format
+- [ ] `api:color-picker:54` Attributes / popper-class
+- [ ] `api:color-picker:55` Attributes / popper-style
+- [ ] `api:color-picker:56` Attributes / predefine
+- [ ] `api:color-picker:57` Attributes / validate-event
+- [ ] `api:color-picker:58` Attributes / tabindex
+- [ ] `api:color-picker:59` Attributes / aria-label
+- [ ] `api:color-picker:60` Attributes / empty-values
+- [ ] `api:color-picker:61` Attributes / value-on-clear
+- [ ] `api:color-picker:62` Attributes / id
+- [ ] `api:color-picker:63` Attributes / teleported
+- [ ] `api:color-picker:64` Attributes / label
+- [ ] `api:color-picker:65` Attributes / persistent
+- [ ] `api:color-picker:66` Attributes / append-to
+- [ ] `api:color-picker:72` Events / change
+- [ ] `api:color-picker:73` Events / active-change
+- [ ] `api:color-picker:74` Events / focus
+- [ ] `api:color-picker:75` Events / blur
+- [ ] `api:color-picker:76` Events / clear
+- [ ] `api:color-picker:82` Exposes / color
+- [ ] `api:color-picker:83` Exposes / show
+- [ ] `api:color-picker:84` Exposes / hide
+- [ ] `api:color-picker:85` Exposes / focus
+- [ ] `api:color-picker:86` Exposes / blur
+- [ ] `scenario:color-picker:10` Basic usage
+- [ ] `scenario:color-picker:18` Alpha
+- [ ] `scenario:color-picker:26` Predefined colors
+- [ ] `scenario:color-picker:34` Sizes
+- [ ] `source-example:color-picker:color-picker/basic` color-picker/basic
+- [ ] `source-example:color-picker:color-picker/alpha` color-picker/alpha
+- [ ] `source-example:color-picker:color-picker/predefined-color` color-picker/predefined-color
+- [ ] `source-example:color-picker:color-picker/sizes` color-picker/sizes
+- [ ] `directory:color-picker` color-picker
+
+## color
+
+- [ ] `scenario:color:56` Main Color
+- [ ] `scenario:color:65` Secondary Color
+- [ ] `scenario:color:74` Neutral Color
+
+## ConfigProvider 全局配置
+
+- [ ] `api:config-provider:106` Config Provider Attributes / locale
+- [x] `api:config-provider:107` Config Provider Attributes / size — 证据：tests/presentation.test.tsx
+- [ ] `api:config-provider:108` Config Provider Attributes / zIndex
+- [x] `api:config-provider:109` Config Provider Attributes / namespace — 证据：tests/presentation.test.tsx
+- [x] `api:config-provider:110` Config Provider Attributes / button — 证据：tests/presentation.test.tsx
+- [x] `api:config-provider:111` Config Provider Attributes / link — 证据：tests/presentation.test.tsx
+- [ ] `api:config-provider:112` Config Provider Attributes / dialog
+- [ ] `api:config-provider:113` Config Provider Attributes / message
+- [ ] `api:config-provider:114` Config Provider Attributes / experimental-features
+- [ ] `api:config-provider:115` Config Provider Attributes / empty-values
+- [ ] `api:config-provider:116` Config Provider Attributes / value-on-clear
+- [ ] `api:config-provider:117` Config Provider Attributes / table
+- [ ] `api:config-provider:123` Button Attribute / type
+- [ ] `api:config-provider:124` Button Attribute / autoInsertSpace
+- [ ] `api:config-provider:125` Button Attribute / plain
+- [ ] `api:config-provider:126` Button Attribute / text
+- [ ] `api:config-provider:127` Button Attribute / round
+- [ ] `api:config-provider:128` Button Attribute / dashed
+- [ ] `api:config-provider:134` Link Attribute / type
+- [ ] `api:config-provider:135` Link Attribute / underline
+- [ ] `api:config-provider:141` Card Attribute / shadow
+- [ ] `api:config-provider:147` Dialog Attribute / align-center
+- [ ] `api:config-provider:148` Dialog Attribute / draggable
+- [ ] `api:config-provider:149` Dialog Attribute / overflow
+- [ ] `api:config-provider:150` Dialog Attribute / transition
+- [ ] `api:config-provider:156` Message Attribute / max
+- [ ] `api:config-provider:157` Message Attribute / grouping
+- [ ] `api:config-provider:158` Message Attribute / duration
+- [ ] `api:config-provider:159` Message Attribute / showClose
+- [ ] `api:config-provider:160` Message Attribute / offset
+- [ ] `api:config-provider:161` Message Attribute / plain
+- [ ] `api:config-provider:162` Message Attribute / placement
+- [ ] `api:config-provider:168` Table Attribute ^(2.13.3) / show-overflow-tooltip
+- [ ] `api:config-provider:169` Table Attribute ^(2.13.3) / tooltip-effect
+- [ ] `api:config-provider:170` Table Attribute ^(2.13.3) / tooltip-options
+- [ ] `api:config-provider:171` Table Attribute ^(2.13.3) / tooltip-formatter
+- [x] `api:config-provider:177` Config Provider Slots / default — 证据：tests/presentation.test.tsx
+- [ ] `scenario:config-provider:10` i18n Configurations
+- [ ] `scenario:config-provider:20` Button Configurations
+- [ ] `scenario:config-provider:28` Link Configurations ^(2.9.11)
+- [ ] `scenario:config-provider:36` Card Configurations ^(2.10.5)
+- [ ] `scenario:config-provider:44` Dialog Configurations ^(2.10.7)
+- [ ] `scenario:config-provider:52` Message Configurations
+- [ ] `scenario:config-provider:60` Empty Values Configurations ^(2.7.0)
+- [ ] `scenario:config-provider:86` Table Configurations ^(2.13.3)
+- [ ] `scenario:config-provider:94` Experimental features
+- [ ] `scenario:config-provider:119` Button Attribute
+- [ ] `scenario:config-provider:130` Link Attribute
+- [ ] `scenario:config-provider:137` Card Attribute
+- [ ] `scenario:config-provider:143` Dialog Attribute
+- [ ] `scenario:config-provider:152` Message Attribute
+- [ ] `scenario:config-provider:164` Table Attribute ^(2.13.3)
+- [ ] `source-example:config-provider:config-provider/usage` config-provider/usage
+- [ ] `source-example:config-provider:config-provider/button` config-provider/button
+- [ ] `source-example:config-provider:config-provider/link` config-provider/link
+- [ ] `source-example:config-provider:config-provider/card` config-provider/card
+- [ ] `source-example:config-provider:config-provider/dialog` config-provider/dialog
+- [ ] `source-example:config-provider:config-provider/message` config-provider/message
+- [ ] `source-example:config-provider:config-provider/empty-values` config-provider/empty-values
+- [ ] `source-example:config-provider:config-provider/table` config-provider/table
+- [ ] `directory:config-provider` config-provider
+- [x] `feature:config-provider/locale-isolation` 选择控件 Provider文案隔离 — 证据：tests/input-choice.test.tsx
+
+## Container 容器
+
+- [x] `api:container:88` Container Attributes / direction — 证据：tests/layout-display.test.tsx
+- [x] `api:container:94` Container Slots / default — 证据：tests/layout-display.test.tsx
+- [x] `api:container:102` Header Attributes / height — 证据：tests/layout-display.test.tsx
+- [x] `api:container:108` Header Slots / default — 证据：tests/layout-display.test.tsx
+- [x] `api:container:116` Aside Attributes / width — 证据：tests/layout-display.test.tsx
+- [x] `api:container:122` Aside Slots / default — 证据：tests/layout-display.test.tsx
+- [x] `api:container:130` Main Slots / default — 证据：tests/layout-display.test.tsx
+- [x] `api:container:138` Footer Attributes / height — 证据：tests/layout-display.test.tsx
+- [x] `api:container:144` Footer Slots / default — 证据：tests/layout-display.test.tsx
+- [ ] `scenario:container:26` Common layouts
+- [ ] `scenario:container:74` Example
+- [ ] `source-example:container:container/layout-hm` container/layout-hm
+- [ ] `source-example:container:container/layout-hmf` container/layout-hmf
+- [ ] `source-example:container:container/layout-am` container/layout-am
+- [ ] `source-example:container:container/layout-ham` container/layout-ham
+- [ ] `source-example:container:container/layout-hamf` container/layout-hamf
+- [ ] `source-example:container:container/layout-ahm` container/layout-ahm
+- [ ] `source-example:container:container/layout-ahmf` container/layout-ahmf
+- [ ] `source-example:container:container/example` container/example
+- [ ] `directory:aside` aside
+- [ ] `directory:container` container
+- [ ] `directory:footer` footer
+- [ ] `directory:header` header
+- [ ] `directory:main` main
+
+## date-picker-panel
+
+- [ ] `api:date-picker-panel:63` Attributes / model-value / v-model
+- [ ] `api:date-picker-panel:64` Attributes / border
+- [ ] `api:date-picker-panel:65` Attributes / disabled
+- [ ] `api:date-picker-panel:66` Attributes / clearable
+- [ ] `api:date-picker-panel:67` Attributes / editable
+- [ ] `api:date-picker-panel:68` Attributes / type
+- [ ] `api:date-picker-panel:69` Attributes / default-value
+- [ ] `api:date-picker-panel:70` Attributes / default-time
+- [ ] `api:date-picker-panel:71` Attributes / value-format
+- [ ] `api:date-picker-panel:72` Attributes / date-format
+- [ ] `api:date-picker-panel:73` Attributes / time-format
+- [ ] `api:date-picker-panel:74` Attributes / unlink-panels
+- [ ] `api:date-picker-panel:75` Attributes / single-panel
+- [ ] `api:date-picker-panel:76` Attributes / disabled-date
+- [ ] `api:date-picker-panel:77` Attributes / shortcuts
+- [ ] `api:date-picker-panel:78` Attributes / cell-class-name
+- [ ] `api:date-picker-panel:79` Attributes / show-footer
+- [ ] `api:date-picker-panel:80` Attributes / show-confirm
+- [ ] `api:date-picker-panel:81` Attributes / show-week-number
+- [ ] `api:date-picker-panel:87` Events / calendar-change
+- [ ] `api:date-picker-panel:88` Events / panel-change
+- [ ] `api:date-picker-panel:89` Events / clear
+- [ ] `api:date-picker-panel:95` Slots / default
+- [ ] `api:date-picker-panel:96` Slots / prev-month
+- [ ] `api:date-picker-panel:97` Slots / next-month
+- [ ] `api:date-picker-panel:98` Slots / prev-year
+- [ ] `api:date-picker-panel:99` Slots / next-year
+- [ ] `scenario:date-picker-panel:10` Enter Date
+- [ ] `scenario:date-picker-panel:20` Border
+- [ ] `scenario:date-picker-panel:31` Disabled
+- [ ] `scenario:date-picker-panel:41` Types
+- [ ] `scenario:date-picker-panel:51` Localization
+- [ ] `source-example:date-picker-panel:date-picker-panel/basic` date-picker-panel/basic
+- [ ] `source-example:date-picker-panel:date-picker-panel/border` date-picker-panel/border
+- [ ] `source-example:date-picker-panel:date-picker-panel/disabled` date-picker-panel/disabled
+- [ ] `source-example:date-picker-panel:date-picker-panel/all-types` date-picker-panel/all-types
+- [ ] `directory:date-picker-panel` date-picker-panel
+
+## date-picker
+
+- [ ] `api:date-picker:185` Attributes / model-value / v-model
+- [ ] `api:date-picker:186` Attributes / readonly
+- [ ] `api:date-picker:187` Attributes / disabled
+- [ ] `api:date-picker:188` Attributes / size
+- [ ] `api:date-picker:189` Attributes / editable
+- [ ] `api:date-picker:190` Attributes / clearable
+- [ ] `api:date-picker:191` Attributes / placeholder
+- [ ] `api:date-picker:192` Attributes / start-placeholder
+- [ ] `api:date-picker:193` Attributes / end-placeholder
+- [ ] `api:date-picker:194` Attributes / type
+- [ ] `api:date-picker:195` Attributes / format
+- [ ] `api:date-picker:196` Attributes / popper-class
+- [ ] `api:date-picker:197` Attributes / popper-style
+- [ ] `api:date-picker:198` Attributes / popper-options
+- [ ] `api:date-picker:199` Attributes / range-separator
+- [ ] `api:date-picker:200` Attributes / default-value
+- [ ] `api:date-picker:201` Attributes / default-time
+- [ ] `api:date-picker:202` Attributes / value-format
+- [ ] `api:date-picker:203` Attributes / id
+- [ ] `api:date-picker:204` Attributes / name
+- [ ] `api:date-picker:205` Attributes / unlink-panels
+- [ ] `api:date-picker:206` Attributes / single-panel
+- [ ] `api:date-picker:207` Attributes / prefix-icon
+- [ ] `api:date-picker:208` Attributes / clear-icon
+- [ ] `api:date-picker:209` Attributes / validate-event
+- [ ] `api:date-picker:210` Attributes / disabled-date
+- [ ] `api:date-picker:211` Attributes / shortcuts
+- [ ] `api:date-picker:212` Attributes / cell-class-name
+- [ ] `api:date-picker:213` Attributes / teleported
+- [ ] `api:date-picker:214` Attributes / empty-values
+- [ ] `api:date-picker:215` Attributes / value-on-clear
+- [ ] `api:date-picker:216` Attributes / fallback-placements
+- [ ] `api:date-picker:217` Attributes / placement
+- [ ] `api:date-picker:218` Attributes / show-footer
+- [ ] `api:date-picker:219` Attributes / show-confirm
+- [ ] `api:date-picker:220` Attributes / show-week-number
+- [ ] `api:date-picker:221` Attributes / automatic-dropdown
+- [ ] `api:date-picker:227` Events / change
+- [ ] `api:date-picker:228` Events / blur
+- [ ] `api:date-picker:229` Events / focus
+- [ ] `api:date-picker:230` Events / clear
+- [ ] `api:date-picker:231` Events / calendar-change
+- [ ] `api:date-picker:232` Events / panel-change
+- [ ] `api:date-picker:233` Events / visible-change
+- [ ] `api:date-picker:239` Slots / default
+- [ ] `api:date-picker:240` Slots / range-separator
+- [ ] `api:date-picker:241` Slots / prev-month
+- [ ] `api:date-picker:242` Slots / next-month
+- [ ] `api:date-picker:243` Slots / prev-year
+- [ ] `api:date-picker:244` Slots / next-year
+- [ ] `api:date-picker:250` Exposes / focus
+- [ ] `api:date-picker:251` Exposes / blur
+- [ ] `api:date-picker:252` Exposes / handleOpen
+- [ ] `api:date-picker:253` Exposes / handleClose
+- [ ] `api:date-picker:267` Type Declarations / 'top-start'
+- [ ] `api:date-picker:268` Type Declarations / 'top-end'
+- [ ] `api:date-picker:269` Type Declarations / 'bottom'
+- [ ] `api:date-picker:270` Type Declarations / 'bottom-start'
+- [ ] `api:date-picker:271` Type Declarations / 'bottom-end'
+- [ ] `api:date-picker:272` Type Declarations / 'left'
+- [ ] `api:date-picker:273` Type Declarations / 'left-start'
+- [ ] `api:date-picker:274` Type Declarations / 'left-end'
+- [ ] `api:date-picker:275` Type Declarations / 'right'
+- [ ] `api:date-picker:276` Type Declarations / 'right-start'
+- [ ] `api:date-picker:277` Type Declarations / 'right-end'
+- [ ] `scenario:date-picker:10` Enter Date
+- [ ] `scenario:date-picker:20` Other measurements
+- [ ] `scenario:date-picker:30` Date Range
+- [ ] `scenario:date-picker:40` Month Range
+- [ ] `scenario:date-picker:50` Year Range ^(2.8.0)
+- [ ] `scenario:date-picker:60` Quarter Range ^(2.14.5)
+- [ ] `scenario:date-picker:70` Single Panel ^(2.14.0)
+- [ ] `scenario:date-picker:78` Default Value
+- [ ] `scenario:date-picker:90` Date Formats
+- [ ] `scenario:date-picker:110` Default time for start date and end date
+- [ ] `scenario:date-picker:120` Set custom content of prefix
+- [ ] `scenario:date-picker:130` Custom content
+- [ ] `scenario:date-picker:140` Custom icon ^(2.8.0)
+- [ ] `scenario:date-picker:173` Localization
+- [ ] `source-example:date-picker:date-picker/enter-date` date-picker/enter-date
+- [ ] `source-example:date-picker:date-picker/other-measurements` date-picker/other-measurements
+- [ ] `source-example:date-picker:date-picker/date-range` date-picker/date-range
+- [ ] `source-example:date-picker:date-picker/month-range` date-picker/month-range
+- [ ] `source-example:date-picker:date-picker/year-range` date-picker/year-range
+- [ ] `source-example:date-picker:date-picker/quarter-range` date-picker/quarter-range
+- [ ] `source-example:date-picker:date-picker/single-panel` date-picker/single-panel
+- [ ] `source-example:date-picker:date-picker/default-value` date-picker/default-value
+- [ ] `source-example:date-picker:date-picker/date-formats` date-picker/date-formats
+- [ ] `source-example:date-picker:date-picker/default-time` date-picker/default-time
+- [ ] `source-example:date-picker:date-picker/custom-prefix-icon` date-picker/custom-prefix-icon
+- [ ] `source-example:date-picker:date-picker/custom-content` date-picker/custom-content
+- [ ] `source-example:date-picker:date-picker/custom-icon` date-picker/custom-icon
+- [ ] `directory:date-picker` date-picker
+
+## datetime-picker
+
+- [ ] `api:datetime-picker:94` Attributes / model-value / v-model
+- [ ] `api:datetime-picker:95` Attributes / readonly
+- [ ] `api:datetime-picker:96` Attributes / disabled
+- [ ] `api:datetime-picker:97` Attributes / editable
+- [ ] `api:datetime-picker:98` Attributes / clearable
+- [ ] `api:datetime-picker:99` Attributes / size
+- [ ] `api:datetime-picker:100` Attributes / placeholder
+- [ ] `api:datetime-picker:101` Attributes / start-placeholder
+- [ ] `api:datetime-picker:102` Attributes / end-placeholder
+- [ ] `api:datetime-picker:103` Attributes / arrow-control
+- [ ] `api:datetime-picker:104` Attributes / type
+- [ ] `api:datetime-picker:105` Attributes / format
+- [ ] `api:datetime-picker:106` Attributes / popper-class
+- [ ] `api:datetime-picker:107` Attributes / popper-style
+- [ ] `api:datetime-picker:108` Attributes / popper-options
+- [ ] `api:datetime-picker:109` Attributes / fallback-placements
+- [ ] `api:datetime-picker:110` Attributes / placement
+- [ ] `api:datetime-picker:111` Attributes / range-separator
+- [ ] `api:datetime-picker:112` Attributes / default-value
+- [ ] `api:datetime-picker:113` Attributes / default-time
+- [ ] `api:datetime-picker:114` Attributes / value-format
+- [ ] `api:datetime-picker:115` Attributes / date-format
+- [ ] `api:datetime-picker:116` Attributes / time-format
+- [ ] `api:datetime-picker:117` Attributes / id
+- [ ] `api:datetime-picker:118` Attributes / name
+- [ ] `api:datetime-picker:119` Attributes / unlink-panels
+- [ ] `api:datetime-picker:120` Attributes / single-panel
+- [ ] `api:datetime-picker:121` Attributes / prefix-icon
+- [ ] `api:datetime-picker:122` Attributes / clear-icon
+- [ ] `api:datetime-picker:123` Attributes / shortcuts
+- [ ] `api:datetime-picker:124` Attributes / disabled-date
+- [ ] `api:datetime-picker:125` Attributes / disabled-hours
+- [ ] `api:datetime-picker:126` Attributes / disabled-minutes
+- [ ] `api:datetime-picker:127` Attributes / disabled-seconds
+- [ ] `api:datetime-picker:128` Attributes / cell-class-name
+- [ ] `api:datetime-picker:129` Attributes / teleported
+- [ ] `api:datetime-picker:130` Attributes / empty-values
+- [ ] `api:datetime-picker:131` Attributes / value-on-clear
+- [ ] `api:datetime-picker:132` Attributes / show-now
+- [ ] `api:datetime-picker:133` Attributes / show-footer
+- [ ] `api:datetime-picker:134` Attributes / show-confirm
+- [ ] `api:datetime-picker:135` Attributes / show-week-number
+- [ ] `api:datetime-picker:141` Events / change
+- [ ] `api:datetime-picker:142` Events / blur
+- [ ] `api:datetime-picker:143` Events / focus
+- [ ] `api:datetime-picker:144` Events / clear
+- [ ] `api:datetime-picker:145` Events / calendar-change
+- [ ] `api:datetime-picker:146` Events / panel-change
+- [ ] `api:datetime-picker:147` Events / visible-change
+- [ ] `api:datetime-picker:153` Slots / default
+- [ ] `api:datetime-picker:154` Slots / range-separator
+- [ ] `api:datetime-picker:155` Slots / prev-month
+- [ ] `api:datetime-picker:156` Slots / next-month
+- [ ] `api:datetime-picker:157` Slots / prev-year
+- [ ] `api:datetime-picker:158` Slots / next-year
+- [ ] `api:datetime-picker:164` Exposes / focus
+- [ ] `api:datetime-picker:165` Exposes / blur
+- [ ] `api:datetime-picker:175` Type Declarations / 'top-start'
+- [ ] `api:datetime-picker:176` Type Declarations / 'top-end'
+- [ ] `api:datetime-picker:177` Type Declarations / 'bottom'
+- [ ] `api:datetime-picker:178` Type Declarations / 'bottom-start'
+- [ ] `api:datetime-picker:179` Type Declarations / 'bottom-end'
+- [ ] `api:datetime-picker:180` Type Declarations / 'left'
+- [ ] `api:datetime-picker:181` Type Declarations / 'left-start'
+- [ ] `api:datetime-picker:182` Type Declarations / 'left-end'
+- [ ] `api:datetime-picker:183` Type Declarations / 'right'
+- [ ] `api:datetime-picker:184` Type Declarations / 'right-start'
+- [ ] `api:datetime-picker:185` Type Declarations / 'right-end'
+- [ ] `scenario:datetime-picker:16` Date and time
+- [ ] `scenario:datetime-picker:24` DateTime Formats
+- [ ] `scenario:datetime-picker:44` Date and time formats in dropdown panel
+- [ ] `scenario:datetime-picker:54` Date and time range
+- [ ] `scenario:datetime-picker:62` Single Panel ^(2.14.0)
+- [ ] `scenario:datetime-picker:70` Default time value for start date and end date
+- [ ] `scenario:datetime-picker:78` Custom icon ^(2.8.0)
+- [ ] `source-example:datetime-picker:datetime-picker/date-and-time` datetime-picker/date-and-time
+- [ ] `source-example:datetime-picker:datetime-picker/date-and-time-formats` datetime-picker/date-and-time-formats
+- [ ] `source-example:datetime-picker:datetime-picker/date-and-time-formats-panel` datetime-picker/date-and-time-formats-panel
+- [ ] `source-example:datetime-picker:datetime-picker/date-and-time-range` datetime-picker/date-and-time-range
+- [ ] `source-example:datetime-picker:datetime-picker/single-panel` datetime-picker/single-panel
+- [ ] `source-example:datetime-picker:datetime-picker/default-time` datetime-picker/default-time
+- [ ] `source-example:datetime-picker:datetime-picker/custom-icon` datetime-picker/custom-icon
+
+## Descriptions 描述列表
+
+- [x] `api:descriptions:56` Descriptions Attributes / border — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:57` Descriptions Attributes / column — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:58` Descriptions Attributes / direction — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:59` Descriptions Attributes / size — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:60` Descriptions Attributes / title — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:61` Descriptions Attributes / extra — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:62` Descriptions Attributes / label-width — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:68` Descriptions Slots / default — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:69` Descriptions Slots / title — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:70` Descriptions Slots / extra — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:78` DescriptionsItem Attributes / label — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:79` DescriptionsItem Attributes / span — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:80` DescriptionsItem Attributes / rowspan — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:81` DescriptionsItem Attributes / width — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:82` DescriptionsItem Attributes / min-width — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:83` DescriptionsItem Attributes / label-width — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:84` DescriptionsItem Attributes / align — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:85` DescriptionsItem Attributes / label-align — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:86` DescriptionsItem Attributes / class-name — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:87` DescriptionsItem Attributes / label-class-name — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:93` DescriptionsItem Slots / default — 证据：tests/descriptions-calendar.test.tsx
+- [x] `api:descriptions:94` DescriptionsItem Slots / label — 证据：tests/descriptions-calendar.test.tsx
+- [ ] `scenario:descriptions:10` Basic usage
+- [ ] `scenario:descriptions:18` Sizes
+- [ ] `scenario:descriptions:26` Vertical List
+- [ ] `scenario:descriptions:34` Rowspan ^(2.8.1)
+- [ ] `scenario:descriptions:42` Customized Style
+- [ ] `source-example:descriptions:descriptions/basic-usage` descriptions/basic-usage
+- [ ] `source-example:descriptions:descriptions/sizes` descriptions/sizes
+- [ ] `source-example:descriptions:descriptions/vertical-list` descriptions/vertical-list
+- [ ] `source-example:descriptions:descriptions/rowspan` descriptions/rowspan
+- [ ] `source-example:descriptions:descriptions/customized-style` descriptions/customized-style
+- [ ] `directory:descriptions` descriptions
+- [ ] `directory:descriptions-item` descriptions-item
+- [x] `feature:descriptions/immutable-layout` 布局不修改React子项props，Fragment保持顺序 — 证据：tests/descriptions-calendar.test.tsx
+
+## Dialog 对话框
+
+- [x] `api:dialog:172` Attributes / model-value / v-model — 证据：tests/modal.test.tsx
+- [x] `api:dialog:173` Attributes / title — 证据：tests/modal.test.tsx
+- [x] `api:dialog:174` Attributes / width — 证据：tests/modal.test.tsx
+- [x] `api:dialog:175` Attributes / fullscreen — 证据：tests/modal.test.tsx
+- [x] `api:dialog:176` Attributes / top — 证据：tests/modal.test.tsx
+- [x] `api:dialog:177` Attributes / modal — 证据：tests/modal.test.tsx
+- [ ] `api:dialog:178` Attributes / modal-penetrable
+- [x] `api:dialog:179` Attributes / modal-class — 证据：tests/modal.test.tsx
+- [x] `api:dialog:180` Attributes / header-class — 证据：tests/modal.test.tsx
+- [x] `api:dialog:181` Attributes / body-class — 证据：tests/modal.test.tsx
+- [x] `api:dialog:182` Attributes / footer-class — 证据：tests/modal.test.tsx
+- [x] `api:dialog:183` Attributes / append-to-body — 证据：tests/modal.test.tsx
+- [x] `api:dialog:184` Attributes / append-to — 证据：tests/modal.test.tsx
+- [x] `api:dialog:185` Attributes / lock-scroll — 证据：tests/modal.test.tsx
+- [x] `api:dialog:186` Attributes / open-delay — 证据：tests/modal.test.tsx
+- [x] `api:dialog:187` Attributes / close-delay — 证据：tests/modal.test.tsx
+- [x] `api:dialog:188` Attributes / close-on-click-modal — 证据：tests/modal.test.tsx
+- [x] `api:dialog:189` Attributes / close-on-press-escape — 证据：tests/modal.test.tsx
+- [x] `api:dialog:190` Attributes / show-close — 证据：tests/modal.test.tsx
+- [x] `api:dialog:191` Attributes / before-close — 证据：tests/modal.test.tsx
+- [x] `api:dialog:192` Attributes / draggable — 证据：tests/modal.test.tsx
+- [x] `api:dialog:193` Attributes / overflow — 证据：tests/modal.test.tsx
+- [x] `api:dialog:194` Attributes / center — 证据：tests/modal.test.tsx
+- [x] `api:dialog:195` Attributes / align-center — 证据：tests/modal.test.tsx
+- [x] `api:dialog:196` Attributes / destroy-on-close — 证据：tests/modal.test.tsx
+- [x] `api:dialog:197` Attributes / close-icon — 证据：tests/modal.test.tsx
+- [x] `api:dialog:198` Attributes / z-index — 证据：tests/modal.test.tsx
+- [x] `api:dialog:199` Attributes / header-aria-level — 证据：tests/modal.test.tsx
+- [ ] `api:dialog:200` Attributes / transition
+- [ ] `api:dialog:201` Attributes / custom-class
+- [x] `api:dialog:213` Slots / default — 证据：tests/modal.test.tsx
+- [x] `api:dialog:214` Slots / header — 证据：tests/modal.test.tsx
+- [x] `api:dialog:215` Slots / footer — 证据：tests/modal.test.tsx
+- [x] `api:dialog:216` Slots / title — 证据：tests/modal.test.tsx
+- [x] `api:dialog:228` Events / open — 证据：tests/modal.test.tsx
+- [x] `api:dialog:229` Events / opened — 证据：tests/modal.test.tsx
+- [x] `api:dialog:230` Events / close — 证据：tests/modal.test.tsx
+- [x] `api:dialog:231` Events / closed — 证据：tests/modal.test.tsx
+- [x] `api:dialog:232` Events / open-auto-focus — 证据：tests/modal.test.tsx
+- [x] `api:dialog:233` Events / close-auto-focus — 证据：tests/modal.test.tsx
+- [x] `api:dialog:239` Exposes / resetPosition — 证据：tests/modal.test.tsx
+- [x] `api:dialog:240` Exposes / handleClose — 证据：tests/modal.test.tsx
+- [ ] `scenario:dialog:10` Basic usage
+- [ ] `scenario:dialog:26` Customized Content
+- [ ] `scenario:dialog:36` Customized Header
+- [ ] `scenario:dialog:46` Nested Dialog
+- [ ] `scenario:dialog:56` Centered content
+- [ ] `scenario:dialog:72` Align Center dialog
+- [ ] `scenario:dialog:82` Destroy on Close
+- [ ] `scenario:dialog:92` Draggable Dialog
+- [ ] `scenario:dialog:108` Fullscreen
+- [ ] `scenario:dialog:124` Modal
+- [ ] `scenario:dialog:136` Custom Animation ^(2.10.5)
+- [ ] `scenario:dialog:242` FAQ
+- [ ] `scenario:dialog:244` Using dialog in SFC, the scope style does not take effect
+- [ ] `scenario:dialog:250` When the dialog is displayed and hidden, there is a situation where the page elements are displaced back and forth
+- [ ] `source-example:dialog:dialog/basic-usage` dialog/basic-usage
+- [ ] `source-example:dialog:dialog/customization-content` dialog/customization-content
+- [ ] `source-example:dialog:dialog/customization-header` dialog/customization-header
+- [ ] `source-example:dialog:dialog/nested-dialog` dialog/nested-dialog
+- [ ] `source-example:dialog:dialog/centered-content` dialog/centered-content
+- [ ] `source-example:dialog:dialog/align-center` dialog/align-center
+- [ ] `source-example:dialog:dialog/destroy-on-close` dialog/destroy-on-close
+- [ ] `source-example:dialog:dialog/draggable-dialog` dialog/draggable-dialog
+- [ ] `source-example:dialog:dialog/fullscreen` dialog/fullscreen
+- [ ] `source-example:dialog:dialog/modal` dialog/modal
+- [ ] `source-example:dialog:dialog/custom-animation` dialog/custom-animation
+- [ ] `source-example:dialog:dialog/events` dialog/events
+- [ ] `directory:dialog` dialog
+- [x] `feature:dialog/close-after-unmount` 关闭拦截的过期done在卸载后不提交模型 — 证据：tests/modal.test.tsx
+- [x] `feature:dialog/nested-layer-focus` 嵌套模态只有顶层响应Escape并按计数解锁 — 证据：tests/modal.test.tsx
+- [x] `feature:dialog/focus-loop` Tab循环与关闭焦点事件取消 — 证据：tests/modal.test.tsx
+
+## Divider 分割线
+
+- [x] `api:divider:54` Attributes / direction — 证据：tests/presentation.test.tsx
+- [x] `api:divider:55` Attributes / border-style — 证据：tests/presentation.test.tsx
+- [x] `api:divider:56` Attributes / content-position — 证据：tests/presentation.test.tsx
+- [x] `api:divider:62` Slots / default — 证据：tests/presentation.test.tsx
+- [ ] `scenario:divider:10` Basic usage
+- [ ] `scenario:divider:20` Custom content
+- [ ] `scenario:divider:30` dashed line
+- [ ] `scenario:divider:40` Vertical divider
+- [ ] `source-example:divider:divider/basic-usage` divider/basic-usage
+- [ ] `source-example:divider:divider/custom-content` divider/custom-content
+- [ ] `source-example:divider:divider/line-dashed` divider/line-dashed
+- [ ] `source-example:divider:divider/vertical-divider` divider/vertical-divider
+- [ ] `directory:divider` divider
+
+## Drawer 抽屉
+
+- [x] `api:drawer:106` Attributes / model-value / v-model — 证据：tests/modal.test.tsx
+- [ ] `api:drawer:107` Attributes / append-to-body
+- [ ] `api:drawer:108` Attributes / append-to
+- [ ] `api:drawer:109` Attributes / lock-scroll
+- [ ] `api:drawer:110` Attributes / before-close
+- [ ] `api:drawer:111` Attributes / close-on-click-modal
+- [ ] `api:drawer:112` Attributes / close-on-press-escape
+- [ ] `api:drawer:113` Attributes / open-delay
+- [ ] `api:drawer:114` Attributes / close-delay
+- [ ] `api:drawer:115` Attributes / destroy-on-close
+- [ ] `api:drawer:116` Attributes / modal
+- [ ] `api:drawer:117` Attributes / modal-penetrable
+- [x] `api:drawer:118` Attributes / direction — 证据：tests/modal.test.tsx
+- [ ] `api:drawer:119` Attributes / resizable
+- [x] `api:drawer:120` Attributes / show-close — 证据：tests/modal.test.tsx
+- [x] `api:drawer:121` Attributes / size — 证据：tests/modal.test.tsx
+- [x] `api:drawer:122` Attributes / title — 证据：tests/modal.test.tsx
+- [x] `api:drawer:123` Attributes / with-header — 证据：tests/modal.test.tsx
+- [ ] `api:drawer:124` Attributes / modal-class
+- [x] `api:drawer:125` Attributes / header-class — 证据：tests/modal.test.tsx
+- [x] `api:drawer:126` Attributes / body-class — 证据：tests/modal.test.tsx
+- [x] `api:drawer:127` Attributes / footer-class — 证据：tests/modal.test.tsx
+- [ ] `api:drawer:128` Attributes / z-index
+- [ ] `api:drawer:129` Attributes / header-aria-level
+- [ ] `api:drawer:130` Attributes / custom-class
+- [ ] `api:drawer:142` Events / open
+- [ ] `api:drawer:143` Events / opened
+- [ ] `api:drawer:144` Events / close
+- [ ] `api:drawer:145` Events / closed
+- [ ] `api:drawer:146` Events / open-auto-focus
+- [ ] `api:drawer:147` Events / close-auto-focus
+- [ ] `api:drawer:148` Events / resize-start
+- [ ] `api:drawer:149` Events / resize
+- [ ] `api:drawer:150` Events / resize-end
+- [x] `api:drawer:156` Slots / default — 证据：tests/modal.test.tsx
+- [x] `api:drawer:157` Slots / header — 证据：tests/modal.test.tsx
+- [x] `api:drawer:158` Slots / footer — 证据：tests/modal.test.tsx
+- [x] `api:drawer:159` Slots / title — 证据：tests/modal.test.tsx
+- [ ] `api:drawer:171` Exposes / handleClose
+- [ ] `scenario:drawer:16` Basic Usage
+- [ ] `scenario:drawer:26` No Title
+- [ ] `scenario:drawer:36` Customized Content
+- [ ] `scenario:drawer:46` Customized Header
+- [ ] `scenario:drawer:56` Resizable Drawer ^(2.11.0)
+- [ ] `scenario:drawer:66` Nested Drawer
+- [ ] `scenario:drawer:76` Modal
+- [ ] `source-example:drawer:drawer/basic-usage` drawer/basic-usage
+- [ ] `source-example:drawer:drawer/no-title` drawer/no-title
+- [ ] `source-example:drawer:drawer/customization-content` drawer/customization-content
+- [ ] `source-example:drawer:drawer/customization-header` drawer/customization-header
+- [ ] `source-example:drawer:drawer/resizable` drawer/resizable
+- [ ] `source-example:drawer:drawer/nested-drawer` drawer/nested-drawer
+- [ ] `source-example:drawer:drawer/modal` drawer/modal
+- [ ] `directory:drawer` drawer
+
+## Dropdown 下拉菜单
+
+- [x] `api:dropdown:106` Dropdown Attributes / type — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:107` Dropdown Attributes / size — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:108` Dropdown Attributes / button-props — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:109` Dropdown Attributes / max-height — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:110` Dropdown Attributes / split-button — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:111` Dropdown Attributes / disabled — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:112` Dropdown Attributes / placement — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:113` Dropdown Attributes / effect — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:114` Dropdown Attributes / trigger — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:115` Dropdown Attributes / trigger-keys — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:116` Dropdown Attributes / virtual-triggering — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:117` Dropdown Attributes / virtual-ref — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:118` Dropdown Attributes / hide-on-click — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:119` Dropdown Attributes / show-arrow — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:120` Dropdown Attributes / show-timeout — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:121` Dropdown Attributes / hide-timeout — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:122` Dropdown Attributes / role — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:123` Dropdown Attributes / tabindex — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:124` Dropdown Attributes / popper-class — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:125` Dropdown Attributes / popper-style — 证据：tests/dropdown.test.tsx
+- [ ] `api:dropdown:126` Dropdown Attributes / popper-options
+- [x] `api:dropdown:127` Dropdown Attributes / teleported — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:128` Dropdown Attributes / append-to — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:129` Dropdown Attributes / persistent — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:135` Dropdown Slots / default — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:136` Dropdown Slots / dropdown — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:142` Dropdown Events / click — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:143` Dropdown Events / command — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:144` Dropdown Events / visible-change — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:150` Dropdown Exposes / handleOpen — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:151` Dropdown Exposes / handleClose — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:159` Dropdown-Menu Slots / default — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:167` Dropdown-Item Attributes / command — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:168` Dropdown-Item Attributes / disabled — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:169` Dropdown-Item Attributes / divided — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:170` Dropdown-Item Attributes / icon — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:176` Dropdown-Item Slots / default — 证据：tests/dropdown.test.tsx
+- [x] `api:dropdown:177` Dropdown-Item Slots / icon — 证据：tests/dropdown.test.tsx
+- [ ] `scenario:dropdown:10` Basic usage
+- [ ] `scenario:dropdown:20` Placement
+- [ ] `scenario:dropdown:30` Triggering element
+- [ ] `scenario:dropdown:40` How to trigger
+- [ ] `scenario:dropdown:50` Menu hiding behavior
+- [ ] `scenario:dropdown:60` Command event
+- [ ] `scenario:dropdown:80` Sizes
+- [ ] `scenario:dropdown:90` Virtual triggering ^(2.11.3)
+- [x] `source-example:dropdown:dropdown/basic-usage` dropdown/basic-usage — 证据：
+- [x] `source-example:dropdown:dropdown/placements` dropdown/placements — 证据：
+- [x] `source-example:dropdown:dropdown/triggering-element` dropdown/triggering-element — 证据：
+- [x] `source-example:dropdown:dropdown/how-to-trigger` dropdown/how-to-trigger — 证据：
+- [x] `source-example:dropdown:dropdown/menu-hiding-behavior` dropdown/menu-hiding-behavior — 证据：
+- [x] `source-example:dropdown:dropdown/command-event` dropdown/command-event — 证据：
+- [x] `source-example:dropdown:dropdown/dropdown-methods` dropdown/dropdown-methods — 证据：
+- [x] `source-example:dropdown:dropdown/sizes` dropdown/sizes — 证据：
+- [x] `source-example:dropdown:dropdown/virtual-trigger` dropdown/virtual-trigger — 证据：
+- [ ] `directory:dropdown` dropdown
+- [ ] `directory:dropdown-item` dropdown-item
+- [ ] `directory:dropdown-menu` dropdown-menu
+- [x] `feature:dropdown/keyboard-focus` 键盘打开聚焦首项、方向键跳过禁用项目、Escape恢复触发焦点 — 证据：tests/dropdown.test.tsx
+
+## Empty 空状态
+
+- [ ] `api:empty:58` Default Variables / --el-empty-fill-color-0
+- [ ] `api:empty:59` Default Variables / --el-empty-fill-color-1
+- [ ] `api:empty:60` Default Variables / --el-empty-fill-color-2
+- [ ] `api:empty:61` Default Variables / --el-empty-fill-color-3
+- [ ] `api:empty:62` Default Variables / --el-empty-fill-color-4
+- [ ] `api:empty:63` Default Variables / --el-empty-fill-color-5
+- [ ] `api:empty:64` Default Variables / --el-empty-fill-color-6
+- [ ] `api:empty:65` Default Variables / --el-empty-fill-color-7
+- [ ] `api:empty:66` Default Variables / --el-empty-fill-color-8
+- [ ] `api:empty:67` Default Variables / --el-empty-fill-color-9
+- [x] `api:empty:75` Attributes / image — 证据：tests/presentation.test.tsx
+- [x] `api:empty:76` Attributes / image-size — 证据：tests/presentation.test.tsx
+- [x] `api:empty:77` Attributes / description — 证据：tests/presentation.test.tsx
+- [x] `api:empty:83` Slots / default — 证据：tests/presentation.test.tsx
+- [x] `api:empty:84` Slots / image — 证据：tests/presentation.test.tsx
+- [x] `api:empty:85` Slots / description — 证据：tests/presentation.test.tsx
+- [ ] `scenario:empty:10` Basic usage
+- [ ] `scenario:empty:18` Custom image
+- [ ] `scenario:empty:28` Image size
+- [ ] `scenario:empty:38` Bottom content
+- [ ] `scenario:empty:48` Custom styles
+- [ ] `scenario:empty:54` Default Variables
+- [ ] `source-example:empty:empty/basic-usage` empty/basic-usage
+- [ ] `source-example:empty:empty/custom-image` empty/custom-image
+- [ ] `source-example:empty:empty/image-size` empty/image-size
+- [ ] `source-example:empty:empty/bottom-content` empty/bottom-content
+- [ ] `directory:empty` empty
+
+## Form 表单
+
+- [x] `api:form:132` Form Attributes / model — 证据：tests/form.test.tsx
+- [x] `api:form:133` Form Attributes / rules — 证据：tests/form.test.tsx
+- [x] `api:form:134` Form Attributes / inline — 证据：tests/form.test.tsx
+- [x] `api:form:135` Form Attributes / label-position — 证据：tests/form.test.tsx
+- [ ] `api:form:136` Form Attributes / label-width
+- [x] `api:form:137` Form Attributes / label-suffix — 证据：tests/form.test.tsx
+- [x] `api:form:138` Form Attributes / hide-required-asterisk — 证据：tests/form.test.tsx
+- [x] `api:form:139` Form Attributes / require-asterisk-position — 证据：tests/form.test.tsx
+- [x] `api:form:140` Form Attributes / show-message — 证据：tests/form.test.tsx
+- [x] `api:form:141` Form Attributes / inline-message — 证据：tests/form.test.tsx
+- [ ] `api:form:142` Form Attributes / status-icon
+- [x] `api:form:143` Form Attributes / validate-on-rule-change — 证据：tests/form.test.tsx
+- [x] `api:form:144` Form Attributes / size — 证据：tests/form.test.tsx
+- [x] `api:form:145` Form Attributes / disabled — 证据：tests/form.test.tsx
+- [ ] `api:form:146` Form Attributes / scroll-to-error
+- [ ] `api:form:147` Form Attributes / scroll-into-view-options
+- [x] `api:form:153` Form Events / validate — 证据：tests/form.test.tsx
+- [x] `api:form:159` Form Slots / default — 证据：tests/form.test.tsx
+- [x] `api:form:165` Form Exposes / validate — 证据：tests/form.test.tsx
+- [x] `api:form:166` Form Exposes / validateField — 证据：tests/form.test.tsx
+- [x] `api:form:167` Form Exposes / resetFields — 证据：tests/form.test.tsx
+- [ ] `api:form:168` Form Exposes / scrollToField
+- [x] `api:form:169` Form Exposes / clearValidate — 证据：tests/form.test.tsx
+- [x] `api:form:170` Form Exposes / fields — 证据：tests/form.test.tsx
+- [x] `api:form:171` Form Exposes / getField — 证据：tests/form.test.tsx
+- [x] `api:form:172` Form Exposes / setInitialValues — 证据：tests/form.test.tsx
+- [x] `api:form:180` FormItem Attributes / prop — 证据：tests/form.test.tsx
+- [x] `api:form:181` FormItem Attributes / label — 证据：tests/form.test.tsx
+- [ ] `api:form:182` FormItem Attributes / label-position
+- [ ] `api:form:183` FormItem Attributes / label-width
+- [x] `api:form:184` FormItem Attributes / required — 证据：tests/form.test.tsx
+- [x] `api:form:185` FormItem Attributes / rules — 证据：tests/form.test.tsx
+- [x] `api:form:186` FormItem Attributes / error — 证据：tests/form.test.tsx
+- [x] `api:form:187` FormItem Attributes / show-message — 证据：tests/form.test.tsx
+- [x] `api:form:188` FormItem Attributes / inline-message — 证据：tests/form.test.tsx
+- [x] `api:form:189` FormItem Attributes / size — 证据：tests/form.test.tsx
+- [x] `api:form:190` FormItem Attributes / for — 证据：tests/form.test.tsx
+- [x] `api:form:191` FormItem Attributes / validate-status — 证据：tests/form.test.tsx
+- [ ] `api:form:197` FormItemRule / trigger
+- [x] `api:form:209` FormItem Slots / default — 证据：tests/form.test.tsx
+- [x] `api:form:210` FormItem Slots / label — 证据：tests/form.test.tsx
+- [x] `api:form:211` FormItem Slots / error — 证据：tests/form.test.tsx
+- [x] `api:form:217` FormItem Exposes / size — 证据：tests/form.test.tsx
+- [x] `api:form:218` FormItem Exposes / validateMessage — 证据：tests/form.test.tsx
+- [x] `api:form:219` FormItem Exposes / validateState — 证据：tests/form.test.tsx
+- [x] `api:form:220` FormItem Exposes / validate — 证据：tests/form.test.tsx
+- [x] `api:form:221` FormItem Exposes / resetField — 证据：tests/form.test.tsx
+- [x] `api:form:222` FormItem Exposes / clearValidate — 证据：tests/form.test.tsx
+- [x] `api:form:223` FormItem Exposes / setInitialValue — 证据：tests/form.test.tsx
+- [ ] `scenario:form:16` Basic Form
+- [ ] `scenario:form:36` Inline Form
+- [ ] `scenario:form:46` Alignment
+- [ ] `scenario:form:58` Validation
+- [ ] `scenario:form:68` Custom Validation Rules
+- [ ] `scenario:form:84` Add/Delete Form Item
+- [ ] `scenario:form:92` Number Validate
+- [ ] `scenario:form:106` Size Control
+- [ ] `scenario:form:116` Accessibility
+- [ ] `scenario:form:193` FormItemRule
+- [ ] `source-example:form:form/basic-form` form/basic-form
+- [ ] `source-example:form:form/inline-form` form/inline-form
+- [ ] `source-example:form:form/alignment` form/alignment
+- [ ] `source-example:form:form/validation` form/validation
+- [ ] `source-example:form:form/custom-validation` form/custom-validation
+- [ ] `source-example:form:form/form-items` form/form-items
+- [ ] `source-example:form:form/number-validate` form/number-validate
+- [ ] `source-example:form:form/size-control` form/size-control
+- [ ] `source-example:form:form/accessibility` form/accessibility
+- [ ] `directory:form` form
+- [ ] `directory:form-item` form-item
+- [x] `feature:form/validation-trigger` Input按blur/change触发规则且validateEvent可关闭 — 证据：tests/form.test.tsx
+- [x] `feature:form/dynamic-registration` StrictMode字段卸载正确注销且不重复注册 — 证据：tests/form.test.tsx
+- [x] `feature:form/multiple-labels` 单输入关联label，多输入使用group语义 — 证据：tests/form.test.tsx
+
+## Icon 图标
+
+- [x] `api:icon:228` Attributes / color — 证据：tests/presentation.test.tsx
+- [x] `api:icon:229` Attributes / size — 证据：tests/presentation.test.tsx
+- [x] `api:icon:235` Slots / default — 证据：tests/presentation.test.tsx
+- [ ] `scenario:icon:10` Icon Usage
+- [ ] `scenario:icon:16` Installation
+- [ ] `scenario:icon:18` Using packaging manager
+- [ ] `scenario:icon:38` Register All Icons
+- [ ] `scenario:icon:56` Import in Browser
+- [ ] `scenario:icon:85` Auto Import
+- [ ] `scenario:icon:91` Simple Usage
+- [ ] `scenario:icon:126` Combined with el-icon
+- [ ] `scenario:icon:184` Using SVG icon directly
+- [ ] `scenario:icon:210` Icon Collection{#icon-collection}
+- [ ] `directory:icon` icon
+
+## Image 图片
+
+- [x] `api:image:88` Image Attributes / src — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:89` Image Attributes / fit — 证据：tests/scroll-image.test.tsx
+- [ ] `api:image:90` Image Attributes / hide-on-click-modal
+- [x] `api:image:91` Image Attributes / loading — 证据：tests/scroll-image.test.tsx
+- [ ] `api:image:92` Image Attributes / lazy
+- [ ] `api:image:93` Image Attributes / scroll-container
+- [x] `api:image:94` Image Attributes / alt — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:95` Image Attributes / referrerpolicy — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:96` Image Attributes / crossorigin — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:97` Image Attributes / preview-src-list — 证据：tests/scroll-image.test.tsx
+- [ ] `api:image:98` Image Attributes / z-index
+- [x] `api:image:99` Image Attributes / initial-index — 证据：tests/scroll-image.test.tsx
+- [ ] `api:image:100` Image Attributes / close-on-press-escape
+- [x] `api:image:101` Image Attributes / preview-teleported — 证据：tests/scroll-image.test.tsx
+- [ ] `api:image:102` Image Attributes / infinite
+- [ ] `api:image:103` Image Attributes / zoom-rate
+- [ ] `api:image:104` Image Attributes / scale
+- [ ] `api:image:105` Image Attributes / min-scale
+- [ ] `api:image:106` Image Attributes / max-scale
+- [x] `api:image:107` Image Attributes / show-progress — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:113` Image Events / load — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:114` Image Events / error — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:115` Image Events / switch — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:116` Image Events / close — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:117` Image Events / show — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:123` Image Slots / placeholder — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:124` Image Slots / error — 证据：tests/scroll-image.test.tsx
+- [ ] `api:image:125` Image Slots / viewer
+- [ ] `api:image:126` Image Slots / [image viewer slots](#image-viewer-slots)
+- [x] `api:image:132` Image Exposes / showPreview — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:140` Image Viewer Attributes / url-list — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:141` Image Viewer Attributes / z-index — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:142` Image Viewer Attributes / initial-index — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:143` Image Viewer Attributes / infinite — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:144` Image Viewer Attributes / hide-on-click-modal — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:145` Image Viewer Attributes / teleported — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:146` Image Viewer Attributes / zoom-rate — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:147` Image Viewer Attributes / scale — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:148` Image Viewer Attributes / min-scale — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:149` Image Viewer Attributes / max-scale — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:150` Image Viewer Attributes / close-on-press-escape — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:151` Image Viewer Attributes / show-progress — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:157` Image Viewer Events / close — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:158` Image Viewer Events / error — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:159` Image Viewer Events / switch — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:160` Image Viewer Events / rotate — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:166` Image Viewer Slots / default — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:167` Image Viewer Slots / progress — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:168` Image Viewer Slots / toolbar — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:169` Image Viewer Slots / viewer-error — 证据：tests/scroll-image.test.tsx
+- [x] `api:image:175` Image Viewer Exposes / setActiveItem — 证据：tests/scroll-image.test.tsx
+- [ ] `scenario:image:10` Basic Usage
+- [ ] `scenario:image:18` Placeholder
+- [ ] `scenario:image:26` Load Failed
+- [ ] `scenario:image:34` Lazy Load
+- [ ] `scenario:image:50` Image Preview
+- [ ] `scenario:image:58` Manually Open Preview ^(2.9.4)
+- [ ] `scenario:image:66` Custom Toolbar ^(2.9.4)
+- [ ] `scenario:image:74` Custom progress ^(2.9.4)
+- [ ] `source-example:image:image/basic-usage` image/basic-usage
+- [ ] `source-example:image:image/placeholder` image/placeholder
+- [ ] `source-example:image:image/load-failed` image/load-failed
+- [ ] `source-example:image:image/lazy-load` image/lazy-load
+- [ ] `source-example:image:image/image-preview` image/image-preview
+- [ ] `source-example:image:image/manually-preview` image/manually-preview
+- [ ] `source-example:image:image/custom-toolbar` image/custom-toolbar
+- [ ] `source-example:image:image/custom-progress` image/custom-progress
+- [ ] `directory:image` image
+- [ ] `directory:image-viewer` image-viewer
+- [x] `feature:image/drag-cleanup` 图片拖动与卸载清理 — 证据：tests/scroll-image.test.tsx
+
+## InfiniteScroll 无限滚动
+
+- [x] `api:infinite-scroll:38` Directives / v-infinite-scroll — 证据：tests/infinite-scroll.test.tsx
+- [x] `api:infinite-scroll:39` Directives / infinite-scroll-disabled — 证据：tests/infinite-scroll.test.tsx
+- [x] `api:infinite-scroll:40` Directives / infinite-scroll-delay — 证据：tests/infinite-scroll.test.tsx
+- [x] `api:infinite-scroll:41` Directives / infinite-scroll-distance — 证据：tests/infinite-scroll.test.tsx
+- [x] `api:infinite-scroll:42` Directives / infinite-scroll-immediate — 证据：tests/infinite-scroll.test.tsx
+- [ ] `scenario:infinite-scroll:16` Basic usage
+- [ ] `scenario:infinite-scroll:26` Disable Loading
+- [ ] `scenario:infinite-scroll:34` Directives
+- [ ] `source-example:infinite-scroll:infinite-scroll/basic` infinite-scroll/basic
+- [ ] `source-example:infinite-scroll:infinite-scroll/disable-loading` infinite-scroll/disable-loading
+- [ ] `directory:infinite-scroll` infinite-scroll
+- [x] `feature:infinite-scroll/nested-host` Hook支持嵌套滚动容器并使用最新回调 — 证据：tests/infinite-scroll.test.tsx
+- [x] `feature:infinite-scroll/reenable-fill` 从禁用恢复后补充首屏且卸载不再通知 — 证据：tests/infinite-scroll.test.tsx
+
+## InputNumber 数字输入
+
+- [x] `api:input-number:122` Attributes / model-value / v-model — 证据：tests/input-choice.test.tsx
+- [x] `api:input-number:123` Attributes / min — 证据：tests/input-choice.test.tsx
+- [x] `api:input-number:124` Attributes / max — 证据：tests/input-choice.test.tsx
+- [x] `api:input-number:125` Attributes / step — 证据：tests/input-choice.test.tsx
+- [x] `api:input-number:126` Attributes / step-strictly — 证据：tests/input-choice.test.tsx
+- [x] `api:input-number:127` Attributes / precision — 证据：tests/input-choice.test.tsx
+- [x] `api:input-number:128` Attributes / size — 证据：tests/input-choice.test.tsx
+- [x] `api:input-number:129` Attributes / readonly — 证据：tests/input-choice.test.tsx
+- [x] `api:input-number:130` Attributes / disabled — 证据：tests/input-choice.test.tsx
+- [x] `api:input-number:131` Attributes / controls — 证据：tests/input-choice.test.tsx
+- [x] `api:input-number:132` Attributes / controls-position — 证据：tests/input-choice.test.tsx
+- [x] `api:input-number:133` Attributes / name — 证据：tests/input-choice.test.tsx
+- [ ] `api:input-number:134` Attributes / aria-label
+- [x] `api:input-number:135` Attributes / placeholder — 证据：tests/input-choice.test.tsx
+- [ ] `api:input-number:136` Attributes / id
+- [ ] `api:input-number:137` Attributes / value-on-clear
+- [ ] `api:input-number:138` Attributes / validate-event
+- [ ] `api:input-number:139` Attributes / label
+- [ ] `api:input-number:140` Attributes / inputmode
+- [ ] `api:input-number:141` Attributes / align
+- [ ] `api:input-number:142` Attributes / disabled-scientific
+- [ ] `api:input-number:143` Attributes / tabindex
+- [ ] `api:input-number:144` Attributes / formatter
+- [ ] `api:input-number:145` Attributes / parser
+- [ ] `api:input-number:151` Slots / decrease-icon
+- [ ] `api:input-number:152` Slots / increase-icon
+- [ ] `api:input-number:153` Slots / prefix
+- [ ] `api:input-number:154` Slots / suffix
+- [x] `api:input-number:160` Events / change — 证据：tests/input-choice.test.tsx
+- [ ] `api:input-number:161` Events / blur
+- [ ] `api:input-number:162` Events / focus
+- [ ] `api:input-number:168` Exposes / focus
+- [ ] `api:input-number:169` Exposes / blur
+- [ ] `scenario:input-number:10` Basic usage
+- [ ] `scenario:input-number:24` Disabled
+- [ ] `scenario:input-number:32` Steps
+- [ ] `scenario:input-number:42` Step strictly
+- [ ] `scenario:input-number:50` Precision
+- [ ] `scenario:input-number:64` Size
+- [ ] `scenario:input-number:74` Controls Position
+- [ ] `scenario:input-number:82` Custom Icon ^(2.6.3)
+- [ ] `scenario:input-number:90` With prefix and suffix ^(2.8.4)
+- [ ] `scenario:input-number:104` Formatter ^(2.14.0)
+- [ ] `source-example:input-number:input-number/basic` input-number/basic
+- [ ] `source-example:input-number:input-number/disabled` input-number/disabled
+- [ ] `source-example:input-number:input-number/steps` input-number/steps
+- [ ] `source-example:input-number:input-number/step-strictly` input-number/step-strictly
+- [ ] `source-example:input-number:input-number/precision` input-number/precision
+- [ ] `source-example:input-number:input-number/size` input-number/size
+- [ ] `source-example:input-number:input-number/controlled` input-number/controlled
+- [ ] `source-example:input-number:input-number/custom` input-number/custom
+- [ ] `source-example:input-number:input-number/with-prefix-suffix` input-number/with-prefix-suffix
+- [ ] `source-example:input-number:input-number/formatter` input-number/formatter
+- [ ] `directory:input-number` input-number
+- [x] `feature:input-number/disabled-readonly-controls` InputNumber 禁用只读和隐藏控制器 — 证据：tests/input-choice.test.tsx
+
+## InputOtp 验证码输入
+
+- [x] `api:input-otp:94` Attributes / model-value / v-model — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:95` Attributes / length — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:96` Attributes / validator — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:97` Attributes / inputmode — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:98` Attributes / type — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:99` Attributes / size — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:100` Attributes / mask — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:101` Attributes / disabled — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:102` Attributes / separator — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:103` Attributes / validate-event — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:104` Attributes / readonly — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:105` Attributes / id — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:106` Attributes / aria-label — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:112` Events / update:modelValue — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:113` Events / change — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:114` Events / finish — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:115` Events / focus — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:116` Events / blur — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:122` Slots / separator — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:128` Exposes / inputRefs — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:129` Exposes / focus — 证据：tests/input-otp.test.tsx
+- [x] `api:input-otp:130` Exposes / blur — 证据：tests/input-otp.test.tsx
+- [ ] `scenario:input-otp:10` Basic Usage
+- [ ] `scenario:input-otp:18` Custom Length
+- [ ] `scenario:input-otp:28` Types
+- [ ] `scenario:input-otp:38` Sizes
+- [ ] `scenario:input-otp:48` Disabled & Readonly
+- [ ] `scenario:input-otp:58` Mask
+- [ ] `scenario:input-otp:68` Separator
+- [ ] `scenario:input-otp:78` Custom Validation
+- [ ] `source-example:input-otp:input-otp/basic` input-otp/basic
+- [ ] `source-example:input-otp:input-otp/custom-length` input-otp/custom-length
+- [ ] `source-example:input-otp:input-otp/types` input-otp/types
+- [ ] `source-example:input-otp:input-otp/sizes` input-otp/sizes
+- [ ] `source-example:input-otp:input-otp/disabled` input-otp/disabled
+- [ ] `source-example:input-otp:input-otp/mask` input-otp/mask
+- [ ] `source-example:input-otp:input-otp/separator` input-otp/separator
+- [ ] `source-example:input-otp:input-otp/validator` input-otp/validator
+- [ ] `directory:input-otp` input-otp
+- [x] `feature:input-otp/keyboard-delete` 方向键和删除保持格位、填补优先前方空格 — 证据：tests/input-otp.test.tsx
+
+## InputTag 标签输入框
+
+- [x] `api:input-tag:136` Attributes / model-value / v-model — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:137` Attributes / max — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:138` Attributes / tag-type — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:139` Attributes / tag-effect — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:140` Attributes / effect — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:141` Attributes / trigger — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:142` Attributes / draggable — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:143` Attributes / delimiter — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:144` Attributes / size — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:145` Attributes / collapse-tags — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:146` Attributes / collapse-tags-tooltip — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:147` Attributes / save-on-blur — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:148` Attributes / clearable — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:149` Attributes / clear-icon — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:150` Attributes / disabled — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:151` Attributes / validate-event — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:152` Attributes / readonly — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:153` Attributes / autofocus — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:154` Attributes / id — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:155` Attributes / tabindex — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:156` Attributes / max-collapse-tags — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:157` Attributes / maxlength — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:158` Attributes / minlength — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:159` Attributes / placeholder — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:160` Attributes / autocomplete — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:161` Attributes / aria-label — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:167` Events / change — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:168` Events / input — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:169` Events / add-tag — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:170` Events / remove-tag — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:171` Events / drag-tag — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:172` Events / focus — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:173` Events / blur — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:174` Events / clear — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:180` Slots / tag — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:181` Slots / prefix — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:182` Slots / suffix — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:188` Exposes / focus — 证据：tests/input-tag.test.tsx
+- [x] `api:input-tag:189` Exposes / blur — 证据：tests/input-tag.test.tsx
+- [ ] `scenario:input-tag:10` Basic Usage
+- [ ] `scenario:input-tag:20` Custom Trigger
+- [ ] `scenario:input-tag:30` Maximum Tags
+- [ ] `scenario:input-tag:40` Collapse Tags ^(2.11.0)
+- [ ] `scenario:input-tag:50` Disabled
+- [ ] `scenario:input-tag:60` Clearable
+- [ ] `scenario:input-tag:70` Custom Clear Icon ^(2.11.0)
+- [ ] `scenario:input-tag:80` Draggable
+- [ ] `scenario:input-tag:90` Delimiter ^(2.9.9)
+- [ ] `scenario:input-tag:100` Sizes
+- [ ] `scenario:input-tag:110` Custom Tag
+- [ ] `scenario:input-tag:120` Custom Prefix and Suffix
+- [ ] `source-example:input-tag:input-tag/basic` input-tag/basic
+- [ ] `source-example:input-tag:input-tag/trigger` input-tag/trigger
+- [ ] `source-example:input-tag:input-tag/max` input-tag/max
+- [ ] `source-example:input-tag:input-tag/collapse` input-tag/collapse
+- [ ] `source-example:input-tag:input-tag/disabled` input-tag/disabled
+- [ ] `source-example:input-tag:input-tag/clearable` input-tag/clearable
+- [ ] `source-example:input-tag:input-tag/clear-icon` input-tag/clear-icon
+- [ ] `source-example:input-tag:input-tag/draggable` input-tag/draggable
+- [ ] `source-example:input-tag:input-tag/delimiter` input-tag/delimiter
+- [ ] `source-example:input-tag:input-tag/size` input-tag/size
+- [ ] `source-example:input-tag:input-tag/tag` input-tag/tag
+- [ ] `source-example:input-tag:input-tag/prefix-suffix` input-tag/prefix-suffix
+- [ ] `directory:input-tag` input-tag
+- [x] `feature:input-tag/composition` 中文组合期间不拆分不提交，组合结束再处理 — 证据：tests/input-tag.test.tsx
+- [x] `feature:input-tag/android-space` Android空格keyup补偿只提交一次 — 证据：tests/input-tag.test.tsx
+
+## Input 输入框
+
+- [x] `api:input:144` Attributes / type — 证据：tests/input-choice.test.tsx
+- [x] `api:input:145` Attributes / model-value / v-model — 证据：tests/input-choice.test.tsx
+- [ ] `api:input:146` Attributes / model-modifiers
+- [x] `api:input:147` Attributes / maxlength — 证据：tests/input-choice.test.tsx
+- [x] `api:input:148` Attributes / minlength — 证据：tests/input-choice.test.tsx
+- [x] `api:input:149` Attributes / show-word-limit — 证据：tests/input-choice.test.tsx
+- [x] `api:input:150` Attributes / word-limit-position — 证据：tests/input-choice.test.tsx
+- [x] `api:input:151` Attributes / placeholder — 证据：tests/input-choice.test.tsx
+- [x] `api:input:152` Attributes / clearable — 证据：tests/input-choice.test.tsx
+- [x] `api:input:153` Attributes / clear-icon — 证据：tests/input-choice.test.tsx
+- [x] `api:input:154` Attributes / formatter — 证据：tests/input-choice.test.tsx
+- [x] `api:input:155` Attributes / parser — 证据：tests/input-choice.test.tsx
+- [x] `api:input:156` Attributes / show-password — 证据：tests/input-choice.test.tsx
+- [x] `api:input:157` Attributes / disabled — 证据：tests/input-choice.test.tsx
+- [x] `api:input:158` Attributes / size — 证据：tests/input-choice.test.tsx
+- [x] `api:input:159` Attributes / prefix-icon — 证据：tests/input-choice.test.tsx
+- [x] `api:input:160` Attributes / suffix-icon — 证据：tests/input-choice.test.tsx
+- [x] `api:input:161` Attributes / rows — 证据：tests/input-choice.test.tsx
+- [ ] `api:input:162` Attributes / autosize
+- [x] `api:input:163` Attributes / autocomplete — 证据：tests/input-choice.test.tsx
+- [x] `api:input:164` Attributes / name — 证据：tests/input-choice.test.tsx
+- [x] `api:input:165` Attributes / readonly — 证据：tests/input-choice.test.tsx
+- [ ] `api:input:166` Attributes / max
+- [ ] `api:input:167` Attributes / min
+- [ ] `api:input:168` Attributes / step
+- [x] `api:input:169` Attributes / resize — 证据：tests/input-choice.test.tsx
+- [x] `api:input:170` Attributes / autofocus — 证据：tests/input-choice.test.tsx
+- [x] `api:input:171` Attributes / form — 证据：tests/input-choice.test.tsx
+- [x] `api:input:172` Attributes / aria-label — 证据：tests/input-choice.test.tsx
+- [x] `api:input:173` Attributes / tabindex — 证据：tests/input-choice.test.tsx
+- [ ] `api:input:174` Attributes / validate-event
+- [x] `api:input:175` Attributes / input-style — 证据：tests/input-choice.test.tsx
+- [ ] `api:input:176` Attributes / label
+- [x] `api:input:177` Attributes / inputmode — 证据：tests/input-choice.test.tsx
+- [ ] `api:input:178` Attributes / count-graphemes
+- [x] `api:input:184` Events / blur — 证据：tests/input-choice.test.tsx
+- [x] `api:input:185` Events / focus — 证据：tests/input-choice.test.tsx
+- [x] `api:input:186` Events / change — 证据：tests/input-choice.test.tsx
+- [x] `api:input:187` Events / input — 证据：tests/input-choice.test.tsx
+- [x] `api:input:188` Events / clear — 证据：tests/input-choice.test.tsx
+- [x] `api:input:189` Events / keydown — 证据：tests/input-choice.test.tsx
+- [ ] `api:input:190` Events / mouseleave
+- [ ] `api:input:191` Events / mouseenter
+- [ ] `api:input:192` Events / compositionstart
+- [ ] `api:input:193` Events / compositionupdate
+- [ ] `api:input:194` Events / compositionend
+- [x] `api:input:200` Slots / prefix — 证据：tests/input-choice.test.tsx
+- [x] `api:input:201` Slots / suffix — 证据：tests/input-choice.test.tsx
+- [x] `api:input:202` Slots / prepend — 证据：tests/input-choice.test.tsx
+- [x] `api:input:203` Slots / append — 证据：tests/input-choice.test.tsx
+- [x] `api:input:204` Slots / password-icon — 证据：tests/input-choice.test.tsx
+- [x] `api:input:210` Exposes / blur — 证据：tests/input-choice.test.tsx
+- [x] `api:input:211` Exposes / clear — 证据：tests/input-choice.test.tsx
+- [x] `api:input:212` Exposes / focus — 证据：tests/input-choice.test.tsx
+- [x] `api:input:213` Exposes / input — 证据：tests/input-choice.test.tsx
+- [x] `api:input:214` Exposes / ref — 证据：tests/input-choice.test.tsx
+- [ ] `api:input:215` Exposes / resizeTextarea
+- [x] `api:input:216` Exposes / select — 证据：tests/input-choice.test.tsx
+- [x] `api:input:217` Exposes / textarea — 证据：tests/input-choice.test.tsx
+- [ ] `api:input:218` Exposes / textareaStyle
+- [ ] `api:input:219` Exposes / isComposing
+- [ ] `api:input:220` Exposes / passwordVisible
+- [ ] `scenario:input:10` Basic usage
+- [ ] `scenario:input:18` Disabled
+- [ ] `scenario:input:26` Clearable
+- [ ] `scenario:input:34` Custom Clear Icon ^(2.11.0)
+- [ ] `scenario:input:42` Formatter
+- [ ] `scenario:input:52` Password box
+- [ ] `scenario:input:60` Input with icon
+- [ ] `scenario:input:70` Textarea
+- [ ] `scenario:input:80` Autosize Textarea
+- [ ] `scenario:input:90` Mixed input
+- [ ] `scenario:input:100` Sizes
+- [ ] `scenario:input:108` Limit length
+- [ ] `scenario:input:116` Count graphemes ^(2.13.7)
+- [ ] `scenario:input:222` FAQ
+- [ ] `scenario:input:224` Why is the width of the ElInput component expanded by clearable?
+- [ ] `source-example:input:input/basic` input/basic
+- [ ] `source-example:input:input/disabled` input/disabled
+- [ ] `source-example:input:input/clearable` input/clearable
+- [ ] `source-example:input:input/clear-icon` input/clear-icon
+- [ ] `source-example:input:input/formatter` input/formatter
+- [ ] `source-example:input:input/password` input/password
+- [ ] `source-example:input:input/with-icon` input/with-icon
+- [ ] `source-example:input:input/textarea` input/textarea
+- [ ] `source-example:input:input/auto-sizing-textarea` input/auto-sizing-textarea
+- [ ] `source-example:input:input/mixed-input` input/mixed-input
+- [ ] `source-example:input:input/various-size` input/various-size
+- [ ] `source-example:input:input/length-limiting` input/length-limiting
+- [ ] `source-example:input:input/count-graphemes` input/count-graphemes
+- [ ] `directory:input` input
+- [x] `feature:input/controlled-uncontrolled` Input 父级拒绝回写和非受控初始化 — 证据：tests/input-choice.test.tsx
+- [x] `feature:input/ime` Input 组合输入只在结束时提交 — 证据：tests/input-choice.test.tsx
+
+## Layout 布局
+
+- [x] `api:layout:112` Row Attributes / gutter — 证据：tests/layout-display.test.tsx
+- [x] `api:layout:113` Row Attributes / justify — 证据：tests/layout-display.test.tsx
+- [x] `api:layout:114` Row Attributes / align — 证据：tests/layout-display.test.tsx
+- [x] `api:layout:115` Row Attributes / tag — 证据：tests/layout-display.test.tsx
+- [x] `api:layout:121` Row Slots / default — 证据：tests/layout-display.test.tsx
+- [x] `api:layout:129` Col Attributes / span — 证据：tests/layout-display.test.tsx
+- [x] `api:layout:130` Col Attributes / offset — 证据：tests/layout-display.test.tsx
+- [x] `api:layout:131` Col Attributes / push — 证据：tests/layout-display.test.tsx
+- [x] `api:layout:132` Col Attributes / pull — 证据：tests/layout-display.test.tsx
+- [x] `api:layout:133` Col Attributes / xs — 证据：tests/layout-display.test.tsx
+- [x] `api:layout:134` Col Attributes / sm — 证据：tests/layout-display.test.tsx
+- [x] `api:layout:135` Col Attributes / md — 证据：tests/layout-display.test.tsx
+- [x] `api:layout:136` Col Attributes / lg — 证据：tests/layout-display.test.tsx
+- [x] `api:layout:137` Col Attributes / xl — 证据：tests/layout-display.test.tsx
+- [x] `api:layout:138` Col Attributes / tag — 证据：tests/layout-display.test.tsx
+- [x] `api:layout:144` Col Slots / default — 证据：tests/layout-display.test.tsx
+- [ ] `scenario:layout:21` Basic layout
+- [ ] `scenario:layout:31` Column spacing
+- [ ] `scenario:layout:41` Hybrid layout
+- [ ] `scenario:layout:51` Column offset
+- [ ] `scenario:layout:61` Alignment
+- [ ] `scenario:layout:71` Responsive Layout
+- [ ] `scenario:layout:82` Utility classes for hiding elements
+- [ ] `source-example:layout:layout/basic-layout` layout/basic-layout
+- [ ] `source-example:layout:layout/column-spacing` layout/column-spacing
+- [ ] `source-example:layout:layout/hybrid-layout` layout/hybrid-layout
+- [ ] `source-example:layout:layout/column-offset` layout/column-offset
+- [ ] `source-example:layout:layout/alignment` layout/alignment
+- [ ] `source-example:layout:layout/responsive-layout` layout/responsive-layout
+- [ ] `directory:col` col
+- [ ] `directory:row` row
+
+## Link 链接
+
+- [x] `api:link:107` Attributes / type — 证据：tests/presentation.test.tsx
+- [x] `api:link:108` Attributes / underline — 证据：tests/presentation.test.tsx
+- [x] `api:link:109` Attributes / disabled — 证据：tests/presentation.test.tsx
+- [x] `api:link:110` Attributes / href — 证据：tests/presentation.test.tsx
+- [x] `api:link:111` Attributes / target — 证据：tests/presentation.test.tsx
+- [x] `api:link:112` Attributes / icon — 证据：tests/presentation.test.tsx
+- [x] `api:link:118` Slots / default — 证据：tests/presentation.test.tsx
+- [x] `api:link:119` Slots / icon — 证据：tests/presentation.test.tsx
+- [ ] `scenario:link:34` Basic
+- [ ] `scenario:link:44` Disabled
+- [ ] `scenario:link:54` Underline
+- [ ] `scenario:link:85` Icon
+- [ ] `source-example:link:link/basic` link/basic
+- [ ] `source-example:link:link/disabled` link/disabled
+- [ ] `source-example:link:link/underline` link/underline
+- [ ] `source-example:link:link/with-icon` link/with-icon
+- [ ] `directory:link` link
+
+## Loading 加载
+
+- [x] `api:loading:109` Options / target — 证据：tests/services.test.tsx
+- [x] `api:loading:110` Options / body — 证据：tests/services.test.tsx
+- [x] `api:loading:111` Options / fullscreen — 证据：tests/services.test.tsx
+- [x] `api:loading:112` Options / lock — 证据：tests/services.test.tsx
+- [x] `api:loading:113` Options / text — 证据：tests/services.test.tsx
+- [x] `api:loading:114` Options / spinner — 证据：tests/services.test.tsx
+- [x] `api:loading:115` Options / background — 证据：tests/services.test.tsx
+- [x] `api:loading:116` Options / customClass — 证据：tests/services.test.tsx
+- [x] `api:loading:117` Options / svg — 证据：tests/services.test.tsx
+- [x] `api:loading:118` Options / svgViewBox — 证据：tests/services.test.tsx
+- [x] `api:loading:119` Options / beforeClose — 证据：tests/services.test.tsx
+- [x] `api:loading:120` Options / closed — 证据：tests/services.test.tsx
+- [ ] `api:loading:126` Directives / v-loading
+- [ ] `api:loading:127` Directives / element-loading-text
+- [ ] `api:loading:128` Directives / element-loading-spinner
+- [ ] `api:loading:129` Directives / element-loading-svg
+- [ ] `api:loading:130` Directives / element-loading-svg-view-box
+- [ ] `api:loading:131` Directives / element-loading-background
+- [ ] `api:loading:132` Directives / element-loading-custom-class
+- [ ] `scenario:loading:10` Loading inside a container
+- [ ] `scenario:loading:20` Customization
+- [ ] `scenario:loading:36` Full screen loading
+- [ ] `scenario:loading:46` Service
+- [ ] `scenario:loading:82` App context inheritance ^(2.9.10)
+- [ ] `scenario:loading:105` Options
+- [ ] `scenario:loading:122` Directives
+- [ ] `source-example:loading:loading/basic` loading/basic
+- [ ] `source-example:loading:loading/customization` loading/customization
+- [ ] `source-example:loading:loading/fullscreen` loading/fullscreen
+- [ ] `directory:loading` loading
+
+## mention
+
+- [ ] `api:mention:101` Attributes / options
+- [ ] `api:mention:102` Attributes / props
+- [ ] `api:mention:103` Attributes / prefix
+- [ ] `api:mention:104` Attributes / split
+- [ ] `api:mention:105` Attributes / filter-option
+- [ ] `api:mention:106` Attributes / placement
+- [ ] `api:mention:107` Attributes / show-arrow
+- [ ] `api:mention:108` Attributes / offset
+- [ ] `api:mention:109` Attributes / whole
+- [ ] `api:mention:110` Attributes / check-is-whole
+- [ ] `api:mention:111` Attributes / loading
+- [ ] `api:mention:112` Attributes / model-value / v-model
+- [ ] `api:mention:113` Attributes / popper-class
+- [ ] `api:mention:114` Attributes / popper-style
+- [ ] `api:mention:115` Attributes / popper-options
+- [ ] `api:mention:116` Attributes / [input props](./input.md#attributes)
+- [ ] `api:mention:122` Events / search
+- [ ] `api:mention:123` Events / select
+- [ ] `api:mention:124` Events / whole-remove
+- [ ] `api:mention:125` Events / [input events](./input.md#events)
+- [ ] `api:mention:131` Slots / label
+- [ ] `api:mention:132` Slots / loading
+- [ ] `api:mention:133` Slots / header
+- [ ] `api:mention:134` Slots / footer
+- [ ] `api:mention:135` Slots / [input slots](./input.md#slots)
+- [ ] `api:mention:141` Exposes / input
+- [ ] `api:mention:142` Exposes / tooltip
+- [ ] `api:mention:143` Exposes / dropdownVisible
+- [ ] `scenario:mention:10` Basic Usage
+- [ ] `scenario:mention:30` Textarea
+- [ ] `scenario:mention:40` Customize label
+- [ ] `scenario:mention:50` Load remote options
+- [ ] `scenario:mention:60` Customize trigger token
+- [ ] `scenario:mention:70` Delete as a whole
+- [ ] `scenario:mention:80` Work with form
+- [ ] `source-example:mention:mention/basic` mention/basic
+- [ ] `source-example:mention:mention/props` mention/props
+- [ ] `source-example:mention:mention/textarea` mention/textarea
+- [ ] `source-example:mention:mention/label` mention/label
+- [ ] `source-example:mention:mention/loading` mention/loading
+- [ ] `source-example:mention:mention/prefix` mention/prefix
+- [ ] `source-example:mention:mention/whole` mention/whole
+- [ ] `source-example:mention:mention/form` mention/form
+- [ ] `directory:mention` mention
+
+## Menu 菜单
+
+- [x] `api:menu:76` Menu Attributes / mode — 证据：tests/menu.test.tsx
+- [x] `api:menu:77` Menu Attributes / collapse — 证据：tests/menu.test.tsx
+- [ ] `api:menu:78` Menu Attributes / ellipsis
+- [ ] `api:menu:79` Menu Attributes / ellipsis-icon
+- [x] `api:menu:80` Menu Attributes / popper-offset — 证据：tests/menu.test.tsx
+- [x] `api:menu:81` Menu Attributes / default-active — 证据：tests/menu.test.tsx
+- [x] `api:menu:82` Menu Attributes / default-openeds — 证据：tests/menu.test.tsx
+- [x] `api:menu:83` Menu Attributes / unique-opened — 证据：tests/menu.test.tsx
+- [x] `api:menu:84` Menu Attributes / menu-trigger — 证据：tests/menu.test.tsx
+- [x] `api:menu:85` Menu Attributes / router — 证据：tests/menu.test.tsx
+- [x] `api:menu:86` Menu Attributes / collapse-transition — 证据：tests/menu.test.tsx
+- [x] `api:menu:87` Menu Attributes / popper-effect — 证据：tests/menu.test.tsx
+- [x] `api:menu:88` Menu Attributes / close-on-click-outside — 证据：tests/menu.test.tsx
+- [x] `api:menu:89` Menu Attributes / popper-class — 证据：tests/menu.test.tsx
+- [x] `api:menu:90` Menu Attributes / popper-style — 证据：tests/menu.test.tsx
+- [x] `api:menu:91` Menu Attributes / show-timeout — 证据：tests/menu.test.tsx
+- [x] `api:menu:92` Menu Attributes / hide-timeout — 证据：tests/menu.test.tsx
+- [x] `api:menu:93` Menu Attributes / background-color — 证据：tests/menu.test.tsx
+- [x] `api:menu:94` Menu Attributes / text-color — 证据：tests/menu.test.tsx
+- [x] `api:menu:95` Menu Attributes / active-text-color — 证据：tests/menu.test.tsx
+- [x] `api:menu:96` Menu Attributes / persistent — 证据：tests/menu.test.tsx
+- [x] `api:menu:102` Menu Events / select — 证据：tests/menu.test.tsx
+- [x] `api:menu:103` Menu Events / open — 证据：tests/menu.test.tsx
+- [x] `api:menu:104` Menu Events / close — 证据：tests/menu.test.tsx
+- [x] `api:menu:110` Menu Slots / default — 证据：tests/menu.test.tsx
+- [x] `api:menu:116` Menu Exposes / open — 证据：tests/menu.test.tsx
+- [x] `api:menu:117` Menu Exposes / close — 证据：tests/menu.test.tsx
+- [x] `api:menu:118` Menu Exposes / handleResize — 证据：tests/menu.test.tsx
+- [x] `api:menu:119` Menu Exposes / updateActiveIndex — 证据：tests/menu.test.tsx
+- [x] `api:menu:127` SubMenu Attributes / index — 证据：tests/menu.test.tsx
+- [x] `api:menu:128` SubMenu Attributes / popper-class — 证据：tests/menu.test.tsx
+- [x] `api:menu:129` SubMenu Attributes / popper-style — 证据：tests/menu.test.tsx
+- [x] `api:menu:130` SubMenu Attributes / show-timeout — 证据：tests/menu.test.tsx
+- [x] `api:menu:131` SubMenu Attributes / hide-timeout — 证据：tests/menu.test.tsx
+- [x] `api:menu:132` SubMenu Attributes / disabled — 证据：tests/menu.test.tsx
+- [x] `api:menu:133` SubMenu Attributes / teleported — 证据：tests/menu.test.tsx
+- [x] `api:menu:134` SubMenu Attributes / popper-offset — 证据：tests/menu.test.tsx
+- [x] `api:menu:135` SubMenu Attributes / expand-close-icon — 证据：tests/menu.test.tsx
+- [x] `api:menu:136` SubMenu Attributes / expand-open-icon — 证据：tests/menu.test.tsx
+- [x] `api:menu:137` SubMenu Attributes / collapse-close-icon — 证据：tests/menu.test.tsx
+- [x] `api:menu:138` SubMenu Attributes / collapse-open-icon — 证据：tests/menu.test.tsx
+- [x] `api:menu:144` SubMenu Slots / default — 证据：tests/menu.test.tsx
+- [x] `api:menu:145` SubMenu Slots / title — 证据：tests/menu.test.tsx
+- [x] `api:menu:153` Menu-Item Attributes / index — 证据：tests/menu.test.tsx
+- [x] `api:menu:154` Menu-Item Attributes / route — 证据：tests/menu.test.tsx
+- [x] `api:menu:155` Menu-Item Attributes / disabled — 证据：tests/menu.test.tsx
+- [x] `api:menu:161` Menu-Item Events / click — 证据：tests/menu.test.tsx
+- [x] `api:menu:167` Menu-Item Slots / default — 证据：tests/menu.test.tsx
+- [x] `api:menu:168` Menu-Item Slots / title — 证据：tests/menu.test.tsx
+- [x] `api:menu:176` Menu-Item-Group Attributes / title — 证据：tests/menu.test.tsx
+- [x] `api:menu:182` Menu-Item-Group Slots / default — 证据：tests/menu.test.tsx
+- [x] `api:menu:183` Menu-Item-Group Slots / title — 证据：tests/menu.test.tsx
+- [ ] `scenario:menu:22` Top bar
+- [ ] `scenario:menu:32` Left And Right
+- [ ] `scenario:menu:40` Side bar
+- [ ] `scenario:menu:50` Collapse
+- [ ] `scenario:menu:60` Popper Offset ^(2.4.4)
+- [x] `source-example:menu:menu/basic` menu/basic — 证据：
+- [x] `source-example:menu:menu/left-and-right` menu/left-and-right — 证据：
+- [x] `source-example:menu:menu/vertical` menu/vertical — 证据：
+- [x] `source-example:menu:menu/collapse` menu/collapse — 证据：
+- [x] `source-example:menu:menu/popper-offset` menu/popper-offset — 证据：
+- [ ] `directory:menu` menu
+- [ ] `directory:menu-item` menu-item
+- [ ] `directory:menu-item-group` menu-item-group
+- [ ] `directory:sub-menu` sub-menu
+- [x] `feature:menu/keyboard-navigation` 方向键循环跳过禁用项目，子菜单键盘展开聚焦后代 — 证据：tests/menu.test.tsx
+
+## MessageBox 消息弹框
+
+- [x] `api:message-box:173` Options / autofocus — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:174` Options / title — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:175` Options / message — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:176` Options / dangerouslyUseHTMLString — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:177` Options / type — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:178` Options / icon — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:179` Options / closeIcon — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:180` Options / customClass — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:181` Options / customStyle — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:182` Options / modal — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:183` Options / modalClass — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:184` Options / callback — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:185` Options / showClose — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:186` Options / beforeClose — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:187` Options / distinguishCancelAndClose — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:188` Options / lockScroll — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:189` Options / showCancelButton — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:190` Options / showConfirmButton — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:191` Options / cancelButtonText — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:192` Options / confirmButtonText — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:193` Options / cancelButtonType — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:194` Options / confirmButtonType — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:195` Options / cancelButtonLoadingIcon — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:196` Options / confirmButtonLoadingIcon — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:197` Options / cancelButtonClass — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:198` Options / confirmButtonClass — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:199` Options / closeOnClickModal — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:200` Options / closeOnPressEscape — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:201` Options / closeOnHashChange — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:202` Options / showInput — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:203` Options / inputPlaceholder — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:204` Options / inputType — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:205` Options / inputValue — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:206` Options / inputPattern — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:207` Options / inputValidator — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:208` Options / inputErrorMessage — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:209` Options / center — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:210` Options / draggable — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:211` Options / overflow — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:212` Options / roundButton — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:213` Options / buttonSize — 证据：tests/message-box.test.tsx
+- [x] `api:message-box:214` Options / appendTo — 证据：tests/message-box.test.tsx
+- [ ] `scenario:message-box:16` Alert
+- [ ] `scenario:message-box:26` Confirm
+- [ ] `scenario:message-box:36` Prompt
+- [ ] `scenario:message-box:46` Use VNode
+- [ ] `scenario:message-box:56` Use VNode With Action Handlers ^(2.14.0)
+- [ ] `scenario:message-box:66` Customization
+- [ ] `scenario:message-box:76` Use HTML String
+- [ ] `scenario:message-box:92` Distinguishing cancel and close
+- [ ] `scenario:message-box:102` Centered content
+- [ ] `scenario:message-box:112` Customized Icon
+- [ ] `scenario:message-box:122` Draggable
+- [ ] `scenario:message-box:132` Global method
+- [ ] `scenario:message-box:141` App context inheritance <el-tag>> 2.0.4</el-tag>
+- [ ] `scenario:message-box:157` Local import
+- [ ] `scenario:message-box:169` Options
+- [ ] `source-example:message-box:message-box/alert` message-box/alert
+- [ ] `source-example:message-box:message-box/confirm` message-box/confirm
+- [ ] `source-example:message-box:message-box/prompt` message-box/prompt
+- [ ] `source-example:message-box:message-box/use-vnode` message-box/use-vnode
+- [ ] `source-example:message-box:message-box/use-vnode-with-action-handlers` message-box/use-vnode-with-action-handlers
+- [ ] `source-example:message-box:message-box/customization` message-box/customization
+- [ ] `source-example:message-box:message-box/use-html` message-box/use-html
+- [ ] `source-example:message-box:message-box/distinguishable-close-cancel` message-box/distinguishable-close-cancel
+- [ ] `source-example:message-box:message-box/centered-content` message-box/centered-content
+- [ ] `source-example:message-box:message-box/customized-icon` message-box/customized-icon
+- [ ] `source-example:message-box:message-box/draggable` message-box/draggable
+- [ ] `directory:message-box` message-box
+- [x] `feature:message-box/same-mask-target` 内容按下后释放在遮罩不触发关闭 — 证据：tests/message-box.test.tsx
+
+## Message 消息提示
+
+- [x] `api:message:125` Options / message — 证据：tests/services.test.tsx
+- [x] `api:message:126` Options / type — 证据：tests/services.test.tsx
+- [x] `api:message:127` Options / plain — 证据：tests/services.test.tsx
+- [x] `api:message:128` Options / icon — 证据：tests/services.test.tsx
+- [x] `api:message:129` Options / dangerouslyUseHTMLString — 证据：tests/services.test.tsx
+- [x] `api:message:130` Options / customClass — 证据：tests/services.test.tsx
+- [x] `api:message:131` Options / duration — 证据：tests/services.test.tsx
+- [x] `api:message:132` Options / showClose — 证据：tests/services.test.tsx
+- [x] `api:message:133` Options / onClose — 证据：tests/services.test.tsx
+- [x] `api:message:134` Options / offset — 证据：tests/services.test.tsx
+- [x] `api:message:135` Options / placement — 证据：tests/services.test.tsx
+- [x] `api:message:136` Options / appendTo — 证据：tests/services.test.tsx
+- [x] `api:message:137` Options / grouping — 证据：tests/services.test.tsx
+- [x] `api:message:138` Options / repeatNum — 证据：tests/services.test.tsx
+- [x] `api:message:146` Methods / close — 证据：tests/services.test.tsx
+- [ ] `scenario:message:10` Basic usage
+- [ ] `scenario:message:20` Types
+- [ ] `scenario:message:30` Plain ^(2.6.3)
+- [ ] `scenario:message:40` Closable
+- [ ] `scenario:message:50` Use HTML string
+- [ ] `scenario:message:66` Grouping
+- [ ] `scenario:message:76` Placement ^(2.11.0)
+- [ ] `scenario:message:86` Global method
+- [ ] `scenario:message:90` Local import
+- [ ] `scenario:message:98` App context inheritance ^(2.0.3)
+- [ ] `scenario:message:121` Options
+- [ ] `source-example:message:message/basic` message/basic
+- [ ] `source-example:message:message/different-types` message/different-types
+- [ ] `source-example:message:message/plain` message/plain
+- [ ] `source-example:message:message/closable` message/closable
+- [ ] `source-example:message:message/raw-html` message/raw-html
+- [ ] `source-example:message:message/grouping` message/grouping
+- [ ] `source-example:message:message/placement` message/placement
+- [ ] `directory:message` message
+- [x] `feature:message/context-bound` 绑定当前Provider命名空间而非读取其他React树 — 证据：tests/services.test.tsx
+- [x] `feature:message/hover-pause` 悬停暂停剩余时长 — 证据：tests/services.test.tsx
+
+## Notification 通知
+
+- [x] `api:notification:142` Options / title — 证据：tests/services.test.tsx
+- [x] `api:notification:143` Options / message — 证据：tests/services.test.tsx
+- [x] `api:notification:144` Options / dangerouslyUseHTMLString — 证据：tests/services.test.tsx
+- [x] `api:notification:145` Options / type — 证据：tests/services.test.tsx
+- [x] `api:notification:146` Options / icon — 证据：tests/services.test.tsx
+- [x] `api:notification:147` Options / customClass — 证据：tests/services.test.tsx
+- [x] `api:notification:148` Options / duration — 证据：tests/services.test.tsx
+- [x] `api:notification:149` Options / position — 证据：tests/services.test.tsx
+- [x] `api:notification:150` Options / showClose — 证据：tests/services.test.tsx
+- [x] `api:notification:151` Options / onClose — 证据：tests/services.test.tsx
+- [x] `api:notification:152` Options / onClick — 证据：tests/services.test.tsx
+- [x] `api:notification:153` Options / offset — 证据：tests/services.test.tsx
+- [x] `api:notification:154` Options / appendTo — 证据：tests/services.test.tsx
+- [x] `api:notification:155` Options / zIndex — 证据：tests/services.test.tsx
+- [x] `api:notification:156` Options / closeIcon — 证据：tests/services.test.tsx
+- [ ] `api:notification:157` Options / progress
+- [x] `api:notification:158` Options / pauseOnHover — 证据：tests/services.test.tsx
+- [x] `api:notification:166` Method / close — 证据：tests/services.test.tsx
+- [ ] `scenario:notification:10` Basic usage
+- [ ] `scenario:notification:18` With types
+- [ ] `scenario:notification:28` Custom position
+- [ ] `scenario:notification:38` With offset
+- [ ] `scenario:notification:48` Use HTML string
+- [ ] `scenario:notification:64` Message using functions ^(2.9.0)
+- [ ] `scenario:notification:76` With progress bar ^(2.14.4)
+- [ ] `scenario:notification:86` Hide close button
+- [ ] `scenario:notification:96` Global method
+- [ ] `scenario:notification:100` Local import
+- [ ] `scenario:notification:115` App context inheritance <el-tag>> 2.0.4</el-tag>
+- [ ] `scenario:notification:138` Options
+- [ ] `scenario:notification:160` Method
+- [ ] `source-example:notification:notification/basic` notification/basic
+- [ ] `source-example:notification:notification/different-types` notification/different-types
+- [ ] `source-example:notification:notification/positioning` notification/positioning
+- [ ] `source-example:notification:notification/offsetting` notification/offsetting
+- [ ] `source-example:notification:notification/raw-html` notification/raw-html
+- [ ] `source-example:notification:notification/use-vnode` notification/use-vnode
+- [ ] `source-example:notification:notification/progress-bar` notification/progress-bar
+- [ ] `source-example:notification:notification/no-close` notification/no-close
+- [ ] `directory:notification` notification
+
+## overview
+
+
+## PageHeader 页头
+
+- [x] `api:page-header:107` Attributes / icon — 证据：tests/navigation-extra.test.tsx
+- [x] `api:page-header:108` Attributes / title — 证据：tests/navigation-extra.test.tsx
+- [x] `api:page-header:109` Attributes / content — 证据：tests/navigation-extra.test.tsx
+- [x] `api:page-header:115` Events / back — 证据：tests/navigation-extra.test.tsx
+- [x] `api:page-header:121` Slots / icon — 证据：tests/navigation-extra.test.tsx
+- [x] `api:page-header:122` Slots / title — 证据：tests/navigation-extra.test.tsx
+- [x] `api:page-header:123` Slots / content — 证据：tests/navigation-extra.test.tsx
+- [x] `api:page-header:124` Slots / extra — 证据：tests/navigation-extra.test.tsx
+- [x] `api:page-header:125` Slots / breadcrumb — 证据：tests/navigation-extra.test.tsx
+- [x] `api:page-header:126` Slots / default — 证据：tests/navigation-extra.test.tsx
+- [ ] `scenario:page-header:10` Complete example
+- [ ] `scenario:page-header:18` Basic usage
+- [ ] `scenario:page-header:28` Custom icon
+- [ ] `scenario:page-header:39` No icon
+- [ ] `scenario:page-header:50` Breadcrumbs
+- [ ] `scenario:page-header:60` Additional operation section
+- [ ] `scenario:page-header:71` Main content
+- [ ] `scenario:page-header:81` Anatomy
+- [ ] `source-example:page-header:page-header/complete` page-header/complete
+- [ ] `source-example:page-header:page-header/basic` page-header/basic
+- [ ] `source-example:page-header:page-header/custom-icon` page-header/custom-icon
+- [ ] `source-example:page-header:page-header/no-icon` page-header/no-icon
+- [ ] `source-example:page-header:page-header/breadcrumb` page-header/breadcrumb
+- [ ] `source-example:page-header:page-header/additional-sections` page-header/additional-sections
+- [ ] `source-example:page-header:page-header/main-content` page-header/main-content
+- [ ] `directory:page-header` page-header
+
+## Pagination 分页
+
+- [x] `api:pagination:70` Attributes / size — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:71` Attributes / background — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:72` Attributes / page-size / v-model:page-size — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:73` Attributes / default-page-size — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:74` Attributes / total — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:75` Attributes / page-count — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:76` Attributes / pager-count — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:77` Attributes / current-page / v-model:current-page — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:78` Attributes / default-current-page — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:79` Attributes / layout — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:80` Attributes / page-sizes — 证据：tests/navigation-extra.test.tsx
+- [ ] `api:pagination:81` Attributes / append-size-to
+- [ ] `api:pagination:82` Attributes / popper-class
+- [ ] `api:pagination:83` Attributes / popper-style
+- [x] `api:pagination:84` Attributes / prev-text — 证据：tests/navigation-extra.test.tsx
+- [ ] `api:pagination:85` Attributes / prev-icon
+- [x] `api:pagination:86` Attributes / next-text — 证据：tests/navigation-extra.test.tsx
+- [ ] `api:pagination:87` Attributes / next-icon
+- [x] `api:pagination:88` Attributes / disabled — 证据：tests/navigation-extra.test.tsx
+- [ ] `api:pagination:89` Attributes / teleported
+- [x] `api:pagination:90` Attributes / hide-on-single-page — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:91` Attributes / small — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:107` Events / size-change — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:108` Events / current-change — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:109` Events / change — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:110` Events / prev-click — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:111` Events / next-click — 证据：tests/navigation-extra.test.tsx
+- [x] `api:pagination:123` Slots / default — 证据：tests/navigation-extra.test.tsx
+- [ ] `scenario:pagination:10` Basic usage
+- [ ] `scenario:pagination:18` Number of pagers
+- [ ] `scenario:pagination:26` Buttons with background color
+- [ ] `scenario:pagination:34` Small Pagination
+- [ ] `scenario:pagination:44` Hide pagination when there is only one page
+- [ ] `scenario:pagination:54` More elements
+- [ ] `source-example:pagination:pagination/basic-usage` pagination/basic-usage
+- [ ] `source-example:pagination:pagination/number-of-pagers` pagination/number-of-pagers
+- [ ] `source-example:pagination:pagination/background-color` pagination/background-color
+- [ ] `source-example:pagination:pagination/small-pagination` pagination/small-pagination
+- [ ] `source-example:pagination:pagination/auto-hide-pagination` pagination/auto-hide-pagination
+- [ ] `source-example:pagination:pagination/more-elements` pagination/more-elements
+- [ ] `directory:pagination` pagination
+- [x] `feature:pagination/pager-more-and-jump` 省略号和跳页边界 — 证据：tests/navigation-extra.test.tsx
+
+## Popconfirm 气泡确认
+
+- [x] `api:popconfirm:56` Attributes / title — 证据：tests/tooltip.test.tsx
+- [x] `api:popconfirm:57` Attributes / effect — 证据：tests/tooltip.test.tsx
+- [x] `api:popconfirm:58` Attributes / confirm-button-text — 证据：tests/tooltip.test.tsx
+- [x] `api:popconfirm:59` Attributes / cancel-button-text — 证据：tests/tooltip.test.tsx
+- [x] `api:popconfirm:60` Attributes / confirm-button-type — 证据：tests/tooltip.test.tsx
+- [x] `api:popconfirm:61` Attributes / cancel-button-type — 证据：tests/tooltip.test.tsx
+- [x] `api:popconfirm:62` Attributes / icon — 证据：tests/tooltip.test.tsx
+- [x] `api:popconfirm:63` Attributes / icon-color — 证据：tests/tooltip.test.tsx
+- [x] `api:popconfirm:64` Attributes / hide-icon — 证据：tests/tooltip.test.tsx
+- [x] `api:popconfirm:65` Attributes / hide-after — 证据：tests/tooltip.test.tsx
+- [x] `api:popconfirm:66` Attributes / teleported — 证据：tests/tooltip.test.tsx
+- [x] `api:popconfirm:67` Attributes / persistent — 证据：tests/tooltip.test.tsx
+- [x] `api:popconfirm:68` Attributes / width — 证据：tests/tooltip.test.tsx
+- [ ] `api:popconfirm:69` Attributes / [tooltip](./tooltip.md#attributes)
+- [x] `api:popconfirm:75` Events / confirm — 证据：tests/tooltip.test.tsx
+- [x] `api:popconfirm:76` Events / cancel — 证据：tests/tooltip.test.tsx
+- [x] `api:popconfirm:82` Slots / reference — 证据：tests/tooltip.test.tsx
+- [x] `api:popconfirm:83` Slots / actions — 证据：tests/tooltip.test.tsx
+- [ ] `api:popconfirm:89` Exposes / popperRef
+- [ ] `api:popconfirm:90` Exposes / hide
+- [ ] `scenario:popconfirm:10` Placement
+- [ ] `scenario:popconfirm:20` Basic usage
+- [ ] `scenario:popconfirm:30` Customize
+- [ ] `scenario:popconfirm:40` Trigger event
+- [ ] `source-example:popconfirm:popconfirm/placement` popconfirm/placement
+- [ ] `source-example:popconfirm:popconfirm/basic-usage` popconfirm/basic-usage
+- [ ] `source-example:popconfirm:popconfirm/customize` popconfirm/customize
+- [ ] `source-example:popconfirm:popconfirm/trigger-event` popconfirm/trigger-event
+- [ ] `directory:popconfirm` popconfirm
+
+## Popover 弹出框
+
+- [x] `api:popover:81` Attributes / trigger — 证据：tests/tooltip.test.tsx
+- [ ] `api:popover:82` Attributes / trigger-keys
+- [x] `api:popover:83` Attributes / title — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:84` Attributes / effect — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:85` Attributes / content — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:86` Attributes / width — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:87` Attributes / placement — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:88` Attributes / disabled — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:89` Attributes / visible / v-model:visible — 证据：tests/tooltip.test.tsx
+- [ ] `api:popover:90` Attributes / offset
+- [ ] `api:popover:91` Attributes / transition
+- [x] `api:popover:92` Attributes / show-arrow — 证据：tests/tooltip.test.tsx
+- [ ] `api:popover:93` Attributes / popper-options
+- [x] `api:popover:94` Attributes / popper-class — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:95` Attributes / popper-style — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:96` Attributes / show-after — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:97` Attributes / hide-after — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:98` Attributes / auto-close — 证据：tests/tooltip.test.tsx
+- [ ] `api:popover:99` Attributes / tabindex
+- [x] `api:popover:100` Attributes / teleported — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:101` Attributes / append-to — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:102` Attributes / persistent — 证据：tests/tooltip.test.tsx
+- [ ] `api:popover:103` Attributes / virtual-triggering
+- [ ] `api:popover:104` Attributes / virtual-ref
+- [ ] `api:popover:105` Attributes / [tooltip](./tooltip.md#attributes)
+- [x] `api:popover:111` Slots / default — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:112` Slots / reference — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:118` Events / show — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:119` Events / before-enter — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:120` Events / after-enter — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:121` Events / hide — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:122` Events / before-leave — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:123` Events / after-leave — 证据：tests/tooltip.test.tsx
+- [x] `api:popover:129` Exposes / hide — 证据：tests/tooltip.test.tsx
+- [ ] `scenario:popover:8` Placement
+- [ ] `scenario:popover:18` Basic usage
+- [ ] `scenario:popover:28` Virtual triggering
+- [ ] `scenario:popover:44` Rich content
+- [ ] `scenario:popover:54` Nested operation
+- [ ] `scenario:popover:64` Directive
+- [ ] `source-example:popover:popover/placement` popover/placement
+- [ ] `source-example:popover:popover/basic-usage` popover/basic-usage
+- [ ] `source-example:popover:popover/virtual-triggering` popover/virtual-triggering
+- [ ] `source-example:popover:popover/nested-information` popover/nested-information
+- [ ] `source-example:popover:popover/nested-operation` popover/nested-operation
+- [ ] `source-example:popover:popover/directive-usage` popover/directive-usage
+- [ ] `directory:popover` popover
+
+## Progress 进度
+
+- [x] `api:progress:86` Attributes / percentage — 证据：tests/layout-display.test.tsx
+- [x] `api:progress:87` Attributes / type — 证据：tests/layout-display.test.tsx
+- [x] `api:progress:88` Attributes / stroke-width — 证据：tests/layout-display.test.tsx
+- [x] `api:progress:89` Attributes / text-inside — 证据：tests/layout-display.test.tsx
+- [ ] `api:progress:90` Attributes / status
+- [x] `api:progress:91` Attributes / indeterminate — 证据：tests/layout-display.test.tsx
+- [x] `api:progress:92` Attributes / duration — 证据：tests/layout-display.test.tsx
+- [x] `api:progress:93` Attributes / color — 证据：tests/layout-display.test.tsx
+- [x] `api:progress:94` Attributes / width — 证据：tests/layout-display.test.tsx
+- [x] `api:progress:95` Attributes / show-text — 证据：tests/layout-display.test.tsx
+- [x] `api:progress:96` Attributes / stroke-linecap — 证据：tests/layout-display.test.tsx
+- [x] `api:progress:97` Attributes / format — 证据：tests/layout-display.test.tsx
+- [x] `api:progress:98` Attributes / striped — 证据：tests/layout-display.test.tsx
+- [x] `api:progress:99` Attributes / striped-flow — 证据：tests/layout-display.test.tsx
+- [x] `api:progress:105` Slots / default — 证据：tests/layout-display.test.tsx
+- [ ] `scenario:progress:10` Linear progress bar
+- [ ] `scenario:progress:18` Internal percentage
+- [ ] `scenario:progress:28` Custom color
+- [ ] `scenario:progress:38` Circular progress bar
+- [ ] `scenario:progress:46` Dashboard progress bar
+- [ ] `scenario:progress:56` Customized content
+- [ ] `scenario:progress:64` Indeterminate progress
+- [ ] `scenario:progress:72` Striped progress
+- [ ] `source-example:progress:progress/linear-progress-bar` progress/linear-progress-bar
+- [ ] `source-example:progress:progress/internal-percentage` progress/internal-percentage
+- [ ] `source-example:progress:progress/custom-color` progress/custom-color
+- [ ] `source-example:progress:progress/circular-progress-bar` progress/circular-progress-bar
+- [ ] `source-example:progress:progress/dashboard-progress-bar` progress/dashboard-progress-bar
+- [ ] `source-example:progress:progress/customized-content` progress/customized-content
+- [ ] `source-example:progress:progress/indeterminate-progress` progress/indeterminate-progress
+- [ ] `source-example:progress:progress/striped-progress` progress/striped-progress
+- [ ] `directory:progress` progress
+- [x] `feature:progress/clamp` 进度和占位 进度边界与输入数组不可变 — 证据：tests/layout-display.test.tsx
+
+## Radio 单选框
+
+- [ ] `api:radio:96` Radio Attributes / model-value / v-model
+- [x] `api:radio:97` Radio Attributes / value — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:98` Radio Attributes / label — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:99` Radio Attributes / disabled — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:100` Radio Attributes / border — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:101` Radio Attributes / size — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:102` Radio Attributes / name — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:108` Radio Events / change — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:114` Radio Slots / default — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:122` RadioGroup Attributes / model-value / v-model — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:123` RadioGroup Attributes / size — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:124` RadioGroup Attributes / disabled — 证据：tests/input-choice.test.tsx
+- [ ] `api:radio:125` RadioGroup Attributes / validate-event
+- [ ] `api:radio:126` RadioGroup Attributes / text-color
+- [ ] `api:radio:127` RadioGroup Attributes / fill
+- [x] `api:radio:128` RadioGroup Attributes / aria-label — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:129` RadioGroup Attributes / name — 证据：tests/input-choice.test.tsx
+- [ ] `api:radio:130` RadioGroup Attributes / id
+- [ ] `api:radio:131` RadioGroup Attributes / label
+- [ ] `api:radio:132` RadioGroup Attributes / options
+- [ ] `api:radio:133` RadioGroup Attributes / props
+- [ ] `api:radio:134` RadioGroup Attributes / type
+- [x] `api:radio:140` RadioGroup Events / change — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:146` RadioGroup Slots / default — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:154` RadioButton Attributes / value — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:155` RadioButton Attributes / label — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:156` RadioButton Attributes / disabled — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:157` RadioButton Attributes / name — 证据：tests/input-choice.test.tsx
+- [x] `api:radio:163` RadioButton Slots / default — 证据：tests/input-choice.test.tsx
+- [ ] `scenario:radio:34` Basic usage
+- [ ] `scenario:radio:44` Disabled
+- [ ] `scenario:radio:54` Radio Group
+- [ ] `scenario:radio:64` With borders
+- [ ] `scenario:radio:72` Options attribute ^(2.11.2)
+- [ ] `scenario:radio:80` Radio Button
+- [ ] `source-example:radio:radio/basic-usage` radio/basic-usage
+- [ ] `source-example:radio:radio/disabled` radio/disabled
+- [ ] `source-example:radio:radio/radio-group` radio/radio-group
+- [ ] `source-example:radio:radio/with-borders` radio/with-borders
+- [ ] `source-example:radio:radio/options` radio/options
+- [ ] `source-example:radio:radio/radio-button` radio/radio-button
+- [ ] `directory:radio` radio
+- [ ] `directory:radio-button` radio-button
+- [ ] `directory:radio-group` radio-group
+
+## Rate 评分
+
+- [ ] `api:rate:81` Default Variables / --el-rate-void-color
+- [ ] `api:rate:82` Default Variables / --el-rate-fill-color
+- [ ] `api:rate:83` Default Variables / --el-rate-disabled-void-color
+- [ ] `api:rate:84` Default Variables / --el-rate-text-color
+- [x] `api:rate:92` Attributes / model-value / v-model — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:93` Attributes / max — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:94` Attributes / size — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:95` Attributes / disabled — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:96` Attributes / allow-half — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:97` Attributes / low-threshold — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:98` Attributes / high-threshold — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:99` Attributes / colors — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:100` Attributes / void-color — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:101` Attributes / disabled-void-color — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:102` Attributes / icons — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:103` Attributes / void-icon — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:104` Attributes / disabled-void-icon — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:105` Attributes / show-text — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:106` Attributes / show-score — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:107` Attributes / text-color — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:108` Attributes / texts — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:109` Attributes / score-template — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:110` Attributes / clearable — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:111` Attributes / id — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:112` Attributes / aria-label — 证据：tests/navigation-extra.test.tsx
+- [ ] `api:rate:113` Attributes / label
+- [x] `api:rate:119` Events / change — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:125` Exposes / setCurrentValue — 证据：tests/navigation-extra.test.tsx
+- [x] `api:rate:126` Exposes / resetCurrentValue — 证据：tests/navigation-extra.test.tsx
+- [ ] `scenario:rate:10` Basic usage
+- [ ] `scenario:rate:18` Sizes
+- [ ] `scenario:rate:26` With allow-half
+- [ ] `scenario:rate:34` With text
+- [ ] `scenario:rate:44` Clearable
+- [ ] `scenario:rate:52` More icons
+- [ ] `scenario:rate:62` Read-only
+- [ ] `scenario:rate:72` Custom styles
+- [ ] `scenario:rate:77` Default Variables
+- [ ] `source-example:rate:rate/basic-usage` rate/basic-usage
+- [ ] `source-example:rate:rate/sizes` rate/sizes
+- [ ] `source-example:rate:rate/allow-half` rate/allow-half
+- [ ] `source-example:rate:rate/text` rate/text
+- [ ] `source-example:rate:rate/clearable` rate/clearable
+- [ ] `source-example:rate:rate/more-icons` rate/more-icons
+- [ ] `source-example:rate:rate/readonly` rate/readonly
+- [ ] `directory:rate` rate
+
+## Result 结果
+
+- [x] `api:result:32` Attributes / title — 证据：tests/presentation.test.tsx
+- [x] `api:result:33` Attributes / sub-title — 证据：tests/presentation.test.tsx
+- [x] `api:result:34` Attributes / icon — 证据：tests/presentation.test.tsx
+- [x] `api:result:40` Slots / icon — 证据：tests/presentation.test.tsx
+- [x] `api:result:41` Slots / title — 证据：tests/presentation.test.tsx
+- [x] `api:result:42` Slots / sub-title — 证据：tests/presentation.test.tsx
+- [x] `api:result:43` Slots / extra — 证据：tests/presentation.test.tsx
+- [ ] `scenario:result:10` Basic usage
+- [ ] `scenario:result:18` Customized content
+- [ ] `source-example:result:result/basic-usage` result/basic-usage
+- [ ] `source-example:result:result/customized-content` result/customized-content
+- [ ] `directory:result` result
+
+## Scrollbar 滚动条
+
+- [x] `api:scrollbar:56` Attributes / height — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:57` Attributes / max-height — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:58` Attributes / native — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:59` Attributes / wrap-style — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:60` Attributes / wrap-class — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:61` Attributes / view-style — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:62` Attributes / view-class — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:63` Attributes / noresize — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:64` Attributes / tag — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:65` Attributes / always — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:66` Attributes / min-size — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:67` Attributes / id — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:68` Attributes / role — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:69` Attributes / aria-label — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:70` Attributes / aria-orientation — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:71` Attributes / tabindex — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:72` Attributes / distance — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:78` Events / scroll — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:79` Events / end-reached — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:85` Slots / default — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:91` Exposes / handleScroll — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:92` Exposes / scrollTo — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:93` Exposes / setScrollTop — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:94` Exposes / setScrollLeft — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:95` Exposes / update — 证据：tests/scroll-image.test.tsx
+- [x] `api:scrollbar:96` Exposes / wrapRef — 证据：tests/scroll-image.test.tsx
+- [ ] `scenario:scrollbar:10` Basic usage
+- [ ] `scenario:scrollbar:18` Horizontal scroll
+- [ ] `scenario:scrollbar:26` Max height
+- [ ] `scenario:scrollbar:34` Manual scroll
+- [ ] `scenario:scrollbar:42` Infinite scroll ^(2.10.0)
+- [ ] `source-example:scrollbar:scrollbar/basic-usage` scrollbar/basic-usage
+- [ ] `source-example:scrollbar:scrollbar/horizontal-scroll` scrollbar/horizontal-scroll
+- [ ] `source-example:scrollbar:scrollbar/max-height` scrollbar/max-height
+- [ ] `source-example:scrollbar:scrollbar/manual-scroll` scrollbar/manual-scroll
+- [ ] `source-example:scrollbar:scrollbar/infinite-scroll` scrollbar/infinite-scroll
+- [ ] `directory:scrollbar` scrollbar
+
+## Segmented 分段选择
+
+- [x] `api:segmented:86` Attributes / model-value / v-model — 证据：tests/input-choice.test.tsx
+- [x] `api:segmented:87` Attributes / options — 证据：tests/input-choice.test.tsx
+- [ ] `api:segmented:88` Attributes / [props](#props)
+- [x] `api:segmented:89` Attributes / size — 证据：tests/input-choice.test.tsx
+- [x] `api:segmented:90` Attributes / block — 证据：tests/input-choice.test.tsx
+- [x] `api:segmented:91` Attributes / disabled — 证据：tests/input-choice.test.tsx
+- [ ] `api:segmented:92` Attributes / validate-event
+- [x] `api:segmented:93` Attributes / name — 证据：tests/input-choice.test.tsx
+- [ ] `api:segmented:94` Attributes / id
+- [x] `api:segmented:95` Attributes / aria-label — 证据：tests/input-choice.test.tsx
+- [x] `api:segmented:96` Attributes / direction — 证据：tests/input-choice.test.tsx
+- [ ] `api:segmented:102` props / value
+- [ ] `api:segmented:103` props / label
+- [ ] `api:segmented:104` props / disabled
+- [x] `api:segmented:110` Events / change — 证据：tests/input-choice.test.tsx
+- [x] `api:segmented:116` Slots / default — 证据：tests/input-choice.test.tsx
+- [ ] `scenario:segmented:10` Basic Usage
+- [ ] `scenario:segmented:20` Direction Usage ^(2.8.7)
+- [ ] `scenario:segmented:30` Disabled
+- [ ] `scenario:segmented:40` Aliases for custom options ^(2.9.8)
+- [ ] `scenario:segmented:50` Block
+- [ ] `scenario:segmented:60` Custom Content
+- [ ] `scenario:segmented:70` Custom Style
+- [ ] `source-example:segmented:segmented/basic` segmented/basic
+- [ ] `source-example:segmented:segmented/custom-direction` segmented/custom-direction
+- [ ] `source-example:segmented:segmented/disabled` segmented/disabled
+- [ ] `source-example:segmented:segmented/props` segmented/props
+- [ ] `source-example:segmented:segmented/block` segmented/block
+- [ ] `source-example:segmented:segmented/custom-content` segmented/custom-content
+- [ ] `source-example:segmented:segmented/custom-style` segmented/custom-style
+- [ ] `directory:segmented` segmented
+- [x] `feature:segmented/empty-options` 选择控件 空选项不渲染 — 证据：tests/input-choice.test.tsx
+
+## select-v2
+
+- [ ] `api:select-v2:240` Attributes / model-value / v-model
+- [ ] `api:select-v2:241` Attributes / options
+- [ ] `api:select-v2:242` Attributes / [props](#props)
+- [ ] `api:select-v2:243` Attributes / multiple
+- [ ] `api:select-v2:244` Attributes / disabled
+- [ ] `api:select-v2:245` Attributes / value-key
+- [ ] `api:select-v2:246` Attributes / size
+- [ ] `api:select-v2:247` Attributes / clearable
+- [ ] `api:select-v2:248` Attributes / clear-icon
+- [ ] `api:select-v2:249` Attributes / collapse-tags
+- [ ] `api:select-v2:250` Attributes / multiple-limit
+- [ ] `api:select-v2:251` Attributes / id
+- [ ] `api:select-v2:252` Attributes / name
+- [ ] `api:select-v2:253` Attributes / effect
+- [ ] `api:select-v2:254` Attributes / autocomplete
+- [ ] `api:select-v2:255` Attributes / placeholder
+- [ ] `api:select-v2:256` Attributes / filterable
+- [ ] `api:select-v2:257` Attributes / allow-create
+- [ ] `api:select-v2:258` Attributes / filter-method
+- [ ] `api:select-v2:259` Attributes / loading
+- [ ] `api:select-v2:260` Attributes / loading-text
+- [ ] `api:select-v2:261` Attributes / reserve-keyword
+- [ ] `api:select-v2:262` Attributes / default-first-option
+- [ ] `api:select-v2:263` Attributes / no-match-text
+- [ ] `api:select-v2:264` Attributes / no-data-text
+- [ ] `api:select-v2:265` Attributes / popper-class
+- [ ] `api:select-v2:266` Attributes / popper-style
+- [ ] `api:select-v2:267` Attributes / teleported
+- [ ] `api:select-v2:268` Attributes / append-to
+- [ ] `api:select-v2:269` Attributes / persistent
+- [ ] `api:select-v2:270` Attributes / popper-options
+- [ ] `api:select-v2:271` Attributes / automatic-dropdown
+- [ ] `api:select-v2:272` Attributes / fit-input-width
+- [ ] `api:select-v2:273` Attributes / suffix-icon
+- [ ] `api:select-v2:274` Attributes / height
+- [ ] `api:select-v2:275` Attributes / item-height
+- [ ] `api:select-v2:276` Attributes / estimated-option-height
+- [ ] `api:select-v2:277` Attributes / scrollbar-always-on
+- [ ] `api:select-v2:278` Attributes / remote
+- [ ] `api:select-v2:279` Attributes / debounce
+- [ ] `api:select-v2:280` Attributes / remote-method
+- [ ] `api:select-v2:281` Attributes / remote-show-suffix
+- [ ] `api:select-v2:282` Attributes / validate-event
+- [ ] `api:select-v2:283` Attributes / offset
+- [ ] `api:select-v2:284` Attributes / show-arrow
+- [ ] `api:select-v2:285` Attributes / placement
+- [ ] `api:select-v2:286` Attributes / fallback-placements
+- [ ] `api:select-v2:287` Attributes / collapse-tags-tooltip
+- [ ] `api:select-v2:288` Attributes / [tag-tooltip](#tag-tooltip)
+- [ ] `api:select-v2:289` Attributes / max-collapse-tags
+- [ ] `api:select-v2:290` Attributes / tag-type
+- [ ] `api:select-v2:291` Attributes / tag-effect
+- [ ] `api:select-v2:292` Attributes / aria-label
+- [ ] `api:select-v2:293` Attributes / empty-values
+- [ ] `api:select-v2:294` Attributes / value-on-clear
+- [ ] `api:select-v2:295` Attributes / popper-append-to-body
+- [ ] `api:select-v2:296` Attributes / tabindex
+- [ ] `api:select-v2:302` props / value
+- [ ] `api:select-v2:303` props / label
+- [ ] `api:select-v2:304` props / options
+- [ ] `api:select-v2:305` props / disabled
+- [ ] `api:select-v2:328` tag-tooltip ^(2.13.3) / append-to
+- [ ] `api:select-v2:329` tag-tooltip ^(2.13.3) / placement
+- [ ] `api:select-v2:330` tag-tooltip ^(2.13.3) / fallback-placements
+- [ ] `api:select-v2:331` tag-tooltip ^(2.13.3) / effect
+- [ ] `api:select-v2:332` tag-tooltip ^(2.13.3) / popper-class
+- [ ] `api:select-v2:333` tag-tooltip ^(2.13.3) / popper-style
+- [ ] `api:select-v2:334` tag-tooltip ^(2.13.3) / transition
+- [ ] `api:select-v2:335` tag-tooltip ^(2.13.3) / teleported
+- [ ] `api:select-v2:336` tag-tooltip ^(2.13.3) / popper-options
+- [ ] `api:select-v2:337` tag-tooltip ^(2.13.3) / show-after
+- [ ] `api:select-v2:338` tag-tooltip ^(2.13.3) / hide-after
+- [ ] `api:select-v2:339` tag-tooltip ^(2.13.3) / auto-close
+- [ ] `api:select-v2:340` tag-tooltip ^(2.13.3) / offset
+- [ ] `api:select-v2:346` Events / change
+- [ ] `api:select-v2:347` Events / visible-change
+- [ ] `api:select-v2:348` Events / remove-tag
+- [ ] `api:select-v2:349` Events / clear
+- [ ] `api:select-v2:350` Events / blur
+- [ ] `api:select-v2:351` Events / focus
+- [ ] `api:select-v2:352` Events / end-reached
+- [ ] `api:select-v2:358` Slots / default
+- [ ] `api:select-v2:359` Slots / header
+- [ ] `api:select-v2:360` Slots / footer
+- [ ] `api:select-v2:361` Slots / empty
+- [ ] `api:select-v2:362` Slots / prefix
+- [ ] `api:select-v2:363` Slots / tag
+- [ ] `api:select-v2:364` Slots / loading
+- [ ] `api:select-v2:365` Slots / label
+- [ ] `api:select-v2:371` Exposes / focus
+- [ ] `api:select-v2:372` Exposes / blur
+- [ ] `api:select-v2:373` Exposes / selectedLabel
+- [ ] `scenario:select-v2:14` Background
+- [ ] `scenario:select-v2:20` Basic usage
+- [ ] `scenario:select-v2:30` Multi select
+- [ ] `scenario:select-v2:40` Sizes
+- [ ] `scenario:select-v2:48` Hide extra tags when the selected items are too many
+- [ ] `scenario:select-v2:58` Filterable multi-select
+- [ ] `scenario:select-v2:68` Disabled selector and select options
+- [ ] `scenario:select-v2:78` Option Grouping
+- [ ] `scenario:select-v2:88` Clearable selector
+- [ ] `scenario:select-v2:98` Customized option renderer
+- [ ] `scenario:select-v2:108` Header of the dropdown ^(2.5.2)
+- [ ] `scenario:select-v2:118` Footer of the dropdown ^(2.5.2)
+- [ ] `scenario:select-v2:128` Create Option
+- [ ] `scenario:select-v2:146` Remote search
+- [ ] `scenario:select-v2:156` Use value-key attribute
+- [ ] `scenario:select-v2:172` Aliases for custom options ^(2.4.2)
+- [ ] `scenario:select-v2:182` Custom Tag ^(2.5.0)
+- [ ] `scenario:select-v2:192` Custom Loading ^(2.5.2)
+- [ ] `scenario:select-v2:202` Empty Values ^(2.7.0)
+- [ ] `scenario:select-v2:214` Custom Label ^(2.7.4)
+- [ ] `scenario:select-v2:224` Custom Width ^(2.9.2)
+- [ ] `scenario:select-v2:307` tag-tooltip ^(2.13.3)
+- [ ] `source-example:select-v2:select-v2/basic-usage` select-v2/basic-usage
+- [ ] `source-example:select-v2:select-v2/multiple` select-v2/multiple
+- [ ] `source-example:select-v2:select-v2/size` select-v2/size
+- [ ] `source-example:select-v2:select-v2/hide-extra-tags` select-v2/hide-extra-tags
+- [ ] `source-example:select-v2:select-v2/filterable` select-v2/filterable
+- [ ] `source-example:select-v2:select-v2/disabled` select-v2/disabled
+- [ ] `source-example:select-v2:select-v2/grouping` select-v2/grouping
+- [ ] `source-example:select-v2:select-v2/clearable` select-v2/clearable
+- [ ] `source-example:select-v2:select-v2/customized-option` select-v2/customized-option
+- [ ] `source-example:select-v2:select-v2/custom-header` select-v2/custom-header
+- [ ] `source-example:select-v2:select-v2/custom-footer` select-v2/custom-footer
+- [ ] `source-example:select-v2:select-v2/allow-create` select-v2/allow-create
+- [ ] `source-example:select-v2:select-v2/remote-search` select-v2/remote-search
+- [ ] `source-example:select-v2:select-v2/use-valueKey` select-v2/use-valueKey
+- [ ] `source-example:select-v2:select-v2/props` select-v2/props
+- [ ] `source-example:select-v2:select-v2/custom-tag` select-v2/custom-tag
+- [ ] `source-example:select-v2:select-v2/custom-loading` select-v2/custom-loading
+- [ ] `source-example:select-v2:select-v2/empty-values` select-v2/empty-values
+- [ ] `source-example:select-v2:select-v2/custom-label` select-v2/custom-label
+- [ ] `source-example:select-v2:select-v2/custom-width` select-v2/custom-width
+- [ ] `directory:select-v2` select-v2
+
+## Select 选择器
+
+- [x] `api:select:206` Select Attributes / model-value / v-model — 证据：tests/select.test.tsx
+- [x] `api:select:207` Select Attributes / multiple — 证据：tests/select.test.tsx
+- [x] `api:select:208` Select Attributes / options — 证据：tests/select.test.tsx
+- [x] `api:select:209` Select Attributes / [props](#props) — 证据：tests/select.test.tsx
+- [x] `api:select:210` Select Attributes / disabled — 证据：tests/select.test.tsx
+- [x] `api:select:211` Select Attributes / value-key — 证据：tests/select.test.tsx
+- [x] `api:select:212` Select Attributes / size — 证据：tests/select.test.tsx
+- [x] `api:select:213` Select Attributes / clearable — 证据：tests/select.test.tsx
+- [x] `api:select:214` Select Attributes / collapse-tags — 证据：tests/select.test.tsx
+- [ ] `api:select:215` Select Attributes / collapse-tags-tooltip
+- [ ] `api:select:216` Select Attributes / [tag-tooltip](#tag-tooltip)
+- [x] `api:select:217` Select Attributes / multiple-limit — 证据：tests/select.test.tsx
+- [x] `api:select:218` Select Attributes / id — 证据：tests/select.test.tsx
+- [x] `api:select:219` Select Attributes / name — 证据：tests/select.test.tsx
+- [x] `api:select:220` Select Attributes / effect — 证据：tests/select.test.tsx
+- [x] `api:select:221` Select Attributes / autocomplete — 证据：tests/select.test.tsx
+- [x] `api:select:222` Select Attributes / placeholder — 证据：tests/select.test.tsx
+- [x] `api:select:223` Select Attributes / filterable — 证据：tests/select.test.tsx
+- [x] `api:select:224` Select Attributes / allow-create — 证据：tests/select.test.tsx
+- [ ] `api:select:225` Select Attributes / filter-method
+- [x] `api:select:226` Select Attributes / remote — 证据：tests/select.test.tsx
+- [x] `api:select:227` Select Attributes / debounce — 证据：tests/select.test.tsx
+- [x] `api:select:228` Select Attributes / remote-method — 证据：tests/select.test.tsx
+- [ ] `api:select:229` Select Attributes / remote-show-suffix
+- [x] `api:select:230` Select Attributes / loading — 证据：tests/select.test.tsx
+- [x] `api:select:231` Select Attributes / loading-text — 证据：tests/select.test.tsx
+- [x] `api:select:232` Select Attributes / no-match-text — 证据：tests/select.test.tsx
+- [x] `api:select:233` Select Attributes / no-data-text — 证据：tests/select.test.tsx
+- [x] `api:select:234` Select Attributes / popper-class — 证据：tests/select.test.tsx
+- [x] `api:select:235` Select Attributes / popper-style — 证据：tests/select.test.tsx
+- [x] `api:select:236` Select Attributes / reserve-keyword — 证据：tests/select.test.tsx
+- [x] `api:select:237` Select Attributes / default-first-option — 证据：tests/select.test.tsx
+- [x] `api:select:238` Select Attributes / teleported — 证据：tests/select.test.tsx
+- [x] `api:select:239` Select Attributes / append-to — 证据：tests/select.test.tsx
+- [x] `api:select:240` Select Attributes / persistent — 证据：tests/select.test.tsx
+- [x] `api:select:241` Select Attributes / automatic-dropdown — 证据：tests/select.test.tsx
+- [x] `api:select:242` Select Attributes / clear-icon — 证据：tests/select.test.tsx
+- [ ] `api:select:243` Select Attributes / fit-input-width
+- [ ] `api:select:244` Select Attributes / suffix-icon
+- [x] `api:select:245` Select Attributes / tag-type — 证据：tests/select.test.tsx
+- [x] `api:select:246` Select Attributes / tag-effect — 证据：tests/select.test.tsx
+- [x] `api:select:247` Select Attributes / validate-event — 证据：tests/select.test.tsx
+- [ ] `api:select:248` Select Attributes / offset
+- [x] `api:select:249` Select Attributes / show-arrow — 证据：tests/select.test.tsx
+- [ ] `api:select:250` Select Attributes / placement
+- [ ] `api:select:251` Select Attributes / fallback-placements
+- [x] `api:select:252` Select Attributes / max-collapse-tags — 证据：tests/select.test.tsx
+- [ ] `api:select:253` Select Attributes / popper-options
+- [x] `api:select:254` Select Attributes / aria-label — 证据：tests/select.test.tsx
+- [x] `api:select:255` Select Attributes / empty-values — 证据：tests/select.test.tsx
+- [x] `api:select:256` Select Attributes / value-on-clear — 证据：tests/select.test.tsx
+- [ ] `api:select:257` Select Attributes / suffix-transition
+- [x] `api:select:258` Select Attributes / tabindex — 证据：tests/select.test.tsx
+- [ ] `api:select:270` props / value
+- [ ] `api:select:271` props / label
+- [ ] `api:select:272` props / options
+- [ ] `api:select:273` props / disabled
+- [ ] `api:select:296` tag-tooltip ^(2.13.3) / append-to
+- [ ] `api:select:297` tag-tooltip ^(2.13.3) / placement
+- [ ] `api:select:298` tag-tooltip ^(2.13.3) / fallback-placements
+- [ ] `api:select:299` tag-tooltip ^(2.13.3) / effect
+- [ ] `api:select:300` tag-tooltip ^(2.13.3) / popper-class
+- [ ] `api:select:301` tag-tooltip ^(2.13.3) / popper-style
+- [ ] `api:select:302` tag-tooltip ^(2.13.3) / transition
+- [ ] `api:select:303` tag-tooltip ^(2.13.3) / teleported
+- [ ] `api:select:304` tag-tooltip ^(2.13.3) / popper-options
+- [ ] `api:select:305` tag-tooltip ^(2.13.3) / show-after
+- [ ] `api:select:306` tag-tooltip ^(2.13.3) / hide-after
+- [ ] `api:select:307` tag-tooltip ^(2.13.3) / auto-close
+- [ ] `api:select:308` tag-tooltip ^(2.13.3) / offset
+- [x] `api:select:314` Select Events / change — 证据：tests/select.test.tsx
+- [x] `api:select:315` Select Events / visible-change — 证据：tests/select.test.tsx
+- [x] `api:select:316` Select Events / remove-tag — 证据：tests/select.test.tsx
+- [x] `api:select:317` Select Events / clear — 证据：tests/select.test.tsx
+- [x] `api:select:318` Select Events / blur — 证据：tests/select.test.tsx
+- [x] `api:select:319` Select Events / focus — 证据：tests/select.test.tsx
+- [ ] `api:select:320` Select Events / popup-scroll
+- [ ] `api:select:321` Select Events / end-reached
+- [x] `api:select:327` Select Slots / default — 证据：tests/select.test.tsx
+- [x] `api:select:328` Select Slots / header — 证据：tests/select.test.tsx
+- [x] `api:select:329` Select Slots / footer — 证据：tests/select.test.tsx
+- [x] `api:select:330` Select Slots / prefix — 证据：tests/select.test.tsx
+- [x] `api:select:331` Select Slots / empty — 证据：tests/select.test.tsx
+- [ ] `api:select:332` Select Slots / tag
+- [x] `api:select:333` Select Slots / loading — 证据：tests/select.test.tsx
+- [x] `api:select:334` Select Slots / label — 证据：tests/select.test.tsx
+- [x] `api:select:340` Select Exposes / focus — 证据：tests/select.test.tsx
+- [x] `api:select:341` Select Exposes / blur — 证据：tests/select.test.tsx
+- [x] `api:select:342` Select Exposes / selectedLabel — 证据：tests/select.test.tsx
+- [x] `api:select:350` Option Group Attributes / label — 证据：tests/select.test.tsx
+- [x] `api:select:351` Option Group Attributes / disabled — 证据：tests/select.test.tsx
+- [ ] `api:select:357` Option Group Slots / default
+- [x] `api:select:365` Option Attributes / value — 证据：tests/select.test.tsx
+- [x] `api:select:366` Option Attributes / label — 证据：tests/select.test.tsx
+- [x] `api:select:367` Option Attributes / disabled — 证据：tests/select.test.tsx
+- [x] `api:select:373` Option Slots / default — 证据：tests/select.test.tsx
+- [ ] `scenario:select:16` Basic usage
+- [ ] `scenario:select:24` Options attribute ^(2.10.5)
+- [ ] `scenario:select:32` Disabled option
+- [ ] `scenario:select:40` Disabled select
+- [ ] `scenario:select:50` Clearable
+- [ ] `scenario:select:60` Sizes
+- [ ] `scenario:select:68` Basic multiple select
+- [ ] `scenario:select:78` Custom template
+- [ ] `scenario:select:88` Header of the dropdown ^(2.4.3)
+- [ ] `scenario:select:98` Footer of the dropdown ^(2.4.3)
+- [ ] `scenario:select:108` Grouping
+- [ ] `scenario:select:118` Option filtering
+- [ ] `scenario:select:128` Remote Search
+- [ ] `scenario:select:138` Create new items
+- [ ] `scenario:select:148` Use value-key attribute
+- [ ] `scenario:select:158` Custom Tag ^(2.5.0)
+- [ ] `scenario:select:168` Custom Loading ^(2.5.2)
+- [ ] `scenario:select:178` Empty Values ^(2.7.0)
+- [ ] `scenario:select:190` Custom Label ^(2.7.4)
+- [ ] `scenario:select:275` tag-tooltip ^(2.13.3)
+- [ ] `source-example:select:select/basic-usage` select/basic-usage
+- [ ] `source-example:select:select/options` select/options
+- [ ] `source-example:select:select/disabled-option` select/disabled-option
+- [ ] `source-example:select:select/disabled` select/disabled
+- [ ] `source-example:select:select/clearable` select/clearable
+- [ ] `source-example:select:select/size` select/size
+- [ ] `source-example:select:select/multiple` select/multiple
+- [ ] `source-example:select:select/custom-template` select/custom-template
+- [ ] `source-example:select:select/custom-header` select/custom-header
+- [ ] `source-example:select:select/custom-footer` select/custom-footer
+- [ ] `source-example:select:select/grouping` select/grouping
+- [ ] `source-example:select:select/filterable` select/filterable
+- [ ] `source-example:select:select/remote-search` select/remote-search
+- [ ] `source-example:select:select/allow-create` select/allow-create
+- [ ] `source-example:select:select/value-key` select/value-key
+- [ ] `source-example:select:select/custom-tag` select/custom-tag
+- [ ] `source-example:select:select/custom-loading` select/custom-loading
+- [ ] `source-example:select:select/empty-values` select/empty-values
+- [ ] `source-example:select:select/custom-label` select/custom-label
+- [ ] `directory:option` option
+- [ ] `directory:option-group` option-group
+- [ ] `directory:select` select
+- [x] `feature:select/keyboard-loop` 方向键跳过禁用项并从末尾循环 — 证据：tests/select.test.tsx
+
+## Skeleton 骨架屏
+
+- [x] `api:skeleton:128` Skeleton Attributes / animated — 证据：tests/layout-display.test.tsx
+- [x] `api:skeleton:129` Skeleton Attributes / count — 证据：tests/layout-display.test.tsx
+- [x] `api:skeleton:130` Skeleton Attributes / loading — 证据：tests/layout-display.test.tsx
+- [x] `api:skeleton:131` Skeleton Attributes / rows — 证据：tests/layout-display.test.tsx
+- [x] `api:skeleton:132` Skeleton Attributes / throttle — 证据：tests/layout-display.test.tsx
+- [x] `api:skeleton:138` Skeleton Slots / default — 证据：tests/layout-display.test.tsx
+- [x] `api:skeleton:139` Skeleton Slots / template — 证据：tests/layout-display.test.tsx
+- [x] `api:skeleton:147` SkeletonItem Attributes / variant — 证据：tests/layout-display.test.tsx
+- [ ] `scenario:skeleton:10` Basic usage
+- [ ] `scenario:skeleton:20` Configurable Rows
+- [ ] `scenario:skeleton:30` Animation
+- [ ] `scenario:skeleton:40` Customized Template
+- [ ] `scenario:skeleton:52` Loading state
+- [ ] `scenario:skeleton:62` Rendering a list of data
+- [ ] `scenario:skeleton:78` Avoiding rendering bouncing.
+- [ ] `scenario:skeleton:94` Initial rendering loading ^(2.8.8)
+- [ ] `scenario:skeleton:104` Toggle show/hide without rending bouncing ^(2.8.8)
+- [ ] `source-example:skeleton:skeleton/basic-usage` skeleton/basic-usage
+- [ ] `source-example:skeleton:skeleton/configurable-rows` skeleton/configurable-rows
+- [ ] `source-example:skeleton:skeleton/animation` skeleton/animation
+- [ ] `source-example:skeleton:skeleton/customized-template` skeleton/customized-template
+- [ ] `source-example:skeleton:skeleton/loading-state` skeleton/loading-state
+- [ ] `source-example:skeleton:skeleton/rendering-with-data` skeleton/rendering-with-data
+- [ ] `source-example:skeleton:skeleton/avoiding-rendering-bouncing` skeleton/avoiding-rendering-bouncing
+- [ ] `source-example:skeleton:skeleton/initial-rendering-loading` skeleton/initial-rendering-loading
+- [ ] `source-example:skeleton:skeleton/leading-trailing-without-bouncing` skeleton/leading-trailing-without-bouncing
+- [ ] `directory:skeleton` skeleton
+- [ ] `directory:skeleton-item` skeleton-item
+- [x] `feature:skeleton/leading-trailing` 对象延迟配置、结束延迟和快速反向切换 — 证据：tests/layout-display.test.tsx
+
+## Slider 滑块
+
+- [x] `api:slider:98` Attributes / model-value / v-model — 证据：tests/slider.test.tsx
+- [x] `api:slider:99` Attributes / min — 证据：tests/slider.test.tsx
+- [x] `api:slider:100` Attributes / max — 证据：tests/slider.test.tsx
+- [x] `api:slider:101` Attributes / disabled — 证据：tests/slider.test.tsx
+- [x] `api:slider:102` Attributes / step — 证据：tests/slider.test.tsx
+- [x] `api:slider:103` Attributes / show-input — 证据：tests/slider.test.tsx
+- [ ] `api:slider:104` Attributes / show-input-controls
+- [x] `api:slider:105` Attributes / size — 证据：tests/slider.test.tsx
+- [ ] `api:slider:106` Attributes / input-size
+- [x] `api:slider:107` Attributes / show-stops — 证据：tests/slider.test.tsx
+- [x] `api:slider:108` Attributes / show-tooltip — 证据：tests/slider.test.tsx
+- [x] `api:slider:109` Attributes / format-tooltip — 证据：tests/slider.test.tsx
+- [x] `api:slider:110` Attributes / range — 证据：tests/slider.test.tsx
+- [x] `api:slider:111` Attributes / vertical — 证据：tests/slider.test.tsx
+- [x] `api:slider:112` Attributes / height — 证据：tests/slider.test.tsx
+- [ ] `api:slider:113` Attributes / aria-label
+- [x] `api:slider:114` Attributes / range-start-label — 证据：tests/slider.test.tsx
+- [x] `api:slider:115` Attributes / range-end-label — 证据：tests/slider.test.tsx
+- [ ] `api:slider:116` Attributes / format-value-text
+- [ ] `api:slider:117` Attributes / tooltip-class
+- [ ] `api:slider:118` Attributes / placement
+- [x] `api:slider:119` Attributes / marks — 证据：tests/slider.test.tsx
+- [ ] `api:slider:120` Attributes / validate-event
+- [ ] `api:slider:121` Attributes / persistent
+- [ ] `api:slider:122` Attributes / label
+- [x] `api:slider:128` Events / change — 证据：tests/slider.test.tsx
+- [x] `api:slider:129` Events / input — 证据：tests/slider.test.tsx
+- [ ] `scenario:slider:10` Basic usage
+- [ ] `scenario:slider:20` Discrete values
+- [ ] `scenario:slider:30` Slider with input box
+- [ ] `scenario:slider:40` Sizes
+- [ ] `scenario:slider:48` Placement
+- [ ] `scenario:slider:58` Range selection
+- [ ] `scenario:slider:68` Vertical mode
+- [ ] `scenario:slider:76` Show marks
+- [ ] `scenario:slider:84` Restrict value ^(2.13.6)
+- [x] `source-example:slider:slider/basic-usage` slider/basic-usage — 证据：
+- [x] `source-example:slider:slider/discrete-values` slider/discrete-values — 证据：
+- [x] `source-example:slider:slider/slider-with-input-box` slider/slider-with-input-box — 证据：
+- [x] `source-example:slider:slider/sizes` slider/sizes — 证据：
+- [ ] `source-example:slider:slider/placement` slider/placement
+- [x] `source-example:slider:slider/range-selection` slider/range-selection — 证据：
+- [x] `source-example:slider:slider/vertical-mode` slider/vertical-mode — 证据：
+- [x] `source-example:slider:slider/show-marks` slider/show-marks — 证据：
+- [x] `source-example:slider:slider/restrict-value` slider/restrict-value — 证据：
+- [ ] `directory:slider` slider
+- [x] `feature:slider/restrict-value` 标记模式吸附到最近标记 — 证据：tests/slider.test.tsx
+
+## Space 间距
+
+- [x] `api:space:128` Attributes / alignment — 证据：tests/layout-display.test.tsx
+- [x] `api:space:129` Attributes / class — 证据：tests/layout-display.test.tsx
+- [x] `api:space:130` Attributes / direction — 证据：tests/layout-display.test.tsx
+- [ ] `api:space:131` Attributes / prefix-cls
+- [x] `api:space:132` Attributes / style — 证据：tests/layout-display.test.tsx
+- [x] `api:space:133` Attributes / spacer — 证据：tests/layout-display.test.tsx
+- [x] `api:space:134` Attributes / size — 证据：tests/layout-display.test.tsx
+- [x] `api:space:135` Attributes / wrap — 证据：tests/layout-display.test.tsx
+- [x] `api:space:136` Attributes / fill — 证据：tests/layout-display.test.tsx
+- [x] `api:space:137` Attributes / fill-ratio — 证据：tests/layout-display.test.tsx
+- [x] `api:space:143` Slots / default — 证据：tests/layout-display.test.tsx
+- [ ] `scenario:space:10` Basic usage
+- [ ] `scenario:space:20` Vertical layout
+- [ ] `scenario:space:30` Control the size of the space
+- [ ] `scenario:space:44` Customized Size
+- [ ] `scenario:space:60` Auto wrapping
+- [ ] `scenario:space:70` Spacer
+- [ ] `scenario:space:74` Literal type spacer
+- [ ] `scenario:space:82` Spacer can also be VNode
+- [ ] `scenario:space:90` Alignment
+- [ ] `scenario:space:100` Fill the container
+- [ ] `source-example:space:space/basic` space/basic
+- [ ] `source-example:space:space/vertical-layout` space/vertical-layout
+- [ ] `source-example:space:space/control-size` space/control-size
+- [ ] `source-example:space:space/customized-size` space/customized-size
+- [ ] `source-example:space:space/auto-wrapping` space/auto-wrapping
+- [ ] `source-example:space:space/literal-type-spacer` space/literal-type-spacer
+- [ ] `source-example:space:space/vnode-type-spacer` space/vnode-type-spacer
+- [ ] `source-example:space:space/alignment` space/alignment
+- [ ] `source-example:space:space/fill` space/fill
+- [ ] `source-example:space:space/fill-ratio` space/fill-ratio
+- [ ] `directory:space` space
+
+## Splitter 分隔面板
+
+- [x] `api:splitter:76` Splitter Attributes / layout — 证据：tests/splitter.test.tsx
+- [x] `api:splitter:77` Splitter Attributes / lazy — 证据：tests/splitter.test.tsx
+- [x] `api:splitter:83` Splitter Events / resize-start — 证据：tests/splitter.test.tsx
+- [x] `api:splitter:84` Splitter Events / resize — 证据：tests/splitter.test.tsx
+- [x] `api:splitter:85` Splitter Events / resize-end — 证据：tests/splitter.test.tsx
+- [x] `api:splitter:86` Splitter Events / collapse — 证据：tests/splitter.test.tsx
+- [x] `api:splitter:94` SplitterPanel Attributes / size / v-model:size — 证据：tests/splitter.test.tsx
+- [x] `api:splitter:95` SplitterPanel Attributes / min — 证据：tests/splitter.test.tsx
+- [x] `api:splitter:96` SplitterPanel Attributes / max — 证据：tests/splitter.test.tsx
+- [x] `api:splitter:97` SplitterPanel Attributes / resizable — 证据：tests/splitter.test.tsx
+- [x] `api:splitter:98` SplitterPanel Attributes / collapsible — 证据：tests/splitter.test.tsx
+- [x] `api:splitter:104` SplitterPanel Events / update:size — 证据：tests/splitter.test.tsx
+- [x] `api:splitter:110` SplitterPanel Slots / default — 证据：tests/splitter.test.tsx
+- [x] `api:splitter:111` SplitterPanel Slots / start-collapsible — 证据：tests/splitter.test.tsx
+- [x] `api:splitter:112` SplitterPanel Slots / end-collapsible — 证据：tests/splitter.test.tsx
+- [x] `api:splitter:118` SplitterPanel Exposes / splitterPanelRef — 证据：tests/splitter.test.tsx
+- [ ] `scenario:splitter:10` Basic usage
+- [ ] `scenario:splitter:20` Vertical
+- [ ] `scenario:splitter:30` Collapsible
+- [ ] `scenario:splitter:40` Disable drag
+- [ ] `scenario:splitter:50` Panel size
+- [ ] `scenario:splitter:60` Lazy ^(2.11.0)
+- [x] `source-example:splitter:splitter/basic` splitter/basic — 证据：
+- [x] `source-example:splitter:splitter/vertical` splitter/vertical — 证据：
+- [x] `source-example:splitter:splitter/collapsible` splitter/collapsible — 证据：
+- [x] `source-example:splitter:splitter/disableDrag` splitter/disableDrag — 证据：
+- [x] `source-example:splitter:splitter/size` splitter/size — 证据：
+- [x] `source-example:splitter:splitter/lazy` splitter/lazy — 证据：
+- [ ] `directory:splitter` splitter
+- [ ] `directory:splitter-panel` splitter-panel
+- [x] `feature:splitter/cancel-and-unmount` 指针取消恢复尺寸且卸载解除拖动监听 — 证据：tests/splitter.test.tsx
+
+## Statistic 统计
+
+- [x] `api:statistic:44` Statistic Attributes / value — 证据：tests/layout-display.test.tsx
+- [x] `api:statistic:45` Statistic Attributes / decimal-separator — 证据：tests/layout-display.test.tsx
+- [x] `api:statistic:46` Statistic Attributes / formatter — 证据：tests/layout-display.test.tsx
+- [x] `api:statistic:47` Statistic Attributes / group-separator — 证据：tests/layout-display.test.tsx
+- [x] `api:statistic:48` Statistic Attributes / precision — 证据：tests/layout-display.test.tsx
+- [x] `api:statistic:49` Statistic Attributes / prefix — 证据：tests/layout-display.test.tsx
+- [x] `api:statistic:50` Statistic Attributes / suffix — 证据：tests/layout-display.test.tsx
+- [x] `api:statistic:51` Statistic Attributes / title — 证据：tests/layout-display.test.tsx
+- [x] `api:statistic:52` Statistic Attributes / value-style — 证据：tests/layout-display.test.tsx
+- [x] `api:statistic:58` Statistic Slots / prefix — 证据：tests/layout-display.test.tsx
+- [x] `api:statistic:59` Statistic Slots / suffix — 证据：tests/layout-display.test.tsx
+- [x] `api:statistic:60` Statistic Slots / title — 证据：tests/layout-display.test.tsx
+- [ ] `api:statistic:66` Statistic Exposes / displayValue
+- [x] `api:statistic:74` Countdown Attributes / value — 证据：tests/layout-display.test.tsx
+- [x] `api:statistic:75` Countdown Attributes / format — 证据：tests/layout-display.test.tsx
+- [ ] `api:statistic:76` Countdown Attributes / prefix
+- [ ] `api:statistic:77` Countdown Attributes / suffix
+- [ ] `api:statistic:78` Countdown Attributes / title
+- [ ] `api:statistic:79` Countdown Attributes / value-style
+- [x] `api:statistic:85` Countdown Events / change — 证据：tests/layout-display.test.tsx
+- [x] `api:statistic:86` Countdown Events / finish — 证据：tests/layout-display.test.tsx
+- [ ] `api:statistic:92` Countdown Slots / prefix
+- [ ] `api:statistic:93` Countdown Slots / suffix
+- [ ] `api:statistic:94` Countdown Slots / title
+- [ ] `api:statistic:100` Countdown Exposes / displayValue
+- [ ] `scenario:statistic:10` Basic usage
+- [ ] `scenario:statistic:18` Countdown
+- [ ] `scenario:statistic:30` Card usage
+- [ ] `source-example:statistic:statistic/basic` statistic/basic
+- [ ] `source-example:statistic:statistic/countdown` statistic/countdown
+- [ ] `source-example:statistic:statistic/card` statistic/card
+- [ ] `directory:countdown` countdown
+- [ ] `directory:statistic` statistic
+
+## Steps 步骤条
+
+- [x] `api:steps:86` Steps Attributes / space — 证据：tests/navigation-extra.test.tsx
+- [x] `api:steps:87` Steps Attributes / direction — 证据：tests/navigation-extra.test.tsx
+- [x] `api:steps:88` Steps Attributes / active — 证据：tests/navigation-extra.test.tsx
+- [x] `api:steps:89` Steps Attributes / process-status — 证据：tests/navigation-extra.test.tsx
+- [x] `api:steps:90` Steps Attributes / finish-status — 证据：tests/navigation-extra.test.tsx
+- [x] `api:steps:91` Steps Attributes / align-center — 证据：tests/navigation-extra.test.tsx
+- [x] `api:steps:92` Steps Attributes / simple — 证据：tests/navigation-extra.test.tsx
+- [x] `api:steps:98` Steps Events / change — 证据：tests/navigation-extra.test.tsx
+- [x] `api:steps:104` Steps Slots / default — 证据：tests/navigation-extra.test.tsx
+- [x] `api:steps:112` Step Attributes / title — 证据：tests/navigation-extra.test.tsx
+- [x] `api:steps:113` Step Attributes / description — 证据：tests/navigation-extra.test.tsx
+- [x] `api:steps:114` Step Attributes / icon — 证据：tests/navigation-extra.test.tsx
+- [x] `api:steps:115` Step Attributes / status — 证据：tests/navigation-extra.test.tsx
+- [x] `api:steps:121` Step Slots / icon — 证据：tests/navigation-extra.test.tsx
+- [x] `api:steps:122` Step Slots / title — 证据：tests/navigation-extra.test.tsx
+- [x] `api:steps:123` Step Slots / description — 证据：tests/navigation-extra.test.tsx
+- [ ] `scenario:steps:10` Basic usage
+- [ ] `scenario:steps:20` Step bar that contains status
+- [ ] `scenario:steps:30` Center
+- [ ] `scenario:steps:40` Step bar with description
+- [ ] `scenario:steps:50` Step bar with icon
+- [ ] `scenario:steps:60` Vertical step bar
+- [ ] `scenario:steps:70` Simple step bar
+- [ ] `source-example:steps:steps/basic` steps/basic
+- [ ] `source-example:steps:steps/with-status` steps/with-status
+- [ ] `source-example:steps:steps/centered` steps/centered
+- [ ] `source-example:steps:steps/with-description` steps/with-description
+- [ ] `source-example:steps:steps/with-icon` steps/with-icon
+- [ ] `source-example:steps:steps/vertical` steps/vertical
+- [ ] `source-example:steps:steps/simple` steps/simple
+- [ ] `directory:step` step
+- [ ] `directory:steps` steps
+
+## Switch 开关
+
+- [x] `api:switch:104` Attributes / model-value / v-model — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:105` Attributes / disabled — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:106` Attributes / loading — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:107` Attributes / size — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:108` Attributes / width — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:109` Attributes / inline-prompt — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:110` Attributes / active-icon — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:111` Attributes / inactive-icon — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:112` Attributes / active-action-icon — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:113` Attributes / inactive-action-icon — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:114` Attributes / active-text — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:115` Attributes / inactive-text — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:116` Attributes / active-value — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:117` Attributes / inactive-value — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:118` Attributes / name — 证据：tests/input-choice.test.tsx
+- [ ] `api:switch:119` Attributes / validate-event
+- [x] `api:switch:120` Attributes / before-change — 证据：tests/input-choice.test.tsx
+- [ ] `api:switch:121` Attributes / id
+- [ ] `api:switch:122` Attributes / tabindex
+- [x] `api:switch:123` Attributes / aria-label — 证据：tests/input-choice.test.tsx
+- [ ] `api:switch:124` Attributes / active-color
+- [ ] `api:switch:125` Attributes / inactive-color
+- [ ] `api:switch:126` Attributes / border-color
+- [ ] `api:switch:127` Attributes / label
+- [x] `api:switch:133` Events / change — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:139` Switch Slots / active-action — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:140` Switch Slots / inactive-action — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:141` Switch Slots / active — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:142` Switch Slots / inactive — 证据：tests/input-choice.test.tsx
+- [x] `api:switch:148` Exposes / focus — 证据：tests/input-choice.test.tsx
+- [ ] `scenario:switch:10` Basic usage
+- [ ] `scenario:switch:18` Sizes
+- [ ] `scenario:switch:26` Text description
+- [ ] `scenario:switch:36` Display custom icons
+- [ ] `scenario:switch:50` Extended value types
+- [ ] `scenario:switch:58` Disabled
+- [ ] `scenario:switch:66` Loading
+- [ ] `scenario:switch:74` Prevent switching
+- [ ] `scenario:switch:82` Custom action icon ^(2.3.9)
+- [ ] `scenario:switch:90` Custom action slot ^(2.4.4)
+- [ ] `source-example:switch:switch/basic` switch/basic
+- [ ] `source-example:switch:switch/sizes` switch/sizes
+- [ ] `source-example:switch:switch/text-description` switch/text-description
+- [ ] `source-example:switch:switch/custom-icons` switch/custom-icons
+- [ ] `source-example:switch:switch/extended-value-types` switch/extended-value-types
+- [ ] `source-example:switch:switch/disabled` switch/disabled
+- [ ] `source-example:switch:switch/loading` switch/loading
+- [ ] `source-example:switch:switch/prevent-switching` switch/prevent-switching
+- [ ] `source-example:switch:switch/custom-action-icon` switch/custom-action-icon
+- [ ] `source-example:switch:switch/custom-action-slot` switch/custom-action-slot
+- [ ] `directory:switch` switch
+
+## table-v2
+
+- [ ] `api:table-v2:302` TableV2 Attributes / cache
+- [ ] `api:table-v2:303` TableV2 Attributes / estimated-row-height
+- [ ] `api:table-v2:304` TableV2 Attributes / header-class
+- [ ] `api:table-v2:305` TableV2 Attributes / header-props
+- [ ] `api:table-v2:306` TableV2 Attributes / header-cell-props
+- [ ] `api:table-v2:307` TableV2 Attributes / header-height
+- [ ] `api:table-v2:308` TableV2 Attributes / footer-height
+- [ ] `api:table-v2:309` TableV2 Attributes / row-class
+- [ ] `api:table-v2:310` TableV2 Attributes / row-key
+- [ ] `api:table-v2:311` TableV2 Attributes / row-props
+- [ ] `api:table-v2:312` TableV2 Attributes / row-height
+- [ ] `api:table-v2:313` TableV2 Attributes / row-event-handlers
+- [ ] `api:table-v2:314` TableV2 Attributes / cell-props
+- [ ] `api:table-v2:315` TableV2 Attributes / columns
+- [ ] `api:table-v2:316` TableV2 Attributes / data
+- [ ] `api:table-v2:317` TableV2 Attributes / data-getter
+- [ ] `api:table-v2:318` TableV2 Attributes / fixed-data
+- [ ] `api:table-v2:319` TableV2 Attributes / expand-column-key
+- [ ] `api:table-v2:320` TableV2 Attributes / expanded-row-keys
+- [ ] `api:table-v2:321` TableV2 Attributes / default-expanded-row-keys
+- [ ] `api:table-v2:322` TableV2 Attributes / class
+- [ ] `api:table-v2:323` TableV2 Attributes / fixed
+- [ ] `api:table-v2:324` TableV2 Attributes / width
+- [ ] `api:table-v2:325` TableV2 Attributes / height
+- [ ] `api:table-v2:326` TableV2 Attributes / max-height
+- [ ] `api:table-v2:327` TableV2 Attributes / indent-size
+- [ ] `api:table-v2:328` TableV2 Attributes / h-scrollbar-size
+- [ ] `api:table-v2:329` TableV2 Attributes / v-scrollbar-size
+- [ ] `api:table-v2:330` TableV2 Attributes / scrollbar-always-on
+- [ ] `api:table-v2:331` TableV2 Attributes / sort-by
+- [ ] `api:table-v2:332` TableV2 Attributes / sort-state
+- [ ] `api:table-v2:338` TableV2 Slots / cell
+- [ ] `api:table-v2:339` TableV2 Slots / header
+- [ ] `api:table-v2:340` TableV2 Slots / header-cell
+- [ ] `api:table-v2:341` TableV2 Slots / row
+- [ ] `api:table-v2:342` TableV2 Slots / footer
+- [ ] `api:table-v2:343` TableV2 Slots / empty
+- [ ] `api:table-v2:344` TableV2 Slots / overlay
+- [ ] `api:table-v2:350` TableV2 Events / column-sort
+- [ ] `api:table-v2:351` TableV2 Events / expanded-rows-change
+- [ ] `api:table-v2:352` TableV2 Events / end-reached
+- [ ] `api:table-v2:353` TableV2 Events / scroll
+- [ ] `api:table-v2:354` TableV2 Events / rows-rendered
+- [ ] `api:table-v2:355` TableV2 Events / row-expand
+- [ ] `api:table-v2:361` TableV2 Exposes / scrollTo
+- [ ] `api:table-v2:362` TableV2 Exposes / scrollToLeft
+- [ ] `api:table-v2:363` TableV2 Exposes / scrollToTop
+- [ ] `api:table-v2:364` TableV2 Exposes / scrollToRow
+- [ ] `api:table-v2:376` Column Attribute / align
+- [ ] `api:table-v2:377` Column Attribute / class
+- [ ] `api:table-v2:378` Column Attribute / key
+- [ ] `api:table-v2:379` Column Attribute / dataKey
+- [ ] `api:table-v2:380` Column Attribute / fixed
+- [ ] `api:table-v2:381` Column Attribute / flexGrow
+- [ ] `api:table-v2:382` Column Attribute / flexShrink
+- [ ] `api:table-v2:383` Column Attribute / headerClass
+- [ ] `api:table-v2:384` Column Attribute / hidden
+- [ ] `api:table-v2:385` Column Attribute / style
+- [ ] `api:table-v2:386` Column Attribute / sortable
+- [ ] `api:table-v2:387` Column Attribute / title
+- [ ] `api:table-v2:388` Column Attribute / maxWidth
+- [ ] `api:table-v2:389` Column Attribute / minWidth
+- [ ] `api:table-v2:390` Column Attribute / width
+- [ ] `api:table-v2:391` Column Attribute / cellRenderer
+- [ ] `api:table-v2:392` Column Attribute / headerCellRenderer
+- [ ] `scenario:table-v2:21` Basic usage
+- [ ] `scenario:table-v2:31` Auto resizer
+- [ ] `scenario:table-v2:51` Customize Cell Renderer{#customize-cell-renderer}
+- [ ] `scenario:table-v2:61` Table with selections
+- [ ] `scenario:table-v2:71` Inline editing
+- [ ] `scenario:table-v2:81` Table with status
+- [ ] `scenario:table-v2:93` Table with sticky rows
+- [ ] `scenario:table-v2:105` Table with fixed columns
+- [ ] `scenario:table-v2:117` Grouping header
+- [ ] `scenario:table-v2:135` Filter
+- [ ] `scenario:table-v2:145` Sortable
+- [ ] `scenario:table-v2:155` Controlled Sort
+- [ ] `scenario:table-v2:166` Cross hovering
+- [ ] `scenario:table-v2:176` Colspan
+- [ ] `scenario:table-v2:186` Rowspan
+- [ ] `scenario:table-v2:197` Rowspan and Colspan together
+- [ ] `scenario:table-v2:207` Tree data
+- [ ] `scenario:table-v2:217` Dynamic height rows
+- [ ] `scenario:table-v2:236` Detail view
+- [ ] `scenario:table-v2:246` Customized Footer
+- [ ] `scenario:table-v2:256` Customized Empty Renderer
+- [ ] `scenario:table-v2:266` Overlay
+- [ ] `scenario:table-v2:276` Manual scrolling
+- [ ] `scenario:table-v2:372` Column Attribute
+- [ ] `scenario:table-v2:394` Typings{#typings}
+- [ ] `scenario:table-v2:577` FAQs
+- [ ] `scenario:table-v2:579` How do I render a list with a checkbox in the first column?
+- [ ] `scenario:table-v2:585` Why does virtualized table provide less features than [TableV1](./table.md)
+- [ ] `source-example:table-v2:table-v2/basic` table-v2/basic
+- [ ] `source-example:table-v2:table-v2/auto-resizer` table-v2/auto-resizer
+- [ ] `source-example:table-v2:table-v2/cell-templating` table-v2/cell-templating
+- [ ] `source-example:table-v2:table-v2/selection` table-v2/selection
+- [ ] `source-example:table-v2:table-v2/inline-editing` table-v2/inline-editing
+- [ ] `source-example:table-v2:table-v2/row-class` table-v2/row-class
+- [ ] `source-example:table-v2:table-v2/sticky-rows` table-v2/sticky-rows
+- [ ] `source-example:table-v2:table-v2/fixed-columns` table-v2/fixed-columns
+- [ ] `source-example:table-v2:table-v2/grouping-header` table-v2/grouping-header
+- [ ] `source-example:table-v2:table-v2/filter` table-v2/filter
+- [ ] `source-example:table-v2:table-v2/sort` table-v2/sort
+- [ ] `source-example:table-v2:table-v2/controlled-sort` table-v2/controlled-sort
+- [ ] `source-example:table-v2:table-v2/cross-hovering` table-v2/cross-hovering
+- [ ] `source-example:table-v2:table-v2/colspan` table-v2/colspan
+- [ ] `source-example:table-v2:table-v2/rowspan` table-v2/rowspan
+- [ ] `source-example:table-v2:table-v2/spans` table-v2/spans
+- [ ] `source-example:table-v2:table-v2/tree-data` table-v2/tree-data
+- [ ] `source-example:table-v2:table-v2/dynamic-height` table-v2/dynamic-height
+- [ ] `source-example:table-v2:table-v2/detailed-view` table-v2/detailed-view
+- [ ] `source-example:table-v2:table-v2/footer` table-v2/footer
+- [ ] `source-example:table-v2:table-v2/empty` table-v2/empty
+- [ ] `source-example:table-v2:table-v2/overlay` table-v2/overlay
+- [ ] `source-example:table-v2:table-v2/manual-scroll` table-v2/manual-scroll
+- [ ] `directory:table-v2` table-v2
+
+## table
+
+- [ ] `api:table:264` Table Attributes / data
+- [ ] `api:table:265` Table Attributes / height
+- [ ] `api:table:266` Table Attributes / max-height
+- [ ] `api:table:267` Table Attributes / stripe
+- [ ] `api:table:268` Table Attributes / border
+- [ ] `api:table:269` Table Attributes / size
+- [ ] `api:table:270` Table Attributes / fit
+- [ ] `api:table:271` Table Attributes / show-header
+- [ ] `api:table:272` Table Attributes / highlight-current-row
+- [ ] `api:table:273` Table Attributes / current-row-key
+- [ ] `api:table:274` Table Attributes / row-class-name
+- [ ] `api:table:275` Table Attributes / row-style
+- [ ] `api:table:276` Table Attributes / cell-class-name
+- [ ] `api:table:277` Table Attributes / cell-style
+- [ ] `api:table:278` Table Attributes / header-row-class-name
+- [ ] `api:table:279` Table Attributes / header-row-style
+- [ ] `api:table:280` Table Attributes / header-cell-class-name
+- [ ] `api:table:281` Table Attributes / header-cell-style
+- [ ] `api:table:282` Table Attributes / row-key
+- [ ] `api:table:283` Table Attributes / empty-text
+- [ ] `api:table:284` Table Attributes / default-expand-all
+- [ ] `api:table:285` Table Attributes / expand-row-keys
+- [ ] `api:table:286` Table Attributes / default-sort
+- [ ] `api:table:287` Table Attributes / tooltip-effect
+- [ ] `api:table:288` Table Attributes / tooltip-options
+- [ ] `api:table:289` Table Attributes / append-filter-panel-to
+- [ ] `api:table:290` Table Attributes / show-summary
+- [ ] `api:table:291` Table Attributes / sum-text
+- [ ] `api:table:292` Table Attributes / summary-method
+- [ ] `api:table:293` Table Attributes / span-method
+- [ ] `api:table:294` Table Attributes / select-on-indeterminate
+- [ ] `api:table:295` Table Attributes / indent
+- [ ] `api:table:296` Table Attributes / lazy
+- [ ] `api:table:297` Table Attributes / load
+- [ ] `api:table:298` Table Attributes / tree-props
+- [ ] `api:table:299` Table Attributes / table-layout
+- [ ] `api:table:300` Table Attributes / scrollbar-always-on
+- [ ] `api:table:301` Table Attributes / show-overflow-tooltip
+- [ ] `api:table:302` Table Attributes / flexible
+- [ ] `api:table:303` Table Attributes / scrollbar-tabindex
+- [ ] `api:table:304` Table Attributes / allow-drag-last-column
+- [ ] `api:table:305` Table Attributes / tooltip-formatter
+- [ ] `api:table:306` Table Attributes / preserve-expanded-content
+- [ ] `api:table:307` Table Attributes / native-scrollbar
+- [ ] `api:table:308` Table Attributes / row-expandable
+- [ ] `api:table:314` Table Events / select
+- [ ] `api:table:315` Table Events / select-all
+- [ ] `api:table:316` Table Events / selection-change
+- [ ] `api:table:317` Table Events / cell-mouse-enter
+- [ ] `api:table:318` Table Events / cell-mouse-leave
+- [ ] `api:table:319` Table Events / cell-click
+- [ ] `api:table:320` Table Events / cell-dblclick
+- [ ] `api:table:321` Table Events / cell-contextmenu
+- [ ] `api:table:322` Table Events / row-click
+- [ ] `api:table:323` Table Events / row-contextmenu
+- [ ] `api:table:324` Table Events / row-dblclick
+- [ ] `api:table:325` Table Events / header-click
+- [ ] `api:table:326` Table Events / header-contextmenu
+- [ ] `api:table:327` Table Events / sort-change
+- [ ] `api:table:328` Table Events / filter-change
+- [ ] `api:table:329` Table Events / current-change
+- [ ] `api:table:330` Table Events / header-dragend
+- [ ] `api:table:331` Table Events / expand-change
+- [ ] `api:table:332` Table Events / scroll
+- [ ] `api:table:338` Table Slots / default
+- [ ] `api:table:339` Table Slots / append
+- [ ] `api:table:340` Table Slots / empty
+- [ ] `api:table:346` Table Exposes / clearSelection
+- [ ] `api:table:347` Table Exposes / getSelectionRows
+- [ ] `api:table:348` Table Exposes / getHalfSelectionRows
+- [ ] `api:table:349` Table Exposes / toggleRowSelection
+- [ ] `api:table:350` Table Exposes / toggleAllSelection
+- [ ] `api:table:351` Table Exposes / toggleRowExpansion
+- [ ] `api:table:352` Table Exposes / setCurrentRow
+- [ ] `api:table:353` Table Exposes / clearSort
+- [ ] `api:table:354` Table Exposes / clearFilter
+- [ ] `api:table:355` Table Exposes / doLayout
+- [ ] `api:table:356` Table Exposes / sort
+- [ ] `api:table:357` Table Exposes / scrollTo
+- [ ] `api:table:358` Table Exposes / setScrollTop
+- [ ] `api:table:359` Table Exposes / setScrollLeft
+- [ ] `api:table:360` Table Exposes / columns
+- [ ] `api:table:361` Table Exposes / updateKeyChildren
+- [ ] `api:table:369` Table-column Attributes / type
+- [ ] `api:table:370` Table-column Attributes / index
+- [ ] `api:table:371` Table-column Attributes / label
+- [ ] `api:table:372` Table-column Attributes / column-key
+- [ ] `api:table:373` Table-column Attributes / prop
+- [ ] `api:table:374` Table-column Attributes / width
+- [ ] `api:table:375` Table-column Attributes / min-width
+- [ ] `api:table:376` Table-column Attributes / fixed
+- [ ] `api:table:377` Table-column Attributes / render-header
+- [ ] `api:table:378` Table-column Attributes / sortable
+- [ ] `api:table:379` Table-column Attributes / sort-method
+- [ ] `api:table:380` Table-column Attributes / sort-by
+- [ ] `api:table:381` Table-column Attributes / sort-orders
+- [ ] `api:table:382` Table-column Attributes / resizable
+- [ ] `api:table:383` Table-column Attributes / formatter
+- [ ] `api:table:384` Table-column Attributes / show-overflow-tooltip
+- [ ] `api:table:385` Table-column Attributes / align
+- [ ] `api:table:386` Table-column Attributes / header-align
+- [ ] `api:table:387` Table-column Attributes / class-name
+- [ ] `api:table:388` Table-column Attributes / label-class-name
+- [ ] `api:table:389` Table-column Attributes / selectable
+- [ ] `api:table:390` Table-column Attributes / reserve-selection
+- [ ] `api:table:391` Table-column Attributes / filters
+- [ ] `api:table:392` Table-column Attributes / filter-placement
+- [ ] `api:table:393` Table-column Attributes / filter-class-name
+- [ ] `api:table:394` Table-column Attributes / filter-multiple
+- [ ] `api:table:395` Table-column Attributes / filter-method
+- [ ] `api:table:396` Table-column Attributes / filtered-value
+- [ ] `api:table:397` Table-column Attributes / tooltip-formatter
+- [ ] `api:table:403` Table-column Slots / default
+- [ ] `api:table:404` Table-column Slots / header
+- [ ] `api:table:405` Table-column Slots / filter-icon
+- [ ] `api:table:406` Table-column Slots / expand
+- [ ] `scenario:table:10` Basic table
+- [ ] `scenario:table:20` Striped Table
+- [ ] `scenario:table:30` Table with border
+- [ ] `scenario:table:38` Table with status
+- [ ] `scenario:table:48` Table with show overflow tooltip
+- [ ] `scenario:table:58` Table with fixed header
+- [ ] `scenario:table:68` Table with fixed column
+- [ ] `scenario:table:78` Table with fixed columns and header
+- [ ] `scenario:table:88` Fluid-height Table with fixed header (and columns)
+- [ ] `scenario:table:98` Grouping table head
+- [ ] `scenario:table:108` Table with fixed group header
+- [ ] `scenario:table:118` Single select
+- [ ] `scenario:table:128` Multiple select
+- [ ] `scenario:table:140` Sorting
+- [ ] `scenario:table:150` Filter
+- [ ] `scenario:table:160` Custom column template
+- [ ] `scenario:table:170` Table with custom header
+- [ ] `scenario:table:180` Expandable row
+- [ ] `scenario:table:192` Tree data and lazy mode
+- [ ] `scenario:table:200` Selectable tree ^(2.8.0)
+- [ ] `scenario:table:208` Summary row
+- [ ] `scenario:table:218` Rowspan and colspan
+- [ ] `scenario:table:228` Custom index
+- [ ] `scenario:table:238` Table Layout
+- [ ] `scenario:table:248` Tooltip formatter ^(2.9.4)
+- [ ] `scenario:table:491` FAQ
+- [ ] `scenario:table:493` How to infer the correct slot types for `el-table-column`?
+- [ ] `scenario:table:524` How to use image preview in the table?
+- [ ] `scenario:table:536` Why column is not rendered when use DOM templates?
+- [ ] `source-example:table:table/basic` table/basic
+- [ ] `source-example:table:table/striped` table/striped
+- [ ] `source-example:table:table/with-border` table/with-border
+- [ ] `source-example:table:table/with-status` table/with-status
+- [ ] `source-example:table:table/show-overflow-tooltip` table/show-overflow-tooltip
+- [ ] `source-example:table:table/fixed-header` table/fixed-header
+- [ ] `source-example:table:table/fixed-column` table/fixed-column
+- [ ] `source-example:table:table/fixed-column-and-header` table/fixed-column-and-header
+- [ ] `source-example:table:table/fixed-header-with-fluid-header` table/fixed-header-with-fluid-header
+- [ ] `source-example:table:table/grouping-header` table/grouping-header
+- [ ] `source-example:table:table/fixed-column-and-group-header` table/fixed-column-and-group-header
+- [ ] `source-example:table:table/single-select` table/single-select
+- [ ] `source-example:table:table/multi-select` table/multi-select
+- [ ] `source-example:table:table/sort` table/sort
+- [ ] `source-example:table:table/filter` table/filter
+- [ ] `source-example:table:table/custom-column` table/custom-column
+- [ ] `source-example:table:table/custom-header` table/custom-header
+- [ ] `source-example:table:table/expandable-row` table/expandable-row
+- [ ] `source-example:table:table/tree-and-lazy` table/tree-and-lazy
+- [ ] `source-example:table:table/check-strictly` table/check-strictly
+- [ ] `source-example:table:table/summary` table/summary
+- [ ] `source-example:table:table/rowspan-and-colspan` table/rowspan-and-colspan
+- [ ] `source-example:table:table/custom-index` table/custom-index
+- [ ] `source-example:table:table/table-layout` table/table-layout
+- [ ] `source-example:table:table/tooltip-formatter` table/tooltip-formatter
+- [ ] `directory:table` table
+- [ ] `directory:table-column` table-column
+
+## Tabs 标签页
+
+- [x] `api:tabs:100` Tabs Attributes / model-value / v-model — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:101` Tabs Attributes / default-value — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:102` Tabs Attributes / type — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:103` Tabs Attributes / closable — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:104` Tabs Attributes / addable — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:105` Tabs Attributes / editable — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:106` Tabs Attributes / tab-position — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:107` Tabs Attributes / stretch — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:108` Tabs Attributes / before-leave — 证据：tests/navigation.test.tsx
+- [ ] `api:tabs:109` Tabs Attributes / tabindex
+- [x] `api:tabs:115` Tabs Events / tab-click — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:116` Tabs Events / tab-change — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:117` Tabs Events / tab-remove — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:118` Tabs Events / tab-add — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:119` Tabs Events / edit — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:125` Tabs Slots / default — 证据：tests/navigation.test.tsx
+- [ ] `api:tabs:126` Tabs Slots / add-icon
+- [ ] `api:tabs:127` Tabs Slots / addIcon
+- [ ] `api:tabs:133` Tabs Exposes / currentName
+- [ ] `api:tabs:134` Tabs Exposes / tabNavRef
+- [ ] `api:tabs:142` Tab-nav Exposes / scrollToActiveTab
+- [ ] `api:tabs:143` Tab-nav Exposes / removeFocus
+- [ ] `api:tabs:144` Tab-nav Exposes / tabListRef
+- [ ] `api:tabs:145` Tab-nav Exposes / tabBarRef
+- [ ] `api:tabs:153` Tab-bar Exposes / ref
+- [ ] `api:tabs:154` Tab-bar Exposes / update
+- [x] `api:tabs:162` Tab-pane Attributes / label — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:163` Tab-pane Attributes / disabled — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:164` Tab-pane Attributes / name — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:165` Tab-pane Attributes / closable — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:166` Tab-pane Attributes / lazy — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:172` Tab-pane Slots / default — 证据：tests/navigation.test.tsx
+- [x] `api:tabs:173` Tab-pane Slots / label — 证据：tests/navigation.test.tsx
+- [ ] `scenario:tabs:10` Basic usage
+- [ ] `scenario:tabs:20` Card Style
+- [ ] `scenario:tabs:30` Border card
+- [ ] `scenario:tabs:40` Tab position
+- [ ] `scenario:tabs:50` Custom Tab
+- [ ] `scenario:tabs:60` Add & close tab
+- [ ] `scenario:tabs:70` Customized add button icon ^(2.4.0)
+- [ ] `scenario:tabs:78` Customized trigger button of new tab
+- [ ] `scenario:tabs:86` Default value ^(2.11.9)
+- [ ] `scenario:tabs:175` FAQ
+- [ ] `scenario:tabs:177` How to use sortable/draggable tabs ?
+- [ ] `source-example:tabs:tabs/basic` tabs/basic
+- [ ] `source-example:tabs:tabs/card-style` tabs/card-style
+- [ ] `source-example:tabs:tabs/border-card` tabs/border-card
+- [ ] `source-example:tabs:tabs/tab-position` tabs/tab-position
+- [ ] `source-example:tabs:tabs/custom-tab` tabs/custom-tab
+- [ ] `source-example:tabs:tabs/dynamic-tabs` tabs/dynamic-tabs
+- [ ] `source-example:tabs:tabs/customized-add-button-icon` tabs/customized-add-button-icon
+- [ ] `source-example:tabs:tabs/customized-trigger` tabs/customized-trigger
+- [ ] `source-example:tabs:tabs/default-value` tabs/default-value
+- [ ] `directory:tab-pane` tab-pane
+- [ ] `directory:tabs` tabs
+- [x] `feature:tabs/keyboard-navigation` 方向键跳过禁用页签 — 证据：tests/navigation.test.tsx
+- [x] `feature:tabs/leave-after-unmount` 切换拦截在卸载后完成不再提交模型 — 证据：tests/navigation.test.tsx
+
+## Tag 标签
+
+- [x] `api:tag:82` Tag Attributes / type — 证据：tests/presentation.test.tsx
+- [x] `api:tag:83` Tag Attributes / closable — 证据：tests/presentation.test.tsx
+- [ ] `api:tag:84` Tag Attributes / disable-transitions
+- [x] `api:tag:85` Tag Attributes / hit — 证据：tests/presentation.test.tsx
+- [x] `api:tag:86` Tag Attributes / color — 证据：tests/presentation.test.tsx
+- [x] `api:tag:87` Tag Attributes / size — 证据：tests/presentation.test.tsx
+- [x] `api:tag:88` Tag Attributes / effect — 证据：tests/presentation.test.tsx
+- [x] `api:tag:89` Tag Attributes / round — 证据：tests/presentation.test.tsx
+- [x] `api:tag:95` Tag Events / click — 证据：tests/presentation.test.tsx
+- [x] `api:tag:96` Tag Events / close — 证据：tests/presentation.test.tsx
+- [x] `api:tag:102` Tag Slots / default — 证据：tests/presentation.test.tsx
+- [x] `api:tag:110` CheckTag Attributes / checked / v-model:checked — 证据：tests/presentation.test.tsx
+- [x] `api:tag:111` CheckTag Attributes / disabled — 证据：tests/presentation.test.tsx
+- [x] `api:tag:112` CheckTag Attributes / type — 证据：tests/presentation.test.tsx
+- [x] `api:tag:118` CheckTag Events / change — 证据：tests/presentation.test.tsx
+- [x] `api:tag:124` CheckTag Slots / default — 证据：tests/presentation.test.tsx
+- [ ] `scenario:tag:10` Basic usage
+- [ ] `scenario:tag:18` Removable Tag
+- [ ] `scenario:tag:26` Edit Dynamically
+- [ ] `scenario:tag:36` Sizes
+- [ ] `scenario:tag:46` Theme
+- [ ] `scenario:tag:56` Rounded
+- [ ] `scenario:tag:66` Checkable Tag
+- [ ] `source-example:tag:tag/basic` tag/basic
+- [ ] `source-example:tag:tag/removable` tag/removable
+- [ ] `source-example:tag:tag/editable` tag/editable
+- [ ] `source-example:tag:tag/sizes` tag/sizes
+- [ ] `source-example:tag:tag/theme` tag/theme
+- [ ] `source-example:tag:tag/rounded` tag/rounded
+- [ ] `source-example:tag:tag/checkable` tag/checkable
+- [ ] `directory:check-tag` check-tag
+- [ ] `directory:tag` tag
+
+## Text 文字
+
+- [x] `api:text:56` Attributes / type — 证据：tests/presentation.test.tsx
+- [x] `api:text:57` Attributes / size — 证据：tests/presentation.test.tsx
+- [x] `api:text:58` Attributes / truncated — 证据：tests/presentation.test.tsx
+- [x] `api:text:59` Attributes / line-clamp — 证据：tests/presentation.test.tsx
+- [x] `api:text:60` Attributes / tag — 证据：tests/presentation.test.tsx
+- [x] `api:text:66` Slots / default — 证据：tests/presentation.test.tsx
+- [ ] `api:text:72` Exposes / isTruncated
+- [ ] `scenario:text:10` Basic
+- [ ] `scenario:text:18` Sizes
+- [ ] `scenario:text:26` Ellipsis
+- [ ] `scenario:text:34` Override
+- [ ] `scenario:text:42` Mixed
+- [ ] `source-example:text:text/basic` text/basic
+- [ ] `source-example:text:text/sizes` text/sizes
+- [ ] `source-example:text:text/truncated` text/truncated
+- [ ] `source-example:text:text/override` text/override
+- [ ] `source-example:text:text/mixed` text/mixed
+- [ ] `directory:text` text
+- [x] `feature:text/overflow-title` 展示组件 实际溢出才显示自动title且卸载观察器 — 证据：tests/presentation.test.tsx
+
+## time-picker
+
+- [ ] `api:time-picker:46` Attributes / model-value / v-model
+- [ ] `api:time-picker:47` Attributes / readonly
+- [ ] `api:time-picker:48` Attributes / disabled
+- [ ] `api:time-picker:49` Attributes / editable
+- [ ] `api:time-picker:50` Attributes / clearable
+- [ ] `api:time-picker:51` Attributes / size
+- [ ] `api:time-picker:52` Attributes / placeholder
+- [ ] `api:time-picker:53` Attributes / start-placeholder
+- [ ] `api:time-picker:54` Attributes / end-placeholder
+- [ ] `api:time-picker:55` Attributes / is-range
+- [ ] `api:time-picker:56` Attributes / arrow-control
+- [ ] `api:time-picker:57` Attributes / popper-class
+- [ ] `api:time-picker:58` Attributes / popper-style
+- [ ] `api:time-picker:59` Attributes / popper-options
+- [ ] `api:time-picker:60` Attributes / fallback-placements
+- [ ] `api:time-picker:61` Attributes / placement
+- [ ] `api:time-picker:62` Attributes / range-separator
+- [ ] `api:time-picker:63` Attributes / format
+- [ ] `api:time-picker:64` Attributes / default-value
+- [ ] `api:time-picker:65` Attributes / value-format
+- [ ] `api:time-picker:66` Attributes / id
+- [ ] `api:time-picker:67` Attributes / name
+- [ ] `api:time-picker:68` Attributes / aria-label
+- [ ] `api:time-picker:69` Attributes / prefix-icon
+- [ ] `api:time-picker:70` Attributes / clear-icon
+- [ ] `api:time-picker:71` Attributes / disabled-hours
+- [ ] `api:time-picker:72` Attributes / disabled-minutes
+- [ ] `api:time-picker:73` Attributes / disabled-seconds
+- [ ] `api:time-picker:74` Attributes / teleported
+- [ ] `api:time-picker:75` Attributes / tabindex
+- [ ] `api:time-picker:76` Attributes / empty-values
+- [ ] `api:time-picker:77` Attributes / value-on-clear
+- [ ] `api:time-picker:78` Attributes / save-on-blur
+- [ ] `api:time-picker:79` Attributes / label
+- [ ] `api:time-picker:85` Events / change
+- [ ] `api:time-picker:86` Events / blur
+- [ ] `api:time-picker:87` Events / focus
+- [ ] `api:time-picker:88` Events / clear
+- [ ] `api:time-picker:89` Events / visible-change
+- [ ] `api:time-picker:95` Exposes / focus
+- [ ] `api:time-picker:96` Exposes / blur
+- [ ] `api:time-picker:97` Exposes / handleOpen
+- [ ] `api:time-picker:98` Exposes / handleClose
+- [ ] `api:time-picker:108` Type Declarations / 'top-start'
+- [ ] `api:time-picker:109` Type Declarations / 'top-end'
+- [ ] `api:time-picker:110` Type Declarations / 'bottom'
+- [ ] `api:time-picker:111` Type Declarations / 'bottom-start'
+- [ ] `api:time-picker:112` Type Declarations / 'bottom-end'
+- [ ] `api:time-picker:113` Type Declarations / 'left'
+- [ ] `api:time-picker:114` Type Declarations / 'left-start'
+- [ ] `api:time-picker:115` Type Declarations / 'left-end'
+- [ ] `api:time-picker:116` Type Declarations / 'right'
+- [ ] `api:time-picker:117` Type Declarations / 'right-start'
+- [ ] `api:time-picker:118` Type Declarations / 'right-end'
+- [ ] `scenario:time-picker:10` Arbitrary time picker
+- [ ] `scenario:time-picker:20` Limit the time range
+- [ ] `scenario:time-picker:30` Arbitrary time range
+- [ ] `source-example:time-picker:time-picker/basic` time-picker/basic
+- [ ] `source-example:time-picker:time-picker/basic-range` time-picker/basic-range
+- [ ] `source-example:time-picker:time-picker/range` time-picker/range
+- [ ] `directory:time-picker` time-picker
+
+## TimeSelect 时间选择
+
+- [x] `api:time-select:56` Attributes / model-value / v-model — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:57` Attributes / disabled — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:58` Attributes / editable — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:59` Attributes / clearable — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:60` Attributes / include-end-time — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:61` Attributes / size — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:62` Attributes / placeholder — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:63` Attributes / name — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:64` Attributes / effect — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:65` Attributes / prefix-icon — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:66` Attributes / clear-icon — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:67` Attributes / start — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:68` Attributes / end — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:69` Attributes / step — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:70` Attributes / min-time — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:71` Attributes / max-time — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:72` Attributes / format — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:73` Attributes / empty-values — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:74` Attributes / value-on-clear — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:75` Attributes / popper-class — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:76` Attributes / popper-style — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:82` Events / change — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:83` Events / blur — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:84` Events / focus — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:85` Events / clear — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:91` Exposes / focus — 证据：tests/time-select.test.tsx
+- [x] `api:time-select:92` Exposes / blur — 证据：tests/time-select.test.tsx
+- [ ] `scenario:time-select:12` Fixed time picker
+- [ ] `scenario:time-select:22` Time Formats
+- [ ] `scenario:time-select:40` Fixed time range
+- [ ] `source-example:time-select:time-select/basic` time-select/basic
+- [ ] `source-example:time-select:time-select/time-formats` time-select/time-formats
+- [ ] `source-example:time-select:time-select/time-range` time-select/time-range
+- [ ] `directory:time-select` time-select
+- [x] `feature:time-select/invalid-config` 非法起止和零步长回退默认值，不产生死循环 — 证据：tests/time-select.test.tsx
+- [x] `feature:time-select/reverse-range` 倒置区间默认无选项，includeEndTime可保留末尾 — 证据：tests/time-select.test.tsx
+
+## Timeline 时间轴
+
+- [x] `api:timeline:82` Timeline Attributes / reverse — 证据：tests/layout-display.test.tsx
+- [ ] `api:timeline:83` Timeline Attributes / mode
+- [x] `api:timeline:89` Timeline Slots / default — 证据：tests/layout-display.test.tsx
+- [x] `api:timeline:97` Timeline-Item Attributes / timestamp — 证据：tests/layout-display.test.tsx
+- [x] `api:timeline:98` Timeline-Item Attributes / hide-timestamp — 证据：tests/layout-display.test.tsx
+- [x] `api:timeline:99` Timeline-Item Attributes / center — 证据：tests/layout-display.test.tsx
+- [x] `api:timeline:100` Timeline-Item Attributes / placement — 证据：tests/layout-display.test.tsx
+- [x] `api:timeline:101` Timeline-Item Attributes / type — 证据：tests/layout-display.test.tsx
+- [x] `api:timeline:102` Timeline-Item Attributes / color — 证据：tests/layout-display.test.tsx
+- [x] `api:timeline:103` Timeline-Item Attributes / size — 证据：tests/layout-display.test.tsx
+- [x] `api:timeline:104` Timeline-Item Attributes / icon — 证据：tests/layout-display.test.tsx
+- [x] `api:timeline:105` Timeline-Item Attributes / hollow — 证据：tests/layout-display.test.tsx
+- [x] `api:timeline:111` Timeline-Item Slots / default — 证据：tests/layout-display.test.tsx
+- [x] `api:timeline:112` Timeline-Item Slots / dot — 证据：tests/layout-display.test.tsx
+- [ ] `scenario:timeline:10` Basic usage
+- [ ] `scenario:timeline:20` Mode ^(2.13.1)
+- [ ] `scenario:timeline:36` Custom node
+- [ ] `scenario:timeline:46` Custom timestamp
+- [ ] `scenario:timeline:56` Vertically centered
+- [ ] `scenario:timeline:66` Reverse ^(2.11.9)
+- [ ] `source-example:timeline:timeline/basic` timeline/basic
+- [ ] `source-example:timeline:timeline/mode` timeline/mode
+- [ ] `source-example:timeline:timeline/custom-node` timeline/custom-node
+- [ ] `source-example:timeline:timeline/custom-timestamp` timeline/custom-timestamp
+- [ ] `source-example:timeline:timeline/center` timeline/center
+- [ ] `source-example:timeline:timeline/reverse` timeline/reverse
+- [ ] `directory:timeline` timeline
+- [ ] `directory:timeline-item` timeline-item
+
+## Tooltip 文字提示
+
+- [x] `api:tooltip:165` Attributes / append-to — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:166` Attributes / effect — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:167` Attributes / content — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:168` Attributes / raw-content — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:169` Attributes / placement — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:170` Attributes / fallback-placements — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:171` Attributes / visible / v-model:visible — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:172` Attributes / disabled — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:173` Attributes / offset — 证据：tests/tooltip.test.tsx
+- [ ] `api:tooltip:174` Attributes / transition
+- [ ] `api:tooltip:175` Attributes / popper-options
+- [ ] `api:tooltip:176` Attributes / arrow-offset
+- [x] `api:tooltip:177` Attributes / show-after — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:178` Attributes / show-arrow — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:179` Attributes / hide-after — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:180` Attributes / auto-close — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:181` Attributes / popper-class — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:182` Attributes / popper-style — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:183` Attributes / enterable — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:184` Attributes / teleported — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:185` Attributes / trigger — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:186` Attributes / virtual-triggering — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:187` Attributes / virtual-ref — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:188` Attributes / trigger-keys — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:189` Attributes / persistent — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:190` Attributes / aria-label — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:191` Attributes / focus-on-target — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:197` Events / before-show — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:198` Events / show — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:199` Events / before-hide — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:200` Events / hide — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:206` Slots / default — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:207` Slots / content — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:213` Exposes / popperRef — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:214` Exposes / contentRef — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:215` Exposes / isFocusInsideContent — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:216` Exposes / updatePopper — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:217` Exposes / onOpen — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:218` Exposes / onClose — 证据：tests/tooltip.test.tsx
+- [x] `api:tooltip:219` Exposes / hide — 证据：tests/tooltip.test.tsx
+- [ ] `scenario:tooltip:10` Basic usage
+- [ ] `scenario:tooltip:20` Theme
+- [ ] `scenario:tooltip:39` More Content
+- [ ] `scenario:tooltip:49` Advanced usage
+- [ ] `scenario:tooltip:73` HTML as content
+- [ ] `scenario:tooltip:89` Virtual triggering
+- [ ] `scenario:tooltip:107` Singleton
+- [ ] `scenario:tooltip:123` Controlled
+- [ ] `scenario:tooltip:133` Animations
+- [ ] `scenario:tooltip:149` Use the `append-to`
+- [ ] `scenario:tooltip:221` FAQ
+- [ ] `scenario:tooltip:223` How to allow spaces in the input box when tooltip is nested?
+- [ ] `source-example:tooltip:tooltip/basic` tooltip/basic
+- [ ] `source-example:tooltip:tooltip/theme` tooltip/theme
+- [ ] `source-example:tooltip:tooltip/rich-content` tooltip/rich-content
+- [ ] `source-example:tooltip:tooltip/advanced-usage` tooltip/advanced-usage
+- [ ] `source-example:tooltip:tooltip/html-content` tooltip/html-content
+- [ ] `source-example:tooltip:tooltip/virtual-trigger` tooltip/virtual-trigger
+- [ ] `source-example:tooltip:tooltip/singleton` tooltip/singleton
+- [ ] `source-example:tooltip:tooltip/controlled` tooltip/controlled
+- [ ] `source-example:tooltip:tooltip/animations` tooltip/animations
+- [ ] `source-example:tooltip:tooltip/append-to` tooltip/append-to
+- [ ] `directory:tooltip` tooltip
+- [x] `feature:tooltip/timer-cleanup` 未显示时卸载会释放延迟任务 — 证据：tests/tooltip.test.tsx
+
+## tour
+
+- [ ] `api:tour:80` Tour Attributes / append-to
+- [ ] `api:tour:81` Tour Attributes / show-arrow
+- [ ] `api:tour:82` Tour Attributes / placement
+- [ ] `api:tour:83` Tour Attributes / content-style
+- [ ] `api:tour:84` Tour Attributes / mask
+- [ ] `api:tour:85` Tour Attributes / gap
+- [ ] `api:tour:86` Tour Attributes / type
+- [ ] `api:tour:87` Tour Attributes / model-value / v-model
+- [ ] `api:tour:88` Tour Attributes / current / v-model:current
+- [ ] `api:tour:89` Tour Attributes / scroll-into-view-options
+- [ ] `api:tour:90` Tour Attributes / z-index
+- [ ] `api:tour:91` Tour Attributes / show-close
+- [ ] `api:tour:92` Tour Attributes / close-icon
+- [ ] `api:tour:93` Tour Attributes / close-on-press-escape
+- [ ] `api:tour:94` Tour Attributes / target-area-clickable
+- [ ] `api:tour:100` Tour slots / default
+- [ ] `api:tour:101` Tour slots / indicators
+- [ ] `api:tour:107` Tour events / close
+- [ ] `api:tour:108` Tour events / finish
+- [ ] `api:tour:109` Tour events / change
+- [ ] `api:tour:117` TourStep Attributes / target
+- [ ] `api:tour:118` TourStep Attributes / show-arrow
+- [ ] `api:tour:119` TourStep Attributes / title
+- [ ] `api:tour:120` TourStep Attributes / description
+- [ ] `api:tour:121` TourStep Attributes / placement
+- [ ] `api:tour:122` TourStep Attributes / content-style
+- [ ] `api:tour:123` TourStep Attributes / mask
+- [ ] `api:tour:124` TourStep Attributes / type
+- [ ] `api:tour:125` TourStep Attributes / next-button-props
+- [ ] `api:tour:126` TourStep Attributes / prev-button-props
+- [ ] `api:tour:127` TourStep Attributes / scroll-into-view-options
+- [ ] `api:tour:128` TourStep Attributes / show-close
+- [ ] `api:tour:129` TourStep Attributes / close-icon
+- [ ] `api:tour:135` TourStep slots / default
+- [ ] `api:tour:136` TourStep slots / header
+- [ ] `api:tour:142` TourStep events / close
+- [ ] `scenario:tour:10` Basic usage
+- [ ] `scenario:tour:20` Non modal
+- [ ] `scenario:tour:30` Placement
+- [ ] `scenario:tour:40` Custom mask style
+- [ ] `scenario:tour:50` Custom indicator
+- [ ] `scenario:tour:60` Target
+- [ ] `source-example:tour:tour/basic` tour/basic
+- [ ] `source-example:tour:tour/non-modal` tour/non-modal
+- [ ] `source-example:tour:tour/placement` tour/placement
+- [ ] `source-example:tour:tour/mask` tour/mask
+- [ ] `source-example:tour:tour/indicator` tour/indicator
+- [ ] `source-example:tour:tour/target` tour/target
+- [ ] `directory:tour` tour
+- [ ] `directory:tour-step` tour-step
+
+## Transfer 穿梭框
+
+- [x] `api:transfer:72` Transfer Attributes / model-value / v-model — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:73` Transfer Attributes / data — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:74` Transfer Attributes / filterable — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:75` Transfer Attributes / filter-placeholder — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:76` Transfer Attributes / filter-method — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:77` Transfer Attributes / target-order — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:78` Transfer Attributes / titles — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:79` Transfer Attributes / button-texts — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:80` Transfer Attributes / render-content — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:81` Transfer Attributes / format — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:82` Transfer Attributes / [props](#type-declarations) — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:83` Transfer Attributes / left-default-checked — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:84` Transfer Attributes / right-default-checked — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:85` Transfer Attributes / validate-event — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:86` Transfer Attributes / virtual-scroll — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:87` Transfer Attributes / item-size — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:93` Transfer Events / change — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:94` Transfer Events / left-check-change — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:95` Transfer Events / right-check-change — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:101` Transfer Slots / default — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:102` Transfer Slots / left-footer — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:103` Transfer Slots / right-footer — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:104` Transfer Slots / left-empty — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:105` Transfer Slots / right-empty — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:111` Transfer Exposes / clearQuery — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:112` Transfer Exposes / leftPanel — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:113` Transfer Exposes / rightPanel — 证据：tests/transfer.test.tsx
+- [x] `api:transfer:121` Transfer Panel Exposes / query — 证据：tests/transfer.test.tsx
+- [ ] `scenario:transfer:8` Basic usage
+- [ ] `scenario:transfer:16` Filterable
+- [ ] `scenario:transfer:26` Customizable
+- [ ] `scenario:transfer:36` Custom empty content ^(2.9.0)
+- [ ] `scenario:transfer:46` Prop aliases
+- [ ] `scenario:transfer:56` Virtual Scroll ^(2.14.3)
+- [ ] `source-example:transfer:transfer/basic` transfer/basic
+- [ ] `source-example:transfer:transfer/filterable` transfer/filterable
+- [ ] `source-example:transfer:transfer/customizable` transfer/customizable
+- [ ] `source-example:transfer:transfer/empty-content` transfer/empty-content
+- [ ] `source-example:transfer:transfer/prop-alias` transfer/prop-alias
+- [ ] `source-example:transfer:transfer/virtual-scroll` transfer/virtual-scroll
+- [ ] `directory:transfer` transfer
+- [x] `feature:transfer/select-filtered` 全选仅勾选当前过滤结果且跳过禁用项 — 证据：tests/transfer.test.tsx
+
+## tree-select
+
+- [ ] `api:tree-select:128` Attributes / [tree](./tree.md#attributes)
+- [ ] `api:tree-select:129` Attributes / [select](./select.md#select-attributes)
+- [ ] `api:tree-select:135` Own Attributes / cache-data
+- [ ] `api:tree-select:147` Exposes / treeRef
+- [ ] `api:tree-select:148` Exposes / selectRef
+- [ ] `api:tree-select:149` Exposes / filter
+- [ ] `api:tree-select:150` Exposes / updateKeyChildren
+- [ ] `api:tree-select:151` Exposes / getCheckedNodes
+- [ ] `api:tree-select:152` Exposes / setCheckedNodes
+- [ ] `api:tree-select:153` Exposes / getCheckedKeys
+- [ ] `api:tree-select:154` Exposes / setCheckedKeys
+- [ ] `api:tree-select:155` Exposes / setChecked
+- [ ] `api:tree-select:156` Exposes / getHalfCheckedNodes
+- [ ] `api:tree-select:157` Exposes / getHalfCheckedKeys
+- [ ] `api:tree-select:158` Exposes / getCurrentKey
+- [ ] `api:tree-select:159` Exposes / getCurrentNode
+- [ ] `api:tree-select:160` Exposes / setCurrentKey
+- [ ] `api:tree-select:161` Exposes / setCurrentNode
+- [ ] `api:tree-select:162` Exposes / getNode
+- [ ] `api:tree-select:163` Exposes / remove
+- [ ] `api:tree-select:164` Exposes / append
+- [ ] `api:tree-select:165` Exposes / insertBefore
+- [ ] `api:tree-select:166` Exposes / insertAfter
+- [ ] `api:tree-select:167` Exposes / focus
+- [ ] `api:tree-select:168` Exposes / blur
+- [ ] `api:tree-select:169` Exposes / selectedLabel
+- [ ] `scenario:tree-select:11` Basic usage
+- [ ] `scenario:tree-select:21` Select any level
+- [ ] `scenario:tree-select:47` Multiple Selection
+- [ ] `scenario:tree-select:57` Disabled Selection
+- [ ] `scenario:tree-select:67` Filterable
+- [ ] `scenario:tree-select:79` Custom content
+- [ ] `scenario:tree-select:89` LazyLoad
+- [ ] `scenario:tree-select:99` Use node-key attribute
+- [ ] `source-example:tree-select:tree-select/basic` tree-select/basic
+- [ ] `source-example:tree-select:tree-select/check-strictly` tree-select/check-strictly
+- [ ] `source-example:tree-select:tree-select/multiple` tree-select/multiple
+- [ ] `source-example:tree-select:tree-select/disabled` tree-select/disabled
+- [ ] `source-example:tree-select:tree-select/filterable` tree-select/filterable
+- [ ] `source-example:tree-select:tree-select/slots` tree-select/slots
+- [ ] `source-example:tree-select:tree-select/lazy` tree-select/lazy
+- [ ] `source-example:tree-select:tree-select/node-key` tree-select/node-key
+- [ ] `directory:tree-select` tree-select
+
+## tree-v2
+
+- [ ] `api:tree-v2:104` TreeV2 Attributes / data
+- [ ] `api:tree-v2:105` TreeV2 Attributes / empty-text
+- [ ] `api:tree-v2:106` TreeV2 Attributes / [props](#props)
+- [ ] `api:tree-v2:107` TreeV2 Attributes / highlight-current
+- [ ] `api:tree-v2:108` TreeV2 Attributes / expand-on-click-node
+- [ ] `api:tree-v2:109` TreeV2 Attributes / check-on-click-node
+- [ ] `api:tree-v2:110` TreeV2 Attributes / check-on-click-leaf
+- [ ] `api:tree-v2:111` TreeV2 Attributes / default-expanded-keys
+- [ ] `api:tree-v2:112` TreeV2 Attributes / show-checkbox
+- [ ] `api:tree-v2:113` TreeV2 Attributes / check-strictly
+- [ ] `api:tree-v2:114` TreeV2 Attributes / default-checked-keys
+- [ ] `api:tree-v2:115` TreeV2 Attributes / current-node-key
+- [ ] `api:tree-v2:116` TreeV2 Attributes / filter-method
+- [ ] `api:tree-v2:117` TreeV2 Attributes / indent
+- [ ] `api:tree-v2:118` TreeV2 Attributes / icon
+- [ ] `api:tree-v2:119` TreeV2 Attributes / item-size
+- [ ] `api:tree-v2:120` TreeV2 Attributes / scrollbar-always-on
+- [ ] `api:tree-v2:121` TreeV2 Attributes / height
+- [ ] `api:tree-v2:127` props / value
+- [ ] `api:tree-v2:128` props / label
+- [ ] `api:tree-v2:129` props / children
+- [ ] `api:tree-v2:130` props / disabled
+- [ ] `api:tree-v2:131` props / class
+- [ ] `api:tree-v2:139` TreeV2 Exposes / filter
+- [ ] `api:tree-v2:140` TreeV2 Exposes / getCheckedNodes
+- [ ] `api:tree-v2:141` TreeV2 Exposes / getCheckedKeys
+- [ ] `api:tree-v2:142` TreeV2 Exposes / setCheckedKeys
+- [ ] `api:tree-v2:143` TreeV2 Exposes / setChecked
+- [ ] `api:tree-v2:144` TreeV2 Exposes / setExpandedKeys
+- [ ] `api:tree-v2:145` TreeV2 Exposes / getHalfCheckedNodes
+- [ ] `api:tree-v2:146` TreeV2 Exposes / getHalfCheckedKeys
+- [ ] `api:tree-v2:147` TreeV2 Exposes / getCurrentKey
+- [ ] `api:tree-v2:148` TreeV2 Exposes / getCurrentNode
+- [ ] `api:tree-v2:149` TreeV2 Exposes / setCurrentKey
+- [ ] `api:tree-v2:150` TreeV2 Exposes / getNode
+- [ ] `api:tree-v2:151` TreeV2 Exposes / expandNode
+- [ ] `api:tree-v2:152` TreeV2 Exposes / collapseNode
+- [ ] `api:tree-v2:153` TreeV2 Exposes / setData
+- [ ] `api:tree-v2:154` TreeV2 Exposes / scrollTo
+- [ ] `api:tree-v2:155` TreeV2 Exposes / scrollToNode
+- [ ] `api:tree-v2:161` TreeV2 Events / node-click
+- [ ] `api:tree-v2:162` TreeV2 Events / node-drop
+- [ ] `api:tree-v2:163` TreeV2 Events / node-contextmenu
+- [ ] `api:tree-v2:164` TreeV2 Events / check-change
+- [ ] `api:tree-v2:165` TreeV2 Events / check
+- [ ] `api:tree-v2:166` TreeV2 Events / current-change
+- [ ] `api:tree-v2:167` TreeV2 Events / node-expand
+- [ ] `api:tree-v2:168` TreeV2 Events / node-collapse
+- [ ] `api:tree-v2:174` TreeV2 Slots / default
+- [ ] `api:tree-v2:175` TreeV2 Slots / empty
+- [ ] `scenario:tree-v2:10` Basic usage
+- [ ] `scenario:tree-v2:20` Selectable
+- [ ] `scenario:tree-v2:37` Disabled checkbox
+- [ ] `scenario:tree-v2:47` Default expanded and default checked
+- [ ] `scenario:tree-v2:57` Custom node content
+- [ ] `scenario:tree-v2:67` Custom node class ^(2.9.0)
+- [ ] `scenario:tree-v2:77` Custom node icon ^(2.10.3)
+- [ ] `scenario:tree-v2:87` Tree node filtering ^(2.9.1)
+- [ ] `source-example:tree-v2:tree-v2/basic` tree-v2/basic
+- [ ] `source-example:tree-v2:tree-v2/selectable` tree-v2/selectable
+- [ ] `source-example:tree-v2:tree-v2/disabled` tree-v2/disabled
+- [ ] `source-example:tree-v2:tree-v2/default-state` tree-v2/default-state
+- [ ] `source-example:tree-v2:tree-v2/custom-node` tree-v2/custom-node
+- [ ] `source-example:tree-v2:tree-v2/custom-node-class` tree-v2/custom-node-class
+- [ ] `source-example:tree-v2:tree-v2/custom-icon` tree-v2/custom-icon
+- [ ] `source-example:tree-v2:tree-v2/filter` tree-v2/filter
+- [ ] `directory:tree-v2` tree-v2
+
+## tree
+
+- [ ] `api:tree:137` Attributes / data
+- [ ] `api:tree:138` Attributes / empty-text
+- [ ] `api:tree:139` Attributes / node-key
+- [ ] `api:tree:140` Attributes / [props](#props)
+- [ ] `api:tree:141` Attributes / render-after-expand
+- [ ] `api:tree:142` Attributes / load
+- [ ] `api:tree:143` Attributes / render-content
+- [ ] `api:tree:144` Attributes / highlight-current
+- [ ] `api:tree:145` Attributes / default-expand-all
+- [ ] `api:tree:146` Attributes / expand-on-click-node
+- [ ] `api:tree:147` Attributes / check-on-click-node
+- [ ] `api:tree:148` Attributes / check-on-click-leaf
+- [ ] `api:tree:149` Attributes / auto-expand-parent
+- [ ] `api:tree:150` Attributes / default-expanded-keys
+- [ ] `api:tree:151` Attributes / show-checkbox
+- [ ] `api:tree:152` Attributes / check-strictly
+- [ ] `api:tree:153` Attributes / default-checked-keys
+- [ ] `api:tree:154` Attributes / current-node-key
+- [ ] `api:tree:155` Attributes / filter-node-method
+- [ ] `api:tree:156` Attributes / accordion
+- [ ] `api:tree:157` Attributes / indent
+- [ ] `api:tree:158` Attributes / icon
+- [ ] `api:tree:159` Attributes / lazy
+- [ ] `api:tree:160` Attributes / draggable
+- [ ] `api:tree:161` Attributes / allow-drag
+- [ ] `api:tree:162` Attributes / allow-drop
+- [ ] `api:tree:168` props / label
+- [ ] `api:tree:169` props / children
+- [ ] `api:tree:170` props / disabled
+- [ ] `api:tree:171` props / isLeaf
+- [ ] `api:tree:172` props / class
+- [ ] `api:tree:180` Exposes / filter
+- [ ] `api:tree:181` Exposes / updateKeyChildren
+- [ ] `api:tree:182` Exposes / getCheckedNodes
+- [ ] `api:tree:183` Exposes / setCheckedNodes
+- [ ] `api:tree:184` Exposes / getCheckedKeys
+- [ ] `api:tree:185` Exposes / setCheckedKeys
+- [ ] `api:tree:186` Exposes / setChecked
+- [ ] `api:tree:187` Exposes / getHalfCheckedNodes
+- [ ] `api:tree:188` Exposes / getHalfCheckedKeys
+- [ ] `api:tree:189` Exposes / getCurrentKey
+- [ ] `api:tree:190` Exposes / getCurrentNode
+- [ ] `api:tree:191` Exposes / setCurrentKey
+- [ ] `api:tree:192` Exposes / setCurrentNode
+- [ ] `api:tree:193` Exposes / getNode
+- [ ] `api:tree:194` Exposes / remove
+- [ ] `api:tree:195` Exposes / append
+- [ ] `api:tree:196` Exposes / insertBefore
+- [ ] `api:tree:197` Exposes / insertAfter
+- [ ] `api:tree:203` Events / node-click
+- [ ] `api:tree:204` Events / node-contextmenu
+- [ ] `api:tree:205` Events / check-change
+- [ ] `api:tree:206` Events / check
+- [ ] `api:tree:207` Events / current-change
+- [ ] `api:tree:208` Events / node-expand
+- [ ] `api:tree:209` Events / node-collapse
+- [ ] `api:tree:210` Events / node-drag-start
+- [ ] `api:tree:211` Events / node-drag-enter
+- [ ] `api:tree:212` Events / node-drag-leave
+- [ ] `api:tree:213` Events / node-drag-over
+- [ ] `api:tree:214` Events / node-drag-end
+- [ ] `api:tree:215` Events / node-drop
+- [ ] `api:tree:221` Slots / default
+- [ ] `api:tree:222` Slots / empty
+- [ ] `scenario:tree:10` Basic usage
+- [ ] `scenario:tree:20` Selectable
+- [ ] `scenario:tree:37` Custom leaf node in lazy mode
+- [ ] `scenario:tree:45` Lazy loading multiple times ^(2.6.3)
+- [ ] `scenario:tree:53` Disabled checkbox
+- [ ] `scenario:tree:63` Default expanded and default checked
+- [ ] `scenario:tree:73` Checking tree nodes
+- [ ] `scenario:tree:81` Custom node content
+- [ ] `scenario:tree:91` Custom node class
+- [ ] `scenario:tree:101` Tree node filtering
+- [ ] `scenario:tree:111` Accordion
+- [ ] `scenario:tree:121` Draggable
+- [ ] `source-example:tree:tree/basic` tree/basic
+- [ ] `source-example:tree:tree/selectable` tree/selectable
+- [ ] `source-example:tree:tree/custom-leaf` tree/custom-leaf
+- [ ] `source-example:tree:tree/multiple-times-load` tree/multiple-times-load
+- [ ] `source-example:tree:tree/disabled` tree/disabled
+- [ ] `source-example:tree:tree/default-state` tree/default-state
+- [ ] `source-example:tree:tree/checking-tree` tree/checking-tree
+- [ ] `source-example:tree:tree/customized-node` tree/customized-node
+- [ ] `source-example:tree:tree/custom-node-class` tree/custom-node-class
+- [ ] `source-example:tree:tree/filtering` tree/filtering
+- [ ] `source-example:tree:tree/accordion` tree/accordion
+- [ ] `source-example:tree:tree/draggable` tree/draggable
+- [ ] `directory:tree` tree
+
+## typography
+
+- [ ] `scenario:typography:10` Font
+- [ ] `scenario:typography:18` Font Convention
+- [ ] `scenario:typography:26` Font Line Height
+- [ ] `scenario:typography:34` Font-family
+- [ ] `source-example:typography:typography/font` typography/font
+- [ ] `source-example:typography:typography/convention` typography/convention
+- [ ] `source-example:typography:typography/line-height` typography/line-height
+
+## Upload 上传
+
+- [x] `api:upload:108` Attributes / action — 证据：tests/upload.test.tsx
+- [x] `api:upload:109` Attributes / headers — 证据：tests/upload.test.tsx
+- [x] `api:upload:110` Attributes / method — 证据：tests/upload.test.tsx
+- [x] `api:upload:111` Attributes / multiple — 证据：tests/upload.test.tsx
+- [x] `api:upload:112` Attributes / data — 证据：tests/upload.test.tsx
+- [x] `api:upload:113` Attributes / name — 证据：tests/upload.test.tsx
+- [x] `api:upload:114` Attributes / with-credentials — 证据：tests/upload.test.tsx
+- [x] `api:upload:115` Attributes / show-file-list — 证据：tests/upload.test.tsx
+- [x] `api:upload:116` Attributes / drag — 证据：tests/upload.test.tsx
+- [x] `api:upload:117` Attributes / accept — 证据：tests/upload.test.tsx
+- [x] `api:upload:118` Attributes / crossorigin — 证据：tests/upload.test.tsx
+- [x] `api:upload:119` Attributes / on-preview — 证据：tests/upload.test.tsx
+- [x] `api:upload:120` Attributes / on-remove — 证据：tests/upload.test.tsx
+- [x] `api:upload:121` Attributes / on-success — 证据：tests/upload.test.tsx
+- [x] `api:upload:122` Attributes / on-error — 证据：tests/upload.test.tsx
+- [x] `api:upload:123` Attributes / on-progress — 证据：tests/upload.test.tsx
+- [x] `api:upload:124` Attributes / on-change — 证据：tests/upload.test.tsx
+- [x] `api:upload:125` Attributes / on-exceed — 证据：tests/upload.test.tsx
+- [x] `api:upload:126` Attributes / before-upload — 证据：tests/upload.test.tsx
+- [x] `api:upload:127` Attributes / before-remove — 证据：tests/upload.test.tsx
+- [x] `api:upload:128` Attributes / file-list / v-model:file-list — 证据：tests/upload.test.tsx
+- [x] `api:upload:129` Attributes / list-type — 证据：tests/upload.test.tsx
+- [x] `api:upload:130` Attributes / auto-upload — 证据：tests/upload.test.tsx
+- [x] `api:upload:131` Attributes / http-request — 证据：tests/upload.test.tsx
+- [x] `api:upload:132` Attributes / disabled — 证据：tests/upload.test.tsx
+- [x] `api:upload:133` Attributes / limit — 证据：tests/upload.test.tsx
+- [x] `api:upload:134` Attributes / directory — 证据：tests/upload.test.tsx
+- [x] `api:upload:140` Slots / default — 证据：tests/upload.test.tsx
+- [x] `api:upload:141` Slots / trigger — 证据：tests/upload.test.tsx
+- [x] `api:upload:142` Slots / tip — 证据：tests/upload.test.tsx
+- [x] `api:upload:143` Slots / file — 证据：tests/upload.test.tsx
+- [x] `api:upload:149` Exposes / abort — 证据：tests/upload.test.tsx
+- [x] `api:upload:150` Exposes / submit — 证据：tests/upload.test.tsx
+- [x] `api:upload:151` Exposes / clearFiles — 证据：tests/upload.test.tsx
+- [x] `api:upload:152` Exposes / handleStart — 证据：tests/upload.test.tsx
+- [x] `api:upload:153` Exposes / handleRemove — 证据：tests/upload.test.tsx
+- [ ] `scenario:upload:10` Basic Usage
+- [ ] `scenario:upload:18` Cover Previous File
+- [ ] `scenario:upload:26` User Avatar
+- [ ] `scenario:upload:36` Photo Wall
+- [ ] `scenario:upload:46` Custom Thumbnail
+- [ ] `scenario:upload:56` File List with Thumbnail
+- [ ] `scenario:upload:64` File List Control
+- [ ] `scenario:upload:74` Drag to Upload
+- [ ] `scenario:upload:84` Upload Directory ^(2.13.1)
+- [ ] `scenario:upload:94` Manual Upload
+- [x] `source-example:upload:upload/basic` upload/basic — 证据：
+- [x] `source-example:upload:upload/limit-cover` upload/limit-cover — 证据：
+- [x] `source-example:upload:upload/avatar` upload/avatar — 证据：
+- [x] `source-example:upload:upload/photo-wall` upload/photo-wall — 证据：
+- [x] `source-example:upload:upload/custom-thumbnail` upload/custom-thumbnail — 证据：
+- [x] `source-example:upload:upload/file-list-with-thumbnail` upload/file-list-with-thumbnail — 证据：
+- [x] `source-example:upload:upload/file-list` upload/file-list — 证据：
+- [x] `source-example:upload:upload/drag-and-drop` upload/drag-and-drop — 证据：
+- [x] `source-example:upload:upload/directory` upload/directory — 证据：
+- [x] `source-example:upload:upload/manual` upload/manual — 证据：
+- [ ] `directory:upload` upload
+- [x] `feature:upload/pending-unmount` 异步预检查在卸载后不能发起请求 — 证据：tests/upload.test.tsx
+- [x] `feature:upload/xhr-transport` 默认请求构建FormData、请求头并转换进度及响应 — 证据：tests/upload.test.tsx
+
+## Watermark 水印
+
+- [x] `api:watermark:56` Attributes / width — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:57` Attributes / height — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:58` Attributes / rotate — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:59` Attributes / z-index — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:60` Attributes / image — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:61` Attributes / content — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:62` Attributes / font — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:63` Attributes / gap — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:64` Attributes / offset — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:70` Font / color — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:71` Font / fontSize — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:72` Font / fontWeight — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:73` Font / fontFamily — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:74` Font / fontGap — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:75` Font / fontStyle — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:76` Font / textAlign — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:77` Font / textBaseline — 证据：tests/watermark.test.tsx
+- [x] `api:watermark:83` Slots / default — 证据：tests/watermark.test.tsx
+- [ ] `scenario:watermark:10` Basic usage
+- [ ] `scenario:watermark:20` Multi-line watermark
+- [ ] `scenario:watermark:30` Image watermark
+- [ ] `scenario:watermark:40` Custom configuration
+- [ ] `scenario:watermark:66` Font
+- [ ] `source-example:watermark:watermark/basic` watermark/basic
+- [ ] `source-example:watermark:watermark/multi-line` watermark/multi-line
+- [ ] `source-example:watermark:watermark/image` watermark/image
+- [ ] `source-example:watermark:watermark/custom` watermark/custom
+- [ ] `directory:watermark` watermark
+- [x] `feature:watermark/mutation-restore` 水印移除和样式修改后恢复，不干扰业务内容 — 证据：tests/watermark.test.tsx
+- [x] `feature:watermark/image-race` 旧图片回调和卸载后的回调不能重新挂载水印 — 证据：tests/watermark.test.tsx
+
+## 内部基础设施
+
+- [ ] `directory:base` base
+- [ ] `directory:collection` collection
+- [ ] `directory:focus-trap` focus-trap
+- [ ] `directory:overlay` overlay
+- [ ] `directory:popper` popper
+- [ ] `directory:roving-focus-group` roving-focus-group
+- [ ] `directory:slot` slot
+- [ ] `directory:virtual-list` virtual-list

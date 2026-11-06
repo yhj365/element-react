@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-11-05",
+  "authoredMarkdownFiles": 212,
+  "documentThemes": 83,
+  "sourceDirectories": 122,
+  "sourceFiles": 1062,
+  "apiTableRows": 2394,
+  "exampleReferences": 599,
+  "brokenLinks": [],
+  "errors": [],
+  "passed": true,
+  "note": "仅静态文档验证；不代表React类型、组件行为或视觉等价已通过。"
+}
